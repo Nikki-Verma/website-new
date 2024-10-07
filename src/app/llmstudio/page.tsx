@@ -1,7 +1,5 @@
 import Header from "@/components/Header/Header";
 import VedioContainer from "@/components/LLM/VedioContainer/VedioContainer";
-import { BsChevronDown } from "react-icons/bs";
-import Accordian from "@/components/LLM/Accordian/Accordian";
 import DataIntegration from "@/components/LLM/DataIntegration/DataIntegration";
 import AiFeature from "@/components/LLM/AiFeature/AiFeature";
 import Tools from "@/components/LLM/Tools/Tools";
