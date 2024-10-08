@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import Badge1 from '../../assets/png/badge-1.png';
 import Badge2 from '../../assets/png/badge-2.png';
@@ -149,7 +150,7 @@ const Footer = () => {
                                         value.menu.map((menu:any) => {
                                             return (
                                                 <ul key = {menu?.label}>
-                                                    <li className='mb-4'>{menu.label}</li>
+                                                    <li className='mb-4 font-14' style={{cursor:'pointer'}}>{menu.label}</li>
                                                 </ul>
                                             )
                                         })
@@ -167,10 +168,11 @@ const Footer = () => {
                     <div className='flex gap-16'>
                         <span>Copyright © 2024 SimplAI</span>
                         <div>
-                            <span>Privacy policy &emsp;|</span>
-                            <span>&emsp;Security &emsp;|</span>
-                            <span>&emsp; Terms of service</span>
+                            <span><Link href="/privacypolicy">Privacy policy</Link> &emsp;|</span>
+                            <span>&emsp;<Link href="/home">Security</Link> &emsp;|</span>
+                            <span>&emsp; <Link href="/termservices">Terms of service</Link></span>
                         </div>
+                        {/* termservices */}
                     </div>
 
                     <div className='social_media_container flex gap-6'>
