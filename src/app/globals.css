@@ -66,8 +66,9 @@ body {
   border-radius: 20px;
   border: 0.5px solid var(--stroke-card);
   background: var(--white);
-  width: 295px;
-  height: 262px;
+  /* width: 100%; */
+  /* width: 100%; */
+  /* height: 262px; */
 }
 
 .cc_card_heading{
@@ -258,6 +259,8 @@ h5{
 .hero_background{
   background: #0D0220;
   height: 830px;
+  position: absolute;
+  top: 0;
 }
 
 .mt-120{
@@ -337,4 +340,8 @@ h5{
   border: .5px solid var(--stroke-cardv2);
   background: var(--white);   
   margin-bottom: 30px;
+}
+
+.font-14{
+  font-size: 14px;
 }
