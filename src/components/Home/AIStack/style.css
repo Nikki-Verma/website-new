@@ -1,12 +1,41 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-40%);
+    }
+  }
+  
+
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
 .badges_wrapper{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
-    gap: 24px 34px;
+    gap: 24px 12px;
     padding-top: 50px;
+    animation: marquee 10s linear infinite; 
 }
 
 .badges{
+    flex-shrink: 0;
+    /* width: 200px;  */
+    /* height: 150px; */
+    /* background-color: #ccc; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 0 15px; */
+    /* font-size: 20px; */
+    transition: transform 0.4s ease, filter 0.4s ease;
     color: var(--Text-Color-900, #171717);
     text-align: center;
 
