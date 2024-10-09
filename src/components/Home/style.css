@@ -1,9 +1,32 @@
 
+@keyframes textIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
 .hero_section{
   background-color: var(--secondry-color);
   width: 100%;
   height: 62.5rem;
-  position: relative;   
+  position: absolute;
+  top: 0;   
 }
 
 .hero_section::before{
@@ -55,11 +78,11 @@
   animation: textanimate 3s ease-in-out;
 }
 
-@keyframes textanimate {
+/* @keyframes textanimate {
   0%  {top: -102px; opacity: 1;}
   50% {top: -208px; opacity: 1;}
   100% {top: 0}
-}
+} */
 
 .hero_text{
   font-size: 18px;
@@ -67,3 +90,25 @@
   font-weight: 500;
   line-height: 34px; 
 }
+
+.animate-text{
+  overflow: hidden;
+}
+
+.animate-text span{
+  line-height: 80px;
+  display: inline-block;
+  display: none;
+  color: var(--primary-color);
+}
+
+.animate-text span.text-in {
+  display: inline-block;
+  animation: textIn 0.5s ease;
+}
+
+.animate-text span.text-out {
+  animation: textOut 0.5s ease;
+}
+
+

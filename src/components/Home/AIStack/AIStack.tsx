@@ -8,7 +8,15 @@ const AIStack = () =>{
         'Workflow Automation', 
         'Business Process Automation', 
         'RAG Applications', 
-        'Summarizations', 
+        'Summarizations',
+        'AI Assistants', 
+        'Chatbots', 
+        'Co-Pilots', 
+        'AI Chains',   
+        
+    ]
+
+     const badges_list2 = [ 
         'Self-Hosted', 
         'Fine Tuning', 
         'Conversational AI', 
@@ -17,7 +25,10 @@ const AIStack = () =>{
         'Agentic RAG', 
         'Knowledge AI', 
         'Data Connectors', 
-        'Responsible AI'
+        'Responsible AI', 
+        'Self-Hosted', 
+        'Fine Tuning', 
+        'Conversational AI',
     ]
 
 
@@ -25,9 +36,24 @@ const AIStack = () =>{
     return (
         <h2 className="text-center container">
             One Platform, Unified Gen AI Stack<br /> Unlimited Possibilities
+            <div className='marquee'>
+                <div className="badges_wrapper">
+                    {
+                        badges_list?.map((badge:string) => {
+                            return (
+                                <div className="badges">
+                                    {badge}
+                                </div>
+                            )
+                        })
+                    }
+                    
+                </div>
+            </div>
+            <div className='marquee'>
             <div className="badges_wrapper">
                 {
-                    badges_list?.map((badge:string) => {
+                    badges_list2?.map((badge:string) => {
                         return (
                             <div className="badges">
                                 {badge}
@@ -36,6 +62,7 @@ const AIStack = () =>{
                     })
                 }
                 
+            </div>
             </div>
         </h2>
     )
