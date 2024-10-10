@@ -1,0 +1,92 @@
+.tabs_banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    background-color: var(--secondry-color);
+    color: var(--white);
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.text_content{
+    padding: 100px 60px;
+}
+
+.tabs_heading{
+    color: var(--white);
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    margin-bottom: 2.1rem;
+}
+.gradient_line{
+    margin-top: 4px;
+    height: 2px;
+    background: linear-gradient(273deg, #C266E7 16.92%, #602EDF 108.46%);
+}
+
+.tabs_content{
+    margin-top: 2rem;
+}
+
+.tab_name{
+    display: inline-block;
+    margin-right: 3rem; 
+    color: var(--Neutral-12, #141414);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.tab_active{
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 4px 15px;
+}
+
+.tab_name_list{
+    padding: 0 1rem 0;
+    margin-left: 1rem;
+    margin-right:1rem;
+    border-bottom: 2px solid rgba(209, 223, 244, 0.71);;
+}
+
+.active_tab_detail{
+    padding: 2.5rem;   
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.active_tab_description{
+    color: #2B2B2E;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 1rem;
+}
+
+.feature_list{
+    padding-left: 1rem;
+}
+
+.feature_list > li{
+    color:  #141414;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+}
+
+.active_tab_text_content{
+    width: 60%;
+}
+
+.active_tab_image{
+    width: 35%;
+}

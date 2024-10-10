@@ -66,10 +66,6 @@ const Hero = () => {
             );
           })}
           </span>
-
-          {/* <span className='animate_text_wapper'>
-                        <span className='animate_text transform_text'>Secure <br/>Scalable <br/>Reliable</span>
-                     </span> */}
           <br />
           <span className="text_gray_gadient">Enterprise-Ready AI Faster</span>
         </h1>
