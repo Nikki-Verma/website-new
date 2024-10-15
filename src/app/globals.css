@@ -279,7 +279,7 @@ h5{
   border: 1px solid var(--G1, #C266E7);
   background: #0D0220;
   display: inline-block;
-  padding: 4px 7px;
+  padding: 4px 18px;
   text-align: center;
 }
 
@@ -344,4 +344,24 @@ h5{
 
 .font-14{
   font-size: 14px;
+}
+
+
+/* new css */
+.dark_bg_hero{
+  margin-top: -86px;
+  background-color:var(--secondry-color);
+  padding-bottom: 100px;
+  padding-top: 160px;
+}
+
+.hero_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.mb-24{
+  margin-bottom: 1.5rem !important;
 }
