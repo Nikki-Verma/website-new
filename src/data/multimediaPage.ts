@@ -1,11 +1,34 @@
+import {
+  AutomationImage,
+  CustomerImage,
+  DiagnosticImage,
+  CostReductionImage,
+  SelfServicePortalImage,
+  CustomerSupportImage,
+  NetwokOptimizationImage,
+  ContentPersonalizationImage,
+  StreamlineOperationsImage,
+  AiPoweredContentSearchImage, 
+  AutomatedContentManagementImage, 
+  ContentCreationImage, 
+  GameEngagementImage, 
+  VirtualAssistantsInGameImage,
+  ContentCreationInGameImage,
+  AssestsMetadataAutomationImage,
+  PlayerAndTeamInsightsImage,
+  ModerationFilteringImage,
+  AutomatePostProductionImage
+} from "../util/svgImage";
+import { MediaAndBroadcastBannerImage, TelecomBannerImage, MulimediaHeroBannerImage, EducationBannerImage, GamingAndSportBannerImage } from "@/util/images";
+
 export const banner = {
   title: "Telecom, Media & Entertainment",
-  heading:
-    "Build AI-First Solutions for Telecom, Media & Entertainment",
+  heading: "Build AI-First Solutions for Telecom, Media & Entertainment",
   description:
     "Harness future-ready applications with SimplAI's Agentic AI and process automation platform. From transforming creativity to automating operational workflows to enhancing customer engagement, unlock the full potential of AI-driven innovation.",
   buttonText: "Request Demo",
   buttonLink: "#",
+  img: MulimediaHeroBannerImage
 };
 
 export const solution = [
@@ -13,32 +36,33 @@ export const solution = [
     title: "Transform Media Innovation",
     description:
       "Leverage SimplAI's Agentic AI to redefine content creation, personalization, and media production—creating experiences that captivate and engage audiences like never before.",
-    icon: "",
+    icon: AutomationImage,
   },
   {
     title: "Fast-Track AI Innovation",
     description:
       "Build and deploy AI-first solutions quickly with our platform, enabling companies to innovate faster, streamline operations, and stay ahead in a competitive landscape.",
-    icon: "",
+    icon: CustomerImage,
   },
   {
     title: "AI-Driven Engagement",
     description:
       "Offer personalized, omnichannel experiences powered by AI—ensuring customer engagement across every platform, anytime.",
-    icon: "",
+    icon: DiagnosticImage,
   },
   {
     title: "Scale. Innovate. Monetize",
     description:
       "SimplAI helps you scale AI-driven innovation while accelerating time to market and unlocking new revenue streams through automation and cutting-edge AI technologies",
-    icon: "",
+    icon: CostReductionImage,
   },
 ];
 
+// import testImage from '../assets/multimedia/telecom_banner.png'
 
 export const telecom = {
   banner: {
-    image: "#",
+    image: TelecomBannerImage,
     title: "Telecom",
     description:
       "Enhance network performance and customer satisfaction with AI-driven automation",
@@ -58,7 +82,7 @@ export const telecom = {
           "Automate customer interactions with AI-powered self-service options.",
           "Enable customers to resolve issues and access services independently.",
         ],
-        image: "CustomerExperienceImage",
+        image: SelfServicePortalImage,
       },
       "Customer Engagement & Support": {
         description:
@@ -69,7 +93,7 @@ export const telecom = {
           "Deploy AI agents to optimize field service management and task allocation.",
           "Predict maintenance needs and improve response times.",
         ],
-        image: "",
+        image:CustomerSupportImage,
       },
       "Network Optimization": {
         description:
@@ -78,7 +102,7 @@ export const telecom = {
           "Use AI for real-time network monitoring and optimization.",
           "Enhance network efficiency and performance with predictive insights.",
         ],
-        image: "LoanProcessingImage",
+        image: NetwokOptimizationImage,
       },
     },
   },
@@ -86,7 +110,7 @@ export const telecom = {
 
 export const multimedia = {
   banner: {
-    image: "#",
+    image: MediaAndBroadcastBannerImage,
     title: "Media, Studio & Broadcast",
     description:
       "Streamline content creation and operations with AI-powered innovation",
@@ -107,16 +131,15 @@ export const multimedia = {
           "Automate metadata tagging for faster content organization.",
           "Improve searchability and accessibility of media assets.",
         ],
-        image: "AssestsMetadataAutomationImage",
+        image: AssestsMetadataAutomationImage,
       },
       "Content Creation": {
-        description:
-          "Accelerating Content Creation with AI-Driven Innovation",
+        description: "Accelerating Content Creation with AI-Driven Innovation",
         features: [
           "Leverage AI for scriptwriting, content generation, and editing workflows.",
           "Accelerate creative processes with AI-driven ideation.",
         ],
-        image: "ContentCreationImage",
+        image: ContentCreationImage,
       },
       "AI-Powered Contextual Moderation & Filtering": {
         description:
@@ -125,7 +148,7 @@ export const multimedia = {
           "Apply AI for real-time content moderation and filtering.",
           "Ensure compliance with contextual AI to detect and block inappropriate content.",
         ],
-        image: "ModerationFilteringImage",
+        image: ModerationFilteringImage,
       },
       "Automate Post Production & Operations": {
         description:
@@ -134,9 +157,9 @@ export const multimedia = {
           "Streamline editing, rendering, and finalization with AI-powered tools.",
           "Enhance video quality and turnaround time with automated processes.",
           "Optimize broadcast scheduling and live control rooms with AI automation.",
-          'Use AI to improve resource allocation and reduce operational costs.'
+          "Use AI to improve resource allocation and reduce operational costs.",
         ],
-        image: "AutomatePostProductionImage",
+        image: AutomatePostProductionImage,
       },
     },
   },
@@ -144,13 +167,13 @@ export const multimedia = {
 
 export const education_and_publication = {
   banner: {
-    image: "#",
+    image: EducationBannerImage,
     title: "Education & Publishing",
     description:
       "Revolutionize educational experiences and publishing workflows with AI.",
   },
 
-   tabs: {
+  tabs: {
     tabsName: [
       "Content Personalization & Localization",
       "AI-Powered Content Discovery & Search",
@@ -165,7 +188,7 @@ export const education_and_publication = {
           "Deliver tailored content for global audiences using AI-driven personalization.",
           "Localize educational materials and media content with AI-based translation.",
         ],
-        image: "ContentPersonalizationImage",
+        image: ContentPersonalizationImage,
       },
       "AI-Powered Content Discovery & Search": {
         description:
@@ -174,7 +197,7 @@ export const education_and_publication = {
           "Improve content discovery with AI-optimized search algorithms.",
           "Make educational resources more accessible and relevant.",
         ],
-        image: "ContentDiscoveryImage",
+        image: AiPoweredContentSearchImage,
       },
       "Automated Content Management": {
         description:
@@ -183,16 +206,15 @@ export const education_and_publication = {
           "Automate content updates and workflows for seamless publishing.",
           "Streamline editorial processes with AI-driven tools for managing large volumes of content.",
         ],
-        image: "ContentManagementImage",
+        image: AutomatedContentManagementImage,
       },
       "Streamline Operations": {
-        description:
-          "Boosting Efficiency by Streamlining Operations with AI",
+        description: "Boosting Efficiency by Streamlining Operations with AI",
         features: [
           "Use AI to optimize administrative workflows and reduce manual tasks.",
           "Increase operational efficiency across educational and publishing systems.",
         ],
-        image: "StreamlineOperationsImage",
+        image: StreamlineOperationsImage,
       },
     },
   },
@@ -200,13 +222,13 @@ export const education_and_publication = {
 
 export const gaming_and_esport = {
   banner: {
-    image: "#",
+    image:GamingAndSportBannerImage ,
     title: "Gaming & E-Sports",
     description:
       "Drive engagement and streamline gaming experiences with AI-powered solutions",
   },
 
-   tabs: {
+  tabs: {
     tabsName: [
       "Game Engagement",
       "In-Game Virtual Assistants",
@@ -221,7 +243,7 @@ export const gaming_and_esport = {
           "Personalize in-game experiences with AI-driven recommendations and dynamic content.",
           "Keep players engaged with evolving storylines and Non Playing Character interactions.",
         ],
-        image: "ContentPersonalizationImage",
+        image:GameEngagementImage,
       },
       "In-Game Virtual Assistants": {
         description:
@@ -230,7 +252,7 @@ export const gaming_and_esport = {
           "Provide real-time assistance to players with AI-powered in-game virtual assistants.",
           "Offer help with game mechanics, strategy, and mission guidance.",
         ],
-        image: "ContentDiscoveryImage",
+        image: VirtualAssistantsInGameImage,
       },
       "Content Creation": {
         description:
@@ -239,7 +261,7 @@ export const gaming_and_esport = {
           "Automate NPC development, procedural content generation, and player personalization.",
           "Use AI to create unique, immersive game environments and characters.",
         ],
-        image: "ContentManagementImage",
+        image: ContentCreationInGameImage,
       },
       "Player & Team Insights": {
         description:
@@ -248,7 +270,7 @@ export const gaming_and_esport = {
           "Leverage AI analytics for deep insights into player behavior and team performance.",
           "Detect patterns to optimize gameplay and improve competitive strategies.",
         ],
-        image: "StreamlineOperationsImage",
+        image: PlayerAndTeamInsightsImage,
       },
     },
   },

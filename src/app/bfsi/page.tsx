@@ -1,45 +1,22 @@
-import Image from "next/image";
 import Header from "@/components/Header/Header";
-import Button from "@/UIComponents/Button";
-import { BfsiHeroImage } from "@/util/images";
+import Footer from "@/components/Footer/Footer";
+import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
+import AIPlatformOverview from "@/components/AIPlatformOverview/AIPlatformOverview";
+import CardInfo from "@/components/CardInfo/CardInfo";
+import { solutionsList, retailAndBanking, banner } from "@/data/bfsiPageData";
+import CommonHero from "@/components/CommonHero/CommonHero";
 import Tabs from "@/components/TabsConfig/Tabs";
-import {
-  ProductivityEfficiencyIcon,
-  DecisionMakingIcon,
-  CustomerEngagementIcon,
-  CostCutIcon,
-} from "@/util/icons";
-
-const solutionsList = [
-  {
-    title: "Boost Productivity & Efficiency",
-    description:
-      "Automate workflows to reduce manual tasks and accelerate results",
-    icon: ProductivityEfficiencyIcon,
-  },
-  {
-    title: "Enhance Decision-Making",
-    description:
-      "Empower decision-making and automate compliance for stronger governance",
-    icon: DecisionMakingIcon,
-  },
-  {
-    title: "Elevate Customer Engagement",
-    description:
-      "Deliver personalized experiences and optimize customer journeys",
-    icon: CustomerEngagementIcon,
-  },
-  {
-    title: "Cut Operational Costs",
-    description: "Streamline operations and automate tasks to reduce costs.",
-    icon: CostCutIcon,
-  },
-];
 
 const BFSI = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
+      <CommonHero data={banner} />
+      <CardInfo data={solutionsList} />
+      <Tabs data={retailAndBanking} />
+      <CaseStudy />
+      <AIPlatformOverview />
+      <Footer />
       {/* <div className="dark_bg_hero">
         <div className="hero_content container">
           <div className="w-2/3">
@@ -80,7 +57,7 @@ const BFSI = () => {
           })}
         </div>
       </div> */}
-      <Tabs />
+      {/* <Tabs /> */}
     </>
   );
 };

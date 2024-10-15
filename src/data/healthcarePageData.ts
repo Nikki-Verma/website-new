@@ -1,3 +1,26 @@
+import {
+  HealthcareHeroImage,
+  AutomationImage,
+  CustomerImage,
+  DiagnosticImage,
+  CostReductionImage,
+  PatientExperienceImage,
+  CareDeliveryImage,
+  RevenueCycleManagementImage,
+  ClaimManagementImage,
+  GroupImage,
+  ProviderManagementImage,
+  IsvImage,
+  DeviceSolututionImage,
+  TeleHealthImage,
+} from "../util/svgImage";
+
+// import { HealthcareHeroImage } from "../util/svgImage";
+import {
+  HealthTechBannerImage,
+  HealthcarePlayerBannerImage,
+  HeathcareProviderBannerImage,
+} from "@/util/images";
 export const banner = {
   title: "Healthcare",
   heading:
@@ -6,6 +29,7 @@ export const banner = {
     "From enhancing patient interactions to automating administrative tasks and augmenting clinical decision-making, scale your healthcare services with SimplAI’s Generative AI solutions designed for efficiency and growth.",
   buttonText: "Request Demo",
   buttonLink: "#",
+  img: HealthcareHeroImage,
 };
 
 export const solution = [
@@ -13,31 +37,31 @@ export const solution = [
     title: "Enhance Patient Experience",
     description:
       "Deliver personalized virtual assistance and tailored patient portals for seamless communication",
-    icon: "",
+    icon: CustomerImage,
   },
   {
     title: "Automate, Optimize, Empower",
     description:
       "Automate routine tasks to optimize workflows and free up healthcare teams for patient care",
-    icon: "",
+    icon: AutomationImage,
   },
   {
     title: "Improve Care Delivery",
     description:
       "Leverage AI-driven diagnostics and real-time support for faster, better patient outcomes",
-    icon: "",
+    icon: DiagnosticImage,
   },
   {
     title: "Reduce Costs Effectively",
     description:
       "Streamline revenue cycle management and claims management to enhance efficiency and lower operational expenses",
-    icon: "",
+    icon: CostReductionImage,
   },
 ];
 
 export const healthcare_provider = {
   banner: {
-    image: "#",
+    image: HeathcareProviderBannerImage,
     title: "Healthcare Providers",
     description:
       "Enhance clinical productivity as well as patient experience and engagement with Generative AI solutions.",
@@ -58,7 +82,7 @@ export const healthcare_provider = {
           "Self-scheduling and reminders with automated follow-ups.",
           "Personalized patient portals using AI-driven insights.",
         ],
-        image: "CustomerExperienceImage",
+        image: PatientExperienceImage,
       },
       "Care Delivery": {
         description:
@@ -69,7 +93,7 @@ export const healthcare_provider = {
           "AI-powered triage systems to prioritize patient care.",
           "Medical image interpretation with AI for enhanced diagnostic accuracy.",
         ],
-        image: "",
+        image: CareDeliveryImage,
       },
       "Revenue Cycle Management": {
         description:
@@ -79,7 +103,7 @@ export const healthcare_provider = {
           "AI-powered medical coding and denial management automation.",
           "AI-driven prior authorization workflows for faster approvals.",
         ],
-        image: "LoanProcessingImage",
+        image: RevenueCycleManagementImage,
       },
     },
   },
@@ -87,7 +111,7 @@ export const healthcare_provider = {
 
 export const healthcare_player: any = {
   banner: {
-    image: "#",
+    image: HealthcarePlayerBannerImage,
     title: "Healthcare Payers",
     description:
       "Streamline claims processes and improve member interactions with AI automation",
@@ -104,7 +128,7 @@ export const healthcare_player: any = {
           "Automated claims adjudication with AI-based fraud detection.",
           "AI-driven document analysis for appeals and grievance management.",
         ],
-        image: "CustomerExperienceImage",
+        image: ClaimManagementImage,
       },
       "Member Experience": {
         description:
@@ -114,7 +138,7 @@ export const healthcare_player: any = {
           "AI-driven chat and voice support for seamless member services.",
           "AI-generated health plan recommendations based on claims history",
         ],
-        image: "",
+        image: GroupImage,
       },
       "Provider Management": {
         description:
@@ -124,7 +148,7 @@ export const healthcare_player: any = {
           "Gen AI-powered communication and education for providers.",
           "Streamline premium billing with AI-driven automation.",
         ],
-        image: "LoanProcessingImage",
+        image: ProviderManagementImage,
       },
     },
   },
@@ -132,7 +156,7 @@ export const healthcare_player: any = {
 
 export const healthcare_tech: any = {
   banner: {
-    image: "#",
+    image: HealthTechBannerImage,
     title: "HealthTech",
     description:
       "Drive innovation in patient care and diagnostics with AI-powered solutions.",
@@ -148,7 +172,7 @@ export const healthcare_tech: any = {
           "AI-driven patient engagement platforms for personalized health pathways.",
           "Predictive analytics and AI-based care recommendations for better outcomes.",
         ],
-        image: "CustomerExperienceImage",
+        image: IsvImage,
       },
       "Medical Device Solutions": {
         description:
@@ -157,7 +181,7 @@ export const healthcare_tech: any = {
           "AI-powered medical image analysis for faster, more accurate diagnostics.",
           "AI-driven clinical decision support for improved accuracy in diagnostics.",
         ],
-        image: "",
+        image: DeviceSolututionImage,
       },
       Telehealth: {
         description:
@@ -167,7 +191,7 @@ export const healthcare_tech: any = {
           "Real-time language translation for cross-lingual consultations.",
           "Automated session summaries and follow-ups post-consultation",
         ],
-        image: "LoanProcessingImage",
+        image: TeleHealthImage,
       },
     },
   },

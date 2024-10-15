@@ -1,6 +1,9 @@
 .tabs_banner{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
     gap: 2.5rem;
     background-color: var(--secondry-color);
     color: var(--white);
@@ -10,6 +13,7 @@
 
 .text_content{
     padding: 100px 60px;
+    max-width: 60%;
 }
 
 .tabs_heading{
@@ -33,7 +37,7 @@
 
 .tab_name{
     display: inline-block;
-    margin-right: 3rem; 
+    margin-right: 2rem; 
     color: var(--Neutral-12, #141414);
     font-size: 18px;
     font-style: normal;
