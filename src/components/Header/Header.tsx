@@ -19,6 +19,18 @@ const Header = () => {
         "Learn about the SimplAi Products how it can boost your business",
       link: "/llmstudio",
     },
+    {
+      title: "Mulimedia",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "/multimedia",
+    },
+    {
+      title: "Healthcare",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "/healthcare",
+    },
     // {
     //   title: "SimplAI LLM Studio",
     //   description:

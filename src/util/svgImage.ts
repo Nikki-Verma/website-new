@@ -50,6 +50,4 @@ export { default as Sales } from '../assets/bfsi/sales.svg';
 export { default as UnderWriting } from '../assets/bfsi/under_writing.svg';
 
 // Exporting PNG Files
-export { default as RetailAndCommercial } from '../assets/bfsi/retail_and_commercial.png';
-export { default as CapitalMarketing } from '../assets/bfsi/capital_marketing.png';
-export { default as InsuranceBanner } from '../assets/bfsi/insurance_banner.png';
+

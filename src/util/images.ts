@@ -24,6 +24,6 @@ export { default as MediaAndBroadcastBannerImage } from '../assets/multimedia/me
 export { default as TelecomBannerImage } from '../assets/multimedia/telecom_banner.png';
 export { default as MulimediaHeroBannerImage } from '../assets/multimedia/multimedia_hero_banner.png';
 
-// export { default as RetailAndCommercial } from '../assets/bfsi/retail_and_commercial_banking_banner.png';
+export { default as RetailAndCommercial } from '../assets/bfsi/retail_and_commercial_banking_banner.png';
 export { default as CapitalMarketing } from '../assets/bfsi/capital_marketing.png';
 export { default as InsuranceBanner } from '../assets/bfsi/insurance_banner.png';
