@@ -13,7 +13,7 @@ const LLMStudio = () => {
       <Header />
 
       <div className="hero_background">
-        <div style={{paddingTop: 160}}>
+        <div style={{ paddingTop: 160 }}>
           <div className="mx-auto text-center">
             <p className="product_page_name">LLM Studio</p>
           </div>
@@ -31,7 +31,7 @@ const LLMStudio = () => {
           </button>
         </div>
       </div>
-      <div style={{marginTop: 500}}>
+      <div style={{ marginTop: 500 }}>
         <div className="mt-12 mb-120">
           <VedioContainer />
         </div>
