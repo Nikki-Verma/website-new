@@ -1,4 +1,4 @@
-import { RetailAndCommercial } from "@/util/images";
+import { CapitalMarketing, InsuranceBanner, RetailAndCommercial } from "@/util/images";
 import {
   AutomationImage,
   CustomerImage,
@@ -10,6 +10,12 @@ import {
   LoanProcessing,
   RegulatoryCompliance,
   CustomerSupport,
+  CustomerExp,
+  ClaimManagement,
+  UnderWriting,
+  Sales,
+  FinancialAdvisor,
+  CustomerExpV2,
 } from "../util/svgImage";
 
 export const banner = {
@@ -77,7 +83,7 @@ export const retailAndBanking: any = {
             "Multilingual Support",
             "Data-Driven Insights",
           ],
-          image: CustomerService,
+          image: CustomerExp,
         },
         "Fraud Detection": {
           description:
@@ -121,4 +127,104 @@ export const retailAndBanking: any = {
         },
       },
     },
-  };
+};
+
+
+export const insurance: any = {
+    banner: {
+      image: InsuranceBanner,
+      title: "Insurance",
+      description:
+        "Streamline operations and enhance risk management with AI-powered solutions.",
+    },
+
+    tabs: {
+      tabsName: [
+        "Claims Management",
+        "Underwriting",
+        "Customer Service",
+        "Sales & Distribution",
+      ],
+      tabsContent: {
+        "Claims Management": {
+          description:
+            "Automate FNOL (First Notice of Loss), claims validation, and fraud detection using AI-driven workflows.",
+          features: [
+            "Automate FNOL (First Notice of Loss) with AI-Driven Workflows",
+            "Streamline Claims Validation and Fraud Detection",
+            "Hyper-Personalized Recommendations",
+            "Enhance Efficiency in Claims Processing Through Automation",
+          ],
+          image: ClaimManagement,
+        },
+        "Underwriting": {
+          description:
+            "Implement risk profiling with automated data extraction and analysis for personalized pricing.",
+          features: [
+            "Implement Risk Profiling with Automated Data Extraction",
+            "Utilize AI for In-Depth Analysis and Personalized Pricing",
+            "Improve Underwriting Accuracy with Intelligent Automation",
+          ],
+          image: UnderWriting,
+        },
+        "Customer Service": {
+          description:
+            "Enhance support with AI-driven email, chat, and voice assistance to provide 24/7 service",
+          features: [
+            "Enhance Support with AI-Driven Email, Chat, and Voice Assistance",
+            "Provide 24/7 Service to Customers with Intelligent Automation",
+            "Improve Customer Satisfaction Through Prompt, Accurate Responses",
+          ],
+          image: CustomerService,
+        },
+        "Sales & Distribution": {
+          description:
+            "Enable self-service experiences and digital sales agents powered by conversational AI.",
+          features: [
+            "Enable Self-Service Experiences for Policyholders",
+            "Leverage Conversational AI for Digital Sales Agents",
+            "Enhance Sales Efficiency with AI-Powered Automation",
+          ],
+          image: Sales,
+        },
+      },
+    },
+};
+
+export const capital_marketing: any = {
+    banner: {
+      image: CapitalMarketing,
+      title: "Capital Markets",
+      description:
+        "Optimize financial advisory and customer support with AI-enhanced insights.",
+    },
+
+    tabs: {
+      tabsName: [
+        "Financial Advisors",
+        "Customer Experience",
+      ],
+      tabsContent: {
+        "Financial Advisors": {
+          description:
+            "Automate research and analysis from complex datasets, generating actionable insights using LLMs.",
+          features: [
+            "Automate Research and Analysis from Complex Datasets",
+            "Generate Actionable Insights Using LLMs (Large Language Models)",
+            "Enhance Decision-Making for Financial Advisors with AI",
+          ],
+          image: FinancialAdvisor,
+        },
+        "Customer Experience": {
+          description:
+            "Implement AI agents for NLP-based insights and support automation, enhancing engagement and satisfaction.",
+          features: [
+            "Implement AI Agents for NLP-Based Insights",
+            "Automate Support Processes to Improve Engagement",
+            "Enhance Customer Satisfaction with Intelligent AI Solutions",
+          ],
+          image: CustomerExpV2,
+        },
+      },
+    },
+};

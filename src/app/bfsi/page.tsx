@@ -3,7 +3,13 @@ import Footer from "@/components/Footer/Footer";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
 import AIPlatformOverview from "@/components/AIPlatformOverview/AIPlatformOverview";
 import CardInfo from "@/components/CardInfo/CardInfo";
-import { solutionsList, retailAndBanking, banner } from "@/data/bfsiPageData";
+import {
+  solutionsList,
+  retailAndBanking,
+  banner,
+  insurance,
+  capital_marketing,
+} from "@/data/bfsiPageData";
 import CommonHero from "@/components/CommonHero/CommonHero";
 import Tabs from "@/components/TabsConfig/Tabs";
 
@@ -13,7 +19,9 @@ const BFSI = () => {
       <Header />
       <CommonHero data={banner} />
       <CardInfo data={solutionsList} />
-      <Tabs data={retailAndBanking} />
+      <Tabs tabsConfig={retailAndBanking} />
+      <Tabs tabsConfig={insurance} />
+      <Tabs tabsConfig={capital_marketing} />
       <CaseStudy />
       <AIPlatformOverview />
       <Footer />
