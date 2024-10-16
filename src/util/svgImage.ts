@@ -32,7 +32,7 @@ export { default as VirtualAssistantsInGameImage } from '../assets/multimedia/vi
 
 // Exporting SVG Files
 export { default as BfsiHeroBanner } from '../assets/bfsi/bfsi_hero_banner.svg';
-export { default as BoostProductivity } from '../assets/bfsi/boost_productivity_and_efficiency.svg';
+// export { default as BoostProductivity } from '../assets/bfsi/boost_productivity_and_efficiency.svg';
 export { default as ClaimManagement } from '../assets/bfsi/claim_managment.svg';
 export { default as CustomerExp } from '../assets/bfsi/customer_exp.svg';
 export { default as CustomerExpV2 } from '../assets/bfsi/customer_exp_v2.svg';
