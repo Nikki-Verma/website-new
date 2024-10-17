@@ -128,7 +128,7 @@ const Header = () => {
               <IoIosArrowDown />
             </span>
           </button>
-          <Link className="px-4 mx-2" href="/">
+          <Link className="px-4 mx-2" href="/pricing">
             Pricing
           </Link>
           <Link className="px-4 mx-2" href="/">
