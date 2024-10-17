@@ -12,7 +12,6 @@ import LinkedInIcon from "../../assets/svg/icons/linkedin.svg";
 import PinterestIcon from "../../assets/svg/icons/pinterest.svg";
 import Logo from "../../assets/svg/icons/color-logo.svg";
 import { PiMapPinLineLight } from "react-icons/pi";
-import { LiaCopyright } from "react-icons/lia";
 
 {
   /* <PiMapPinLineLight /> */
@@ -113,9 +112,13 @@ const Footer = () => {
     <div className="footer_container">
       <div className="container mb-0">
         <div className="flex justify-between">
-          <div className="address_info">
+          <div className="address_info" style={{ maxWidth: 400 }}>
             <Image src={Logo} alt="simplAI" />
-            <div className="flex items-start gap-2 mb-4 mt-4">
+            <p className="py-4">
+              SimplAI is a unified Gen AI development platform to build,
+              orchestrate, deploy & monitor LLM-Powered applications with ease
+            </p>
+            {/* <div className="flex items-start gap-2 mb-4 mt-4">
               <span>
                 <PiMapPinLineLight />{" "}
               </span>
@@ -133,13 +136,13 @@ const Footer = () => {
                 <br />
                 95/D1, Block C, Ardee City, Gurugram, Haryana, India
               </span>
-            </div>
+            </div> */}
             <div className="badge_wrapper flex mt-8 gap-4">
               <Image src={Badge1} alt="badge" />
               <Image src={Badge2} alt="badge" />
-              <Image src={Badge3} alt="badge" />
+              {/* <Image src={Badge3} alt="badge" />
               <Image src={Badge4} alt="badge" />
-              <Image src={Badge5} alt="badge" />
+              <Image src={Badge5} alt="badge" /> */}
             </div>
           </div>
 

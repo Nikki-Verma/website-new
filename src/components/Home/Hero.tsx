@@ -15,7 +15,7 @@ const Hero = () => {
 
     const animateText = () => {
       // Remove the classes from all elements
-      textRefs.current.forEach((txt:any) => {
+      textRefs.current.forEach((txt: any) => {
         if (txt) {
           txt.classList.remove("text-in", "text-out");
         }
@@ -44,7 +44,6 @@ const Hero = () => {
     };
 
     animateText();
-    
   }, [index]);
 
   return (
@@ -54,17 +53,17 @@ const Hero = () => {
         <h1 className="text-center hero_section_heading">
           <span className="text_gray_gadient">Build </span>
           <span className="animate-text">
-          {animateText?.map((text: string, index: number) => {
-            return (
-              <span
-                key={index}
-                ref={(el: any) => (textRefs.current[index] = el)}
-              >
-                {" "}
-                {text}
-              </span>
-            );
-          })}
+            {animateText?.map((text: string, index: number) => {
+              return (
+                <span
+                  key={index}
+                  ref={(el: any) => (textRefs.current[index] = el)}
+                >
+                  {" "}
+                  {text}
+                </span>
+              );
+            })}
           </span>
           <br />
           <span className="text_gray_gadient">Enterprise-Ready AI Faster</span>

@@ -4,8 +4,6 @@
     padding-bottom: 54px;
 }
 
-
-
 .platform_feature_list{
     margin-bottom: 24px;
     color: var(--off-white)
@@ -24,4 +22,11 @@
     align-items: center;
     gap: 0 40px;
     margin-bottom: 40px;
+}
+
+.button_section > button:hover {
+   background: linear-gradient(var(--button-hover), var(--button-hover)) padding-box,
+    var(--G1) border-box;
+  border: 1px solid transparent;
+  color: var(--white);
 }

@@ -18,24 +18,28 @@ const Header = () => {
       description:
         "Learn about the SimplAi Products how it can boost your business",
       link: "/llmstudio",
+      icon: Programming,
     },
     {
       title: "Mulimedia",
       description:
         "Learn about the SimplAi Products how it can boost your business",
       link: "/multimedia",
+      icon: Programming,
     },
     {
       title: "Healthcare",
       description:
         "Learn about the SimplAi Products how it can boost your business",
       link: "/healthcare",
+      icon: Programming,
     },
     {
       title: "BFSI",
       description:
         "Learn about the SimplAi Products how it can boost your business",
       link: "/bfsi",
+      icon: Programming,
     },
     // {
     //   title: "SimplAI LLM Studio",
@@ -65,11 +69,16 @@ const Header = () => {
           return (
             <Link href={value.link}>
               <div className="subMenu_link_wrapper">
-                <h5>{value.title}</h5>
-                <p className="font-14 text-left mt-4">
-                  Learn about the SimplAi Products how it can boost your
-                  business
-                </p>
+                <div>
+                  <Image src={value.icon} alt="icon" />
+                </div>
+                <div>
+                  <h5>{value.title}</h5>
+                  <p className="font-14 text-left">
+                    Learn about the SimplAi Products how it can boost your
+                    business
+                  </p>
+                </div>
               </div>
             </Link>
           );
@@ -128,12 +137,16 @@ const Header = () => {
               <IoIosArrowDown />
             </span>
           </button>
-          <Link className="px-4 mx-2" href="/pricing">
-            Pricing
-          </Link>
-          <Link className="px-4 mx-2" href="/">
-            FAQ
-          </Link>
+          <button>
+            <Link className="px-4 mx-2" href="/pricing">
+              Pricing
+            </Link>
+          </button>
+          <button>
+            <Link className="px-4 mx-2" href="/">
+              FAQ
+            </Link>
+          </button>
         </div>
         <div className="request_button">
           <button>

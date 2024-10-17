@@ -19,6 +19,9 @@
   --blog-card-stroke: rgba(166, 188, 218, 0.40);
   --section-blue-color: #1C0643;
   --pure-white: #ffffff;
+  --G1: linear-gradient(123deg, #C266E7 42.91%, #602EDF 100.75%);
+  --button-hover: #020305;
+  --text-hover: #444444
   /* --black:"#222222" */
 
 }
@@ -164,11 +167,21 @@ h5{
   align-items: center;
   background-color: var(--primary-color);
   color: var(--support-white);
+  overflow: hidden;
 }
 
 .button_white{
   background-color: var(--off-white);
   color: var(--black);
+  transition: all .3s;
+}
+
+.button:hover{
+   background: linear-gradient(var(--button-hover), var(--button-hover)) padding-box,
+    var(--G1) border-box;
+  border: 1px solid transparent;
+  color: var(--white);
+ 
 }
 
 .link_button{
@@ -179,6 +192,7 @@ h5{
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
+  transition: all .3s;
 }
 
 .link_button_primary{
@@ -186,7 +200,12 @@ h5{
 }
 
 .link_button .icon{
+  transition: all .3s;
   transform: rotateZ(-45deg);
+}
+
+.link_button:hover .icon{
+  transform: translateX(6px) rotateZ(-45deg) ;
 }
 
 
