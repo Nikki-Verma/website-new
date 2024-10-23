@@ -20,12 +20,14 @@ const HealthCare = () => {
     <>
       <Header />
       <CommonHero data={banner} />
-      <div className="container">
-        <h2>
-          Transforming Healthcare with SimplAI’s
-          <br /> Generative AI Solutions
-        </h2>
-        <CardInfo data={solution} />
+      <div className="section">
+        <div className="container mb-0">
+          <h2>
+            Transforming Healthcare with SimplAI’s
+            <br /> Generative AI Solutions
+          </h2>
+          <CardInfo data={solution} />
+        </div>
       </div>
       <Tabs tabsConfig={healthcare_provider} />
       <Tabs tabsConfig={healthcare_player} />

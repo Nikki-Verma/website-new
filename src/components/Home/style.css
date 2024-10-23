@@ -60,9 +60,13 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* background: -webkit-linear-gradient(133deg, #8F8B8B 14.61%, #FFF 37.69%, #A29D9D 66.24%);
+}
+
+.text_gadient_primary{
+  background: linear-gradient(180deg, #602EDF 0%, #C266E7 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
 }
 
 .animate_text_wrapper{
@@ -81,11 +85,6 @@
   animation: textanimate 3s ease-in-out;
 }
 
-/* @keyframes textanimate {
-  0%  {top: -102px; opacity: 1;}
-  50% {top: -208px; opacity: 1;}
-  100% {top: 0}
-} */
 
 .hero_text{
   font-size: 18px;

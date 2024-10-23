@@ -7,7 +7,7 @@
 .blog_card{
     border-radius: 10px;
     border: 1px solid var(--blog-card-stroke);
-    background-color: var(--section-blue-color);
+    /* background-color: var(--section-blue-color); */
     min-width: 340px;
 }
 .blog_card > img{
@@ -20,19 +20,19 @@
     padding: 16px 16px 24px;
 }
 
-.blog_content h5{
+/* .blog_content h5{
     color: var(--pure-white);
-}
+} */
 
-.blog_content p {
+/* .blog_content p {
     color: var(--off-white);
-}
+} */
 
 .artical_badge{
     border-radius: 8px;
     border: 0.5px solid #46426E;
     backdrop-filter: blur(17.5px);
-    color: var(--pure-white);
+    /* color: var(--pure-white); */
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -48,7 +48,7 @@
 }
 
 .blog_date{
-    color: var(--pure-white);
+    /* color: var(--pure-white); */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
