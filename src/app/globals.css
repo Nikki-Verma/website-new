@@ -21,7 +21,7 @@
   --pure-white: #ffffff;
   --G1: linear-gradient(123deg, #C266E7 42.91%, #602EDF 100.75%);
   --button-hover: #020305;
-  --text-hover: #444444
+  --text-hover: #444444;
   /* --black:"#222222" */
 
 }
@@ -277,8 +277,12 @@ h5{
   font-weight: 500;
   line-height: normal;
   border-radius: 10px;
-  border: 1px solid var(--G1, #C266E7);
-  background: #0D0220;
+  /* border: 1px solid var(--G1, #C266E7); */
+   background: linear-gradient(var(--button-hover), var(--button-hover)) padding-box,
+    var(--G1) border-box;
+  border: 1px solid transparent;
+
+  /* background: #0D0220; */
   display: inline-block;
   padding: 4px 18px;
   text-align: center;
