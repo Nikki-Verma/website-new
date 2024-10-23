@@ -21,7 +21,13 @@ const Multimedia = () => {
     <>
       <Header />
       <CommonHero data={banner} />
-      <CardInfo data={solution} />
+      <div className="section">
+        <h2 className="mb-8">
+          Transforming Healthcare with SimplAI’s <br />
+          Generative AI Solutions
+        </h2>
+        <CardInfo data={solution} />
+      </div>
       <Tabs tabsConfig={telecom} />
       <Tabs tabsConfig={multimedia} />
       <Tabs tabsConfig={education_and_publication} />

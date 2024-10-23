@@ -62,24 +62,6 @@ body {
   margin: 0 auto 120px;
 }
 
-
-
-.cc_card{
-  padding: 38px 16px;
-  border-radius: 20px;
-  border: 0.5px solid var(--stroke-card);
-  background: var(--white);
-  /* width: 100%; */
-  /* width: 100%; */
-  /* height: 262px; */
-}
-
-.cc_card_heading{
-  font-size: 18px;
-  font-weight: 700;
-  line-height: normal;
-}
-
 h1{
   text-align: center;
   font-size: 42px;
@@ -383,4 +365,11 @@ h5{
 
 .mb-24{
   margin-bottom: 1.5rem !important;
+}
+
+.section{
+  background: linear-gradient(180deg, #FCFBFF 0%, #F1F1FF 100%);
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
