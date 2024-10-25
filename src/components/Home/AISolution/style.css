@@ -1,0 +1,13 @@
+.ai_system_org_text{
+    color: var(--dark-blue);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+}
+
+.button_container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

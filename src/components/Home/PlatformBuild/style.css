@@ -1,6 +1,12 @@
+.platform_section {
+  background: linear-gradient(180deg, #0d0220 0%, #1f0649 100%);
+  padding-top: 84px;
+  padding-bottom: 54px;
+}
+
 .platform_feature_list {
   margin-bottom: 24px;
-  color: var(--black-v2);
+  color: var(--off-white);
 }
 
 .platform_feature_list > li {
@@ -20,4 +26,22 @@
   border-radius: 10px;
   border: 1px solid rgba(166, 188, 218, 0.3);
   background: #fdfdff;
+}
+
+.button_section {
+  width: 520px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+  margin-bottom: 40px;
+}
+
+.button_section > button:hover {
+  background: linear-gradient(var(--button-hover), var(--button-hover))
+      padding-box,
+    var(--G1) border-box;
+  border: 1px solid transparent;
+  color: var(--white);
 }

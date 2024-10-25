@@ -1,3 +1,4 @@
+import { Col, Row } from "antd";
 import Image from "next/image";
 import AutoMatedProcess from "../../../assets/svg/icons/automated-process.svg";
 import Coding from "../../../assets/svg/icons/coding.svg";
@@ -55,31 +56,61 @@ const OurApplications = () => {
 
   return (
     <div className="application_container container">
-      <div className="grid grid-rows-2 grid-flow-col gap-4">
-        <div className="col-span-2">
-          <div className="our_application_left_side">
-            <h3>
-              Build powerful Gen AI applications with our advanced generative AI
-              solutions
-            </h3>
-            <button className="button mt-8">Contact us</button>
+      <Row gutter={[20, 20]}>
+        <Col lg={12} sm={24}>
+          <div className="col-span-2">
+            <div className="our_application_left_side">
+              <h3>
+                Build powerful Gen AI applications with our advanced generative
+                AI solutions
+              </h3>
+              <button className="button mt-8">Contact us</button>
+            </div>
           </div>
-        </div>
+        </Col>
         {applicationList?.map((application: Application) => {
           return (
-            <div className="cc_card">
-              <div className="mb-6">
-                <Image src={application.icon} alt={application.heading} />
+            <Col lg={6} md={12} style={{ display: "flex" }}>
+              <div className="cc_card">
+                <div className="mb-6">
+                  <Image src={application.icon} alt={application.heading} />
+                </div>
+                <div>
+                  <h5 className="mb-4">{application.heading}</h5>
+                  <p>{application.description}</p>
+                </div>
               </div>
-              <div>
-                <h5 className="mb-4">{application.heading}</h5>
-                <p>{application.description}</p>
-              </div>
-            </div>
+            </Col>
           );
         })}
-      </div>
+      </Row>
     </div>
+    // <div className="application_container container">
+    //   <div className="grid grid-rows-2 grid-flow-col gap-4">
+    //     <div className="col-span-2">
+    //       <div className="our_application_left_side">
+    //         <h3>
+    //           Build powerful Gen AI applications with our advanced generative AI
+    //           solutions
+    //         </h3>
+    //         <button className="button mt-8">Contact us</button>
+    //       </div>
+    //     </div>
+    //     {applicationList?.map((application: Application) => {
+    //       return (
+    //         <div className="cc_card">
+    //           <div className="mb-6">
+    //             <Image src={application.icon} alt={application.heading} />
+    //           </div>
+    //           <div>
+    //             <h5 className="mb-4">{application.heading}</h5>
+    //             <p>{application.description}</p>
+    //           </div>
+    //         </div>
+    //       );
+    //     })}
+    //   </div>
+    // </div>
   );
 };
 

@@ -16,25 +16,9 @@ const Tabs = ({ tabsConfig }: any) => {
     tabsConfig?.tabs?.tabsName[0]
   );
 
-  // console.log(tabsConfig.banner?.image, "checking url");
-  //   const [selectedTabData, setSelectedTabData] = useState()
-
   return (
-    <>
-      {/* <style>{`
-        .banner {
-          background-image: url(${tabsConfig.banner?.image?.src});
-          height: 300px;
-          background-size: cover;
-          background-position: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          font-size: 24px;
-        }
-      `}</style> */}
-      <div className="container">
+    <div className="section">
+      <div className="container mb-0">
         <div className="card_v2 mb-0">
           <div
             className="tabs_banner"
@@ -99,7 +83,7 @@ const Tabs = ({ tabsConfig }: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

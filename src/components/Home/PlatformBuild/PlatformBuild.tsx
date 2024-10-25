@@ -1,8 +1,8 @@
 "use client";
 
-import { ReliableIcon } from "@/util/icons";
 import Image from "next/image";
 import { useState } from "react";
+import Relaible from "../../../assets/png/reliable.png";
 import GenScale from "../../../assets/png/scale-gen-ai.png";
 import "./style.css";
 const data = [
@@ -37,11 +37,16 @@ const data = [
     ],
     buttonName: "Get started",
     buttonLink: "",
-    image: ReliableIcon,
+    image: Relaible,
   },
 ];
 const PlatformBuild = () => {
   const [currentSelect, setCurrentSelect] = useState(data[0]);
+  const [index, setIndex] = useState(0);
+  const handle = (number: number) => {
+    setIndex(number);
+    setCurrentSelect(data[number]);
+  };
   return (
     <section className="home_page_container">
       <div className="mx-auto mt-8 mb-16 items-center flex flex-col gap-8">
@@ -54,33 +59,39 @@ const PlatformBuild = () => {
 
       {/* buttons */}
       <div className="button_section">
-        <button className="round_button_selected">Secure AI</button>
-        <button className="round_button">Scalable AI</button>
-        <button className="round_button">Reliable AI</button>
+        <button
+          onClick={() => handle(0)}
+          className={index === 0 ? "round_button_selected" : "round_button"}
+        >
+          Secure AI
+        </button>
+        <button
+          onClick={() => handle(1)}
+          className={index === 1 ? "round_button_selected" : "round_button"}
+        >
+          Scalable AI
+        </button>
+        <button
+          onClick={() => handle(2)}
+          className={index === 2 ? "round_button_selected" : "round_button"}
+        >
+          Reliable AI
+        </button>
       </div>
 
       <div className="platform_build_box_container mb-0 py-10 px-12 flex-wrap justify-between gap-x-56">
         <div className="flex flex-1 flex-col">
           <h4 className="text-[color:--black-v2] mb-6">
-            Create safe and secure applications with data privacy
+            {currentSelect.heading}
           </h4>
           <ul className="platform_feature_list list-disc pl-4">
-            <li>
-              Experience low latency with real-time streaming and parallel
-              processing for optimal performance
-            </li>
-            <li>
-              Enhance LLM reliability with guardrails, RAG, finetuning, and
-              memory features
-            </li>
-            <li>
-              Full transparency over applications with comprehensive LLM
-              observability
-            </li>
+            {currentSelect.description.map((value: string) => {
+              return <li>{value}</li>;
+            })}
           </ul>
         </div>
         <div className="flex justify-center m-auto">
-          <Image src={ReliableIcon} alt={"relaible-icon"} />
+          <Image src={currentSelect.image} alt={"relaible-icon"} />
         </div>
       </div>
     </section>

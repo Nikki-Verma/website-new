@@ -21,19 +21,16 @@ const Hero = () => {
         }
       });
 
-      // Add text-in class to the current index
       if (textRefs.current[index]) {
         textRefs.current[index].classList.add("text-in");
       }
 
-      // Add text-out class just before the text transitions out
       setTimeout(() => {
         if (textRefs.current[index]) {
           textRefs.current[index].classList.add("text-out");
         }
       }, textOutTimer);
 
-      // Update the index for the next animation
       setTimeout(() => {
         if (index === txtsLen - 1) {
           setIndex(0);

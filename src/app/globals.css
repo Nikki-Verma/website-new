@@ -24,6 +24,9 @@
     #c266e7 42.91%,
     #602edf 100.75%
   );
+  --G1: linear-gradient(123deg, #c266e7 42.91%, #602edf 100.75%);
+  --button-hover: #020305;
+  --text-hover: #444444;
   /* --black:"#222222" */
 }
 
@@ -206,6 +209,7 @@ h5 {
   align-items: center;
   background-color: var(--primary-color);
   color: var(--support-white);
+  overflow: hidden;
 }
 
 .button_white {
@@ -217,6 +221,14 @@ h5 {
   line-height: normal;
 }
 
+.button:hover {
+  background: linear-gradient(var(--button-hover), var(--button-hover))
+      padding-box,
+    var(--G1) border-box;
+  border: 1px solid transparent;
+  color: var(--white);
+}
+
 .link_button {
   color: var(--support-white);
   text-align: center;
@@ -225,6 +237,7 @@ h5 {
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
+  transition: all 0.3s;
 }
 
 .link_button_primary {
@@ -232,6 +245,7 @@ h5 {
 }
 
 .link_button .icon {
+  transition: all 0.3s;
   transform: rotateZ(-45deg);
 }
 .button_section {
@@ -276,6 +290,9 @@ h5 {
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; /*5'*/
   mask-composite: exclude; /*5*/
+}
+.link_button:hover .icon {
+  transform: translateX(6px) rotateZ(-45deg);
 }
 
 .round_button {
@@ -363,8 +380,13 @@ h5 {
   font-weight: 500;
   line-height: normal;
   border-radius: 10px;
-  border: 1px solid var(--G1, #c266e7);
-  background: #0d0220;
+  /* border: 1px solid var(--G1, #C266E7); */
+  background: linear-gradient(var(--button-hover), var(--button-hover))
+      padding-box,
+    var(--G1) border-box;
+  border: 1px solid transparent;
+
+  /* background: #0D0220; */
   display: inline-block;
   padding: 4px 18px;
   text-align: center;
@@ -450,4 +472,11 @@ h5 {
 
 .mb-24 {
   margin-bottom: 1.5rem !important;
+}
+
+.section {
+  background: linear-gradient(180deg, #fcfbff 0%, #f1f1ff 100%);
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
 }

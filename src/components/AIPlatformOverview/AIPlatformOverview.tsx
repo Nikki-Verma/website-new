@@ -24,21 +24,23 @@ const AIPlatformOverview = () => {
   ];
 
   return (
-    <div className="container">
-      <h2 className="mb-12">
-        SimplAI Enterprise-Grade AI Platform:
-        <br /> Scale Beyond PoC to Capture Value
-      </h2>
-      <div className="flex justify-between gap-8">
-        {data.map((value: any) => {
-          return (
-            <div className="card_v2 py-6 px-4 w-full flex justify-center flex-col items-center">
-              <Image src={value.icon} alt={value.heading} />
-              <h4 className="heading_24 text-center">{value.heading}</h4>
-              <p className="font-18 text-center">{value.description}</p>
-            </div>
-          );
-        })}
+    <div className="section">
+      <div className="container mb-0">
+        <h2 className="mb-12">
+          SimplAI Enterprise-Grade AI Platform:
+          <br /> Scale Beyond PoC to Capture Value
+        </h2>
+        <div className="flex justify-between gap-8">
+          {data.map((value: any) => {
+            return (
+              <div className="card_v2 py-6 px-4 w-full flex justify-center flex-col items-center">
+                <Image src={value.icon} alt={value.heading} />
+                <h4 className="heading_24 text-center">{value.heading}</h4>
+                <p className="font-18 text-center">{value.description}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

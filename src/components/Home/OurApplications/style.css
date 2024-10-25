@@ -11,3 +11,24 @@
 .our_application_left_side {
   max-width: 562px;
 }
+
+.cc_card {
+  padding: 38px 16px;
+  border-radius: 20px;
+  border: 0.5px solid var(--stroke-card);
+  background: var(--white);
+  transition: all 0.3s;
+}
+
+.cc_card img {
+  transition: all 0.3s;
+}
+.cc_card:hover img {
+  transform: scale(1.12);
+}
+
+.cc_card_heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}

@@ -6,9 +6,9 @@ import CaseStudyImage from "../../../assets/png/caseStudyImage.png";
 
 const CaseStudy = () => {
   return (
-    <section className="platform_section mb-120">
+    <section className="section">
       <div className="container mb-0">
-        <h2 className="text-white mb-20">Case studies</h2>
+        <h2 className="mb-20">Get Latest Insights on GenAI</h2>
         <div className="grid grid-cols-12 gap-10">
           <div className="blog_card col-span-4">
             <Image src={CaseStudyImage} alt={"case-study"} />
@@ -24,7 +24,7 @@ const CaseStudy = () => {
                 Scorecards can convert complex objectives into clear, measurable
                 outcomes which help align the entire team around a common goal.
               </p>
-              <button className="link_button flex items-center gap-3">
+              <button className="link_button link_button_primary flex items-center gap-2">
                 Read more{" "}
                 <span className="icon">
                   <IoMdArrowForward />
@@ -46,7 +46,7 @@ const CaseStudy = () => {
                 Scorecards can convert complex objectives into clear, measurable
                 outcomes which help align the entire team around a common goal.
               </p>
-              <button className="link_button flex items-center gap-3">
+              <button className="link_button link_button_primary flex items-center gap-2">
                 Read more{" "}
                 <span className="icon">
                   <IoMdArrowForward />
@@ -68,7 +68,7 @@ const CaseStudy = () => {
                 Scorecards can convert complex objectives into clear, measurable
                 outcomes which help align the entire team around a common goal.
               </p>
-              <button className="link_button flex items-center gap-3">
+              <button className="link_button link_button_primary flex items-center gap-2">
                 Read more{" "}
                 <span className="icon">
                   <IoMdArrowForward />
