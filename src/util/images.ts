@@ -27,3 +27,7 @@ export { default as MulimediaHeroBannerImage } from '../assets/multimedia/multim
 export { default as RetailAndCommercial } from '../assets/bfsi/retail_and_commercial_banking_banner.png';
 export { default as CapitalMarketing } from '../assets/bfsi/capital_marketing.png';
 export { default as InsuranceBanner } from '../assets/bfsi/insurance_banner.png';
+//
+export { default as ConsultingBanner } from '../assets/legal/consulting_banner.png';
+export { default as LegalBanner } from '../assets/legal/legal_banner.png';
+export { default as ResearchBanner } from '../assets/legal/research_banner.png';

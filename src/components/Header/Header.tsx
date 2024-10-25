@@ -41,6 +41,13 @@ const Header = () => {
       link: "/bfsi",
       icon: Programming,
     },
+    {
+      title: "Leagl",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "/legal",
+      icon: Programming,
+    },
     // {
     //   title: "SimplAI LLM Studio",
     //   description:
@@ -64,7 +71,8 @@ const Header = () => {
         </p>
         <button className="button">Talk with expert</button>
       </div>
-      <div>
+
+      <div className="links_container">
         {productsSubMenu?.map((value: any) => {
           return (
             <Link href={value.link}>

@@ -65,13 +65,18 @@ const Tabs = ({ tabsConfig }: any) => {
                 <p className="active_tab_description">
                   {tabsConfig?.tabs?.tabsContent?.[activeTab]?.description}
                 </p>
-                <ul className="feature_list list-disc">
-                  {tabsConfig?.tabs?.tabsContent?.[activeTab]?.features.map(
-                    (feature: string) => {
-                      return <li>{feature}</li>;
-                    }
-                  )}
-                </ul>
+                {tabsConfig?.tabs?.tabsContent?.[activeTab]?.features
+                  ?.length ? (
+                  <ul className="feature_list list-disc">
+                    {tabsConfig?.tabs?.tabsContent?.[activeTab]?.features?.map(
+                      (feature: string) => {
+                        return <li>{feature}</li>;
+                      }
+                    )}
+                  </ul>
+                ) : (
+                  ""
+                )}
               </div>
               <div className="active_tab_image">
                 <Image

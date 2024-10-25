@@ -50,4 +50,19 @@ export { default as Sales } from '../assets/bfsi/sales.svg';
 export { default as UnderWriting } from '../assets/bfsi/under_writing.svg';
 
 // Exporting PNG Files
+// svg
+export { default as AgilityIcon } from '../assets/legal/agility_icon.svg';
+export { default as ComplianceIcon } from '../assets/legal/compliance_icon.svg';
+export { default as ConsultingAiWorkforce } from '../assets/legal/consulting_ai_workforce.svg';
+export { default as ConsultingDataStructuring } from '../assets/legal/consulting_data_structuring.svg';
+export { default as ConsultingInsightGeneration } from '../assets/legal/consulting_insight_generation.svg';
+export { default as FasterIcon } from '../assets/legal/faster_icon.svg';
+export { default as LegalAiWorkforce } from '../assets/legal/legal_ai_workforce.svg';
+export { default as LegalDataAnalysis } from '../assets/legal/legal_data_analysis.svg';
+export { default as LegalDocumentation } from '../assets/legal/legal_documentation.svg';
+export { default as LegalHeroBanner } from '../assets/legal/legal_hero_banner.svg';
+export { default as ResearchDataAnalysis } from '../assets/legal/research_data_analysis.svg';
+export { default as ResearchDataStructuring } from '../assets/legal/research_data_structuring.svg';
+export { default as ResearchInsightGeneration } from '../assets/legal/research_insight_generation.svg';
+export { default as StreamlineIcon } from '../assets/legal/streamline_icon.svg';
 

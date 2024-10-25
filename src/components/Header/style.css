@@ -90,6 +90,13 @@
     border-radius: 20px;
     min-width: 620px;
     border: 1px solid var(--stroke-cardv2);
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+.links_container{
+    overflow-y: auto;
+
 }
 
 .subMenu_link_wrapper{
