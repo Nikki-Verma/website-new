@@ -38,6 +38,7 @@
   border-radius: 4px 0px 0px 4px;
   background: #fff;
   color: #171717;
+  gap: 12px;
 }
 
 .industries_box_button {
@@ -49,8 +50,19 @@
   border-radius: 4px 0px 0px 4px;
   background: transparent;
   color: var(--white);
+  gap: 12px;
   &:hover {
-    background-color: var(--off-white);
-    color: #171717;
+    background-color: #271841;
+    color: var(--white);
   }
+}
+
+.industries_description {
+  color: var(--Text-Color-900, #171717);
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 158.333% */
+  width: 60%;
 }

@@ -23,24 +23,30 @@ const Securitystandards = () => {
   ];
 
   return (
-    <div className="container">
-      <h2 className="mb-6">Enterprise-grade security standards</h2>
-      <p className="section_subheading">
-        Designed to help enterprises of any size deploy safe and trustworthy AI
-        apps.
-      </p>
-      <div className="flex jusitfy-between gap-8">
-        {data?.map((value: any) => {
-          return (
-            <div className="card_v2_thin_border w-full px-6 pt-6 pb-12">
-              <Image src={value?.icon} alt={value.heading} />
-              <h5>{value.heading}</h5>
-              <p>{value.description}</p>
-            </div>
-          );
-        })}
+    <section className="section">
+      <div className="container">
+        <div className="section_heading_container">
+          <div className="home_page_heading">
+            Enterprise-grade security standards
+          </div>
+        </div>
+        <p className="section_subheading">
+          Designed to help enterprises of any size deploy safe and trustworthy
+          AI apps.
+        </p>
+        <div className="flex jusitfy-between gap-8">
+          {data?.map((value: any) => {
+            return (
+              <div className="card_v2_with_hover w-full px-6 pt-6 pb-6">
+                <Image src={value?.icon} alt={value.heading} />
+                <h5 className="mt-6 mb-4">{value.heading}</h5>
+                <p>{value.description}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
     // card_v2_thin_border
   );
 };

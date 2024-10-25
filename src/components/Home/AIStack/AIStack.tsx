@@ -31,25 +31,27 @@ const AIStack = () => {
   ];
 
   return (
-    <h2 className="text-center home_page_container">
-      <span className="home_page_heading ">
-        One Platform, Unlimited Possibilities
-      </span>
-      <div className="marquee">
-        <div className="badges_wrapper">
-          {badges_list?.map((badge: string) => {
-            return <div className="badges">{badge}</div>;
-          })}
+    <div className="text-center">
+      <div className="container">
+        <span className="home_page_heading ">
+          One Platform, Unlimited Possibilities
+        </span>
+        <div className="marquee">
+          <div className="badges_wrapper">
+            {badges_list?.map((badge: string) => {
+              return <div className="badges">{badge}</div>;
+            })}
+          </div>
+        </div>
+        <div className="marquee1">
+          <div className="badges_wrapper badges_wrapper1">
+            {badges_list2?.map((badge: string) => {
+              return <div className="badges">{badge}</div>;
+            })}
+          </div>
         </div>
       </div>
-      <div className="marquee1">
-        <div className="badges_wrapper badges_wrapper1">
-          {badges_list2?.map((badge: string) => {
-            return <div className="badges">{badge}</div>;
-          })}
-        </div>
-      </div>
-    </h2>
+    </div>
   );
 };
 

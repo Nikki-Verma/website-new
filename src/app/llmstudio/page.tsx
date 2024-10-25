@@ -1,11 +1,12 @@
-import Header from "@/components/Header/Header";
-import VedioContainer from "@/components/LLM/VedioContainer/VedioContainer";
-import DataIntegration from "@/components/LLM/DataIntegration/DataIntegration";
-import AiFeature from "@/components/LLM/AiFeature/AiFeature";
-import Tools from "@/components/LLM/Tools/Tools";
-import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
 import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
+import AiFeature from "@/components/LLM/AiFeature/AiFeature";
+import DataIntegration from "@/components/LLM/DataIntegration/DataIntegration";
+import ModelFeatures from "@/components/LLM/ModelFeatures/ModelFeatures";
+import Tools from "@/components/LLM/Tools/Tools";
+import VedioContainer from "@/components/LLM/VedioContainer/VedioContainer";
 
 const LLMStudio = () => {
   return (
@@ -15,7 +16,7 @@ const LLMStudio = () => {
       <div className="hero_background">
         <div style={{ paddingTop: 160 }}>
           <div className="mx-auto text-center">
-            <p className="product_page_name">LLM Studio</p>
+            <p className="product_page_name">Full Stack Gen AI Platform</p>
           </div>
           <h1 className="text-white">
             A comprehensive AI platform for experimentation, <br /> deployment,
@@ -35,6 +36,7 @@ const LLMStudio = () => {
         <div className="mt-12 mb-120">
           <VedioContainer />
         </div>
+        <ModelFeatures />
         <DataIntegration />
         <AiFeature />
         <Tools />

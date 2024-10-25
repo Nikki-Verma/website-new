@@ -1,5 +1,9 @@
 "use client";
 
+import ReliableAiIcon from "@/components/Icons/ReliableAi";
+import SecureAiIcon from "@/components/Icons/SecureAiIcon";
+import ScalableAiIcon from "@/components/Icons/scalableAi";
+import { SecureAi } from "@/util/images";
 import Image from "next/image";
 import { useState } from "react";
 import Relaible from "../../../assets/png/reliable.png";
@@ -15,7 +19,7 @@ const data = [
     ],
     buttonName: "Get started",
     buttonLink: "",
-    image: GenScale,
+    image: SecureAi,
   },
   {
     heading: "Scale your Gen AI to production with ease",
@@ -48,50 +52,60 @@ const PlatformBuild = () => {
     setCurrentSelect(data[number]);
   };
   return (
-    <section className="home_page_container">
-      <div className="mx-auto mt-8 mb-16 items-center flex flex-col gap-8">
-        <div className="home_page_heading_tag">Why SimplAI?</div>
-        <div className="home_page_heading">
-          Platform built with enterprise <br />
-          success in mind
+    <section className="section">
+      <div className="container">
+        <div className="section_heading_container">
+          <div className="home_page_heading_tag">Why SimplAI?</div>
+          <div className="home_page_heading">
+            Platform built with enterprise <br />
+            success in mind
+          </div>
         </div>
-      </div>
 
-      {/* buttons */}
-      <div className="button_section">
-        <button
-          onClick={() => handle(0)}
-          className={index === 0 ? "round_button_selected" : "round_button"}
-        >
-          Secure AI
-        </button>
-        <button
-          onClick={() => handle(1)}
-          className={index === 1 ? "round_button_selected" : "round_button"}
-        >
-          Scalable AI
-        </button>
-        <button
-          onClick={() => handle(2)}
-          className={index === 2 ? "round_button_selected" : "round_button"}
-        >
-          Reliable AI
-        </button>
-      </div>
-
-      <div className="platform_build_box_container mb-0 py-10 px-12 flex-wrap justify-between gap-x-56">
-        <div className="flex flex-1 flex-col">
-          <h4 className="text-[color:--black-v2] mb-6">
-            {currentSelect.heading}
-          </h4>
-          <ul className="platform_feature_list list-disc pl-4">
-            {currentSelect.description.map((value: string) => {
-              return <li>{value}</li>;
-            })}
-          </ul>
+        {/* buttons */}
+        <div className="button_section">
+          <button
+            onClick={() => handle(0)}
+            className={index === 0 ? "round_button_selected" : "round_button"}
+          >
+            <SecureAiIcon style={{ height: 24, width: 24 }} />
+            Secure AI
+          </button>
+          <button
+            onClick={() => handle(1)}
+            className={index === 1 ? "round_button_selected" : "round_button"}
+          >
+            <ScalableAiIcon style={{ height: 24, width: 24 }} />
+            Scalable AI
+          </button>
+          <button
+            onClick={() => handle(2)}
+            className={index === 2 ? "round_button_selected" : "round_button"}
+          >
+            <ReliableAiIcon style={{ height: 24, width: 24 }} />
+            Reliable AI
+          </button>
         </div>
-        <div className="flex justify-center m-auto">
-          <Image src={currentSelect.image} alt={"relaible-icon"} />
+
+        <div className="platform_build_box_container mb-0 py-10 px-12 flex-wrap justify-between gap-x-56">
+          <div className="flex flex-1 flex-col">
+            <h4 className="text-[color:--black-v2] mb-6">
+              {currentSelect.heading}
+            </h4>
+            <ul className="platform_feature_list list-disc">
+              {currentSelect.description.map((value: string) => {
+                return <li>{value}</li>;
+              })}
+            </ul>
+          </div>
+          <div className="flex justify-center m-auto">
+            <Image
+              src={currentSelect.image}
+              alt={"relaible-icon"}
+              height={400}
+              width={360}
+            />
+          </div>
         </div>
       </div>
     </section>

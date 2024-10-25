@@ -7,8 +7,10 @@ import CaseStudyImage from "../../../assets/png/caseStudyImage.png";
 const CaseStudy = () => {
   return (
     <section className="section">
-      <div className="container mb-0">
-        <h2 className="mb-20">Get Latest Insights on GenAI</h2>
+      <div className="container">
+        <div className="section_heading_container">
+          <div className="home_page_heading">Get Latest Insights on GenAI</div>
+        </div>
         <div className="grid grid-cols-12 gap-10">
           <div className="blog_card col-span-4">
             <Image src={CaseStudyImage} alt={"case-study"} />

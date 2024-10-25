@@ -1,0 +1,14 @@
+.collapse-container .ant-collapse-item-active {
+  border: 1px solid transparent;
+}
+
+.collapse-container .ant-collapse-item-active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent; /*2*/
+  background: var(--border-gradient-purple) border-box; /*3*/
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+}

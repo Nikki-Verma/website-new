@@ -27,4 +27,16 @@ export { default as TelecomBannerImage } from "../assets/multimedia/telecom_bann
 export { default as CapitalMarketing } from "../assets/bfsi/capital_marketing.png";
 export { default as InsuranceBanner } from "../assets/bfsi/insurance_banner.png";
 export { default as RetailAndCommercial } from "../assets/bfsi/retail_and_commercial_banking_banner.png";
+export { default as AiChainingImage } from "../assets/svg/Images/AiChainingImage.svg";
+export { default as AutomacticImage } from "../assets/svg/Images/AutomacticImage.svg";
+export { default as DeployImage } from "../assets/svg/Images/DeployImage.svg";
+export { default as ImproveImage } from "../assets/svg/Images/ImproveImage.svg";
+export { default as IsoIcon } from "../assets/svg/Images/IsoIcon.svg";
+export { default as ModelFeatureImage } from "../assets/svg/Images/ModelFeatureImage.svg";
+export { default as ReadilyImage } from "../assets/svg/Images/ReadilyImage.svg";
+export { default as SocIcon } from "../assets/svg/Images/SocIcon.svg";
+export { default as TraceVisibilityImage } from "../assets/svg/Images/TraceVisibilityImage.svg";
+export { default as cloudDeploy } from "../assets/svg/Images/cloudDeploy.svg";
 export { default as CoinHourglass } from "../assets/svg/Images/coinHourglass.svg";
+export { default as intelligentAi } from "../assets/svg/Images/intelligentAi.svg";
+export { default as SecureAi } from "../assets/svg/Images/secure-ai.svg";

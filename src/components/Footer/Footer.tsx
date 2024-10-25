@@ -1,17 +1,12 @@
-import Link from "next/link";
+import { IsoIcon, SocIcon } from "@/util/images";
 import Image from "next/image";
-import Badge1 from "../../assets/png/badge-1.png";
-import Badge2 from "../../assets/png/badge-2.png";
-import Badge3 from "../../assets/png/badge-3.png";
-import Badge4 from "../../assets/png/badge-4.png";
-import Badge5 from "../../assets/png/badge-5.png";
+import Link from "next/link";
+import Logo from "../../assets/svg/icons/color-logo.svg";
 import FacebookIcon from "../../assets/svg/icons/facebook.svg";
 import InstagramIcon from "../../assets/svg/icons/instagram.svg";
-import TwitterIcon from "../../assets/svg/icons/twitter.svg";
 import LinkedInIcon from "../../assets/svg/icons/linkedin.svg";
 import PinterestIcon from "../../assets/svg/icons/pinterest.svg";
-import Logo from "../../assets/svg/icons/color-logo.svg";
-import { PiMapPinLineLight } from "react-icons/pi";
+import TwitterIcon from "../../assets/svg/icons/twitter.svg";
 
 {
   /* <PiMapPinLineLight /> */
@@ -138,8 +133,8 @@ const Footer = () => {
               </span>
             </div> */}
             <div className="badge_wrapper flex mt-8 gap-4">
-              <Image src={Badge1} alt="badge" />
-              <Image src={Badge2} alt="badge" />
+              <Image src={SocIcon} alt="badge" />
+              <Image src={IsoIcon} alt="badge" />
               {/* <Image src={Badge3} alt="badge" />
               <Image src={Badge4} alt="badge" />
               <Image src={Badge5} alt="badge" /> */}
@@ -181,7 +176,7 @@ const Footer = () => {
                 <Link href="/privacypolicy">Privacy policy</Link> &emsp;|
               </span>
               <span>
-                &emsp;<Link href="/home">Security</Link> &emsp;|
+                &emsp;<Link href="/refund">Refund policy</Link> &emsp;|
               </span>
               <span>
                 &emsp; <Link href="/termservices">Terms of service</Link>

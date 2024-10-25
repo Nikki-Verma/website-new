@@ -4,6 +4,8 @@ import AIStack from "@/components/Home/AIStack/AIStack";
 import AcceleratedExecution from "@/components/Home/AcceleratedExecution/AcceleratedExecution";
 import Banner from "@/components/Home/Banner/Banner";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
+import CloudDeployment from "@/components/Home/CloudDeployment";
+import Features from "@/components/Home/Features/Features";
 import Hero from "@/components/Home/Hero";
 import Industries from "@/components/Home/Industries/Industries";
 import PlatformBuild from "@/components/Home/PlatformBuild/PlatformBuild";
@@ -14,12 +16,14 @@ const home = () => {
     <section>
       <Header />
       <Hero />
+      <Features />
       <AIStack />
       <PlatformBuild />
       <AcceleratedExecution />
       <Industries />
-      <CaseStudy />
+      <CloudDeployment />
       <Testimonial />
+      <CaseStudy />
       <Banner />
       <Footer />
     </section>

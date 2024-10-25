@@ -1,43 +1,46 @@
-.testimonial_card{
-    display: flex;
-    width: 551px;
-    padding: 27.492px 27.492px 26.193px 27.493px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 11.455px;
-    border: 0.573px solid rgba(166, 188, 218, 0.40);
-    background: #F5F7FA;
-    margin-top: 55px;
+.testimonial_card {
+  display: flex;
+  width: 30%;
+  padding: 27.492px 27.492px 26.193px 27.493px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11.455px;
+  border: 0.573px solid rgba(166, 188, 218, 0.4);
+  background: var(--white);
+  &:hover {
+    border: 1px solid var(--G1, #c266e7) !important;
+    /* DP for website */
+    box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
+      0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
+  }
 }
 
-
-.user_details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.user_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.user_name{
-    color: var(--Text-Color-850, #222);
-    font-size: 18.328px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.user_name {
+  color: var(--Text-Color-850, #222);
+  font-size: 18.328px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.user_designation{
-    color: var(--Text-Color-850, #222);
-    font-size: 16.037px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.user_designation {
+  color: var(--Text-Color-850, #222);
+  font-size: 16.037px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.user_say{
-    color: var(--Text-Color-900, #171717);
-    font-size: 18.328px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 34.366px; /* 187.5% */
+.user_say {
+  color: var(--Text-Color-900, #171717);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 187.5% */
 }

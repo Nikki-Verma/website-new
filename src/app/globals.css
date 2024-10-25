@@ -194,7 +194,7 @@ h5 {
   font-style: normal;
   font-weight: 500;
   line-height: 34px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   margin-top: 18px;
 }
 
@@ -202,6 +202,7 @@ h5 {
 
 .button {
   display: flex;
+  width: max-content;
   height: 44px;
   border-radius: 10px;
   padding: 2px 30px;
@@ -230,7 +231,7 @@ h5 {
 }
 
 .link_button {
-  color: var(--support-white);
+  color: var(--black-v2);
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -257,8 +258,6 @@ h5 {
   align-items: center;
   gap: 0 12px;
   border-radius: 30px;
-  border: 1px solid var(--Stroke, #c3d0e2);
-  background: #f9f8fe;
   padding: 5px 6px;
 }
 
@@ -278,6 +277,7 @@ h5 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  gap: 6px;
 }
 .round_button_selected::before {
   content: "";
@@ -309,6 +309,7 @@ h5 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  gap: 6px;
   &:hover {
     background-color: #f0f0ff;
   }
@@ -422,7 +423,17 @@ h5 {
   border-radius: 10px;
   border: 1px solid var(--stroke-cardv2);
   background: var(--white);
-  margin-bottom: 30px;
+}
+.card_v2_with_hover {
+  border-radius: 10px;
+  border: 1px solid var(--stroke-cardv2);
+  background: var(--white);
+  &:hover {
+    border: 1px solid var(--G1, #c266e7);
+    /* DP for website */
+    box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
+      0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
+  }
 }
 .card_v2_text {
   color: var(--dark-blue);
@@ -476,7 +487,37 @@ h5 {
 
 .section {
   background: linear-gradient(180deg, #fcfbff 0%, #f1f1ff 100%);
-  padding-top: 50px;
+  padding-top: 24px;
   padding-bottom: 70px;
   margin-bottom: 70px;
+}
+
+.section_heading_container {
+  margin-inline: auto;
+  margin-bottom: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_hover {
+  border: 1px solid var(--G1, #c266e7);
+  /* DP for website */
+  box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
+    0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
+}
+
+.heading_highlighter {
+  background: var(
+    --G1,
+    linear-gradient(123deg, #c266e7 42.91%, #602edf 100.75%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60.2px;
 }

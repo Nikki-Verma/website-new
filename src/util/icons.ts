@@ -2,6 +2,10 @@
 export { default as CostCutIcon } from "../assets/bfsi/cut_operational_costs.svg";
 export { default as CustomerEngagementIcon } from "../assets/bfsi/elevate_customer_engagement.svg";
 export { default as DecisionMakingIcon } from "../assets/bfsi/enhance_decision_making.svg";
+export { default as IntegrateAgent } from "../assets/svg/icons/IntegrateAgent.svg";
+export { default as IterateRefine } from "../assets/svg/icons/IterateRefine.svg";
+export { default as PocDev } from "../assets/svg/icons/PocDev.svg";
+export { default as ProductiseAi } from "../assets/svg/icons/ProductiseAi.svg";
 export { default as ReliableIcon } from "../assets/svg/icons/reliable.svg";
 export { default as ScalableIcon } from "../assets/svg/icons/scalable.svg";
 export { default as SecureIcon } from "../assets/svg/icons/secure.svg";

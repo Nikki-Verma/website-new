@@ -1,16 +1,15 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { Popover } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoMdArrowForward } from "react-icons/io";
-import "./style.css";
+import { useEffect, useRef, useState } from "react";
+import { IoIosArrowDown, IoMdArrowForward } from "react-icons/io";
 import Logo from "../../assets/svg/icons/color-logo.svg";
-import { describe } from "node:test";
 import Programming from "../../assets/svg/icons/programming.svg";
+import "./style.css";
 
 const Header = () => {
-  const [showSubMenu, setshowSubMenu] = useState(false);
+  const [showSubMenu, setshowSubMenu] = useState("");
 
   const productsSubMenu = [
     {
@@ -20,6 +19,9 @@ const Header = () => {
       link: "/llmstudio",
       icon: Programming,
     },
+  ];
+
+  const UseCaseSubMenu = [
     {
       title: "Mulimedia",
       description:
@@ -41,21 +43,57 @@ const Header = () => {
       link: "/bfsi",
       icon: Programming,
     },
-    // {
-    //   title: "SimplAI LLM Studio",
-    //   description:
-    //     "Learn about the SimplAi Products how it can boost your business",
-    //   link: "/home",
-    // },
-    // {
-    //   title: "SimplAI LLM Studio",
-    //   description:
-    //     "Learn about the SimplAi Products how it can boost your business",
-    //   link: "/home",
-    // },
+  ];
+  const ResourcesSubMenu = [
+    {
+      title: "Blogs",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "",
+      icon: Programming,
+    },
+    {
+      title: "Documentation",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "",
+      icon: Programming,
+    },
   ];
 
   const subMenuProduct = (
+    <div className="subMenu">
+      <div>
+        <h4 className="text-left">Platforms</h4>
+        <p className="font-14 text-left my-4">
+          Learn about the SimplAi Products how it can boost your business
+        </p>
+        <button className="button">Talk with expert</button>
+      </div>
+      <div className="subMenu-Item-container">
+        {productsSubMenu?.map((value: any) => {
+          return (
+            <Link href={value.link}>
+              <div className="subMenu_link_wrapper">
+                <div>
+                  <Image src={value.icon} alt="icon" />
+                </div>
+                <div>
+                  <h5>{value.title}</h5>
+                  <p className="font-14 text-left">
+                    Learn about the SimplAi Products how it can boost your
+                    business
+                  </p>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+
+  const subMenuUseCase = (
     <div className="subMenu">
       <div>
         <h4 className="text-left">Products</h4>
@@ -65,7 +103,39 @@ const Header = () => {
         <button className="button">Talk with expert</button>
       </div>
       <div>
-        {productsSubMenu?.map((value: any) => {
+        {UseCaseSubMenu?.map((value: any) => {
+          return (
+            <Link href={value.link}>
+              <div className="subMenu_link_wrapper">
+                <div>
+                  <Image src={value.icon} alt="icon" />
+                </div>
+                <div>
+                  <h5>{value.title}</h5>
+                  <p className="font-14 text-left">
+                    Learn about the SimplAi Products how it can boost your
+                    business
+                  </p>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+
+  const subMenuResource = (
+    <div className="subMenu">
+      <div>
+        <h4 className="text-left">Resources</h4>
+        <p className="font-14 text-left my-4">
+          Learn about the SimplAi Products how it can boost your business
+        </p>
+        <button className="button">Talk with expert</button>
+      </div>
+      <div>
+        {ResourcesSubMenu?.map((value: any) => {
           return (
             <Link href={value.link}>
               <div className="subMenu_link_wrapper">
@@ -90,7 +160,7 @@ const Header = () => {
   const componentRef = useRef<HTMLDivElement>(null);
   const handleClickOutside = (event: any) => {
     if (componentRef.current && !componentRef.current.contains(event.target)) {
-      setshowSubMenu(false); // Set state to false if clicked outside
+      setshowSubMenu(""); // Set state to false if clicked outside
     }
   };
 
@@ -114,28 +184,52 @@ const Header = () => {
         </div>
         <div className="nav_links">
           <button className="px-4 mx-2">
-            <div
-              className="relative ..."
-              onClick={() => setshowSubMenu(!showSubMenu)}
+            <Popover
+              content={subMenuProduct}
+              trigger={"hover"}
+              zIndex={131313131313133}
+              autoAdjustOverflow={true}
+              placement="bottom"
             >
-              Products
-              <span className="inline-block align-middle pl-2">
-                <IoIosArrowDown />
-              </span>
-              {showSubMenu && subMenuProduct}
-            </div>
+              <div className="relative ...">
+                Platform
+                <span className="inline-block align-middle pl-2">
+                  <IoIosArrowDown />
+                </span>
+              </div>
+            </Popover>
           </button>
           <button className="px-4 mx-2">
-            Use Cases
-            <span className="inline-block align-middle pl-2">
-              <IoIosArrowDown />
-            </span>
+            <Popover
+              content={subMenuUseCase}
+              trigger={"hover"}
+              zIndex={131313131313133}
+              autoAdjustOverflow={true}
+              placement="bottom"
+            >
+              <div className="relative ...">
+                Use Cases
+                <span className="inline-block align-middle pl-2">
+                  <IoIosArrowDown />
+                </span>
+              </div>
+            </Popover>
           </button>
           <button className="px-4 mx-2">
-            Resources
-            <span className="inline-block align-middle pl-2">
-              <IoIosArrowDown />
-            </span>
+            <Popover
+              content={subMenuResource}
+              trigger={"hover"}
+              zIndex={131313131313133}
+              autoAdjustOverflow={true}
+              placement="bottom"
+            >
+              <div className="relative ...">
+                Resources
+                <span className="inline-block align-middle pl-2">
+                  <IoIosArrowDown />
+                </span>
+              </div>
+            </Popover>
           </button>
           <button>
             <Link className="px-4 mx-2" href="/pricing">
