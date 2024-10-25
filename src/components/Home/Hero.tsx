@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../../app/globals.css";
+import OurApplications from "./OurApplications/OurApplications";
 import "./style.css";
-import Header from "../Header/Header";
 const Hero = () => {
   const animateText = ["Secure", "Scalable", "Reliable"];
   const textRefs: any = useRef([]);
@@ -15,7 +15,7 @@ const Hero = () => {
 
     const animateText = () => {
       // Remove the classes from all elements
-      textRefs.current.forEach((txt:any) => {
+      textRefs.current.forEach((txt: any) => {
         if (txt) {
           txt.classList.remove("text-in", "text-out");
         }
@@ -44,39 +44,27 @@ const Hero = () => {
     };
 
     animateText();
-    
   }, [index]);
 
   return (
-    <div className="hero_section" style={{ paddingTop: 70 }}>
+    <div className="hero_section" style={{ marginTop: -82 }}>
       {/* <Header /> */}
       <div className="content_section">
         <h1 className="text-center hero_section_heading">
-          <span className="text_gray_gadient">Build </span>
-          <span className="animate-text">
-          {animateText?.map((text: string, index: number) => {
-            return (
-              <span
-                key={index}
-                ref={(el: any) => (textRefs.current[index] = el)}
-              >
-                {" "}
-                {text}
-              </span>
-            );
-          })}
-          </span>
+          <span className="hero_h2">Build and Scale Gen AI Applications </span>
           <br />
-          <span className="text_gray_gadient">Enterprise-Ready AI Faster</span>
+          <span className="hero_h1">Fast, Simple, and Secure</span>
         </h1>
-        <p className="text-center text-[color:--off-white] w-1/2 mx-auto mt-8 hero_text">
-          SimplAI is a unified Gen AI development platform to build,
-          orchestrate, deploy & monitor LLM-Powered applications with ease
+        <p className="text-center w-2/3 mx-auto mt-8 hero_text">
+          Create AI agents and agentic workflows with rapid execution from PoC
+          to production <a className="hero_text_highlight"> in a month </a> -
+          delivering secure and reliable systems.
         </p>
-        <div className="flex justify-center items-center mt-8">
-          <button className="button button_white">Request Demo</button>
+        <div className="flex justify-center items-center mt-8 mb-8">
+          <button className="button button_white">Book a demo</button>
         </div>
       </div>
+      <OurApplications />
     </div>
   );
 };

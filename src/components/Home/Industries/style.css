@@ -1,0 +1,56 @@
+.industries_box_container {
+  width: 100%;
+  gap: 0;
+  border-radius: 10px;
+  border: 1px solid var(--Stroke, #c3d0e2);
+}
+
+.industries_box_left_container {
+  padding: 50px 0px 50px 37px;
+  border-radius: 9px 0px 0px 9px;
+  background: linear-gradient(180deg, #0d0220 0%, #1f0649 100%);
+}
+
+.industries_list {
+  margin-bottom: 24px;
+  color: var(--black-v2);
+}
+
+.industries_list > li {
+  color: var(--background);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 0.5px solid rgba(166, 188, 218, 0.67);
+  padding: 16px 0px;
+}
+.industries_list > li::marker {
+  content: "";
+}
+
+.industries_box_button_selected {
+  height: 46px;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px 0px 0px 4px;
+  background: #fff;
+  color: #171717;
+}
+
+.industries_box_button {
+  height: 46px;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px 0px 0px 4px;
+  background: transparent;
+  color: var(--white);
+  &:hover {
+    background-color: var(--off-white);
+    color: #171717;
+  }
+}

@@ -1,57 +1,56 @@
 @keyframes marquee {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-40%);
-    }
+  0% {
+    transform: translateX(0%);
   }
-  
-
-.marquee{
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    position: relative;
+  100% {
+    transform: translateX(-40%);
+  }
 }
 
-.badges_wrapper{
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    gap: 24px 12px;
-    padding-top: 50px;
-    animation: marquee 10s linear infinite; 
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.badges{
-    flex-shrink: 0;
-    /* width: 200px;  */
-    /* height: 150px; */
-    /* background-color: #ccc; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin: 0 15px; */
-    /* font-size: 20px; */
-    transition: transform 0.4s ease, filter 0.4s ease;
-    color: var(--Text-Color-900, #171717);
-    text-align: center;
+.badges_wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 24px 12px;
+  padding-top: 50px;
+  animation: marquee 10s linear infinite;
+}
 
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.badges {
+  flex-shrink: 0;
+  /* width: 200px;  */
+  /* height: 150px; */
+  /* background-color: #ccc; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin: 0 15px; */
+  /* font-size: 20px; */
+  transition: transform 0.4s ease, filter 0.4s ease;
+  color: var(--Text-Color-900, #171717);
+  text-align: center;
 
-    display: inline-flex;
-    height: 43px;
-    padding: 0px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 
-    border-radius: 8px;
-    border: 0.5px solid rgba(166, 188, 218, 0.70);
-    background: #F1F6FC;
+  display: inline-flex;
+  height: 43px;
+  padding: 0px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  border-radius: 8px;
+  border: 0.5px solid rgba(166, 188, 218, 0.7);
+  background: #f1f6fc;
 }

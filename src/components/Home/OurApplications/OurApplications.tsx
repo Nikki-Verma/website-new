@@ -1,12 +1,11 @@
 import Image from "next/image";
-import "./style.css";
-import { FunctionComponent, SVGProps } from "react";
 import AutoMatedProcess from "../../../assets/svg/icons/automated-process.svg";
 import Coding from "../../../assets/svg/icons/coding.svg";
 import CustomerService from "../../../assets/svg/icons/customer-service-agent.svg";
 import Documentation from "../../../assets/svg/icons/documentation.svg";
 import Programming from "../../../assets/svg/icons/programming.svg";
 import VoiceRecognition from "../../../assets/svg/icons/voice-recognition.svg";
+import "./style.css";
 
 interface Application {
   icon: any; // Assuming icons might be a component or string path
