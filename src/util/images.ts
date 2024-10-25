@@ -40,3 +40,7 @@ export { default as cloudDeploy } from "../assets/svg/Images/cloudDeploy.svg";
 export { default as CoinHourglass } from "../assets/svg/Images/coinHourglass.svg";
 export { default as intelligentAi } from "../assets/svg/Images/intelligentAi.svg";
 export { default as SecureAi } from "../assets/svg/Images/secure-ai.svg";
+//
+export { default as ConsultingBanner } from "../assets/legal/consulting_banner.png";
+export { default as LegalBanner } from "../assets/legal/legal_banner.png";
+export { default as ResearchBanner } from "../assets/legal/research_banner.png";

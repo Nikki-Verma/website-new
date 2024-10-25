@@ -43,6 +43,13 @@ const Header = () => {
       link: "/bfsi",
       icon: Programming,
     },
+    {
+      title: "Leagl",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "/legal",
+      icon: Programming,
+    },
   ];
   const ResourcesSubMenu = [
     {
