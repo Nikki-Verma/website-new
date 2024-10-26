@@ -1,7 +1,7 @@
 "use client";
 
+import ScalableAiIcon from "@/components/Icons/ScalableAi";
 import SecureAiIcon from "@/components/Icons/SecureAiIcon";
-import ScalableAiIcon from "@/components/Icons/scalableAi";
 import { cloudDeploy } from "@/util/images";
 import Image from "next/image";
 import { useState } from "react";
