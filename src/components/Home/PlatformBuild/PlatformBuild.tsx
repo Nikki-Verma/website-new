@@ -1,8 +1,8 @@
 "use client";
 
 import ReliableAiIcon from "@/components/Icons/ReliableAi";
+import ScalableAiIcon from "@/components/Icons/ScalableAi";
 import SecureAiIcon from "@/components/Icons/SecureAiIcon";
-import ScalableAiIcon from "@/components/Icons/scalableAi";
 import { SecureAi } from "@/util/images";
 import Image from "next/image";
 import { useState } from "react";
