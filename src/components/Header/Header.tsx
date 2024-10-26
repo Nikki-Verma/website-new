@@ -20,10 +20,17 @@ const Header = () => {
       icon: Programming,
     },
     {
-      title: " Production RAG",
+      title: "Production RAG",
       description:
         "Learn about the SimplAi Products how it can boost your business",
       link: "/rag",
+      icon: Programming,
+    },
+    {
+      title: "AI Agents",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "/ai-agents",
       icon: Programming,
     },
   ];

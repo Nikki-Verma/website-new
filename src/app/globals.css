@@ -521,3 +521,13 @@ h5 {
   font-weight: 700;
   line-height: 60.2px;
 }
+
+.card_points_container {
+  display: flex;
+  border-bottom: 1px solid var(--Stroke, #c3d0e2);
+  background: #fdfdff;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 14px 12px;
+}
