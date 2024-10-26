@@ -67,7 +67,7 @@ export { default as MobileSdkIcon } from "../assets/svg/Images/MobileSdkIcon.svg
 export { default as ResearchIcon } from "../assets/svg/Images/ResearchIcon.svg";
 export { default as ScalabilityIcon } from "../assets/svg/Images/ScalabilityIcon.svg";
 export { default as SecurityIcon } from "../assets/svg/Images/SecurityIcon.svg";
-export { default as SpeedIcon } from "../assets/svg/Images/SpeedIcon.svg";
+export { default as SpeedIcon } from "../assets/svg/Images/Speed_Icon.svg";
 export { default as TaskIcon } from "../assets/svg/Images/TaskIcon.svg";
 export { default as TelecomImage } from "../assets/svg/Images/TelecomImage.svg";
 export { default as chatbotImage } from "../assets/svg/Images/chatbotImage.svg";
