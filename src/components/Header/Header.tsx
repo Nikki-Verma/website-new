@@ -19,6 +19,13 @@ const Header = () => {
       link: "/llmstudio",
       icon: Programming,
     },
+    {
+      title: " Production RAG",
+      description:
+        "Learn about the SimplAi Products how it can boost your business",
+      link: "/rag",
+      icon: Programming,
+    },
   ];
 
   const UseCaseSubMenu = [
@@ -44,7 +51,7 @@ const Header = () => {
       icon: Programming,
     },
     {
-      title: "Leagl",
+      title: "Legal",
       description:
         "Learn about the SimplAi Products how it can boost your business",
       link: "/legal",

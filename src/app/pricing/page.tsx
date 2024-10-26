@@ -1,9 +1,12 @@
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 import Button from "@/UIComponents/Button";
-import "./PricingPlans.css";
-import { FaCheck } from "react-icons/fa6";
 import BannerExpert from "@/components/BannerExpert/BannerExpert";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
+import { Collapse, CollapseProps } from "antd";
+import { CSSProperties } from "react";
+import { FaCheck } from "react-icons/fa6";
+import "./PricingPlans.css";
 
 const pricingPlans: any = [
   {
@@ -80,59 +83,137 @@ const pricingPlans: any = [
   },
 ];
 
+const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
+  panelStyle,
+) => [
+  {
+    key: 1,
+    label: "Access to all Global LLMs",
+    children: (
+      <p>
+        Quickly discover and connect with a unified API for the latest and most
+        advanced LLMs
+      </p>
+    ),
+    style: panelStyle,
+  },
+  {
+    key: 2,
+    label: "Deploy open source models on your own cloud",
+    children: (
+      <p>
+        With SimplAI, you have the flexibility to deploy any open-source LLM
+        model directly on your own cloud infrastructure with one-click
+        deployment.
+      </p>
+    ),
+    style: panelStyle,
+  },
+  {
+    key: 3,
+    label: "LLM playground",
+    children: (
+      <p>
+        Developers can experiment, test, and evaluate prompts and models in a
+        dynamic environment, allowing for iterative improvement Experiment,
+        test, and iterate on prompts and model configurations in a fully
+        interactive environment, enabling real-time adjustments{" "}
+      </p>
+    ),
+    style: panelStyle,
+  },
+  {
+    key: 4,
+    label: "Fine tune any open source model",
+    children: (
+      <p>
+        Securely apply advanced fine-tuning techniques on open-source models in
+        your virtual private cloud with our SOC-2 compliant platform{" "}
+      </p>
+    ),
+    style: { ...panelStyle, marginBottom: "0" },
+  },
+];
+
 const Pricing = () => {
+  const panelStyle: React.CSSProperties = {
+    marginBottom: 24,
+    borderRadius: "8px",
+    border: "0.5px solid var(--Stroke, #A6BCDA)",
+    background: "var(--Support, #F8FAFC)",
+  };
+
   return (
     <>
       <Header />
-      <div className="mt-120">
-        <h2>
-          Discover boundless creativity
-          <br /> with one plan
-        </h2>
-        <p className="font-18 text-center mb-12">
-          Volume-based pricing with transparency in mind. Only pay for what you
-          use.
-        </p>
-        <div className="container flex justify-between gap-6">
-          {pricingPlans.map((plan: any, index: number) => {
-            return (
-              <div
-                className={`card_v2 px-4 py-4 plan-card ${
-                  plan.mostPopular ? "most_popular" : ""
-                }`}
-              >
-                {plan.mostPopular && (
-                  <div className="plan_tag">MOST POPULAR</div>
-                )}
-                <h3 className="plan_heading">{plan.title}</h3>
-                <p className="plan_description">{plan.description}</p>
-                <h4 className="price">
-                  {plan.price} <span>{plan.basis}</span>
-                </h4>
-                <div className="my-6 flex justify-center">
-                  <Button
-                    url={plan.buttonLink}
-                    label={plan.buttonLabel}
-                    color={plan.mostPopular ? "button_white" : ""}
-                  />
+      <section className="section mt-12">
+        <div className="container">
+          <div className="section_heading_container">
+            <div className="home_page_heading">
+              Discover boundless creativity
+              <br />
+              with one plan
+            </div>
+          </div>
+          <p className="font-18 text-center mb-12">
+            Volume-based pricing with transparency in mind. Only pay for what
+            you use.
+          </p>
+          <div className="container flex justify-between gap-6">
+            {pricingPlans.map((plan: any, index: number) => {
+              return (
+                <div
+                  className={`card_v2 px-4 py-4 plan-card ${
+                    plan.mostPopular ? "most_popular" : ""
+                  }`}
+                >
+                  {plan.mostPopular && (
+                    <div className="plan_tag">MOST POPULAR</div>
+                  )}
+                  <h3 className="plan_heading">{plan.title}</h3>
+                  <p className="plan_description">{plan.description}</p>
+                  <h4 className="price">
+                    {plan.price} <span>{plan.basis}</span>
+                  </h4>
+                  <div className="my-6 flex justify-center">
+                    <Button
+                      url={plan.buttonLink}
+                      label={plan.buttonLabel}
+                      color={plan.mostPopular ? "button_white" : ""}
+                    />
+                  </div>
+                  <div>
+                    {plan.features.map((feature: string, index: number) => {
+                      return (
+                        <div className="flex items-center gap-2 feature">
+                          <span>
+                            <FaCheck />
+                          </span>
+                          {feature}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-                <div>
-                  {plan.features.map((feature: string, index: number) => {
-                    return (
-                      <div className="flex items-center gap-2 feature">
-                        <span>
-                          <FaCheck />
-                        </span>
-                        {feature}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </section>
+      <section className="section mt-12">
+        <div className="container justify-center flex">
+          <div className="w-1/2">
+            <Collapse
+              bordered={false}
+              items={getItems(panelStyle)}
+              style={{ background: "transparent", width: "100%" }}
+              className="accordian_custom"
+              expandIconPosition={"end"}
+            />
+          </div>
+        </div>
+      </section>
+      <CaseStudy />
       <BannerExpert />
       <Footer />
     </>

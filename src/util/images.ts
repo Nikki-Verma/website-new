@@ -44,3 +44,8 @@ export { default as SecureAi } from "../assets/svg/Images/secure-ai.svg";
 export { default as ConsultingBanner } from "../assets/legal/consulting_banner.png";
 export { default as LegalBanner } from "../assets/legal/legal_banner.png";
 export { default as ResearchBanner } from "../assets/legal/research_banner.png";
+export { default as HealthcareImage } from "../assets/svg/Images/HealthcareImage.svg";
+export { default as InsuranceImage } from "../assets/svg/Images/InsuranceImage.svg";
+export { default as InternetImage } from "../assets/svg/Images/InternetImage.svg";
+export { default as LegalImage } from "../assets/svg/Images/LegalImage.svg";
+export { default as TelecomImage } from "../assets/svg/Images/TelecomImage.svg";

@@ -1,5 +1,5 @@
+import { ReliableIcon, ScalableIcon, SecureIcon } from "@/util/icons";
 import Image from "next/image";
-import { ReliableIcon, SecureIcon, ScalableIcon } from "@/util/icons";
 
 const AIPlatformOverview = () => {
   const data = [
@@ -24,16 +24,18 @@ const AIPlatformOverview = () => {
   ];
 
   return (
-    <div className="section">
-      <div className="container mb-0">
-        <h2 className="mb-12">
-          SimplAI Enterprise-Grade AI Platform:
-          <br /> Scale Beyond PoC to Capture Value
-        </h2>
+    <section className="section">
+      <div className="container">
+        <div className="section_heading_container">
+          <div className="home_page_heading">
+            SimplAI Enterprise-Grade AI Platform: Scale Beyond
+            <br /> PoC to Capture Value
+          </div>
+        </div>
         <div className="flex justify-between gap-8">
           {data.map((value: any) => {
             return (
-              <div className="card_v2 py-6 px-4 w-full flex justify-center flex-col items-center">
+              <div className="card_v2_with_hover py-6 px-4 w-full flex justify-center flex-col items-center">
                 <Image src={value.icon} alt={value.heading} />
                 <h4 className="heading_24 text-center">{value.heading}</h4>
                 <p className="font-18 text-center">{value.description}</p>
@@ -42,7 +44,7 @@ const AIPlatformOverview = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

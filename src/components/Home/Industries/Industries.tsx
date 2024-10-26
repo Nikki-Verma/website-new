@@ -1,6 +1,5 @@
 "use client";
 
-import { ReliableIcon } from "@/util/icons";
 import { useState } from "react";
 
 import FinancialServiceIcon from "@/components/Icons/FinancialServiceIcon";
@@ -15,43 +14,70 @@ import LegalIcon from "@/components/Icons/LegalIcon";
 import LegalSelectedIcon from "@/components/Icons/LegalSelectedIcon";
 import TelecomIcon from "@/components/Icons/TelecomIcon";
 import TelecomSelectedIcon from "@/components/Icons/TelecomSelectedIcon";
-import { CoinHourglass } from "@/util/images";
-import GenScale from "../../../assets/png/scale-gen-ai.png";
+import {
+  CoinHourglass,
+  HealthcareImage,
+  InsuranceImage,
+  InternetImage,
+  LegalImage,
+  TelecomImage,
+} from "@/util/images";
 import "./style.css";
 
 const data = [
   {
-    heading: "Secure the Generative AI in your enterprise",
+    heading: "Financial service",
     description: [
-      "Robust data encryption and access controls at both application and infrastructure layers",
-      "Deploy on your own cloud for the highest data security",
-      "Strong compliance measures in place, including SOC2 & ISO 27001",
+      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
     ],
     buttonName: "Get started",
     buttonLink: "",
-    image: GenScale,
+    image: CoinHourglass,
   },
   {
-    heading: "Scale your Gen AI to production with ease",
+    heading: "Insurance",
     description: [
-      "Highest interoperability to connect complex data sources with our data connector engine",
-      "Built-in autoscaling of infrastructure to handle varying workloads seamlessly",
-      "Flexible deployment options across multiple cloud environments or on-premise solutions",
+      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
     ],
     buttonName: "Get started",
     buttonLink: "",
-    image: GenScale,
+    image: InsuranceImage,
   },
   {
-    heading: "Reliably run Gen AI for your enterprise",
+    heading: "healthcare",
     description: [
-      "Experience low latency with real-time streaming and parallel processing for optimal performance",
-      "Enhance LLM reliability with guardrails, RAG, finetuning, and memory features",
-      "Full transparency over applications with comprehensive LLM observability",
+      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
     ],
     buttonName: "Get started",
     buttonLink: "",
-    image: ReliableIcon,
+    image: HealthcareImage,
+  },
+  {
+    heading: "Telecom",
+    description: [
+      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+    ],
+    buttonName: "Get started",
+    buttonLink: "",
+    image: TelecomImage,
+  },
+  {
+    heading: "Internet",
+    description: [
+      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+    ],
+    buttonName: "Get started",
+    buttonLink: "",
+    image: InternetImage,
+  },
+  {
+    heading: "Legal",
+    description: [
+      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+    ],
+    buttonName: "Get started",
+    buttonLink: "",
+    image: LegalImage,
   },
 ];
 const Industries = () => {
@@ -147,7 +173,7 @@ const Industries = () => {
           <div
             className="flex flex-1 col-span-2"
             style={{
-              backgroundImage: `url(${CoinHourglass?.src})`,
+              backgroundImage: `url(${currentSelect?.image?.src})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -155,12 +181,12 @@ const Industries = () => {
               display: "flex",
               flexDirection: "column",
               gap: 24,
+              borderTopRightRadius: "10px",
+              borderBottomRightRadius: "10px",
             }}
           >
             <span className="industries_description">
-              Transform financial services by driving automation, enhancing
-              compliance, and accelerating innovation in your digital
-              operations.
+              {currentSelect?.description}
             </span>
             <button className="button">Know more</button>
           </div>

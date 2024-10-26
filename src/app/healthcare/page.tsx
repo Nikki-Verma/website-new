@@ -1,39 +1,40 @@
-import Header from "@/components/Header/Header";
-import style from "./healthcare.module.css";
-import CommonHero from "@/components/CommonHero/CommonHero";
-import CardInfo from "@/components/CardInfo/CardInfo";
-import Tabs from "@/components/TabsConfig/Tabs";
-import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
-import Footer from "@/components/Footer/Footer";
+import AIPlatformOverview from "@/components/AIPlatformOverview/AIPlatformOverview";
 import BannerExpert from "@/components/BannerExpert/BannerExpert";
+import CardInfo from "@/components/CardInfo/CardInfo";
+import CommonHero from "@/components/CommonHero/CommonHero";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
+import Tabs from "@/components/TabsConfig/Tabs";
 import {
   banner,
-  solution,
-  healthcare_provider,
   healthcare_player,
+  healthcare_provider,
   healthcare_tech,
+  solution,
 } from "@/data/healthcarePageData";
-import AIPlatformOverview from "@/components/AIPlatformOverview/AIPlatformOverview";
 
 const HealthCare = () => {
   return (
     <>
       <Header />
       <CommonHero data={banner} />
-      <div className="section">
-        <div className="container mb-0">
-          <h2>
-            Transforming Healthcare with SimplAI’s
-            <br /> Generative AI Solutions
-          </h2>
+      <section className="section">
+        <div className="container">
+          <div className="section_heading_container">
+            <div className="home_page_heading">
+              Transforming Healthcare with SimplAI’s
+              <br /> Generative AI Solutions
+            </div>
+          </div>
           <CardInfo data={solution} />
         </div>
-      </div>
+      </section>
       <Tabs tabsConfig={healthcare_provider} />
       <Tabs tabsConfig={healthcare_player} />
       <Tabs tabsConfig={healthcare_tech} />
-      <CaseStudy />
       <AIPlatformOverview />
+      <CaseStudy />
       <BannerExpert />
       <Footer />
     </>
