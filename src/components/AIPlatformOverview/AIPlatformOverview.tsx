@@ -1,4 +1,5 @@
 import { ReliableIcon, ScalableIcon, SecureIcon } from "@/util/icons";
+import { Row, Col } from "antd";
 import Image from "next/image";
 
 const AIPlatformOverview = () => {
@@ -32,17 +33,19 @@ const AIPlatformOverview = () => {
             <br /> PoC to Capture Value
           </div>
         </div>
-        <div className="flex justify-between gap-8">
+        <Row gutter={[36, 36]}>
           {data.map((value: any) => {
             return (
-              <div className="card_v2_with_hover py-6 px-4 w-full flex justify-center flex-col items-center">
-                <Image src={value.icon} alt={value.heading} />
-                <h4 className="heading_24 text-center">{value.heading}</h4>
-                <p className="font-18 text-center">{value.description}</p>
-              </div>
+              <Col xs={24} md={8} style={{ display: "flex" }}>
+                <div className="card_v2_with_hover py-6 px-4 flex justify-center flex-col items-center">
+                  <Image src={value.icon} alt={value.heading} />
+                  <h4 className="heading_24 text-center">{value.heading}</h4>
+                  <p className="font-18 text-center">{value.description}</p>
+                </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </div>
     </section>
   );

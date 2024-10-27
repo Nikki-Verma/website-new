@@ -17,9 +17,11 @@ import {
   AssestsMetadataAutomationImage,
   PlayerAndTeamInsightsImage,
   ModerationFilteringImage,
-  AutomatePostProductionImage
+  AutomatePostProductionImage, 
+  TelecomHeroBanner, 
+  EngagementIcon, FastTrackIcon, ScaleIcon, TransformMediaIcon
 } from "../util/svgImage";
-import { MediaAndBroadcastBannerImage, TelecomBannerImage, MulimediaHeroBannerImage, EducationBannerImage, GamingAndSportBannerImage } from "@/util/images";
+import { MediaAndBroadcastBannerImage, TelecomBannerImage, EducationBannerImage, GamingAndSportBannerImage } from "@/util/images";
 
 export const banner = {
   title: "Telecom, Media & Entertainment",
@@ -28,7 +30,7 @@ export const banner = {
     "Harness future-ready applications with SimplAI's Agentic AI and process automation platform. From transforming creativity to automating operational workflows to enhancing customer engagement, unlock the full potential of AI-driven innovation.",
   buttonText: "Request Demo",
   buttonLink: "#",
-  img: MulimediaHeroBannerImage
+  img: TelecomHeroBanner
 };
 
 export const solution = [
@@ -36,25 +38,25 @@ export const solution = [
     title: "Transform Media Innovation",
     description:
       "Leverage SimplAI's Agentic AI to redefine content creation, personalization, and media production—creating experiences that captivate and engage audiences like never before.",
-    icon: AutomationImage,
+    icon: TransformMediaIcon,
   },
   {
     title: "Fast-Track AI Innovation",
     description:
       "Build and deploy AI-first solutions quickly with our platform, enabling companies to innovate faster, streamline operations, and stay ahead in a competitive landscape.",
-    icon: CustomerImage,
+    icon: FastTrackIcon,
   },
   {
     title: "AI-Driven Engagement",
     description:
       "Offer personalized, omnichannel experiences powered by AI—ensuring customer engagement across every platform, anytime.",
-    icon: DiagnosticImage,
+    icon: EngagementIcon,
   },
   {
     title: "Scale. Innovate. Monetize",
     description:
       "SimplAI helps you scale AI-driven innovation while accelerating time to market and unlocking new revenue streams through automation and cutting-edge AI technologies",
-    icon: CostReductionImage,
+    icon: ScaleIcon,
   },
 ];
 

@@ -1,10 +1,7 @@
 .tabs_banner {
-  /* display: flex; */
-  /* justify-content: space-between; */
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  gap: 2.5rem;
   background-color: var(--secondry-color);
   color: var(--white);
   align-items: center;
@@ -13,7 +10,6 @@
 
 .text_content {
   padding: 100px 60px;
-  max-width: 60%;
 }
 
 .tabs_heading {
@@ -67,10 +63,10 @@
 
 .active_tab_detail {
   padding: 2.5rem;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 2rem; */
 }
 
 .active_tab_description {
@@ -94,10 +90,31 @@
   line-height: 40px;
 }
 
-.active_tab_text_content {
+/* .active_tab_text_content {
   width: 60%;
-}
+} */
 
-.active_tab_image {
+/* .active_tab_image {
   width: 35%;
+} */
+
+
+@media (max-width: 576px) {
+  .text_content {
+   padding: 48px 36px;
+  }
+
+  .tab_name_list{
+    flex-direction: column;
+  }
+  .tab_name{
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 4px;
+  }
+
+  .tab_name.tab_active{
+    padding: 4px 0;
+    border-bottom: 3px solid var(--primary-color);
+  }
 }

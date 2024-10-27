@@ -16,6 +16,7 @@ import {
   Sales,
   FinancialAdvisor,
   CustomerExpV2,
+  CustomerEngagementIcon, DecisionIcon, ProductivityIcon
 } from "../util/svgImage";
 
 export const banner = {
@@ -34,19 +35,19 @@ export  const solutionsList = [
     title: "Boost Productivity & Efficiency",
     description:
       "Automate workflows to reduce manual tasks and accelerate results",
-    icon: AutomationImage,
+    icon: ProductivityIcon,
   },
   {
     title: "Enhance Decision-Making",
     description:
       "Empower decision-making and automate compliance for stronger governance",
-    icon: CustomerImage,
+    icon: DecisionIcon,
   },
   {
     title: "Elevate Customer Engagement",
     description:
       "Deliver personalized experiences and optimize customer journeys",
-    icon: DiagnosticImage,
+    icon: CustomerEngagementIcon,
   },
   {
     title: "Cut Operational Costs",

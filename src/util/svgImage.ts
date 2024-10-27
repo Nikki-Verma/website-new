@@ -28,6 +28,11 @@ export { default as PlayerAndTeamInsightsImage } from "../assets/multimedia/play
 export { default as SelfServicePortalImage } from "../assets/multimedia/self_service_portal.svg";
 export { default as StreamlineOperationsImage } from "../assets/multimedia/streamline_operations.svg";
 export { default as VirtualAssistantsInGameImage } from "../assets/multimedia/virtual_assistants_in_game.svg";
+export { default as TelecomHeroBanner } from "../assets/multimedia/telecom_hero_banner.svg";
+export { default as EngagementIcon } from '../assets/multimedia/engagement_icon.svg';
+export { default as FastTrackIcon } from '../assets/multimedia/fast_track_icon.svg';
+export { default as ScaleIcon } from '../assets/multimedia/scale_icon.svg';
+export { default as TransformMediaIcon } from '../assets/multimedia/transform_media_icon.svg';
 // new image
 
 // Exporting SVG Files
@@ -48,6 +53,9 @@ export { default as RegulatoryCompliance } from "../assets/bfsi/regulatory_compl
 // export { default as RetailAndCommercial } from '../assets/bfsi/retail_and_commercial.svg';
 export { default as Sales } from "../assets/bfsi/sales.svg";
 export { default as UnderWriting } from "../assets/bfsi/under_writing.svg";
+export { default as CustomerEngagementIcon } from "../assets/bfsi/customer_engagement_icon.svg";
+export { default as DecisionIcon } from "../assets/bfsi/decision_icon.svg";
+export { default as ProductivityIcon } from "../assets/bfsi/productivity_icon.svg";
 
 // Exporting PNG Files
 // svg
