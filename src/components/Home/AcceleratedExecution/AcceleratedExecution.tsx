@@ -6,6 +6,7 @@ import {
   PocDev,
   ProductiseAi,
 } from "@/util/icons";
+import { Col, Row } from "antd";
 import Image from "next/image";
 import { useState } from "react";
 import "./style.css";
@@ -47,28 +48,37 @@ const AcceleratedExecution = () => {
             in a month
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-10 w-full">
+        <Row align={"stretch"} justify={"space-between"} gutter={[16, 16]}>
           {data?.map((cardDetail) => {
             return (
-              <div className="accelerated_exec_box_container w-1/5">
-                <Image
-                  alt={cardDetail.imageAlt}
-                  src={cardDetail?.image}
-                  height={94}
-                  width={95}
-                />
-                <div className="flex flex-col items-center">
-                  <div className="accelerated_exec_box_heading">
-                    {cardDetail?.heading}
-                  </div>
-                  <div className="accelerated_exec_box_description">
-                    {cardDetail?.description}
+              <Col
+                xs={24}
+                sm={12}
+                md={12}
+                lg={8}
+                xl={6}
+                style={{ alignSelf: "stretch" }}
+              >
+                <div className="accelerated_exec_box_container">
+                  <Image
+                    alt={cardDetail.imageAlt}
+                    src={cardDetail?.image}
+                    height={94}
+                    width={95}
+                  />
+                  <div className="flex flex-col items-center">
+                    <div className="accelerated_exec_box_heading">
+                      {cardDetail?.heading}
+                    </div>
+                    <div className="accelerated_exec_box_description">
+                      {cardDetail?.description}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </div>
     </section>
   );

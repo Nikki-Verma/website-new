@@ -1,3 +1,4 @@
+import { Col, Row } from "antd";
 import Image from "next/image";
 import DocumentIcon from "../../../assets/svg/icons/documentationIcon.svg";
 
@@ -34,17 +35,19 @@ const Securitystandards = () => {
           Designed to help enterprises of any size deploy safe and trustworthy
           AI apps.
         </p>
-        <div className="flex jusitfy-between gap-8">
+        <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
           {data?.map((value: any) => {
             return (
-              <div className="card_v2_with_hover w-full px-6 pt-6 pb-6">
-                <Image src={value?.icon} alt={value.heading} />
-                <h5 className="mt-6 mb-4">{value.heading}</h5>
-                <p>{value.description}</p>
-              </div>
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+                <div className="card_v2_with_hover w-full px-6 pt-6 pb-6">
+                  <Image src={value?.icon} alt={value.heading} />
+                  <h5 className="mt-6 mb-4">{value.heading}</h5>
+                  <p>{value.description}</p>
+                </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </div>
     </section>
     // card_v2_thin_border

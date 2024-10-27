@@ -1,12 +1,12 @@
 .features_box_container {
   display: flex;
-  width: 23%;
   flex-direction: column;
   border-radius: 10px;
   align-items: flex-start;
   border: 0.5px solid var(--Stroke, #a6bcda);
   background: #fdfdff;
   padding: 24px 32px;
+  height: 100%;
   gap: 16px;
   &:hover {
     border: 1px solid var(--G1, #c266e7);

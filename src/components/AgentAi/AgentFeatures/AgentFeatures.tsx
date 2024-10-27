@@ -12,6 +12,7 @@ import {
   ResearchIcon,
   TaskIcon,
 } from "@/util/images";
+import { Col, Row } from "antd";
 import "./style.css";
 const data = [
   {
@@ -78,28 +79,30 @@ const AgentFeatures = () => {
             One Agentic Platform. Unlimited Possibilities
           </div>
         </div>
-        <div className="flex flex-wrap justify-between w-full gap-y-8">
+        <Row gutter={[12, 12]} justify={"start"}>
           {data?.map((cardDetails) => {
             return (
-              <div className="features_box_container">
-                <Image
-                  alt={cardDetails?.imageAlt ?? "icon"}
-                  src={cardDetails?.image}
-                  height={32}
-                  width={32}
-                />
-                <div className="flex flex-col items-start gap-2">
-                  <div className="features_box_heading">
-                    {cardDetails?.heading}
-                  </div>
-                  <div className="features_box_description">
-                    {cardDetails.description}
+              <Col xs={24} sm={12} md={8} lg={6} xl={6}>
+                <div className="features_box_container">
+                  <Image
+                    alt={cardDetails?.imageAlt ?? "icon"}
+                    src={cardDetails?.image}
+                    height={32}
+                    width={32}
+                  />
+                  <div className="flex flex-col items-start gap-2">
+                    <div className="features_box_heading">
+                      {cardDetails?.heading}
+                    </div>
+                    <div className="features_box_description">
+                      {cardDetails.description}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </div>
     </section>
   );

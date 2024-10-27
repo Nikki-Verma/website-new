@@ -39,19 +39,21 @@ const SimplaiAgentFeatures = () => {
         <Row gutter={[12, 12]} justify={"space-around"}>
           {data?.map((cardDetail) => {
             return (
-              <Col span={7} className="Simplai_features_box_container">
-                <Image
-                  alt={cardDetail.imageAlt}
-                  src={cardDetail?.image}
-                  height={54}
-                  width={54}
-                />
-                <div className="flex flex-col items-center gap-2">
-                  <div className="Simplai_features_box_heading">
-                    {cardDetail?.heading}
-                  </div>
-                  <div className="Simplai_features_box_description">
-                    {cardDetail?.description}
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+                <div className="Simplai_features_box_container">
+                  <Image
+                    alt={cardDetail.imageAlt}
+                    src={cardDetail?.image}
+                    height={54}
+                    width={54}
+                  />
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="Simplai_features_box_heading">
+                      {cardDetail?.heading}
+                    </div>
+                    <div className="Simplai_features_box_description">
+                      {cardDetail?.description}
+                    </div>
                   </div>
                 </div>
               </Col>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { ModelFeatureImage } from "@/util/images";
-import { Collapse, CollapseProps } from "antd";
+import { Col, Collapse, CollapseProps, Row } from "antd";
 import { CSSProperties } from "react";
 import "./style.css";
 
@@ -73,8 +73,15 @@ const ModelFeatures = () => {
         </div>
 
         <div className="card_v2 px-4 py-8">
-          <div className="grid grid-cols-2 gap-4 ">
-            <div className="col-span-1 collapse-container">
+          <Row justify={"space-between"} align={"top"} gutter={[16, 16]}>
+            <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={12}
+              xl={12}
+              className="collapse-container"
+            >
               <Collapse
                 bordered={false}
                 items={getItems(panelStyle)}
@@ -82,15 +89,15 @@ const ModelFeatures = () => {
                 className="accordian_custom"
                 expandIconPosition={"end"}
               />
-            </div>
-            <div className="col-span-1 flex flex-col justify-start">
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               <Image
                 src={ModelFeatureImage}
                 alt="RetrievalImage"
                 className="w-full"
               />
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </div>
     </section>

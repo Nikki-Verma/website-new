@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "../../app/globals.css";
 import OurApplications from "./OurApplications/OurApplications";
 import "./style.css";
@@ -7,41 +7,6 @@ const Hero = () => {
   const animateText = ["Secure", "Scalable", "Reliable"];
   const textRefs: any = useRef([]);
   const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const txtsLen = textRefs.current.length;
-    const textInTimer = 3000;
-    const textOutTimer = 2800;
-
-    const animateText = () => {
-      // Remove the classes from all elements
-      textRefs.current.forEach((txt: any) => {
-        if (txt) {
-          txt.classList.remove("text-in", "text-out");
-        }
-      });
-
-      if (textRefs.current[index]) {
-        textRefs.current[index].classList.add("text-in");
-      }
-
-      setTimeout(() => {
-        if (textRefs.current[index]) {
-          textRefs.current[index].classList.add("text-out");
-        }
-      }, textOutTimer);
-
-      setTimeout(() => {
-        if (index === txtsLen - 1) {
-          setIndex(0);
-        } else {
-          setIndex(index + 1);
-        }
-      }, textInTimer);
-    };
-
-    animateText();
-  }, [index]);
 
   return (
     <div className="hero_section" style={{ marginTop: -82 }}>

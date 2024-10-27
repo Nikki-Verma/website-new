@@ -251,14 +251,20 @@ h5 {
 }
 .button_section {
   width: max-content;
+  max-width: 100%;
   margin: auto;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 12px;
+  flex-wrap: wrap;
+  gap: 2px 12px;
   border-radius: 30px;
   padding: 5px 6px;
+
+  @media screen and (max-width: 889px) {
+    gap: 8px 0px;
+  }
 }
 
 .round_button_selected {
@@ -421,11 +427,13 @@ h5 {
 
 .card_v2 {
   border-radius: 10px;
+  height: 100%;
   border: 1px solid var(--stroke-cardv2);
   background: var(--white);
 }
 .card_v2_with_hover {
   border-radius: 10px;
+  height: 100%;
   border: 1px solid var(--stroke-cardv2);
   background: var(--white);
   &:hover {
@@ -530,4 +538,7 @@ h5 {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 14px 12px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 }

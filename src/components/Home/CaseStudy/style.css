@@ -6,9 +6,10 @@
 
 .blog_card {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--blog-card-stroke);
   /* background-color: var(--section-blue-color); */
-  min-width: 340px;
   background-color: var(--white);
   &:hover {
     border: 1px solid var(--G1, #c266e7);

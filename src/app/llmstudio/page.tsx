@@ -13,7 +13,7 @@ const LLMStudio = () => {
     <>
       <Header />
 
-      <div className="hero_background">
+      <div className="hero_background px-4">
         <div style={{ paddingTop: 160 }}>
           <div className="mx-auto text-center">
             <p className="product_page_name">Full Stack Gen AI Platform</p>

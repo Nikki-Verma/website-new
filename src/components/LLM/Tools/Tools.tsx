@@ -5,6 +5,7 @@ import {
   ImproveImage,
   TraceVisibilityImage,
 } from "@/util/images";
+import { Col, Row } from "antd";
 
 const Tools = () => {
   return (
@@ -15,60 +16,66 @@ const Tools = () => {
             Observe, Optimize, and Iterate <br /> with Confidence
           </div>
         </div>
-        <div className="flex justify-start gap-10">
-          <div className="card_v2_with_hover w-full px-8 pb-8 pt-10">
-            <div className="mx-auto flex flex-col justify-center">
-              <Image
-                src={TraceVisibilityImage}
-                alt={"TraceVisibilityImage"}
-                className="tex-center mx-auto"
-              />
+        <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+            <div className="card_v2_with_hover w-full px-8 pb-8 pt-10">
+              <div className="mx-auto flex flex-col justify-center">
+                <Image
+                  src={TraceVisibilityImage}
+                  alt={"TraceVisibilityImage"}
+                  className="tex-center mx-auto"
+                />
 
-              <h4 className="heading_24 text-center mb-4 mt-8">
-                Granular visibility with Traces
-              </h4>
-              <p className="text-center">
-                Get a clear view of every sequence of calls, allowing you to
-                fine-tune performance with precision and detail
-              </p>
+                <h4 className="heading_24 text-center mb-4 mt-8">
+                  Granular visibility with Traces
+                </h4>
+                <p className="text-center">
+                  Get a clear view of every sequence of calls, allowing you to
+                  fine-tune performance with precision and detail
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card_v2_with_hover w-full px-8 pb-8 pt-10">
-            <div className="mx-auto flex flex-col justify-center">
-              <Image
-                src={AutomacticImage}
-                alt={"AutomacticImage"}
-                className="tex-center mx-auto"
-              />
+          </Col>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+            <div className="card_v2_with_hover w-full px-8 pb-8 pt-10">
+              <div className="mx-auto flex flex-col justify-center">
+                <Image
+                  src={AutomacticImage}
+                  alt={"AutomacticImage"}
+                  className="tex-center mx-auto"
+                />
 
-              <h4 className="heading_24 text-center mb-4 mt-8">
-                Automatic Evaluation Metrics
-              </h4>
-              <p className="text-center">
-                Gain insights into the robustness and reliability of your LLM
-                applications through built-in metrics, ensuring consistent
-                performance
-              </p>
+                <h4 className="heading_24 text-center mb-4 mt-8">
+                  Automatic Evaluation Metrics
+                </h4>
+                <p className="text-center">
+                  Gain insights into the robustness and reliability of your LLM
+                  applications through built-in metrics, ensuring consistent
+                  performance
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card_v2_with_hover w-full px-8 pb-8 pt-10">
-            <div className="mx-auto flex flex-col justify-center">
-              <Image
-                src={ImproveImage}
-                alt={"ImproveImage"}
-                className="tex-center mx-auto"
-              />
+          </Col>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+            <div className="card_v2_with_hover w-full px-8 pb-8 pt-10">
+              <div className="mx-auto flex flex-col justify-center">
+                <Image
+                  src={ImproveImage}
+                  alt={"ImproveImage"}
+                  className="tex-center mx-auto"
+                />
 
-              <h4 className="heading_24 text-center mb-4 mt-8">
-                Evaluate and Improve
-              </h4>
-              <p className="text-center">
-                Continually enhance your LLM models with actionable insights,
-                keeping you ahead of the curve in AI development
-              </p>
+                <h4 className="heading_24 text-center mb-4 mt-8">
+                  Evaluate and Improve
+                </h4>
+                <p className="text-center">
+                  Continually enhance your LLM models with actionable insights,
+                  keeping you ahead of the curve in AI development
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

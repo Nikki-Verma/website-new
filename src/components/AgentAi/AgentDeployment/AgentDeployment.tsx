@@ -10,6 +10,7 @@ import {
   GuardrailsImage,
   MobileSdkIcon,
 } from "@/util/images";
+import { Col, Row } from "antd";
 import Image from "next/image";
 import { useState } from "react";
 import "./style.css";
@@ -72,8 +73,8 @@ const AgentDeployment = () => {
     <section className="section">
       <div className="container">
         <div className="card_v2 flex w-full px-8 py-8 mb-12">
-          <div className=" grid grid-cols-2 gap-16 w-full">
-            <div className="col-span-1 flex flex-col  justify-center">
+          <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
+            <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               <h4 className="text-left mb-4 w-5/6">
                 Trust, Security, and Control
               </h4>
@@ -81,8 +82,8 @@ const AgentDeployment = () => {
                 With SimplAI, trust and security are foundational.
               </p>
               <Image src={AiEncryption} alt="Ai-encryption-image" />
-            </div>
-            <div className="col-span-1 flex flex-col gap-8 justify-center">
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               {EncryptionDataPoints?.map((data) => {
                 return (
                   <div className="card_points_container">
@@ -91,6 +92,7 @@ const AgentDeployment = () => {
                       src={data?.image}
                       height={70}
                       width={70}
+                      style={{ margin: "0px auto" }}
                     />
                     <div className="flex flex-col items-start gap-2">
                       <div className="features_box_heading">
@@ -103,8 +105,8 @@ const AgentDeployment = () => {
                   </div>
                 );
               })}
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
         <div className="section_heading_container">
           <div className="home_page_heading">
@@ -112,28 +114,30 @@ const AgentDeployment = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between w-full gap-y-8">
+        <Row gutter={[12, 12]} justify={"space-between"}>
           {data?.map((cardDetails) => {
             return (
-              <div className="features_box_container">
-                <Image
-                  alt={cardDetails?.imageAlt ?? "icon"}
-                  src={cardDetails?.image}
-                  height={32}
-                  width={32}
-                />
-                <div className="flex flex-col items-start gap-2">
-                  <div className="features_box_heading">
-                    {cardDetails?.heading}
-                  </div>
-                  <div className="features_box_description">
-                    {cardDetails.description}
+              <Col xs={24} sm={12} md={8} lg={6} xl={6}>
+                <div className="features_box_container">
+                  <Image
+                    alt={cardDetails?.imageAlt ?? "icon"}
+                    src={cardDetails?.image}
+                    height={32}
+                    width={32}
+                  />
+                  <div className="flex flex-col items-start gap-2">
+                    <div className="features_box_heading">
+                      {cardDetails?.heading}
+                    </div>
+                    <div className="features_box_description">
+                      {cardDetails.description}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </div>
     </section>
   );

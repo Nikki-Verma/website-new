@@ -1,6 +1,6 @@
+import { Col, Row } from "antd";
 import Image from "next/image";
 import { IoMdArrowForward } from "react-icons/io";
-import { Row, Col } from "antd";
 import "./style.css";
 
 import CaseStudyImage from "../../../assets/png/caseStudyImage.png";
@@ -13,7 +13,7 @@ const CaseStudy = () => {
           <div className="home_page_heading">Get Latest Insights on GenAI</div>
         </div>
         <Row gutter={[36, 36]}>
-          <Col xs={24} md={8}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
             <div className="blog_card">
               <Image src={CaseStudyImage} alt={"case-study"} />
               <div className="blog_content">
@@ -38,7 +38,7 @@ const CaseStudy = () => {
               </div>
             </div>
           </Col>
-          <Col xs={24} md={8}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
             <div className="blog_card">
               <Image src={CaseStudyImage} alt={"case-study"} />
               <div className="blog_content">
@@ -63,7 +63,7 @@ const CaseStudy = () => {
               </div>
             </div>
           </Col>
-          <Col xs={24} md={8}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
             <div className="blog_card">
               <Image src={CaseStudyImage} alt={"case-study"} />
               <div className="blog_content">

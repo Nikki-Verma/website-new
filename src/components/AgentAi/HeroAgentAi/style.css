@@ -50,6 +50,7 @@
 }
 
 .content_section {
+  padding-inline: 20px;
   position: relative;
   z-index: 12;
 }

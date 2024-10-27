@@ -9,6 +9,7 @@ import EnterpriseKnowledgebase from "../../../assets/svg/icons/EnterpriseKnowled
 import Observability from "../../../assets/svg/icons/Observability.svg";
 import Coding from "../../../assets/svg/icons/coding.svg";
 
+import { Col, Row } from "antd";
 import "./style.css";
 const data = [
   {
@@ -82,28 +83,37 @@ const Features = () => {
             AI solutions - without technical complexity
           </div>
         </div>
-        <div className="flex flex-wrap justify-between w-full gap-y-8">
+        <Row align={"stretch"} justify={"start"} gutter={[16, 16]}>
           {data?.map((cardDetails) => {
             return (
-              <div className="features_box_container">
-                <Image
-                  alt={cardDetails?.imageAlt ?? "icon"}
-                  src={cardDetails?.image}
-                  height={32}
-                  width={32}
-                />
-                <div className="flex flex-col items-start gap-2">
-                  <div className="features_box_heading">
-                    {cardDetails?.heading}
-                  </div>
-                  <div className="features_box_description">
-                    {cardDetails.description}
+              <Col
+                xs={24}
+                sm={12}
+                md={8}
+                lg={6}
+                xl={6}
+                style={{ alignSelf: "stretch" }}
+              >
+                <div className="features_box_container">
+                  <Image
+                    alt={cardDetails?.imageAlt ?? "icon"}
+                    src={cardDetails?.image}
+                    height={32}
+                    width={32}
+                  />
+                  <div className="flex flex-col items-start gap-2">
+                    <div className="features_box_heading">
+                      {cardDetails?.heading}
+                    </div>
+                    <div className="features_box_description">
+                      {cardDetails.description}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </div>
     </section>
   );
