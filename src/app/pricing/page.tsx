@@ -3,7 +3,7 @@ import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
-import { Collapse, CollapseProps } from "antd";
+import { Col, Collapse, CollapseProps, Row } from "antd";
 import { CSSProperties } from "react";
 import { FaCheck } from "react-icons/fa6";
 import "./PricingPlans.css";
@@ -27,43 +27,43 @@ const pricingPlans: any = [
     buttonLabel: "Request Demo",
     buttonLink: "#",
   },
-  {
-    title: "Pro",
-    description: "Build and deploy AI apps and automations.",
-    price: "$0",
-    basis: "/month",
-    features: [
-      "100 credits/day + pay for additional runs",
-      "Connecting closed source APIs",
-      "20 MB of storage for datasets (knowledge base creation)",
-      "Knowledge base creation (additional charge)",
-      "Create pipelines and agents",
-      "Pipeline/agent API",
-      "Chat history storage",
-      "1 User",
-    ],
-    buttonLabel: "Request Demo",
-    buttonLink: "#",
-  },
-  {
-    title: "Team",
-    description: "Build and deploy AI apps and automations.",
-    price: "$0",
-    basis: "/month",
-    mostPopular: true,
-    features: [
-      "100 credits/day + pay for additional runs",
-      "Connecting closed source APIs",
-      "20 MB of storage for datasets (knowledge base creation)",
-      "Knowledge base creation (additional charge)",
-      "Create pipelines and agents",
-      "Pipeline/agent API",
-      "Chat history storage",
-      "1 User",
-    ],
-    buttonLabel: "Request Demo",
-    buttonLink: "#",
-  },
+  // {
+  //   title: "Pro",
+  //   description: "Build and deploy AI apps and automations.",
+  //   price: "$0",
+  //   basis: "/month",
+  //   features: [
+  //     "100 credits/day + pay for additional runs",
+  //     "Connecting closed source APIs",
+  //     "20 MB of storage for datasets (knowledge base creation)",
+  //     "Knowledge base creation (additional charge)",
+  //     "Create pipelines and agents",
+  //     "Pipeline/agent API",
+  //     "Chat history storage",
+  //     "1 User",
+  //   ],
+  //   buttonLabel: "Request Demo",
+  //   buttonLink: "#",
+  // },
+  // {
+  //   title: "Team",
+  //   description: "Build and deploy AI apps and automations.",
+  //   price: "$0",
+  //   basis: "/month",
+  //   mostPopular: true,
+  //   features: [
+  //     "100 credits/day + pay for additional runs",
+  //     "Connecting closed source APIs",
+  //     "20 MB of storage for datasets (knowledge base creation)",
+  //     "Knowledge base creation (additional charge)",
+  //     "Create pipelines and agents",
+  //     "Pipeline/agent API",
+  //     "Chat history storage",
+  //     "1 User",
+  //   ],
+  //   buttonLabel: "Request Demo",
+  //   buttonLink: "#",
+  // },
   {
     title: "Enterprise",
     price: "Custom",
@@ -159,58 +159,69 @@ const Pricing = () => {
             Volume-based pricing with transparency in mind. Only pay for what
             you use.
           </p>
-          <div className="container flex justify-between gap-6">
+          <Row gutter={[36, 36]} justify={"space-evenly"} align={"stretch"}>
             {pricingPlans.map((plan: any, index: number) => {
               return (
-                <div
-                  className={`card_v2 px-4 py-4 plan-card ${
-                    plan.mostPopular ? "most_popular" : ""
-                  }`}
-                >
-                  {plan.mostPopular && (
-                    <div className="plan_tag">MOST POPULAR</div>
-                  )}
-                  <h3 className="plan_heading">{plan.title}</h3>
-                  <p className="plan_description">{plan.description}</p>
-                  <h4 className="price">
-                    {plan.price} <span>{plan.basis}</span>
-                  </h4>
-                  <div className="my-6 flex justify-center">
-                    <Button
-                      url={plan.buttonLink}
-                      label={plan.buttonLabel}
-                      color={plan.mostPopular ? "button_white" : ""}
-                    />
+                <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+                  <div
+                    className={`card_v2 px-4 py-4 plan-card ${
+                      plan.mostPopular ? "most_popular" : ""
+                    }`}
+                  >
+                    {plan.mostPopular && (
+                      <div className="plan_tag">MOST POPULAR</div>
+                    )}
+                    <h3 className="plan_heading">{plan.title}</h3>
+                    <p className="plan_description">{plan.description}</p>
+                    <h4 className="price">
+                      {plan.price} <span>{plan.basis}</span>
+                    </h4>
+                    <div className="my-6 flex justify-center">
+                      <Button
+                        url={plan.buttonLink}
+                        label={plan.buttonLabel}
+                        color={plan.mostPopular ? "button_white" : ""}
+                      />
+                    </div>
+                    <div>
+                      {plan.features.map((feature: string, index: number) => {
+                        return (
+                          <div className="flex items-center gap-2 feature">
+                            <span>
+                              <FaCheck />
+                            </span>
+                            {feature}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <div>
-                    {plan.features.map((feature: string, index: number) => {
-                      return (
-                        <div className="flex items-center gap-2 feature">
-                          <span>
-                            <FaCheck />
-                          </span>
-                          {feature}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
+                </Col>
               );
             })}
-          </div>
+          </Row>
         </div>
       </section>
       <section className="section mt-12">
-        <div className="container justify-center flex">
-          <div className="w-1/2">
-            <Collapse
-              bordered={false}
-              items={getItems(panelStyle)}
-              style={{ background: "transparent", width: "100%" }}
-              className="accordian_custom"
-              expandIconPosition={"end"}
-            />
-          </div>
+        <div className="container">
+          <Row gutter={[36, 36]} justify={"center"} align={"top"}>
+            <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={16}
+              xl={14}
+              className="collapse-container"
+            >
+              <Collapse
+                bordered={false}
+                items={getItems(panelStyle)}
+                style={{ background: "transparent", width: "100%" }}
+                className="accordian_custom"
+                expandIconPosition={"end"}
+              />
+            </Col>
+          </Row>
         </div>
       </section>
       <CaseStudy />
