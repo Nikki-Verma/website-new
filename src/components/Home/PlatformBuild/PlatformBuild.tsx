@@ -3,41 +3,47 @@
 import ReliableAiIcon from "@/components/Icons/ReliableAi";
 import ScalableAiIcon from "@/components/Icons/ScalableAi";
 import SecureAiIcon from "@/components/Icons/SecureAiIcon";
-import { SecureAi } from "@/util/images";
+import { GenScale, Relaible, SecureAi } from "@/util/images";
 import Image from "next/image";
 import { useState } from "react";
-import Relaible from "../../../assets/png/reliable.png";
-import GenScale from "../../../assets/png/scale-gen-ai.png";
 import "./style.css";
 const data = [
   {
-    heading: "Secure the Generative AI in your enterprise",
+    heading: "Create safe and secure applications with data privacy",
     description: [
-      "Robust data encryption and access controls at both application and infrastructure layers",
-      "Deploy on your own cloud for the highest data security",
-      "Strong compliance measures in place, including SOC2 & ISO 27001",
+      "End-to-end data encryption",
+      "Secure data vault with multi-tenant architecture",
+      "Role Based Access Controls",
+      "Deploy in the SimplAI Cloud, virtual private cloud or on-prem",
+      "SOC II & ISO 27001 compliant",
     ],
     buttonName: "Get started",
     buttonLink: "",
     image: SecureAi,
   },
   {
-    heading: "Scale your Gen AI to production with ease",
+    heading:
+      "Build complex, scalable systems that handle high workloads with ease",
     description: [
-      "Highest interoperability to connect complex data sources with our data connector engine",
-      "Built-in autoscaling of infrastructure to handle varying workloads seamlessly",
-      "Flexible deployment options across multiple cloud environments or on-premise solutions",
+      "Horizontal cluster scaling for seamless expansion",
+      "Efficiently handle millions of requests",
+      "Low-latency performance with real-time streaming",
+      "Parallelization for faster processing",
+      "Optimized memory and caching for quicker response times",
     ],
     buttonName: "Get started",
     buttonLink: "",
     image: GenScale,
   },
   {
-    heading: "Reliably run Gen AI for your enterprise",
+    heading:
+      "Deliver accurate and dependable results, every time—no hallucinations",
     description: [
-      "Experience low latency with real-time streaming and parallel processing for optimal performance",
-      "Enhance LLM reliability with guardrails, RAG, finetuning, and memory features",
-      "Full transparency over applications with comprehensive LLM observability",
+      "Application-level version control for stability and consistency",
+      "Input and output guardrails to ensure trustworthy AI",
+      "Granular tracing for detailed debugging",
+      "Experimentation framework to iterate and refine applications",
+      "Grounding mechanisms like RAG and fine-tuning for accuracy",
     ],
     buttonName: "Get started",
     buttonLink: "",

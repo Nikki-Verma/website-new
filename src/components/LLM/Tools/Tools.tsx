@@ -13,7 +13,7 @@ const Tools = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Observe, Optimize, and Iterate <br /> with Confidence
+            Observe, refine, iterate and optimize with confidence
           </div>
         </div>
         <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>

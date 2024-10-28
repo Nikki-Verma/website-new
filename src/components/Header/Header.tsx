@@ -13,7 +13,7 @@ const Header = () => {
 
   const productsSubMenu = [
     {
-      title: "SimplAI LLM Studio",
+      title: "SimplAI Studio",
       description:
         "Learn about the SimplAi Products how it can boost your business",
       link: "/llmstudio",

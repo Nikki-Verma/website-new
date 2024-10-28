@@ -1,9 +1,11 @@
+import {
+  DataSecureImage,
+  EaseUseImage,
+  HallucinateImage,
+  PlatformImage,
+} from "@/util/images";
 import { Col, Row } from "antd";
 import Image from "next/image";
-import DataSecureImage from "../../../assets/png/Data-Secure.png";
-import EaseUseImage from "../../../assets/png/Ease-Of-Use.png";
-import PlatformImage from "../../../assets/png/End-to-End-Platform.png";
-import HallucinateImage from "../../../assets/png/Hallucinate.png";
 
 const Feature = () => {
   return (

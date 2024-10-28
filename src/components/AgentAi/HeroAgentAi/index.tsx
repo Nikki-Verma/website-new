@@ -1,7 +1,7 @@
 "use client";
-import OurApplications from "@/components/Home/OurApplications/OurApplications";
 import { useRef, useState } from "react";
 import "../../../app/globals.css";
+import VideoContainerAgentAi from "../VideoContainerAgentAi/VideoContainerAgentAi";
 import "./style.css";
 const HeroAgentAi = () => {
   const animateText = ["Secure", "Scalable", "Reliable"];
@@ -29,7 +29,7 @@ const HeroAgentAi = () => {
           <button className="button button_white">Book a demo</button>
         </div>
       </div>
-      <OurApplications />
+      <VideoContainerAgentAi />
     </div>
   );
 };

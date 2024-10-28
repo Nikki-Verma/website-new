@@ -2,10 +2,10 @@ import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
-import VedioContainer from "@/components/LLM/VedioContainer/VedioContainer";
 import Feature from "@/components/Rag/Feature/Feature";
 import Securitystandards from "@/components/Rag/Securitystandards/Securitystandards";
 import Solution from "@/components/Rag/Solution/Solution";
+import VedioContainerProductionRag from "@/components/Rag/VedioContainer/VedioContainer";
 
 const Rag = () => {
   return (
@@ -32,7 +32,7 @@ const Rag = () => {
       </div>
       <div style={{ marginTop: 500 }}>
         <div className="mt-12 mb-120">
-          <VedioContainer />
+          <VedioContainerProductionRag />
         </div>
         <Feature />
         <Solution />

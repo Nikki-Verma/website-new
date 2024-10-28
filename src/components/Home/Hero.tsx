@@ -12,15 +12,16 @@ const Hero = () => {
     <div className="hero_section" style={{ marginTop: -82 }}>
       {/* <Header /> */}
       <div className="content_section">
-        <h1 className="text-center hero_section_heading">
-          <span className="hero_h2">Build and Scale Gen AI Applications </span>
-          <br />
-          <span className="hero_h1">Fast, Simple, and Secure</span>
-        </h1>
-        <p className="text-center w-2/3 mx-auto mt-8 hero_text">
-          Create AI agents and agentic workflows with rapid execution from PoC
-          to production <a className="hero_text_highlight"> in a month </a> -
-          delivering secure and reliable systems.
+        <div className="text-center hero_section_heading">
+          <span className="hero_h1">
+            The <span className="hero_h2">simplest and fastest</span> way to
+            build and deploy Gen AI applications
+          </span>
+        </div>
+        <p className="text-center mx-auto mt-8 hero_text">
+          Create AI agents and agentic workflows at scale, with robust security.
+          Experience rapid execution, transforming PoC to production in just{" "}
+          <a className="hero_text_highlight"> in a month </a>
         </p>
         <div className="flex justify-center items-center mt-8 mb-8">
           <button className="button button_white">Book a demo</button>

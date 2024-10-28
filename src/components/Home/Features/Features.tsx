@@ -48,7 +48,7 @@ const data = [
     imageAlt: "enterprise-knowledgebase",
   },
   {
-    heading: "Mod",
+    heading: "Models",
     description:
       "Leverage your data to ground AI, ensuring high accuracy and relevance",
     image: EnterpriseKnowledgebase,

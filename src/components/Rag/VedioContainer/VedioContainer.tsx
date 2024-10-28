@@ -1,11 +1,11 @@
-import { SimplaiStudioHeroImage } from "@/util/images";
+import { ProductionRagHeroImage } from "@/util/images";
 import Image from "next/image";
 import "./style.css";
-const VedioContainerLLmStudio = () => {
+const VedioContainerProductionRag = () => {
   return (
     <div className="relative ... vedio_container_parent">
       <Image
-        src={SimplaiStudioHeroImage}
+        src={ProductionRagHeroImage}
         style={{ width: "100%", height: "100%" }}
         alt="Simplai-llm-studio-image"
       />
@@ -13,4 +13,4 @@ const VedioContainerLLmStudio = () => {
   );
 };
 
-export default VedioContainerLLmStudio;
+export default VedioContainerProductionRag;

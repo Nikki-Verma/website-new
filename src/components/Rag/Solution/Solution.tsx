@@ -1,9 +1,11 @@
+import {
+  ContentGenerationImage,
+  ConversationalAiImage,
+  InformationRetrievalImage,
+} from "@/util/images";
 import { Col, Row } from "antd";
 import Image from "next/image";
 import { IoMdArrowForward } from "react-icons/io";
-import ContentGenerationImage from "../../../assets/png/content-generation.png";
-import ConversationalAiImage from "../../../assets/png/conversational-aI.png";
-import InformationRetrievalImage from "../../../assets/png/information-retrieval.png";
 
 const Solution = () => {
   return (

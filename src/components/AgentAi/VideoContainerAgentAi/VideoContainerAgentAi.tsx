@@ -1,4 +1,4 @@
-import { WebsiteVideo } from "@/util/images";
+import { VideoContainerAgentAiImage } from "@/util/images";
 import Image from "next/image";
 import "./style.css";
 
@@ -8,11 +8,11 @@ interface Application {
   description: string;
 }
 
-const OurApplications = () => {
+const VideoContainerAgentAi = () => {
   return (
-    <div className="application_container container">
+    <div className=" container relative">
       <Image
-        src={WebsiteVideo}
+        src={VideoContainerAgentAiImage}
         style={{ width: "100%", height: "100%" }}
         alt="website-video"
       />
@@ -20,4 +20,4 @@ const OurApplications = () => {
   );
 };
 
-export default OurApplications;
+export default VideoContainerAgentAi;

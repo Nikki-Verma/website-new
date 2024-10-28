@@ -46,10 +46,9 @@ const AiFeature = () => {
                 <div>
                   <h4 className="heading_24 text-left">AI & LLM Chaining</h4>
                   <p className="">
-                    Execute dynamic tasks and automate multi-step processes,
-                    enhancing efficiency and reducing manual effort. Configure
-                    retries, guardrails, API limits, and caching for robust
-                    performance.
+                    Build multi-agent systems where agents collaborate and
+                    independently execute tasks, using adaptive learning and
+                    conditional chaining.
                   </p>
                 </div>
                 <div className="mx-auto">
@@ -67,11 +66,12 @@ const AiFeature = () => {
               <div className="h-full flex justify-between gap-4 flex-col">
                 <div>
                   <h4 className="heading_24 text-left">
-                    Deploy AI Systems on Your Own Cloud
+                    Automated AI Workflows
                   </h4>
                   <p className="">
-                    Maintain control over your deployment environment, ensuring
-                    compliance and performance
+                    Automate workflows with multi-step execution, blending
+                    traditional process automation with intelligent agents to
+                    streamline operations.
                   </p>
                 </div>
                 <div className="mx-auto">
@@ -89,12 +89,11 @@ const AiFeature = () => {
               <div className="gap-2 gap-4 h-full flex justify-between flex-col">
                 <div>
                   <h4 className="heading_24 text-left">
-                    Readily available Integrations
+                    Flexible Deployment Options
                   </h4>
                   <p>
-                    Seamlessly integrate AI systems into your existing tech
-                    stack using our APIs, webhooks, mobile SDKs, app
-                    integrations, and embed code
+                    Deploy AI systems on SimplAI’s cloud, your private cloud, or
+                    on-premise for maximum data control and compliance.
                   </p>
                 </div>
                 <div className="mx-auto">

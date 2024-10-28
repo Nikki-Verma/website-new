@@ -1,3 +1,4 @@
+import { ComplianceIcon, MfaIcon } from "@/util/images";
 import { Col, Row } from "antd";
 import Image from "next/image";
 import DocumentIcon from "../../../assets/svg/icons/documentationIcon.svg";
@@ -11,13 +12,13 @@ const Securitystandards = () => {
         "Develop advanced RAG applications powered by data, documents, and extensive knowledge bases",
     },
     {
-      icon: DocumentIcon,
+      icon: MfaIcon,
       heading: "Multi-Factor Authentication (MFA)",
       description:
         "Battle-tested by Red Teaming to ensure highest standards are met.",
     },
     {
-      icon: DocumentIcon,
+      icon: ComplianceIcon,
       heading: "Certified compliances",
       description: "Cloud or custom deployment so your data never leaves.",
     },
