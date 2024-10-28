@@ -1,10 +1,10 @@
+import { Col, Row } from "antd";
 import Image from "next/image";
-import { Row, Col } from "antd";
 
 const CardInfo = ({ data }: any) => {
   return (
     <div className="container mb-0">
-      <Row gutter={[20, 20]}>
+      <Row gutter={[36, 36]}>
         {data?.map((value: any) => {
           return (
             <Col md={6} xs={24} style={{ display: "flex" }}>

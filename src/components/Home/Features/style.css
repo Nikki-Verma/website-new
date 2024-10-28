@@ -16,6 +16,20 @@
   }
 }
 
+.features_box_container:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 1px solid transparent; /*2*/
+  background: var(--border-gradient-purple) border-box; /*3*/
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+  margin: 0px 6px;
+}
+
 .features_box_heading {
   color: #242323;
   font-size: 18px;

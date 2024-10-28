@@ -78,7 +78,7 @@ body {
   font-size: 34px;
   font-style: normal;
   font-weight: 700;
-  line-height: 38px; /* 188.235% */
+  line-height: 50px; /* 188.235% */
 }
 
 .home_page_heading_tag {
@@ -444,6 +444,20 @@ h5 {
       0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
   }
 }
+
+.card_v2_with_hover:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 1px solid transparent; /*2*/
+  background: var(--border-gradient-purple) border-box; /*3*/
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+  margin: 0px 18px;
+}
 .card_v2_text {
   color: var(--dark-blue);
   font-size: 18px;
@@ -515,6 +529,19 @@ h5 {
   /* DP for website */
   box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
     0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
+}
+.card_hover:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 1px solid transparent; /*2*/
+  background: var(--border-gradient-purple) border-box; /*3*/
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+  margin: 0px 8px;
 }
 
 .heading_highlighter {

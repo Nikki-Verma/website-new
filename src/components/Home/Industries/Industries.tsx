@@ -22,6 +22,7 @@ import {
   LegalImage,
   TelecomImage,
 } from "@/util/images";
+import { Col, Row } from "antd";
 import "./style.css";
 
 const data = [
@@ -97,8 +98,12 @@ const Industries = () => {
             transformation. Ready for takeoff?
           </div>
         </div>
-        <div className="industries_box_container grid grid-cols-3  mb-0 mt-8 flex">
-          <div className="industries_box_left_container flex flex-col col-span-1 gap-4">
+        <Row
+          className="industries_box_container"
+          gutter={[0, 0]}
+          align={"stretch"}
+        >
+          <Col className="industries_box_left_container" span={6}>
             <button
               onClick={() => handle(0)}
               className={
@@ -169,8 +174,9 @@ const Industries = () => {
               {index === 5 ? <LegalSelectedIcon /> : <LegalIcon />}
               Legal, Research & Consulting
             </button>
-          </div>
-          <div
+          </Col>
+          <Col
+            span={18}
             className="flex flex-1 col-span-2"
             style={{
               backgroundImage: `url(${currentSelect?.image?.src})`,
@@ -189,8 +195,8 @@ const Industries = () => {
               {currentSelect?.description}
             </span>
             <button className="button">Know more</button>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

@@ -6,6 +6,9 @@
 }
 
 .industries_box_left_container {
+  display: flex !important;
+  flex-direction: column;
+  gap: 16px;
   padding: 50px 0px 50px 37px;
   border-radius: 9px 0px 0px 9px;
   background: linear-gradient(180deg, #0d0220 0%, #1f0649 100%);
@@ -62,7 +65,7 @@
   font-feature-settings: "liga" off, "clig" off;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 38px; /* 158.333% */
   width: 60%;
 }

@@ -83,7 +83,7 @@ const Features = () => {
             AI solutions - without technical complexity
           </div>
         </div>
-        <Row align={"stretch"} justify={"start"} gutter={[16, 16]}>
+        <Row align={"stretch"} justify={"start"} gutter={[12, 12]}>
           {data?.map((cardDetails) => {
             return (
               <Col
