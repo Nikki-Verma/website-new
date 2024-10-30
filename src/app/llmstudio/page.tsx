@@ -1,3 +1,4 @@
+import AgentDeployment from "@/components/AgentAi/AgentDeployment/AgentDeployment";
 import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -7,7 +8,43 @@ import DataIntegration from "@/components/LLM/DataIntegration/DataIntegration";
 import ModelFeatures from "@/components/LLM/ModelFeatures/ModelFeatures";
 import Tools from "@/components/LLM/Tools/Tools";
 import VedioContainerLLmStudio from "@/components/LLM/VedioContainer/VedioContainer";
+import {
+  EvaluationImage,
+  FrameworkImage,
+  GuardrailsImage,
+  TrustSecurityImage,
+} from "@/util/images";
 
+const EncryptionDataPoints = [
+  {
+    heading: "Application-Level Version Control",
+    description:
+      "Simplify version management with seamless rollbacks and updates, supporting efficient collaborative workflows.",
+    imageAlt: "poc-dev-icon",
+    image: EvaluationImage,
+  },
+  {
+    heading: "Project-Level Environments",
+    description:
+      "Establish isolated environments for prototyping, testing, and development to ensure stability and smooth transitions to production.",
+    imageAlt: "iterate-refine-icon",
+    image: GuardrailsImage,
+  },
+  {
+    heading: "Experimentation Framework",
+    description:
+      "Experiment with diverse models, prompts, and AI applications, testing responses side-by-side to effectively fine-tune and optimize outcomes.",
+    imageAlt: "integrate-agent-icon",
+    image: FrameworkImage,
+  },
+  {
+    heading: "Experimentation Framework",
+    description:
+      "Experiment with diverse models, prompts, and AI applications, testing responses side-by-side to effectively fine-tune and optimize outcomes.",
+    imageAlt: "integrate-agent-icon",
+    image: TrustSecurityImage,
+  },
+];
 const LLMStudio = () => {
   return (
     <>
@@ -24,8 +61,9 @@ const LLMStudio = () => {
           </h1>
           <p className="font-18 text-white text-center mt-6 w-2/3 mx-auto">
             The fastest and simplest path from idea to PoC to production,
-            SimplAI Studio empowers technical and product teams to build secure,
-            scalable, and reliable AI applications.
+            SimplAI Studio empowers technical and product teams with
+            user-friendly tools to build secure, scalable, and reliable AI
+            applications.
           </p>
           <button className="button button_white mx-auto mt-6">
             Request Demo
@@ -40,6 +78,11 @@ const LLMStudio = () => {
         <DataIntegration />
         <AiFeature />
         <Tools />
+        <AgentDeployment
+          title={"Advanced features to build production-ready applications"}
+          subTitle={""}
+          EncryptionDataPoints={EncryptionDataPoints}
+        />
         <CaseStudy />
         <BannerExpert />
         <Footer />

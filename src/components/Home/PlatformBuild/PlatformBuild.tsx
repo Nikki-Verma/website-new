@@ -11,11 +11,11 @@ const data = [
   {
     heading: "Create safe and secure applications with data privacy",
     description: [
-      "End-to-end data encryption",
-      "Secure data vault with multi-tenant architecture",
-      "Role Based Access Controls",
-      "Deploy in the SimplAI Cloud, virtual private cloud or on-prem",
-      "SOC II & ISO 27001 compliant",
+      "Deploy on any cloud — AWS, Azure, or GCP",
+      "On-premise deployment for full control over data",
+      "End-to-end encryption to safeguard data at every stage",
+      "Advanced access controls with MFA, VPNs, Cloudflare, and RBAC",
+      "Global security standards compliant with SOC2 and ISO 27001",
     ],
     buttonName: "Get started",
     buttonLink: "",
@@ -27,7 +27,7 @@ const data = [
     description: [
       "Horizontal cluster scaling for seamless expansion",
       "Efficiently handle millions of requests",
-      "Low-latency performance with real-time streaming",
+      "Achieve low-latency performance with real-time streaming",
       "Parallelization for faster processing",
       "Optimized memory and caching for quicker response times",
     ],
@@ -63,8 +63,7 @@ const PlatformBuild = () => {
         <div className="section_heading_container">
           <div className="home_page_heading_tag">Why SimplAI?</div>
           <div className="home_page_heading">
-            Platform built with enterprise <br />
-            success in mind
+            Platform Built for Enterprise Success
           </div>
         </div>
 

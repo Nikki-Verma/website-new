@@ -1,4 +1,5 @@
 import AntdStyledComponentsRegistry from "@/components/AntDesign/AntdStyledComponentsRegistry";
+import { ThemeProvider } from "@/providers/antdThemeProvider";
 import { Montserrat } from "@next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable}`}>
-        <AntdStyledComponentsRegistry>{children}</AntdStyledComponentsRegistry>
+        <AntdStyledComponentsRegistry>
+          <ThemeProvider>{children}</ThemeProvider>
+        </AntdStyledComponentsRegistry>
       </body>
     </html>
   );

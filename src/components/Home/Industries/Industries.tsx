@@ -29,7 +29,7 @@ const data = [
   {
     heading: "Financial service",
     description: [
-      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+      "Transform financial services with SimplAI's secure Gen AI solutions that drive automation, enhance compliance, and accelerate digital innovation.",
     ],
     buttonName: "Get started",
     buttonLink: "",
@@ -38,7 +38,7 @@ const data = [
   {
     heading: "Insurance",
     description: [
-      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+      "Simplify and scale insurance workflows with SimplAI's secure Gen AI solutions, enabling insurers to enhance customer relationships and risk profiles.",
     ],
     buttonName: "Get started",
     buttonLink: "",
@@ -47,7 +47,7 @@ const data = [
   {
     heading: "healthcare",
     description: [
-      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+      "Transform healthcare operations by streamlining patient care, enhancing compliance, and accelerating clinical outcomes with SimplAI's generative AI solutions.",
     ],
     buttonName: "Get started",
     buttonLink: "",
@@ -56,7 +56,7 @@ const data = [
   {
     heading: "Telecom",
     description: [
-      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+      "Elevate network management and customer engagement with SimplAI’s Gen AI solutions, enabling seamless service delivery, automated processes, and enhanced satisfaction.",
     ],
     buttonName: "Get started",
     buttonLink: "",
@@ -65,7 +65,7 @@ const data = [
   {
     heading: "Internet",
     description: [
-      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+      "Deliver scalable, reliable Gen AI applications with SimplAI, enhancing user experiences and enabling intelligent personalization while ensuring robust data privacy.",
     ],
     buttonName: "Get started",
     buttonLink: "",
@@ -74,7 +74,7 @@ const data = [
   {
     heading: "Legal",
     description: [
-      "Transform financial services by driving automation, enhancing compliance, and accelerating innovation in your digital operations.",
+      "Swiftly automate complex document analysis, data synthesis, and compliance with SimplAI’s secure Gen AI platform, empowering legal and research teams while ensuring security.",
     ],
     buttonName: "Get started",
     buttonLink: "",
@@ -94,8 +94,11 @@ const Industries = () => {
         <div className="section_heading_container">
           <div className="home_page_heading_tag">Industries</div>
           <div className="home_page_heading">
-            We’ve built an AI-driven platform for launching business <br />
-            transformation. Ready for takeoff?
+            SimplAI empowers organizations across diverse sectors to build
+            production-ready Gen AI applications that are{" "}
+            <a className="heading_highlighter">
+              secure, scalable, and reliable.
+            </a>
           </div>
         </div>
         <Row

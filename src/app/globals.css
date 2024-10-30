@@ -54,6 +54,10 @@ body {
   line-height: 24px;
 }
 
+a {
+  color: var(--foreground) !important;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -400,6 +404,27 @@ h5 {
   text-align: center;
 }
 
+.product_page_name_solution {
+  color: #fff;
+  text-align: center;
+  margin: 32px auto 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 10px;
+  /* border: 1px solid var(--G1, #C266E7); */
+  background: linear-gradient(var(--button-hover), var(--button-hover))
+      padding-box,
+    var(--G1) border-box;
+  border: 1px solid transparent;
+
+  /* background: #0D0220; */
+  display: inline-block;
+  padding: 4px 18px;
+  text-align: center;
+}
+
 .accordian {
   /* display: flex; */
   padding: 15px 16px 13px 16px;
@@ -492,9 +517,12 @@ h5 {
 /* new css */
 .dark_bg_hero {
   margin-top: -86px;
-  background-color: var(--secondry-color);
-  padding-bottom: 100px;
+  background: linear-gradient(124deg, #1f003c 0%, #311a66 78%);
+  padding-bottom: 34px;
   padding-top: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero_content {
@@ -587,4 +615,56 @@ h5 {
   -webkit-mask-composite: xor; /*5'*/
   mask-composite: exclude; /*5*/
   border-radius: 8px;
+}
+
+.features_box_container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: flex-start;
+  height: 100%;
+  border: 0.5px solid var(--Stroke, #a6bcda);
+  background: #fdfdff;
+  padding: 24px 32px;
+  gap: 16px;
+  &:hover {
+    border: 1px solid var(--G1, #c266e7);
+    /* DP for website */
+    box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
+      0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
+  }
+}
+.features_box_container:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 1px solid transparent; /*2*/
+  background: var(--border-gradient-purple) border-box; /*3*/
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+  margin: 0px 6px;
+}
+.features_box_container img {
+  transition: all 0.3s;
+}
+.features_box_container:hover img {
+  transform: scale(1.2);
+}
+.features_box_heading {
+  color: #242323;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.features_box_description {
+  color: var(--Text-Color-800, #2e2e2e);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 188.235% */
 }

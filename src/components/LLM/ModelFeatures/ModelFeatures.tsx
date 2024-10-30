@@ -1,8 +1,15 @@
+"use client";
+
 import Image from "next/image";
 
-import { ModelFeatureImage } from "@/util/images";
+import {
+  AccordianImage1,
+  AccordianImage2,
+  AccordianImage3,
+  ModelFeatureImage,
+} from "@/util/images";
 import { Col, Collapse, CollapseProps, Row } from "antd";
-import { CSSProperties } from "react";
+import { CSSProperties, useState } from "react";
 import "./style.css";
 
 const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
@@ -13,8 +20,8 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
     label: "Access to all Global LLMs",
     children: (
       <p>
-        Quickly discover and connect with a unified API for the latest and most
-        advanced LLMs
+        Discover and integrate with closed-source models using our unified API
+        and one-click connectivity.
       </p>
     ),
     style: panelStyle,
@@ -24,9 +31,8 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
     label: "Deploy open source models on your own cloud",
     children: (
       <p>
-        With SimplAI, you have the flexibility to deploy any open-source LLM
-        model directly on your own cloud infrastructure with one-click
-        deployment.
+        Seamlessly deploy open-source models on SimplAI’s cloud or your own
+        cloud, with optimized loading and pre-configured GPU options.
       </p>
     ),
     style: panelStyle,
@@ -36,10 +42,8 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
     label: "LLM playground",
     children: (
       <p>
-        Developers can experiment, test, and evaluate prompts and models in a
-        dynamic environment, allowing for iterative improvement Experiment,
-        test, and iterate on prompts and model configurations in a fully
-        interactive environment, enabling real-time adjustments{" "}
+        Experiment with prompts and model configurations in a live, interactive
+        environment to test, refine and iterate.
       </p>
     ),
     style: panelStyle,
@@ -49,14 +53,29 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
     label: "Fine tune any open source model",
     children: (
       <p>
-        Securely apply advanced fine-tuning techniques on open-source models in
-        your virtual private cloud with our SOC-2 compliant platform{" "}
+        Customize models with advanced techniques like quantization, low-rank
+        adaptation, etc. —all with no coding required.
       </p>
     ),
     style: { ...panelStyle, marginBottom: "0" },
   },
 ];
+
+const data = [
+  { image: AccordianImage1 },
+  { image: AccordianImage2 },
+  {
+    image: AccordianImage3,
+  },
+  {
+    image: ModelFeatureImage,
+  },
+];
 const ModelFeatures = () => {
+  const [currentSelect, setCurrentSelect] = useState(data[0]);
+  const handle = (number: number) => {
+    setCurrentSelect(data[number - 1]);
+  };
   const panelStyle: React.CSSProperties = {
     marginBottom: 24,
     borderRadius: "8px",
@@ -88,13 +107,30 @@ const ModelFeatures = () => {
                 style={{ background: "var(--white)", width: "100%" }}
                 className="accordian_custom"
                 expandIconPosition={"end"}
+                accordion
+                defaultActiveKey={1}
+                onChange={(key: any) => {
+                  handle(Number(key));
+                }}
               />
             </Col>
-            <Col xs={24} sm={24} md={24} lg={12} xl={12}>
+            <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={12}
+              xl={12}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-end",
+                justifyContent: "center",
+              }}
+            >
               <Image
-                src={ModelFeatureImage}
+                src={currentSelect?.image}
                 alt="RetrievalImage"
-                className="w-full"
+                className="w-9/12"
               />
             </Col>
           </Row>

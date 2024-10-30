@@ -14,11 +14,11 @@ const Rag = () => {
       <div className="hero_background">
         <div style={{ paddingTop: 160 }}>
           <div className="mx-auto text-center">
-            <p className="product_page_name">Production RAG</p>
+            <p className="product_page_name">Multi-modal Production RAG</p>
           </div>
           <h1 className="text-white">
-            Advanced RAG Platform for Building
-            <br /> Trustworthy AI Systems
+            The fastest and simplest RAG Platform for
+            <br /> building trustworthy AI systems
           </h1>
           <p className="font-18 text-white text-center mt-6 w-2/3 mx-auto">
             Transform and ingest both structured and unstructured data,

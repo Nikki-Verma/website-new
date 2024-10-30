@@ -1,84 +1,101 @@
 "use client";
-import { Popover } from "antd";
+import { Dropdown, MenuProps } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown, IoMdArrowForward } from "react-icons/io";
 import Logo from "../../assets/svg/icons/color-logo.svg";
-import Programming from "../../assets/svg/icons/programming.svg";
 import "./style.css";
 
 const Header = () => {
   const [showSubMenu, setshowSubMenu] = useState("");
 
-  const productsSubMenu = [
+  const productsSubMenu: MenuProps["items"] = [
     {
-      title: "SimplAI Studio",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "/llmstudio",
-      icon: Programming,
+      key: 1,
+      label: <Link href={"/llmstudio"}>SimplAI Studio</Link>,
+      // title: "SimplAI Studio",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/llmstudio",
+      // icon: Programming,
     },
     {
-      title: "Production RAG",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "/rag",
-      icon: Programming,
+      key: 2,
+      label: <Link href={"/rag"}>Production RAG</Link>,
+      // title: "Production RAG",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/rag",
+      // icon: Programming,
     },
     {
-      title: "AI Agents",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "/ai-agents",
-      icon: Programming,
+      key: 3,
+      label: <Link href={"/ai-agents"}>AI Agents</Link>,
+      // title: "AI Agents",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/ai-agents",
+      // icon: Programming,
     },
   ];
 
-  const UseCaseSubMenu = [
+  const UseCaseSubMenu: MenuProps["items"] = [
     {
-      title: "Mulimedia",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "/multimedia",
-      icon: Programming,
+      key: 1,
+      label: <Link href={"/multimedia"}>Mulimedia</Link>,
+      // title: "Mulimedia",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/multimedia",
+      // icon: Programming,
     },
     {
-      title: "Healthcare",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "/healthcare",
-      icon: Programming,
+      key: 2,
+      label: <Link href={"/healthcare"}>Healthcare</Link>,
+      // title: "Healthcare",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/healthcare",
+      // icon: Programming,
     },
     {
-      title: "BFSI",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "/bfsi",
-      icon: Programming,
+      key: 3,
+      label: <Link href={"/bfsi"}>BFSI</Link>,
+      // title: "BFSI",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/bfsi",
+      // icon: Programming,
     },
     {
-      title: "Legal",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "/legal",
-      icon: Programming,
+      key: 4,
+      label: <Link href={"/legal"}>Legal</Link>,
+      // title: "Legal",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/legal",
+      // icon: Programming,
     },
   ];
-  const ResourcesSubMenu = [
+  const ResourcesSubMenu: MenuProps["items"] = [
     {
-      title: "Blogs",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "",
-      icon: Programming,
+      key: 1,
+      label: <Link href={""}>Blogs</Link>,
+      // title: "Blogs",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "",
+      // icon: Programming,
     },
     {
-      title: "Documentation",
-      description:
-        "Learn about the SimplAi Products how it can boost your business",
-      link: "",
-      icon: Programming,
+      key: 2,
+      label: <Link href={""}>Documentation</Link>,
+      // title: "Documentation",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "",
+      // icon: Programming,
     },
   ];
 
@@ -196,7 +213,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header" ref={componentRef}>
+    <header id="header-nav" className="header" ref={componentRef}>
       <nav className="nav_bar flex justify-between items-center w-full">
         <div className="logo_section">
           <Link href={"/"}>
@@ -205,12 +222,17 @@ const Header = () => {
         </div>
         <div className="nav_links">
           <button className="px-4 mx-2">
-            <Popover
-              content={subMenuProduct}
-              trigger={"hover"}
-              zIndex={131313131313133}
-              autoAdjustOverflow={true}
+            <Dropdown
+              menu={{ items: productsSubMenu }}
+              // menu={ {productsSubMenu} }
+              trigger={["hover"]}
               placement="bottom"
+              dropdownRender={(menu) => (
+                <div style={{ zIndex: "131313131313133" }}>{menu}</div>
+              )}
+              getPopupContainer={() =>
+                document.getElementById("header-nav") || document.body
+              }
             >
               <div className="relative ...">
                 Platform
@@ -218,15 +240,20 @@ const Header = () => {
                   <IoIosArrowDown />
                 </span>
               </div>
-            </Popover>
+            </Dropdown>
           </button>
           <button className="px-4 mx-2">
-            <Popover
-              content={subMenuUseCase}
-              trigger={"hover"}
-              zIndex={131313131313133}
-              autoAdjustOverflow={true}
+            <Dropdown
+              menu={{ items: UseCaseSubMenu }}
+              // menu={ {productsSubMenu} }
+              trigger={["hover"]}
               placement="bottom"
+              dropdownRender={(menu) => (
+                <div style={{ zIndex: "131313131313133" }}>{menu}</div>
+              )}
+              getPopupContainer={() =>
+                document.getElementById("header-nav") || document.body
+              }
             >
               <div className="relative ...">
                 Use Cases
@@ -234,15 +261,20 @@ const Header = () => {
                   <IoIosArrowDown />
                 </span>
               </div>
-            </Popover>
+            </Dropdown>
           </button>
           <button className="px-4 mx-2">
-            <Popover
-              content={subMenuResource}
-              trigger={"hover"}
-              zIndex={131313131313133}
-              autoAdjustOverflow={true}
+            <Dropdown
+              menu={{ items: ResourcesSubMenu }}
+              // menu={ {productsSubMenu} }
+              trigger={["hover"]}
               placement="bottom"
+              dropdownRender={(menu) => (
+                <div style={{ zIndex: "131313131313133" }}>{menu}</div>
+              )}
+              getPopupContainer={() =>
+                document.getElementById("header-nav") || document.body
+              }
             >
               <div className="relative ...">
                 Resources
@@ -250,16 +282,11 @@ const Header = () => {
                   <IoIosArrowDown />
                 </span>
               </div>
-            </Popover>
+            </Dropdown>
           </button>
           <button>
             <Link className="px-4 mx-2" href="/pricing">
               Pricing
-            </Link>
-          </button>
-          <button>
-            <Link className="px-4 mx-2" href="/">
-              FAQ
             </Link>
           </button>
         </div>

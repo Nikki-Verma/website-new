@@ -5,14 +5,10 @@ import {
   ApiIcon,
   ConnectionIcon,
   EmbedIcon,
-  EvaluationImage,
-  FrameworkImage,
-  GuardrailsImage,
   MobileSdkIcon,
 } from "@/util/images";
 import { Col, Row } from "antd";
 import Image from "next/image";
-import { useState } from "react";
 import "./style.css";
 const data = [
   {
@@ -44,43 +40,23 @@ const data = [
   },
 ];
 
-const EncryptionDataPoints = [
-  {
-    heading: "Evaluation and Fine-Tuning",
-    description:
-      "Continuously improve your agents with prompt finetuning and real-time evaluations, ensuring they are optimized for performance and reliability",
-    imageAlt: "poc-dev-icon",
-    image: EvaluationImage,
-  },
-  {
-    heading: "Guardrails for Accuracy",
-    description:
-      "Every agent is deployed with built-in safeguards to ensure that only factual, reliable, and verifiable information is delivered, giving you confidence in every interaction",
-    imageAlt: "iterate-refine-icon",
-    image: GuardrailsImage,
-  },
-  {
-    heading: "Experimentation Framework",
-    description:
-      "Easily test and optimize your AI agents by configuring different prompts, response strategies, and guardrails within a controlled environment",
-    imageAlt: "integrate-agent-icon",
-    image: FrameworkImage,
-  },
-];
-const AgentDeployment = () => {
-  const [currentSelect, setCurrentSelect] = useState(data[0]);
+const AgentDeployment = ({
+  EncryptionDataPoints,
+  title,
+  subTitle,
+}: {
+  EncryptionDataPoints: any[];
+  title: string | null | undefined;
+  subTitle: string | null | undefined;
+}) => {
   return (
     <section className="section">
       <div className="container">
         <div className="card_v2 flex w-full px-8 py-8 mb-12">
           <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-              <h4 className="text-left mb-4 w-5/6">
-                Trust, Security, and Control
-              </h4>
-              <p className="text-left pr-4 mb-8">
-                With SimplAI, trust and security are foundational.
-              </p>
+              <h4 className="text-left mb-4 w-5/6">{title}</h4>
+              <p className="text-left pr-4 mb-8">{subTitle}</p>
               <Image src={AiEncryption} alt="Ai-encryption-image" />
             </Col>
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>

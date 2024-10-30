@@ -25,7 +25,7 @@ const BuildAgent = () => {
                 <p className="text-left">
                   From AI-powered chatbots to task-specific AI agents, deploy
                   conversational systems that engage users naturally, answer
-                  complex queries, and perform actions on your behalf
+                  complex queries, and perform actions on your behalf.
                 </p>
               </div>
               <div className="mx-auto text-center w-full">
@@ -40,12 +40,13 @@ const BuildAgent = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <h4 className="text-left mb-4 w-5/6">
-                Knowledge-Equipped and Function-Calling Agents
+                Knowledge-Equipped and Function-Calling Sub-Agents
               </h4>
               <p className="text-left">
-                Your AI agents go beyond conversation—they can retrieve data,
-                perform tasks, and interact with other systems through built-in
-                function calling
+                Your multi-agent AI system goes beyond conversation—each
+                sub-agent can retrieve data, perform tasks, or interact with
+                other systems through function calling, enabling specialized
+                roles within a larger process
               </p>
               <div className="">
                 <Image

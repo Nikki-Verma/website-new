@@ -1,4 +1,5 @@
-import { WebsiteVideo } from "@/util/images";
+import { HeroImage1, HeroImage2, HeroImage3, HeroImage4 } from "@/util/images";
+import { Carousel } from "antd";
 import Image from "next/image";
 import "./style.css";
 
@@ -10,12 +11,37 @@ interface Application {
 
 const OurApplications = () => {
   return (
-    <div className="application_container container">
-      <Image
-        src={WebsiteVideo}
-        style={{ width: "100%", height: "100%" }}
-        alt="website-video"
-      />
+    <div className=" container">
+      <Carousel arrows dots infinite={true} autoplaySpeed={3000}>
+        <div className="carousel-container">
+          <Image
+            src={HeroImage1}
+            style={{ width: "100%", height: "100%" }}
+            alt="website-video"
+          />
+        </div>
+        <div className="carousel-container">
+          <Image
+            src={HeroImage2}
+            style={{ width: "100%", height: "100%" }}
+            alt="website-video"
+          />
+        </div>
+        <div className="carousel-container">
+          <Image
+            src={HeroImage3}
+            style={{ width: "100%", height: "100%" }}
+            alt="website-video"
+          />
+        </div>
+        <div className="carousel-container">
+          <Image
+            src={HeroImage4}
+            style={{ width: "100%", height: "100%" }}
+            alt="website-video"
+          />
+        </div>
+      </Carousel>
     </div>
   );
 };

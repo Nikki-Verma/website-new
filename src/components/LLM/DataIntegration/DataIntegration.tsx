@@ -18,9 +18,8 @@ const DataIntegration = () => {
                 <div>
                   <h4 className="text-left mb-4">Data connectors</h4>
                   <p className="text-left">
-                    Directly sync your data from various sources and streamline
-                    data ingestion without the need for building custom
-                    integration development
+                    Seamlessly sync data from over 300 sources, enabling smooth
+                    and rapid data integration across platforms.
                   </p>
                 </div>
                 <div className="mx-auto text-center w-full">
@@ -39,9 +38,9 @@ const DataIntegration = () => {
                 <div className="mb-4">
                   <h4 className="text-left mb-4">Build Production-Ready RAG</h4>
                   <p className="text-left">
-                    Utilize an end-to-end interface for RAG with support for any
-                    vector database, embeddings, parsers, and chunking on both
-                    structured and unstructured data
+                    Use a powerful RAG interface supporting any vector database,
+                    embeddings, and chunking for structured and unstructured
+                    data.
                   </p>
                 </div>
                 <div>
@@ -60,9 +59,8 @@ const DataIntegration = () => {
                 <div className="mb-4">
                   <h4 className="text-left mb-4">Build Production-Ready RAG</h4>
                   <p className="text-left ">
-                    Utilize an end-to-end interface for RAG with support for any
-                    vector database, embeddings, parsers, and chunking on both
-                    structured and unstructured data
+                    Experiment, iterate, and refine in the simplest and fastest
+                    way to maximize accuracy and performance.
                   </p>
                 </div>
                 <div>

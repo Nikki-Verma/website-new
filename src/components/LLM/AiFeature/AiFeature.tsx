@@ -12,7 +12,8 @@ const AiFeature = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Build & Deploy AI systems without <br /> the usual overhead
+            Build and deploy AI solutions — without <br />
+            technical complexity.
           </div>
         </div>
 
@@ -25,9 +26,9 @@ const AiFeature = () => {
                     Intelligent AI Agents
                   </h4>
                   <p className="">
-                    Design smart conversational agents capable of handling
-                    complex interactions with ease, utilizing caching, chat
-                    history, and real-time streaming for optimal performance
+                    Design conversational agents that manage complex
+                    interactions with ease, utilizing chat history, guardrails,
+                    and real-time streaming.
                   </p>
                 </div>
                 <div className="mx-auto">
@@ -69,7 +70,7 @@ const AiFeature = () => {
                     Automated AI Workflows
                   </h4>
                   <p className="">
-                    Automate workflows with multi-step execution, blending
+                    Automate workflows with multi-step sequencing, blending
                     traditional process automation with intelligent agents to
                     streamline operations.
                   </p>
@@ -92,8 +93,9 @@ const AiFeature = () => {
                     Flexible Deployment Options
                   </h4>
                   <p>
-                    Deploy AI systems on SimplAI’s cloud, your private cloud, or
-                    on-premise for maximum data control and compliance.
+                    Deploy AI systems in the SimplAI cloud, on your private
+                    cloud, or on-premise for maximum data control and
+                    compliance.
                   </p>
                 </div>
                 <div className="mx-auto">

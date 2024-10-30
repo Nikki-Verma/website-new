@@ -1,6 +1,6 @@
-import "./style.css";
+import { FounderHubLogo, RazorpayLogo } from "@/util/images";
 import Image from "next/image";
-import BannerLogo from "../../../assets/png/banner_logo.png";
+import "./style.css";
 
 const Banner = () => {
   return (
@@ -8,14 +8,15 @@ const Banner = () => {
       <div className="container mb-0">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-white">Empowering innovators by</h2>
-            <p className="text-white">
+            <h2>Empowering innovators by</h2>
+            <p>
               SimplAI is now part of Microsoft for Startups Founders Hub &
               Razorpay Rize{" "}
             </p>
           </div>
-          <div>
-            <Image src={BannerLogo} alt={"banner-logo"} />
+          <div className="flex items-center gap-4">
+            <Image src={FounderHubLogo} alt={"founder-hub-logo"} />
+            <Image src={RazorpayLogo} alt={"razorpay-rize-logo"} />
           </div>
         </div>
       </div>

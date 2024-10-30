@@ -1,5 +1,5 @@
-import { Row, Col } from "antd";
 import { IsoIcon, SocIcon } from "@/util/images";
+import { Col, Row } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../assets/svg/icons/color-logo.svg";
@@ -8,6 +8,7 @@ import InstagramIcon from "../../assets/svg/icons/instagram.svg";
 import LinkedInIcon from "../../assets/svg/icons/linkedin.svg";
 import PinterestIcon from "../../assets/svg/icons/pinterest.svg";
 import TwitterIcon from "../../assets/svg/icons/twitter.svg";
+import Banner from "../Home/Banner/Banner";
 
 const Footer = () => {
   const menuList = [
@@ -182,6 +183,7 @@ const Footer = () => {
           </Row>
         </div>
       </div>
+      <Banner />
     </div>
   );
 };

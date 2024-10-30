@@ -7,6 +7,10 @@
   margin-top: 60px;
 }
 
+.carousel-container {
+  display: flex;
+  padding: 50px;
+}
 .our_application_left_side {
   max-width: 562px;
 }

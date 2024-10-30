@@ -15,7 +15,7 @@
   box-shadow: 3px 25px 50px -12px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(2px);
   padding: 16px 18px;
-  z-index: 13131313131313;
+  z-index: 214748364;
 }
 
 .nav_links > button:hover {
@@ -23,7 +23,7 @@
   color: var(--text-hover);
 }
 
-.request_button > button {
+.request_button {
   background: var(--primary-color);
   border-radius: 10px;
   box-shadow: 0px 12px 24px -6px rgba(45, 32, 17, 0.3),
@@ -31,9 +31,8 @@
     0px 1.5px 3px 0px rgba(45, 32, 17, 0.2),
     0px 1px 1px 0px rgba(45, 32, 17, 0.12);
   display: flex;
-  width: 182px;
   height: 50px;
-  padding: 9px 12px 9px 18px;
+  padding: 9px;
   justify-content: space-between;
   align-items: center;
   gap: 11px;
@@ -46,15 +45,24 @@
   position: relative;
   transition: all 0.3s;
   border: 1px solid transparent;
+  min-width: max-content;
+  cursor: pointer;
 }
 
-.request_button > button:hover {
-  width: 183px;
-  background: linear-gradient(var(--button-hover), var(--button-hover))
-      padding-box,
-    var(--G1) border-box;
-  border: 1px solid transparent;
-  color: var(--white);
+.request_button > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all;
+  gap: 4px;
+  padding-left: 8px;
+}
+
+.request_button:hover > button {
+  transition: all;
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 .header_button_icon {
@@ -65,7 +73,7 @@
   height: 32px;
   padding: 8px 9px;
   flex-shrink: 0;
-  border-radius: 9px;
+  border-radius: 6px;
   background: #fdfdff;
   color: var(--primary-color);
   transition: all 0.5s;

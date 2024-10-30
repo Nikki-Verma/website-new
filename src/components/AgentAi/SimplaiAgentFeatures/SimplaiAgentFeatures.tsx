@@ -23,7 +23,7 @@ const data = [
   {
     heading: "Security",
     description:
-      "Industry-leading SOC 2 and ISO 27001 compliance ensures that your data and interactions are secure",
+      "Industry-leading SOC 2 and ISO 27001 compliance with secure encryption keep data protected and ensure enterprise-level security.",
     imageAlt: "integrate-agent-icon",
     image: SecurityIcon,
   },

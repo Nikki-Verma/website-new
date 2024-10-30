@@ -65,8 +65,8 @@ const Feature = () => {
                   <p className="text-left">
                     Ensure your generative systems rely solely on the facts and
                     data you provide. Every generated response is traceable to
-                    its source, enhancing trust and credibility by allowing
-                    verification of factuality.
+                    its source, with citations enhancing trust and credibility
+                    by allowing verification of factuality.
                   </p>
                 </div>
                 <div className="mx-auto text-center w-full mt-8">
@@ -111,7 +111,7 @@ const Feature = () => {
                   <p>
                     Keep complete control of your data with our privacy-first
                     approach. Deploy your RAG systems on your own cloud, with
-                    our SOC 2 and ISO 27001 compliant platform
+                    our SOC 2 and ISO 27001 compliant platform.
                   </p>
                 </Col>
 
