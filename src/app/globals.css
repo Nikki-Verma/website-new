@@ -371,6 +371,7 @@ h5 {
 }
 
 .hero_background {
+  width: 100%;
   background: #0d0220;
   height: 830px;
   position: absolute;
@@ -686,4 +687,8 @@ h5 {
 
 li {
   font-family: var(--font-montserrat);
+}
+
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item:hover {
+  color: #602edf;
 }

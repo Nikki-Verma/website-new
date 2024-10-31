@@ -16,7 +16,7 @@ const OurApplications = () => {
         arrows={true}
         dots
         infinite={true}
-        autoplaySpeed={3000}
+        autoplaySpeed={2000}
         autoplay
         // nextArrow={<NextArrowIcon />}
         // prevArrow={<PrevArrowIcon />}
@@ -24,28 +24,48 @@ const OurApplications = () => {
         <div className="carousel-container">
           <Image
             src={HeroImage1}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              border: "4px solid rgba(214, 217, 222, 0.56)",
+              borderRadius: "20px",
+            }}
             alt="website-video"
           />
         </div>
         <div className="carousel-container">
           <Image
             src={HeroImage2}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              border: "4px solid rgba(214, 217, 222, 0.56)",
+              borderRadius: "20px",
+            }}
             alt="website-video"
           />
         </div>
         <div className="carousel-container">
           <Image
             src={HeroImage3}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              border: "4px solid rgba(214, 217, 222, 0.56)",
+              borderRadius: "20px",
+            }}
             alt="website-video"
           />
         </div>
         <div className="carousel-container">
           <Image
             src={HeroImage4}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              border: "4px solid rgba(214, 217, 222, 0.56)",
+              borderRadius: "20px",
+            }}
             alt="website-video"
           />
         </div>
