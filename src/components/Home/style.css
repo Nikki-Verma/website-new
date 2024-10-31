@@ -128,7 +128,7 @@
 }
 
 .hero_text_highlight {
-  color: var(--Text-Color-50, #fff);
+  color: var(--Text-Color-50, #fff) !important;
   background: var(--blue-purple-500, #602edf);
   text-align: center;
   font-size: 18px;

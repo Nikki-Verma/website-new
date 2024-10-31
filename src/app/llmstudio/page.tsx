@@ -38,9 +38,9 @@ const EncryptionDataPoints = [
     image: FrameworkImage,
   },
   {
-    heading: "Experimentation Framework",
+    heading: "Trust and Security",
     description:
-      "Experiment with diverse models, prompts, and AI applications, testing responses side-by-side to effectively fine-tune and optimize outcomes.",
+      "SimplAI Studio complies with industry standards such as SOC 2 and ISO2701, ensuring robust data protection and compliance",
     imageAlt: "integrate-agent-icon",
     image: TrustSecurityImage,
   },
@@ -59,7 +59,7 @@ const LLMStudio = () => {
             Enterprise Platform for experimenting, building,
             <br /> deploying, and monitoring Gen AI applications
           </h1>
-          <p className="font-18 text-white text-center mt-6 w-2/3 mx-auto">
+          <p className="font-16 text-white text-center mt-6 w-2/3 mx-auto">
             The fastest and simplest path from idea to PoC to production,
             SimplAI Studio empowers technical and product teams with
             user-friendly tools to build secure, scalable, and reliable AI

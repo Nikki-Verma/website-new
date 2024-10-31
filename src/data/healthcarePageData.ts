@@ -1,17 +1,17 @@
 import {
-  HealthcareHeroImage,
   AutomationImage,
-  CustomerImage,
-  DiagnosticImage,
-  CostReductionImage,
-  PatientExperienceImage,
   CareDeliveryImage,
-  RevenueCycleManagementImage,
   ClaimManagementImage,
-  GroupImage,
-  ProviderManagementImage,
-  IsvImage,
+  CostReductionImage,
+  CustomerImage,
   DeviceSolututionImage,
+  DiagnosticImage,
+  GroupImage,
+  HealthcareHeroImage,
+  IsvImage,
+  PatientExperienceImage,
+  ProviderManagementImage,
+  RevenueCycleManagementImage,
   TeleHealthImage,
 } from "../util/svgImage";
 
@@ -40,9 +40,9 @@ export const solution = [
     icon: CustomerImage,
   },
   {
-    title: "Automate, Optimize, Empower",
+    title: "Boost Throughput Amid Workforce Shortages",
     description:
-      "Automate routine tasks to optimize workflows and free up healthcare teams for patient care",
+      "Automate routine tasks to optimize workflows and free up healthcare teams for patient care.",
     icon: AutomationImage,
   },
   {

@@ -1,10 +1,11 @@
 "use client";
-import { Dropdown, MenuProps } from "antd";
+import { Dropdown, MenuProps, Space } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown, IoMdArrowForward } from "react-icons/io";
 import Logo from "../../assets/svg/icons/color-logo.svg";
+import ExperienceCenterIcon from "../Icons/ExperienceCenterIcon";
 import "./style.css";
 
 const Header = () => {
@@ -37,6 +38,16 @@ const Header = () => {
       //   "Learn about the SimplAi Products how it can boost your business",
       // link: "/ai-agents",
       // icon: Programming,
+    },
+    {
+      key: 4,
+      label: (
+        <Link href={"/agentic-process-automation"}>
+          Agentic Process Automation
+        </Link>
+      ),
+      // title: "AI Optimization",
+      // description:}
     },
   ];
 
@@ -256,7 +267,7 @@ const Header = () => {
               }
             >
               <div className="relative ...">
-                Use Cases
+                Industries
                 <span className="inline-block align-middle pl-2">
                   <IoIosArrowDown />
                 </span>
@@ -290,14 +301,22 @@ const Header = () => {
             </Link>
           </button>
         </div>
-        <div className="request_button">
-          <button>
-            <span>Request Demo</span>
-            <span className="header_button_icon">
-              <IoMdArrowForward />
-            </span>
-          </button>
-        </div>
+        <Space>
+          <div className="experience_center_button">
+            <button>
+              <ExperienceCenterIcon />
+              <span>Experience SimplAI </span>
+            </button>
+          </div>
+          <div className="request_button">
+            <button>
+              <span>Request Demo</span>
+              <span className="header_button_icon">
+                <IoMdArrowForward />
+              </span>
+            </button>
+          </div>
+        </Space>
       </nav>
       <div className="product_nav" style={{ background: "#fff" }}></div>
     </header>

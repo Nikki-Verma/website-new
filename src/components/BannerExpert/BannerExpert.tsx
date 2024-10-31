@@ -1,10 +1,14 @@
+import { BannerExpertBgImage } from "@/util/images";
+
 const BannerExpert = () => {
   return (
     <div
-      className="dark_bg mb-120"
+      className="dark_bg mb-120 py-12"
       style={{
-        paddingTop: "32px !important",
-        paddingBottom: "40px !important",
+        backgroundImage: `url(${BannerExpertBgImage?.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "right",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="container">

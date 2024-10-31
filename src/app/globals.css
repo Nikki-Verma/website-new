@@ -179,12 +179,12 @@ h5 {
   margin-bottom: 16px;
 }
 
-.font-18 {
+.font-16 {
   color: var(--Text-Color-900, #171717);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 34px; /* 188.889% */
+  line-height: 28px; /* 188.889% */
 }
 
 .text-white {
@@ -198,8 +198,6 @@ h5 {
   font-style: normal;
   font-weight: 500;
   line-height: 34px;
-  margin-bottom: 40px;
-  margin-top: 18px;
 }
 
 /* buttons */
@@ -407,7 +405,7 @@ h5 {
 .product_page_name_solution {
   color: #fff;
   text-align: center;
-  margin: 32px auto 0px;
+  margin: 0px auto 32px;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -493,8 +491,6 @@ h5 {
 
 .dark_bg {
   background: linear-gradient(180deg, #0d0220 0%, #1f0649 100%);
-  padding-top: 84px;
-  padding-bottom: 54px;
 }
 
 .dark_card {
@@ -667,4 +663,27 @@ h5 {
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 188.235% */
+}
+
+.platform_feature_list {
+  margin-bottom: 24px;
+  color: var(--off-white);
+}
+
+.platform_feature_list > li {
+  color: var(--Text-Color-900, #171717);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 0.5px solid rgba(166, 188, 218, 0.67);
+  padding: 16px 0px;
+  max-width: max-content;
+}
+.platform_feature_list > li::marker {
+  content: "";
+}
+
+li {
+  font-family: var(--font-montserrat);
 }

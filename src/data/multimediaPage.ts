@@ -1,27 +1,31 @@
 import {
-  AutomationImage,
-  CustomerImage,
-  DiagnosticImage,
-  CostReductionImage,
-  SelfServicePortalImage,
-  CustomerSupportImage,
-  NetwokOptimizationImage,
-  ContentPersonalizationImage,
-  StreamlineOperationsImage,
-  AiPoweredContentSearchImage, 
-  AutomatedContentManagementImage, 
-  ContentCreationImage, 
-  GameEngagementImage, 
-  VirtualAssistantsInGameImage,
-  ContentCreationInGameImage,
+  EducationBannerImage,
+  GamingAndSportBannerImage,
+  MediaAndBroadcastBannerImage,
+  TelecomBannerImage,
+} from "@/util/images";
+import {
+  AiPoweredContentSearchImage,
   AssestsMetadataAutomationImage,
-  PlayerAndTeamInsightsImage,
+  AutomatePostProductionImage,
+  AutomatedContentManagementImage,
+  ContentCreationImage,
+  ContentCreationInGameImage,
+  ContentPersonalizationImage,
+  CustomerSupportImage,
+  EngagementIcon,
+  FastTrackIcon,
+  GameEngagementImage,
   ModerationFilteringImage,
-  AutomatePostProductionImage, 
-  TelecomHeroBanner, 
-  EngagementIcon, FastTrackIcon, ScaleIcon, TransformMediaIcon
+  NetwokOptimizationImage,
+  PlayerAndTeamInsightsImage,
+  ScaleIcon,
+  SelfServicePortalImage,
+  StreamlineOperationsImage,
+  TelecomHeroBanner,
+  TransformMediaIcon,
+  VirtualAssistantsInGameImage,
 } from "../util/svgImage";
-import { MediaAndBroadcastBannerImage, TelecomBannerImage, EducationBannerImage, GamingAndSportBannerImage } from "@/util/images";
 
 export const banner = {
   title: "Telecom, Media & Entertainment",
@@ -30,32 +34,32 @@ export const banner = {
     "Harness future-ready applications with SimplAI's Agentic AI and process automation platform. From transforming creativity to automating operational workflows to enhancing customer engagement, unlock the full potential of AI-driven innovation.",
   buttonText: "Request Demo",
   buttonLink: "#",
-  img: TelecomHeroBanner
+  img: TelecomHeroBanner,
 };
 
 export const solution = [
   {
-    title: "Transform Media Innovation",
+    title: "Deliver Unmatched Creative Experiences",
     description:
       "Leverage SimplAI's Agentic AI to redefine content creation, personalization, and media production—creating experiences that captivate and engage audiences like never before.",
     icon: TransformMediaIcon,
   },
   {
-    title: "Fast-Track AI Innovation",
+    title: "Accelerate AI Application Launches",
     description:
       "Build and deploy AI-first solutions quickly with our platform, enabling companies to innovate faster, streamline operations, and stay ahead in a competitive landscape.",
     icon: FastTrackIcon,
   },
   {
-    title: "AI-Driven Engagement",
+    title: "Empower Your Customers Everywhere",
     description:
-      "Offer personalized, omnichannel experiences powered by AI—ensuring customer engagement across every platform, anytime.",
+      "Offer personalized, omnichannel experiences powered by AI—ensuring customer engagement across every platform, anytime",
     icon: EngagementIcon,
   },
   {
-    title: "Scale. Innovate. Monetize",
+    title: "Monetize Innovation and Scale Fast",
     description:
-      "SimplAI helps you scale AI-driven innovation while accelerating time to market and unlocking new revenue streams through automation and cutting-edge AI technologies",
+      "SimplAI helps you scale AI-driven innovation while accelerating time to market and unlocking new revenue streams through automation and cutting-edge AI technologies.",
     icon: ScaleIcon,
   },
 ];
@@ -67,7 +71,7 @@ export const telecom = {
     image: TelecomBannerImage,
     title: "Telecom",
     description:
-      "Enhance network performance and customer satisfaction with AI-driven automation",
+      "Enhance network performance and customer satisfaction with AI-driven automation.",
   },
 
   tabs: {
@@ -95,7 +99,7 @@ export const telecom = {
           "Deploy AI agents to optimize field service management and task allocation.",
           "Predict maintenance needs and improve response times.",
         ],
-        image:CustomerSupportImage,
+        image: CustomerSupportImage,
       },
       "Network Optimization": {
         description:
@@ -224,7 +228,7 @@ export const education_and_publication = {
 
 export const gaming_and_esport = {
   banner: {
-    image:GamingAndSportBannerImage ,
+    image: GamingAndSportBannerImage,
     title: "Gaming & E-Sports",
     description:
       "Drive engagement and streamline gaming experiences with AI-powered solutions",
@@ -245,7 +249,7 @@ export const gaming_and_esport = {
           "Personalize in-game experiences with AI-driven recommendations and dynamic content.",
           "Keep players engaged with evolving storylines and Non Playing Character interactions.",
         ],
-        image:GameEngagementImage,
+        image: GameEngagementImage,
       },
       "In-Game Virtual Assistants": {
         description:

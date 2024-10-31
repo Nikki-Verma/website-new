@@ -17,15 +17,15 @@ const CommonHero = ({ data }: any) => {
               alignItems: "center",
             }}
           >
-            <h1 className="text-left color-white text-white mb-4 text-center">
-              {data.heading}
-            </h1>
-            <p className="font-18 text-white mb-8 text-center">
-              {data.description}
-            </p>
             <div className="product_page_name_solution text-center">
               {data.title}
             </div>
+            <h1 className="text-left color-white text-white mb-4 text-center">
+              {data.heading}
+            </h1>
+            <p className="font-16 text-white mb-8 text-center">
+              {data.description}
+            </p>
           </Col>
         </Row>
       </div>

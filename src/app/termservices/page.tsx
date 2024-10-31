@@ -1,5 +1,5 @@
-import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 const Termservices = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Termservices = () => {
             </h5>
           </div>
           <div className="mb-50">
-            <p className="font-18">
+            <p className="font-16">
               The Company provides various services to the Merchants and Users
               (“Services”). The performance of services by the Company depends
               on the accuracy of information and records of the Users. From time
@@ -27,13 +27,13 @@ const Termservices = () => {
               Company.The Company does not warrant that the results that may be
               obtained from the use of the Service will be accurate or reliable.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               The Company does not warrant that the quality of any products,
               information, or other material purchased or services availed by
               you through the Service will meet your expectations, or that the
               Service will be completely error free.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               You hereby expressly understand and agree that the Company shall
               not be liable for any direct, indirect, incidental, special,
               consequential or exemplary damages, including but not limited to,
@@ -41,7 +41,7 @@ const Termservices = () => {
               intangible losses resulting from the use of or inability to use
               the Service.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               In no event shall the Company or our suppliers be liable for lost
               profits or any special, incidental or consequential damages
               arising out of or in connection with our Website, our Services or
@@ -54,7 +54,7 @@ const Termservices = () => {
               documents it incorporates by reference, or your violation of any
               law or the rights of a third party.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               The Company may immediately terminate the membership / account of
               any User who verbally or in written form abuses (including threats
               of abuse or retribution) any customer, employee, member, or

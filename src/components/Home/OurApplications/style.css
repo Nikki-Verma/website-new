@@ -7,6 +7,10 @@
   margin-top: 60px;
 }
 
+.carousel-container-main .anticon .slick-arrow .slick-next {
+  color: transparent;
+}
+
 .carousel-container {
   display: flex;
   padding: 50px;

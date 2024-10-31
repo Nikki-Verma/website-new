@@ -13,48 +13,44 @@ import Banner from "../Home/Banner/Banner";
 const Footer = () => {
   const menuList = [
     {
-      heading: "Products",
+      heading: "Platform",
       menu: [
         {
-          label: "Gen AI Platform",
-          link: "",
+          label: "SimplAI Studio",
+          link: "/llmstudio",
         },
         {
-          label: "SimlAI DocGen",
-          link: "",
+          label: "Production RAG",
+          link: "/rag",
         },
         {
-          label: "Simplai Aeon (Voice AI)",
-          link: "",
+          label: "AI Agents",
+          link: "/ai-agents",
         },
         {
-          label: "Customer Support",
-          link: "",
-        },
-        {
-          label: "Pricing",
-          link: "/pricing",
+          link: "/agentic-process-automation",
+          label: "Agentic Process Automation",
         },
       ],
     },
     {
-      heading: "Solutions",
+      heading: "Industries",
       menu: [
         {
-          label: "Capabilities",
-          link: "",
+          label: "Multimedia",
+          link: "/multimedia",
         },
         {
-          label: "Industry Solutions",
-          link: "",
+          label: "Healthcare",
+          link: "/healthcare",
         },
         {
-          label: "Simplai Aeon (Voice AI)",
-          link: "",
+          label: "BFSI",
+          link: "/bfsi",
         },
         {
-          label: "Customer Support",
-          link: "",
+          label: "Legal",
+          link: "/legal",
         },
       ],
     },
@@ -66,15 +62,7 @@ const Footer = () => {
           link: "",
         },
         {
-          label: "Reports",
-          link: "",
-        },
-        {
-          label: "Articles",
-          link: "",
-        },
-        {
-          label: "Customer Support",
+          label: "Documentation",
           link: "",
         },
       ],
@@ -173,10 +161,33 @@ const Footer = () => {
             </Col>
             <Col xs={24} md={4}>
               <div className="social_media_container flex gap-6">
-                <Image src={FacebookIcon} alt="facebook" />
+                <Link
+                  target="_blank"
+                  href="https://www.facebook.com/SimplAI/"
+                  style={{ display: "contents" }}
+                >
+                  <Image src={FacebookIcon} alt="facebook" />
+                </Link>
                 <Image src={InstagramIcon} alt="instagram" />
-                <Image src={TwitterIcon} alt="twitter" />
-                <Image src={LinkedInIcon} alt="linkedin" />
+                <Link
+                  href="https://twitter.com/simplai1"
+                  target="_blank"
+                  style={{ display: "contents" }}
+                >
+                  <Image
+                    src={TwitterIcon}
+                    alt="twitter"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/simplai-ai/about/"
+                  target="_blank"
+                  style={{ display: "contents" }}
+                >
+                  <Image src={LinkedInIcon} alt="linkedin" />
+                </Link>
                 <Image src={PinterestIcon} alt="pinterest" />
               </div>
             </Col>

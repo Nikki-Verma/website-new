@@ -14,7 +14,7 @@ const Refund = () => {
         </div>
         <div className="mb-50">
           <h4 className="heading_24">Commitment to Service Excellence</h4>
-          <p className="font-18">
+          <p className="font-16">
             At SimplAI, we are dedicated to offering you a seamless and
             effective platform designed to empower your business with AI
             solutions. While we strive to exceed your expectations through our
@@ -26,7 +26,7 @@ const Refund = () => {
           <h4 className="heading_24">
             Subscription Modifications and Cancellations
           </h4>
-          <p className="font-18">
+          <p className="font-16">
             SimplAI operates on a no-refund policy across all our subscription
             plans, including monthly and annual agreements. We believe in
             providing our customers with the utmost transparency and control
@@ -48,7 +48,7 @@ const Refund = () => {
           </ul>
         </div>
         <div className="mb-50">
-          <p className="font-18">
+          <p className="font-16">
             <strong>Cancellation Window: </strong>
             We encourage our customers to review their subscription settings to
             ensure they align with their current needs. If you wish to cancel or
@@ -58,7 +58,7 @@ const Refund = () => {
           </p>
         </div>
         <div className="mb-50">
-          <p className="font-18">
+          <p className="font-16">
             <strong>Account Termination: </strong>
             In cases where an account is terminated due to violations of our
             Terms of Service, including but not limited to fraudulent activities
@@ -67,13 +67,13 @@ const Refund = () => {
         </div>
         <div className="mb-50">
           <h4 className="heading_24">Contact and Support</h4>
-          <p className="font-18">
+          <p className="font-16">
             Should you have any questions regarding your subscription, wish to
             make changes, or need further clarification on our policies, our
             support team is here to assist. Please reach out to us through our
             designated customer support channels
           </p>
-          <p className="font-18">
+          <p className="font-16">
             We value your trust and business at SimplAI and are committed to
             providing you with the tools and support needed to transform your
             enterprise with AI. Thank you for choosing SimplAI as your partner

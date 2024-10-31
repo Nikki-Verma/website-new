@@ -23,8 +23,8 @@ const BFSI = () => {
         <div className="container">
           <div className="section_heading_container">
             <div className="home_page_heading">
-              Comprehensive AI-Powered Financial
-              <br /> Solutions with SimplAI
+              The Fastest and Simplest Way to Implement <br />
+              AI-Powered Financial Solutions
             </div>
           </div>
           <CardInfo data={solutionsList} />

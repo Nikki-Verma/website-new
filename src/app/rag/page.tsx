@@ -17,10 +17,10 @@ const Rag = () => {
             <p className="product_page_name">Multi-modal Production RAG</p>
           </div>
           <h1 className="text-white">
-            The fastest and simplest RAG Platform for
-            <br /> building trustworthy AI systems
+            Advanced RAG Platform for Building <br />
+            Trustworthy AI Systems
           </h1>
-          <p className="font-18 text-white text-center mt-6 w-2/3 mx-auto">
+          <p className="font-16 text-white text-center mt-6 w-2/3 mx-auto">
             Transform and ingest both structured and unstructured data,
             converting it into factual insights with every response grounded in
             truth and delivered with precision.

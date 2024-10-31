@@ -11,8 +11,16 @@ interface Application {
 
 const OurApplications = () => {
   return (
-    <div className=" container">
-      <Carousel arrows dots infinite={true} autoplaySpeed={3000}>
+    <div className="carousel-container-main container">
+      <Carousel
+        arrows={true}
+        dots
+        infinite={true}
+        autoplaySpeed={3000}
+        autoplay
+        // nextArrow={<NextArrowIcon />}
+        // prevArrow={<PrevArrowIcon />}
+      >
         <div className="carousel-container">
           <Image
             src={HeroImage1}

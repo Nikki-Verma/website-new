@@ -14,6 +14,11 @@ const BuildAgent = () => {
           <div className="home_page_heading">
             Build Smart AI Agents in Minutes
           </div>
+          <p className="section_subheading w-2/3">
+            SimplAI’s platform provides a no-fuss way for technical and product
+            teams to create intelligent AI agents and employees—without the
+            hassle.
+          </p>
         </div>
         <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>

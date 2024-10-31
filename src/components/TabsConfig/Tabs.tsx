@@ -1,12 +1,11 @@
 "use client";
+import { Col, Row } from "antd";
 import { useState } from "react";
-import { Row, Col } from "antd";
-import Image from "next/image";
 import "./tabs.css";
 
 const Tabs = ({ tabsConfig }: any) => {
   const [activeTab, setActiveTab] = useState<string>(
-    tabsConfig?.tabs?.tabsName[0]
+    tabsConfig?.tabs?.tabsName[0],
   );
 
   return (
@@ -16,16 +15,16 @@ const Tabs = ({ tabsConfig }: any) => {
           <div
             className="tabs_banner"
             style={{
-              backgroundImage: `linear-gradient(to right, rgb(0 0 0 / 80%), rgb(0 0 0 / 40%)), url(${tabsConfig?.banner?.image?.src})`,
+              backgroundImage: `url(${tabsConfig?.banner?.image?.src})`,
             }}
           >
             <Row>
               <Col xs={24} md={16}>
                 <div className="text_content w-full">
-                  <p className="tabs_heading ">
+                  <div className="tabs_heading ">
                     {tabsConfig?.banner?.title}
                     <div className="gradient_line" />
-                  </p>
+                  </div>
                   <h3 className="tabs_description text-white">
                     {tabsConfig?.banner?.description}
                   </h3>
@@ -53,14 +52,14 @@ const Tabs = ({ tabsConfig }: any) => {
             {/* active tab details */}
             <div className="active_tab_detail">
               <Row gutter={[36, 36]}>
-                <Col xs={24} md={16}>
+                <Col span={24}>
                   <div className="active_tab_text_content">
-                    <p className="active_tab_description">
+                    <p className="active_tab_description w-1/2 mb-4">
                       {tabsConfig?.tabs?.tabsContent?.[activeTab]?.description}
                     </p>
                     {tabsConfig?.tabs?.tabsContent?.[activeTab]?.features
                       ?.length ? (
-                      <ul className="feature_list list-disc">
+                      <ul className="platform_feature_list list-disc">
                         {tabsConfig?.tabs?.tabsContent?.[
                           activeTab
                         ]?.features?.map((feature: string) => {
@@ -70,14 +69,6 @@ const Tabs = ({ tabsConfig }: any) => {
                     ) : (
                       ""
                     )}
-                  </div>
-                </Col>
-                <Col xs={24} md={8}>
-                  <div className="active_tab_image">
-                    <Image
-                      src={tabsConfig?.tabs.tabsContent?.[activeTab]?.image}
-                      alt={activeTab}
-                    />
                   </div>
                 </Col>
               </Row>

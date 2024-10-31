@@ -1,5 +1,5 @@
-import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 const Privacypolicy = () => {
   return (
     <>
@@ -14,7 +14,7 @@ const Privacypolicy = () => {
           </div>
           <div className="mb-50">
             <h4 className="heading_24">Privacy</h4>
-            <p className="font-18">
+            <p className="font-16">
               This website https://simplai.ai/ and Datafuse mobile WAP site is
               owned and operated by Datafuse Technology Private Limited
               (henceforth referred as the "Company" or "we" or "us" or "our"
@@ -35,7 +35,7 @@ const Privacypolicy = () => {
               various statutes as amended by the Information Technology Act,
               2000.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               This electronic record does not require any physical or digital
               signatures. By using the services and tools provided on the
               Website, it is deemed that You have read and accepted the terms
@@ -60,7 +60,7 @@ const Privacypolicy = () => {
               any obligations to inform You. It is your responsibility to check
               the Terms and Conditions periodically for changes.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               Your continued use of the Website following the posting of changes
               will mean that You have read and thereby accept and agree to the
               changes. As long as You comply with these Terms and Conditions,
@@ -77,7 +77,7 @@ const Privacypolicy = () => {
           </div>
           <div className="mb-50">
             <h4 className="heading_24">Registration Eligibility</h4>
-            <p className="mb-50 font-18">
+            <p className="mb-50 font-16">
               Use of the Website is available only to persons who can enter into
               a legally binding contract under Indian Contract Act, 1872.
               Persons who are “incompetent to contract” within the meaning of
@@ -86,7 +86,7 @@ const Privacypolicy = () => {
               You wish to use or transact on the Website, such use or
               transaction may be facilitated by your legal guardian or parents.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               The Company reserves the right to terminate and refuse to provide
               You with access to the Website if it is brought to its notice or
               if it is discovered that you are under the age of 18 years or are
@@ -101,13 +101,13 @@ const Privacypolicy = () => {
             <h4 className="heading_24">
               Your Account and Registration Responsibilities
             </h4>
-            <p className="font-18">
+            <p className="font-16">
               If You are a Merchant to the Company registered with the Website,
               You shall be responsible for maintaining the confidentiality of
               your User ID and Password and You shall be responsible for all
               activities that occur under your User ID and Password.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               You agree that if You provide any information that is untrue,
               inaccurate, not current or incomplete or the Company has
               reasonable grounds to suspect that such information is untrue,
@@ -117,7 +117,7 @@ const Privacypolicy = () => {
               registration with the Website and refuse to provide You with
               access to the Website.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               You shall also be the sole owner of the Password and shall be
               responsible for the consequences arising out of disclosure of the
               Password and/or consequential unauthorized use of the material or
@@ -126,21 +126,21 @@ const Privacypolicy = () => {
           </div>
           <div className="mb-50">
             <h4 className="heading_24">Communications</h4>
-            <p className="font-18 mb-6">
+            <p className="font-16 mb-6">
               When You use the Website or send emails or other data, information
               or communication to the Company, You agree and understand that You
               are communicating with the Company through electronic records and
               You consent to receive communications via electronic records from
               the Company periodically and as and when required.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               The Company may communicate with You by email or by such other
               modes of communication, electronic, digital, or otherwise.
             </p>
           </div>
           <div className="mb-50">
             <h4 className="heading_24">Fees and Charges</h4>
-            <p className="font-18 mb-50">
+            <p className="font-16 mb-50">
               Signing up on the Website is free. The Company does not charge any
               fee for accessing the Website. However, the Company’s Services
               through the Website are chargeable, and the Company reserves the
@@ -153,7 +153,7 @@ const Privacypolicy = () => {
               discontinue any Services offered on the Website with or without
               notice.
             </p>
-            <p className="font-18">
+            <p className="font-16">
               The Company may in its sole discretion make the use of the website
               or any services thereon chargeable. You shall be solely
               responsible for compliance of all applicable laws including those

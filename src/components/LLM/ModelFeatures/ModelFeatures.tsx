@@ -12,9 +12,10 @@ import { Col, Collapse, CollapseProps, Row } from "antd";
 import { CSSProperties, useState } from "react";
 import "./style.css";
 
-const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
-  panelStyle,
-) => [
+const getItems: (
+  panelStyle: CSSProperties,
+  headerStyle: CSSProperties,
+) => CollapseProps["items"] = (panelStyle, headerStyle) => [
   {
     key: 1,
     label: "Access to all Global LLMs",
@@ -25,6 +26,9 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
       </p>
     ),
     style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
   },
   {
     key: 2,
@@ -36,6 +40,9 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
       </p>
     ),
     style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
   },
   {
     key: 3,
@@ -47,6 +54,9 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
       </p>
     ),
     style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
   },
   {
     key: 4,
@@ -58,6 +68,9 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
       </p>
     ),
     style: { ...panelStyle, marginBottom: "0" },
+    styles: {
+      header: headerStyle,
+    },
   },
 ];
 
@@ -82,6 +95,13 @@ const ModelFeatures = () => {
     border: "0.5px solid var(--Stroke, #A6BCDA)",
     background: "var(--Support, #F8FAFC)",
   };
+  const headerStyle: React.CSSProperties = {
+    color: "var(--Text-Color-900, #171717)",
+    fontSize: "16px",
+    fontStyle: "normal",
+    fontWeight: 600,
+    lineHeight: "normal",
+  };
   return (
     <section className="section">
       <div className="container">
@@ -103,7 +123,7 @@ const ModelFeatures = () => {
             >
               <Collapse
                 bordered={false}
-                items={getItems(panelStyle)}
+                items={getItems(panelStyle, headerStyle)}
                 style={{ background: "var(--white)", width: "100%" }}
                 className="accordian_custom"
                 expandIconPosition={"end"}

@@ -1,5 +1,5 @@
 import { ReliableIcon, ScalableIcon, SecureIcon } from "@/util/icons";
-import { Row, Col } from "antd";
+import { Col, Row } from "antd";
 import Image from "next/image";
 
 const AIPlatformOverview = () => {
@@ -8,19 +8,19 @@ const AIPlatformOverview = () => {
       icon: SecureIcon,
       heading: "Secure",
       description:
-        "Deploy on private cloud or on-premises for maximum data security. SOC 2 and ISO compliance ensure strict security standards are met.",
+        "Deploy on private clouds or on-premises, ensuring optimal security with SOC 2 and ISO compliance​ . Navigate complex regulations with confidence through our robust compliance framework",
     },
     {
       icon: ScalableIcon,
       heading: "Scalable",
       description:
-        "Easily scale from PoC to full production with auto-scaling that adapts to changing workloads, ensuring seamless performance.",
+        "Transition from PoC to Production - effortlessly scale AI initiatives, ensuring operational agility​. Auto-scaling capabilities efficiently manage fluctuating workloads​.",
     },
     {
       icon: ReliableIcon,
       heading: "Reliable",
       description:
-        "Achieve high availability with continuous monitoring and fast issue resolution. Full decision traceability and optimized AI workflows ensure reliability.",
+        "Build trusted AI systems with guardrails, retrieval-augmented generation (RAG), and fine-tuning to ensure AI outputs are accurate and reliable. Transparency in workflows with comprehensive tracing and evaluation capabilities that meet regulatory standard.",
     },
   ];
 
@@ -40,7 +40,7 @@ const AIPlatformOverview = () => {
                 <div className="card_v2_with_hover py-6 px-4 flex justify-center flex-col items-center">
                   <Image src={value.icon} alt={value.heading} />
                   <h4 className="heading_24 text-center">{value.heading}</h4>
-                  <p className="font-18 text-center">{value.description}</p>
+                  <p className="font-16 text-center">{value.description}</p>
                 </div>
               </Col>
             );

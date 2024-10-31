@@ -8,10 +8,10 @@ const CardInfo = ({ data }: any) => {
         {data?.map((value: any) => {
           return (
             <Col md={6} xs={24} style={{ display: "flex" }}>
-              <div className="w-full flex justify-center flex-col items-center card_v2_with_hover px-4 py-8">
+              <div className="w-full flex justify-start flex-col items-center card_v2_with_hover px-4 py-8">
                 <Image src={value.icon} alt={value.title} />
                 <h5 className="text-center mt-6 mb-4">{value.title}</h5>
-                <p className="font-18 text-center">{value.description}</p>
+                <p className="font-16 text-center">{value.description}</p>
               </div>
             </Col>
           );

@@ -18,9 +18,45 @@
   z-index: 214748364;
 }
 
+.nav_links > button {
+  color: var(--foreground);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .nav_links > button:hover {
   transition: all 0.3s;
-  color: var(--text-hover);
+  color: #444444;
+}
+
+.experience_center_button > button {
+  display: flex;
+  height: 40px;
+  padding: 0px 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fdfdff;
+
+  /* typography */
+
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: var(
+    --G1,
+    linear-gradient(123deg, #c266e7 42.91%, #602edf 100.75%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .request_button {

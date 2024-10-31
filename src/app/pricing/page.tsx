@@ -83,55 +83,128 @@ const pricingPlans: any = [
   },
 ];
 
-const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
-  panelStyle,
-) => [
+const getItems: (
+  panelStyle: CSSProperties,
+  headerStyle: CSSProperties,
+) => CollapseProps["items"] = (panelStyle, headerStyle) => [
   {
     key: 1,
-    label: "Access to all Global LLMs",
+    label: "What is SimplAI used for?",
     children: (
       <p>
-        Quickly discover and connect with a unified API for the latest and most
-        advanced LLMs
+        SimplAI streamlines AI development, empowering teams to quickly create,
+        deploy, and refine generative AI applications. It enhances productivity,
+        accelerates revenue generation, and fosters rapid experimentation for
+        continuous improvement.
       </p>
     ),
     style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
   },
   {
     key: 2,
-    label: "Deploy open source models on your own cloud",
+    label: "Who can use SimplAI?",
     children: (
       <p>
-        With SimplAI, you have the flexibility to deploy any open-source LLM
-        model directly on your own cloud infrastructure with one-click
-        deployment.
+        SimplAI is for all innovative teams – offering an enterprise-grade
+        solution to streamline processes, enhance productivity, and foster
+        innovation. Our vision is to democratize AI for everyone.
       </p>
     ),
     style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
   },
   {
     key: 3,
-    label: "LLM playground",
+    label: "Which LLMs SimplAI support?",
     children: (
       <p>
-        Developers can experiment, test, and evaluate prompts and models in a
-        dynamic environment, allowing for iterative improvement Experiment,
-        test, and iterate on prompts and model configurations in a fully
-        interactive environment, enabling real-time adjustments{" "}
+        SimplAI support a wide range of Large language models (LLM), including
+        both open-source and closed-source models, and continually integrate new
+        models to meet your needs.
       </p>
     ),
     style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
   },
   {
     key: 4,
-    label: "Fine tune any open source model",
+    label: "What is a SimplAI Credit?",
+    children: (
+      <>
+        <p>
+          A SimplAI Credit serves as the unit of currency within the SimplAI
+          platform, facilitating access to its features and services. It enables
+          users to deploy models, conduct experiments, and efficiently manage
+          their AI projects.
+        </p>
+        <br />
+        <p>
+          When executing tasks within SimplAI, credits are deducted based on the
+          complexity and duration of the operation. The cost of an execution
+          comprises two main components: Fixed and Variable.
+        </p>
+        <br />
+        <p>
+          Fixed Costs: These are the standard charges associated with each
+          execution, regardless of the specific tasks performed. The fixed cost
+          varies depending on your subscription tier:
+          <br />
+          - 8 credits for Free accounts
+          <br />
+          - 6 credits for Team accounts
+          <br />- 4 credits for Business accounts
+        </p>
+        <br />
+        <p>
+          Variable Costs: Variable charges encompass tasks involving compute
+          time and third-party services, notably Large Language Models (LLMs).
+          If you provide your own API key for third-party services, no
+          additional credits are deducted for that step. However, if an API key
+          is not provided, the cost will be subject to a 20% surcharge.
+        </p>
+      </>
+    ),
+    style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
+  },
+  {
+    key: 5,
+    label: "Do I need to enter a credit card to try SimplAI?",
     children: (
       <p>
-        Securely apply advanced fine-tuning techniques on open-source models in
-        your virtual private cloud with our SOC-2 compliant platform{" "}
+        No, we offer a waitlist for interested users to join and explore the
+        platform firsthand. Once you're off the waitlist, you can access
+        SimplAI's capabilities without requiring a credit card.
+      </p>
+    ),
+    style: panelStyle,
+    styles: {
+      header: headerStyle,
+    },
+  },
+  {
+    key: 6,
+    label: "How does SimplAI protect my privacy?",
+    children: (
+      <p>
+        We prioritize confidentiality and maintain rigorous data security
+        measures. Your privacy is paramount, upheld through industry best
+        practices.
       </p>
     ),
     style: { ...panelStyle, marginBottom: "0" },
+    styles: {
+      header: headerStyle,
+    },
   },
 ];
 
@@ -141,6 +214,13 @@ const Pricing = () => {
     borderRadius: "8px",
     border: "0.5px solid var(--Stroke, #A6BCDA)",
     background: "var(--Support, #F8FAFC)",
+  };
+  const headerStyle: React.CSSProperties = {
+    color: "var(--Text-Color-900, #171717)",
+    fontSize: "16px",
+    fontStyle: "normal",
+    fontWeight: 600,
+    lineHeight: "normal",
   };
 
   return (
@@ -155,7 +235,7 @@ const Pricing = () => {
               with one plan
             </div>
           </div>
-          <p className="font-18 text-center mb-12">
+          <p className="font-16 text-center mb-12">
             Volume-based pricing with transparency in mind. Only pay for what
             you use.
           </p>
@@ -209,13 +289,13 @@ const Pricing = () => {
               xs={24}
               sm={24}
               md={24}
-              lg={16}
-              xl={14}
+              lg={18}
+              xl={18}
               className="collapse-container"
             >
               <Collapse
                 bordered={false}
-                items={getItems(panelStyle)}
+                items={getItems(panelStyle, headerStyle)}
                 style={{ background: "transparent", width: "100%" }}
                 className="accordian_custom"
                 expandIconPosition={"end"}

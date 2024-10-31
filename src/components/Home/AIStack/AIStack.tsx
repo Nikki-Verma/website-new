@@ -44,7 +44,7 @@ const AIStack = () => {
           </div>
         </div>
         <div className="marquee1">
-          <div className="badges_wrapper badges_wrapper1">
+          <div className="badges_wrapper1">
             {badges_list2?.map((badge: string) => {
               return <div className="badges">{badge}</div>;
             })}

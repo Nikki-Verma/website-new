@@ -23,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable}`}>
-        <AntdStyledComponentsRegistry>
-          <ThemeProvider>{children}</ThemeProvider>
-        </AntdStyledComponentsRegistry>
+        <ThemeProvider>
+          <AntdStyledComponentsRegistry>
+            {children}
+          </AntdStyledComponentsRegistry>
+        </ThemeProvider>
       </body>
     </html>
   );

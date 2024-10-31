@@ -1,8 +1,11 @@
 import Image from "next/image";
 
-import { DataConnectorImage, RetrievalImage } from "@/util/images";
+import {
+  BuildProductionImage,
+  DataConnectorImage,
+  RetrievalImage,
+} from "@/util/images";
 import { Col, Row } from "antd";
-import BuildProductionImage from "../../../assets/png/build-production-ready-rag.png";
 const DataIntegration = () => {
   return (
     <div className="section">

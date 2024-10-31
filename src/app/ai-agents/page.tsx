@@ -25,21 +25,21 @@ const EncryptionDataPoints = [
   {
     heading: "Evaluation and Fine-Tuning",
     description:
-      "Continuously improve your agents with prompt finetuning and real-time evaluations, ensuring they are optimized for performance and reliability",
+      "Continuously improve your agents with prompt fine-tuning and real-time evaluations, ensuring they are optimized for performance and reliability",
     imageAlt: "poc-dev-icon",
     image: EvaluationImage,
   },
   {
     heading: "Guardrails for Accuracy",
     description:
-      "Every agent is deployed with built-in safeguards to ensure that only factual, reliable, and verifiable information is delivered, giving you confidence in every interaction",
+      "Built-in safeguards ensure every interaction is accurate, reliable, and fact-based, maintaining the highest standard of trustworthiness",
     imageAlt: "iterate-refine-icon",
     image: GuardrailsImage,
   },
   {
     heading: "Experimentation Framework",
     description:
-      "Easily test and optimize your AI agents by configuring different prompts, response strategies, and guardrails within a controlled environment",
+      "Easily test and optimize your AI agents by configuring different prompts, response strategies, and guardrails within a controlled environment.",
     imageAlt: "integrate-agent-icon",
     image: FrameworkImage,
   },

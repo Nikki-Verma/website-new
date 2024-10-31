@@ -70,62 +70,59 @@ export const retailAndBanking: any = {
 
   tabs: {
     tabsName: [
-      "Customer Experience",
+      "Customer Engagement",
       "Fraud Detection",
-      "Loan Processing",
       "Regulatory Compliance",
+      "Loan Processing & Borrower Risk Analysis",
       "Customer Support",
     ],
     tabsContent: {
-      "Customer Experience": {
+      "Customer Engagement": {
         description:
-          "Deploy conversational AI assistants for customer queries, onboarding, and hyper-personalized product recommendations.",
+          "Gen AI can significantly enhance customer service and engagement in banking",
         features: [
-          "Instant Customer Support",
-          "Seamless Onboarding",
-          "Hyper-Personalized Recommendations",
-          "Multilingual Support",
-          "Data-Driven Insights",
+          "Provide hyper-personalized product recommendations tailored to individual customers",
+          "Deploy virtual financial assistants for 24/7 customer support, onboarding, and transactional guidance",
+          "Use sentiment analysis tools to assess customer feedback in real time for responsive service.",
+          "Enable agents with contextual insights during customer interactions for quicker resolutions.",
         ],
         image: CustomerExp,
       },
       "Fraud Detection": {
-        description:
-          "Utilize AI co-pilots for fraud prevention, synthetic data generation for model training, and adaptive learning techniques.",
+        description: "Generative AI can improve fraud prevention efforts",
         features: [
-          "AI Co-pilots for Real-Time Fraud Prevention",
-          "Synthetic Data for Enhanced Model Training",
-          "Adaptive Learning to Counter Evolving Fraud",
+          "Detect transaction anomalies instantly to proactively prevent fraud.",
+          "Use biometric authentication to secure customer access and prevent identity fraud.",
+          "Validate documents for identity verification to enhance fraud prevention.",
+          "Map and analyze connections to detect complex fraud networks in real time.",
         ],
         image: FraudDetection,
       },
-      "Loan Processing": {
-        description:
-          "Automate loan workflows from origination to credit risk assessment using AI-driven document processing.",
-        features: [
-          "Automate Loan Workflows from Origination to Risk Assessment",
-          "AI-Powered Document Processing for Faster Decisions",
-          "Streamline Loan Approval with Intelligent Automation",
-        ],
-        image: LoanProcessing,
-      },
       "Regulatory Compliance": {
-        description:
-          "Streamline KYC and regulatory reporting processes through intelligent automation.",
+        description: "Generative AI can streamline compliance.",
         features: [
-          "Automate KYC and Regulatory Reporting",
-          "Ensure Real-Time Compliance with AI",
-          "Minimize Errors in Compliance Processes",
+          "Automate document verification to maintain compliance standards",
+          "Classify KYC and AML risks quickly for accurate customer screening",
+          "Generate regulatory reports automatically to meet compliance requirements",
         ],
         image: RegulatoryCompliance,
       },
-      "Customer Support": {
+      "Loan Processing & Borrower Risk Analysis": {
         description:
-          "Leverage AI-generated responses and voice AI for enhanced call center automation",
+          "Gen AI can optimize loan processing and credit risk assessment.",
         features: [
-          "AI-Driven Responses for Call Center Automation",
-          "Virtual Assistants for Customer Inquiries",
-          "Improve Response Time and Accuracy with AI",
+          "Conduct automated financial spreading and covenant testing for quicker loan assessments.",
+          "Search and synthesize data from financial documents to automate loan processes.",
+          "Segment customers by risk profile to offer tailored loan products.",
+        ],
+        image: LoanProcessing,
+      },
+      "Application Modernization": {
+        description: "Modernizing legacy banking systems with Gen AI",
+        features: [
+          "Use AI for automated code summarization, explanation and generation to modernize legacy applications faster",
+          "Automate test case creation to expedite quality assurance processes",
+          "Assist developers with productivity-enhancing AI suggestions during coding",
         ],
         image: CustomerSupport,
       },
@@ -138,7 +135,7 @@ export const insurance: any = {
     image: InsuranceBanner,
     title: "Insurance",
     description:
-      "Streamline operations and enhance risk management with AI-powered solutions.",
+      "Streamline operations and enhance risk management with generative AI-driven solutions.",
   },
 
   tabs: {
@@ -147,46 +144,55 @@ export const insurance: any = {
       "Underwriting",
       "Customer Service",
       "Sales & Distribution",
+      "Risk Management",
     ],
     tabsContent: {
       "Claims Management": {
-        description:
-          "Automate FNOL (First Notice of Loss), claims validation, and fraud detection using AI-driven workflows.",
+        description: "Generative AI can revolutionize claims management",
         features: [
-          "Automate FNOL (First Notice of Loss) with AI-Driven Workflows",
-          "Streamline Claims Validation and Fraud Detection",
-          "Hyper-Personalized Recommendations",
-          "Enhance Efficiency in Claims Processing Through Automation",
+          "Automating the First Notice of Loss (FNOL) process through LLMs to facilitate faster claim initiation and reduce human error.",
+          "Implementing intelligent workflows for claims adjudication, validation, utilizing agentic AI to minimize fraud and processing errors",
+          "Enhancing customer communication with AI-powered chatbots capable of providing real-time updates on claim status and inquiries.",
         ],
         image: ClaimManagement,
       },
       Underwriting: {
         description:
-          "Implement risk profiling with automated data extraction and analysis for personalized pricing.",
+          "Generative AI can enhance underwriting efficiency and precision.",
         features: [
-          "Implement Risk Profiling with Automated Data Extraction",
-          "Utilize AI for In-Depth Analysis and Personalized Pricing",
-          "Improve Underwriting Accuracy with Intelligent Automation",
+          "Leveraging AI-driven risk profiling to swiftly assess applicant risks and streamline decision-making.",
+          "Automating data extraction from diverse sources using LLMs to expedite risk assessment and improve accuracy.",
+          "Integrating external data sources to create a comprehensive risk profile for applicants, enhancing underwriting quality.",
         ],
         image: UnderWriting,
       },
       "Customer Service": {
         description:
-          "Enhance support with AI-driven email, chat, and voice assistance to provide 24/7 service",
+          "Generative AI can significantly elevate customer service experiences",
         features: [
-          "Enhance Support with AI-Driven Email, Chat, and Voice Assistance",
-          "Provide 24/7 Service to Customers with Intelligent Automation",
-          "Improve Customer Satisfaction Through Prompt, Accurate Responses",
+          "Providing 24/7 support through AI-driven email, chat, and voice assistants, ensuring seamless customer interactions.",
+          "Enhancing self-service capabilities with conversational AI for efficient policy inquiries and modifications.",
+          "Utilizing sentiment analysis tools powered by generative AI to gauge customer satisfaction and enhance service responsiveness.",
         ],
         image: CustomerService,
       },
       "Sales & Distribution": {
         description:
-          "Enable self-service experiences and digital sales agents powered by conversational AI.",
+          "Generative AI can optimize sales and improve distribution channels.",
         features: [
-          "Enable Self-Service Experiences for Policyholders",
-          "Leverage Conversational AI for Digital Sales Agents",
-          "Enhance Sales Efficiency with AI-Powered Automation",
+          "Enabling self-service experiences for policy purchases and renewals via intuitive AI interfaces that leverage agentic process automation.",
+          "Deploying digital sales agents powered by generative AI to assist customers in real-time, enhancing the sales process.",
+          "Utilizing AI-driven insights to tailor marketing strategies, thereby improving lead conversion rates and customer targeting.",
+        ],
+        image: Sales,
+      },
+      "Risk Management": {
+        description: "Generative AI can bolster risk management strategies.",
+        features: [
+          "Conducting real-time risk assessments through continuous data analysis powered by LLMs, facilitating proactive risk management.",
+          "Utilizing AI for trend analysis and future risk predictions, improving strategic planning within the insurance domain.",
+          "Implementing AI solutions for disaster recovery and business continuity, ensuring readiness against potential disruptions.",
+          "Enhancing compliance monitoring through agentic AI that automatically tracks regulatory changes and requirements.",
         ],
         image: Sales,
       },
@@ -197,31 +203,39 @@ export const insurance: any = {
 export const capital_marketing: any = {
   banner: {
     image: CapitalMarketing,
-    title: "Capital Markets",
+    title: "Wealth Management",
     description:
-      "Optimize financial advisory and customer support with AI-enhanced insights.",
+      "Optimize financial advisory and enhance customer support with generative AI-driven insights.",
   },
 
   tabs: {
-    tabsName: ["Financial Advisors", "Customer Experience"],
+    tabsName: ["Financial Advisors", "Customer Experience", "Risk Management"],
     tabsContent: {
       "Financial Advisors": {
-        description:
-          "Automate research and analysis from complex datasets, generating actionable insights using LLMs.",
+        description: "Generative AI can transform financial advisory services.",
         features: [
-          "Automate Research and Analysis from Complex Datasets",
-          "Generate Actionable Insights Using LLMs (Large Language Models)",
-          "Enhance Decision-Making for Financial Advisors with AI",
+          "Automating research and analysis of complex datasets to generate actionable investment insights for advisors.",
+          "Implementing LLMs for personalized portfolio recommendations based on individual client profiles and market trends.",
+          "Leveraging AI-driven predictive analytics to assess market conditions and optimize asset allocation strategies.",
         ],
         image: FinancialAdvisor,
       },
       "Customer Experience": {
         description:
-          "Implement AI agents for NLP-based insights and support automation, enhancing engagement and satisfaction.",
+          "Generative AI can significantly enhance customer experiences in wealth management.",
         features: [
-          "Implement AI Agents for NLP-Based Insights",
-          "Automate Support Processes to Improve Engagement",
-          "Enhance Customer Satisfaction with Intelligent AI Solutions",
+          "Deploying AI agents for NLP-based insights to streamline client interactions and improve satisfaction.",
+          "Providing virtual financial assistants for real-time portfolio tracking and performance updates, enhancing client engagement.",
+          "Utilizing sentiment analysis tools to gauge client sentiment regarding investments and tailor communication accordingly.",
+        ],
+        image: CustomerExpV2,
+      },
+      "Risk Management": {
+        description: "Generative AI can strengthen risk management strategies.",
+        features: [
+          "Conducting real-time risk assessments of portfolios through continuous monitoring and AI-driven analysis.",
+          "Utilizing LLMs to identify emerging market risks and opportunities, enhancing proactive decision-making for wealth managers.",
+          "Automating compliance checks to ensure adherence to regulatory standards in investment practices.",
         ],
         image: CustomerExpV2,
       },
