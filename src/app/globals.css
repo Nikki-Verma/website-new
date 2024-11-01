@@ -48,7 +48,7 @@ body {
   font-family: var(--font-montserrat) !important;
   background: var(--white);
   color: var(--black-v2);
-  font-size: 16px;
+  font-size: 16px !important;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -56,6 +56,13 @@ body {
 
 a {
   color: var(--foreground) !important;
+}
+
+p,
+.ant-row,
+.ant-col {
+  font-size: 16px;
+  font-family: var(--font-montserrat) !important;
 }
 
 .mb-0 {

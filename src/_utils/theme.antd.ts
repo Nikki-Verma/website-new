@@ -6,6 +6,7 @@ const theme = {
       colorPrimary: PRIMARY_BRAND_COLOR,
       colorInfo: PRIMARY_BRAND_COLOR,
       fontFamily: "var(--font-montserrat)",
+      fontSize: 16,
     },
     Carousel: {
       colorBgContainer: PRIMARY_BRAND_COLOR,
