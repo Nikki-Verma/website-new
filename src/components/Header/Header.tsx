@@ -374,7 +374,7 @@ const Header = () => {
             </Link>
           </button>
         </div>
-        <div className="flex gap-4 button-container-header items-center justify-center">
+        <div className="button-container-header">
           <div className="experience_center_button">
             <button>
               <ExperienceCenterIcon />
