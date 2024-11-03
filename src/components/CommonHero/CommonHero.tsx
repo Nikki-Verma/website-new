@@ -10,7 +10,7 @@ const CommonHero = ({ data }: any) => {
       <div className=" container mb-0">
         <Row gutter={[36, 36]} justify="center" align="middle">
           <Col
-            md={16}
+            span={20}
             style={{
               display: "flex",
               flexDirection: "column",

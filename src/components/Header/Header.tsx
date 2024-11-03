@@ -1,5 +1,7 @@
 "use client";
-import { Dropdown, MenuProps, Space } from "antd";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Dropdown, Menu, MenuProps, Space } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -9,7 +11,19 @@ import ExperienceCenterIcon from "../Icons/ExperienceCenterIcon";
 import "./style.css";
 
 const Header = () => {
-  const [showSubMenu, setshowSubMenu] = useState("");
+  const [showSubMenu, setshowSubMenu] = useState(false);
+  const componentRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const handleClickOutside = (event: any) => {
+    if (
+      componentRef.current &&
+      !componentRef.current.contains(event.target) &&
+      menuRef.current &&
+      !menuRef.current.contains(event.target)
+    ) {
+      setshowSubMenu(false); // Set state to false if clicked outside
+    }
+  };
 
   const productsSubMenu: MenuProps["items"] = [
     {
@@ -119,35 +133,58 @@ const Header = () => {
     },
   ];
 
+  const mainSubMenu: MenuProps["items"] = [
+    {
+      key: 1,
+      label: "Platform",
+      children: productsSubMenu,
+      // title: "SimplAI Studio",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/llmstudio",
+      // icon: Programming,
+    },
+    {
+      key: 3,
+      label: "Industries",
+      children: UseCaseSubMenu,
+      // title: "AI Agents",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/ai-agents",
+      // icon: Programming,
+    },
+    {
+      key: 4,
+      label: "Resources",
+      children: ResourcesSubMenu,
+      // title: "AI Optimization",
+      // description:}
+    },
+    {
+      key: 2,
+      label: (
+        <Link href={"/pricing"} prefetch>
+          Platform
+        </Link>
+      ),
+      // title: "Production RAG",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/rag",
+      // icon: Programming,
+    },
+  ];
+
   const subMenuProduct = (
-    <div className="subMenu">
-      <div>
-        <h4 className="text-left">Platforms</h4>
-        <p className="font-14 text-left my-4">
-          Learn about the SimplAi Products how it can boost your business
-        </p>
-        <button className="button">Talk with expert</button>
-      </div>
-      <div className="subMenu-Item-container">
-        {productsSubMenu?.map((value: any) => {
-          return (
-            <Link href={value.link}>
-              <div className="subMenu_link_wrapper">
-                <div>
-                  <Image src={value.icon} alt="icon" />
-                </div>
-                <div>
-                  <h5>{value.title}</h5>
-                  <p className="font-14 text-left">
-                    Learn about the SimplAi Products how it can boost your
-                    business
-                  </p>
-                </div>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
+    <div className="subMenu" ref={menuRef}>
+      <Menu
+        style={{
+          width: "100%",
+        }}
+        mode="inline"
+        items={mainSubMenu}
+      />
     </div>
   );
 
@@ -215,13 +252,6 @@ const Header = () => {
     </div>
   );
 
-  const componentRef = useRef<HTMLDivElement>(null);
-  const handleClickOutside = (event: any) => {
-    if (componentRef.current && !componentRef.current.contains(event.target)) {
-      setshowSubMenu(""); // Set state to false if clicked outside
-    }
-  };
-
   // Attach event listener to detect outside clicks
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -233,12 +263,20 @@ const Header = () => {
   }, []);
 
   return (
-    <header id="header-nav" className="header" ref={componentRef}>
-      <nav className="nav_bar flex justify-between items-center w-full">
+    <>
+      <header id="header-nav" className="header">
         <div className="logo_section">
           <Link href={"/"}>
             <Image src={Logo} alt="logo" />
           </Link>
+          <div ref={componentRef} className="iconShow">
+            <FontAwesomeIcon
+              onClick={() => {
+                setshowSubMenu(true);
+              }}
+              icon={faBars}
+            />
+          </div>
         </div>
         <div className="nav_links">
           <button className="px-4 mx-2">
@@ -310,7 +348,7 @@ const Header = () => {
             </Link>
           </button>
         </div>
-        <Space>
+        <Space className="button-container-header">
           <div className="experience_center_button">
             <button>
               <ExperienceCenterIcon />
@@ -326,9 +364,10 @@ const Header = () => {
             </button>
           </div>
         </Space>
-      </nav>
-      <div className="product_nav" style={{ background: "#fff" }}></div>
-    </header>
+      </header>
+
+      {showSubMenu && subMenuProduct}
+    </>
   );
 };
 export default Header;

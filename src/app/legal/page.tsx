@@ -22,9 +22,10 @@ const Legal = () => {
       <section className="section">
         <div className="container">
           <div className="section_heading_container">
+            <div className="home_page_heading_tag">Why SimplAI?</div>
             <div className="home_page_heading">
-              The fastest and simplest way to innovate legal, <br />
-              consulting, and research practices
+              The fastest and simplest way to innovate <br />
+              legal, consulting, and research practices
             </div>
           </div>
           <div>
@@ -35,8 +36,12 @@ const Legal = () => {
       <Tabs tabsConfig={legal} />
       <Tabs tabsConfig={consulting} />
       {/* <Tabs tabsConfig={research} /> */}
+      <AIPlatformOverview
+        data={platformData}
+        heading1="SimplAI Gen AI platform"
+        heading2="Your strategic partner for innovation in legal, consulting & research"
+      />
       <CaseStudy />
-      <AIPlatformOverview data={platformData} />
       <BannerExpert
         bannerHeading="Ready to Transform Your Legal, Consulting, and Research Solutions?"
         bannerText="Unlock the immense potential of AI to enhance efficiency, drive insights, and automate processes across your organization."

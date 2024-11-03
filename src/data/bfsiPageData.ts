@@ -70,13 +70,13 @@ export const retailAndBanking: any = {
 
   tabs: {
     tabsName: [
-      "Customer Engagement",
+      "Customer engagement",
       "Loan processing & assessment",
       "Application modernization",
-      "Risk & Compliance",
+      "Risk & compliance",
     ],
     tabsContent: {
-      "Customer Engagement": {
+      "Customer engagement": {
         description:
           "Drive personalized experiences that enhance customer loyalty and satisfaction",
         features: [
@@ -108,7 +108,7 @@ export const retailAndBanking: any = {
         ],
         image: RegulatoryCompliance,
       },
-      "Risk & Compliance": {
+      "Risk & compliance": {
         description: "Simplify compliance and strengthen risk management.",
         features: [
           "Risk evaluation: Extract & evaluate key risks from vendors, third parties etc.",
@@ -201,12 +201,12 @@ export const capital_marketing: any = {
 
   tabs: {
     tabsName: [
-      "Financial Advisory",
-      "Customer Experience",
-      "Risk & Compliance",
+      "Financial advisory",
+      "Customer experience",
+      "Risk & compliance",
     ],
     tabsContent: {
-      "Financial Advisory": {
+      "Financial advisory": {
         description:
           "Unlock smarter, faster insights to inform investment decisions.",
         features: [
@@ -216,7 +216,7 @@ export const capital_marketing: any = {
         ],
         image: FinancialAdvisor,
       },
-      "Customer Experience": {
+      "Customer experience": {
         description:
           "Deliver personalized experiences that drive client satisfaction.",
         features: [
@@ -225,7 +225,7 @@ export const capital_marketing: any = {
         ],
         image: CustomerExpV2,
       },
-      "Risk & Compliance": {
+      "Risk & compliance": {
         description:
           "Enhance risk management and streamline compliance processes.",
         features: [

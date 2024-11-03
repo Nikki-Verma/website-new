@@ -1,15 +1,21 @@
 import { Col, Row } from "antd";
 import Image from "next/image";
 
-const AIPlatformOverview = ({ data }: { data: any }) => {
+const AIPlatformOverview = ({
+  data,
+  heading1 = "",
+  heading2 = "",
+}: {
+  data: any;
+  heading1?: string;
+  heading2?: string;
+}) => {
   return (
     <section className="section">
       <div className="container">
         <div className="section_heading_container">
-          <div className="home_page_heading">
-            SimplAI Enterprise-Grade AI Platform: Scale Beyond
-            <br /> PoC to Capture Value
-          </div>
+          <div className="home_page_heading_tag">{heading1}</div>
+          <div className="home_page_heading">{heading2}</div>
         </div>
         <Row gutter={[36, 36]}>
           {data.map((value: any) => {

@@ -21,16 +21,21 @@ const Insurance = () => {
       <section className="section">
         <div className="container">
           <div className="section_heading_container">
+            <div className="home_page_heading_tag">Why SimplAI?</div>
             <div className="home_page_heading">
-              The fastest and simplest way to implement <br />
-              AI-powered financial solutions
+              The fastest and most effective way to implement <br /> AI-powered
+              solutions for insurance
             </div>
           </div>
           <CardInfo data={solutionsList} />
         </div>
       </section>
       <Tabs tabsConfig={insurance} />
-      <AIPlatformOverview data={platformData} />
+      <AIPlatformOverview
+        data={platformData}
+        heading1="Empowering insurance leaders"
+        heading2="Your trusted partner in Gen AI innovation"
+      />
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to transform your insurance business?"

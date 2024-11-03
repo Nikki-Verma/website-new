@@ -27,8 +27,8 @@ const CloudDeployment = () => {
         <div className="section_heading_container">
           <div className="home_page_heading_tag">Cloud Deployments</div>
           <div className="home_page_heading">
-            Deploy Your Way <br />
-            SimplAI Cloud, Your Cloud, or On-Premises
+            Deploy your way <br />
+            SimplAI cloud, your cloud, or on-premises
           </div>
         </div>
 
@@ -39,14 +39,14 @@ const CloudDeployment = () => {
             className={index === 0 ? "round_button_selected" : "round_button"}
           >
             <SecureAiIcon />
-            SimplAI Cloud
+            SimplAI cloud
           </button>
           <button
             onClick={() => handle(1)}
             className={index === 1 ? "round_button_selected" : "round_button"}
           >
             <ScalableAiIcon />
-            On Premise
+            On-premise
           </button>
         </div>
 

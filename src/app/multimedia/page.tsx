@@ -24,6 +24,7 @@ const Multimedia = () => {
       <section className="section">
         <div className="container">
           <div className="section_heading_container">
+            <div className="home_page_heading_tag">Why SimplAI?</div>
             <div className="home_page_heading">
               Unlock innovation with SimplAI’s Generative AI Solutions
             </div>
@@ -35,7 +36,11 @@ const Multimedia = () => {
       <Tabs tabsConfig={multimedia} />
       {/* <Tabs tabsConfig={education_and_publication} /> */}
       <Tabs tabsConfig={gaming_and_esport} />
-      <AIPlatformOverview data={platformData} />
+      <AIPlatformOverview
+        data={platformData}
+        heading1="Telecom, Media & Entertainment teams"
+        heading2="Your strategic partner for innovation in Gen AI"
+      />
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to transform your Telecom, Media & Entertainment operations?"

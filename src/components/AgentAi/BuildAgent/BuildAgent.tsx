@@ -43,16 +43,18 @@ const BuildAgent = () => {
             </div>
           </Col>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-            <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
-              <h4 className="text-left mb-4 w-5/6">
-                Knowledge-equipped and function-calling sub-agents
-              </h4>
-              <p className="text-left">
-                Your multi-agent AI system goes beyond conversation—each
-                sub-agent can retrieve data, perform tasks, or interact with
-                other systems through function calling, enabling specialized
-                roles within a larger process
-              </p>
+            <div className="card_v2 h-full flex justify-between flex-col py-8 px-8 gap-4">
+              <div>
+                <h4 className="text-left mb-4 w-5/6">
+                  Knowledge-equipped and function-calling sub-agents
+                </h4>
+                <p className="text-left">
+                  Your multi-agent AI system goes beyond conversation—each
+                  sub-agent can retrieve data, perform tasks, or interact with
+                  other systems through function calling, enabling specialized
+                  roles within a larger process
+                </p>
+              </div>
               <div className="">
                 <Image
                   src={ChatbotFeatureImage}

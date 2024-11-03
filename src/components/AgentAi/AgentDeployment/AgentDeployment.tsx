@@ -13,27 +13,25 @@ const data = [
   {
     heading: "API & webhooks",
     description:
-      "Integrate your AI agents seamlessly into any workflow or system",
+      "Integrate your AI applications seamlessly into any workflow or system.",
     imageAlt: "poc-dev-icon",
     image: ApiIcon,
   },
   {
     heading: "Embed code",
-    description:
-      "Easily add AI agents to your website with a simple embed code",
+    description: "Easily add to your application with a simple embed code.",
     imageAlt: "iterate-refine-icon",
     image: EmbedIcon,
   },
   {
     heading: "Mobile SDK",
-    description:
-      "Deploy AI agents on mobile apps with our SDK for iOS and Android",
+    description: "Deploy on mobile apps with our SDK for iOS and Android.",
     imageAlt: "integrate-agent-icon",
     image: MobileSdkIcon,
   },
   {
     heading: "Connect with popular apps",
-    description: "Directly integrate with WhatsApp, Slack, Telegram, and more",
+    description: "Directly integrate with WhatsApp, Slack, Telegram, and more.",
     imageAlt: "productise-ai-icon",
     image: ConnectionIcon,
   },
@@ -55,7 +53,7 @@ const AgentDeployment = ({
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">{title}</div>
-          <p className="text-center">{subTitle}</p>
+          <p className="text-center text-lg">{subTitle}</p>
         </div>
         <div className="card_v2 flex w-full px-8 py-8 mb-12">
           <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>

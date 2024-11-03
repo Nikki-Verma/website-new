@@ -63,7 +63,7 @@ const PlatformBuild = () => {
         <div className="section_heading_container">
           <div className="home_page_heading_tag">Why SimplAI?</div>
           <div className="home_page_heading">
-            Platform Built for Enterprise Success
+            Platform built for enterprise success
           </div>
         </div>
 

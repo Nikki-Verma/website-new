@@ -11,8 +11,8 @@ const DataIntegration = () => {
     <div className="section">
       <div className="container">
         <h2 className="mb-12">
-          Bring your own data via our data <br />
-          integration engine
+          Bring your own data via our <br />
+          data integration engine
         </h2>
         <Row gutter={[16, 16]} justify={"space-between"} align={"stretch"}>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>

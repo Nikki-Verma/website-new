@@ -24,6 +24,7 @@ const Tools = () => {
                   src={TraceVisibilityImage}
                   alt={"TraceVisibilityImage"}
                   className="tex-center mx-auto"
+                  height={150}
                 />
 
                 <h4 className="heading_24 text-center mb-4 mt-8">
@@ -43,10 +44,11 @@ const Tools = () => {
                   src={AutomacticImage}
                   alt={"AutomacticImage"}
                   className="tex-center mx-auto"
+                  height={150}
                 />
 
                 <h4 className="heading_24 text-center mb-4 mt-8">
-                  Automatic Evaluation metrics
+                  Automatic evaluation metrics
                 </h4>
                 <p className="text-center">
                   Gain insights into the robustness and reliability of your LLM
@@ -63,10 +65,11 @@ const Tools = () => {
                   src={ImproveImage}
                   alt={"ImproveImage"}
                   className="tex-center mx-auto"
+                  height={150}
                 />
 
                 <h4 className="heading_24 text-center mb-4 mt-8">
-                  Evaluate and improve
+                  Evaluate and improve applications
                 </h4>
                 <p className="text-center">
                   Continually enhance your LLM models with actionable insights,

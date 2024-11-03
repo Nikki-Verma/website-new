@@ -42,7 +42,7 @@ const BuildAgenticProcess = () => {
                   }}
                 >
                   <h4 className="text-left mb-4 w-5/6">
-                    Intelligent Decision Making
+                    Intelligent decision making
                   </h4>
                   <p className="text-left pr-4">
                     Leverage LLMs to power decision-making processes, also

@@ -5,7 +5,6 @@ import {
 } from "@/util/images";
 import { Col, Row } from "antd";
 import Image from "next/image";
-import { IoMdArrowForward } from "react-icons/io";
 
 const Solution = () => {
   return (
@@ -34,12 +33,12 @@ const Solution = () => {
                   <p className="mb-4 text-center">
                     Chatbots and AI assistants grounded with truth
                   </p>
-                  <button className="link_button link_button_primary flex m-auto items-center gap-3">
+                  {/* <button className="link_button link_button_primary flex m-auto items-center gap-3">
                     Learn more{" "}
                     <span className="icon">
                       <IoMdArrowForward />
                     </span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -62,12 +61,12 @@ const Solution = () => {
                   <p className="text-center mb-4">
                     Summarizations and question answering with precise citations
                   </p>
-                  <button className="link_button link_button_primary flex items-center m-auto gap-3">
+                  {/* <button className="link_button link_button_primary flex items-center m-auto gap-3">
                     Learn more{" "}
                     <span className="icon">
                       <IoMdArrowForward />
                     </span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -90,12 +89,12 @@ const Solution = () => {
                   <p className="text-center mb-4">
                     Power hybrid search and recommendation system
                   </p>
-                  <button className="link_button link_button_primary m-auto flex items-center gap-3">
+                  {/* <button className="link_button link_button_primary m-auto flex items-center gap-3">
                     Learn more{" "}
                     <span className="icon">
                       <IoMdArrowForward />
                     </span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

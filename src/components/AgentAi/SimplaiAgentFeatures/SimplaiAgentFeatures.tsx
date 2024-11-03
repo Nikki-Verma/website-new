@@ -34,7 +34,7 @@ const SimplaiAgentFeatures = () => {
     <section className="section">
       <div className="container">
         <div className="section_heading_container">
-          <div className="home_page_heading">Why Choose SimplAI?</div>
+          <div className="home_page_heading">Why choose SimplAI?</div>
         </div>
         <Row gutter={[12, 12]} justify={"space-around"}>
           {data?.map((cardDetail) => {
@@ -45,7 +45,6 @@ const SimplaiAgentFeatures = () => {
                     alt={cardDetail.imageAlt}
                     src={cardDetail?.image}
                     height={54}
-                    width={54}
                   />
                   <div className="flex flex-col items-center gap-2">
                     <div className="Simplai_features_box_heading">

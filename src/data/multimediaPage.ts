@@ -24,7 +24,7 @@ import {
 
 export const banner = {
   title: "Telecom, Media & Entertainment",
-  heading: "Build AI-First Solutions for Telecom, Media & Entertainment",
+  heading: "Build AI-first solutions!",
   description:
     "Unlock the power of Gen AI with SimplAI's Agentic AI platform. Transform creativity, automate workflows, and elevate customer engagement—future-ready solutions for a competitive edge.",
   buttonText: "Request Demo",
@@ -70,7 +70,7 @@ export const telecom = {
   },
 
   tabs: {
-    tabsName: ["Customer engagement", "Network Operations"],
+    tabsName: ["Customer engagement", "Network operations"],
     tabsContent: {
       "Customer engagement": {
         description:
@@ -82,7 +82,7 @@ export const telecom = {
         ],
         image: CustomerSupportImage,
       },
-      "Network Operations": {
+      "Network operations": {
         description:
           "Leverage AI to enhance network efficiency and performance through real-time monitoring and predictive analytics.",
         features: [
@@ -195,9 +195,9 @@ export const gaming_and_esport = {
   },
 
   tabs: {
-    tabsName: ["Game Development"],
+    tabsName: ["Game development"],
     tabsContent: {
-      "Game Development": {
+      "Game development": {
         description:
           "Enhance game design and development processes through innovative AI solutions.",
         features: [

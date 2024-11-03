@@ -55,7 +55,7 @@ const home = () => {
       <AgentFeatures />
       <AgentDeployment
         title={"Create agents you can trust"}
-        subTitle={"Advanced features to build production-ready AI agents."}
+        subTitle={"Advanced features to build production-ready AI agents"}
         EncryptionDataPoints={EncryptionDataPoints}
         mainImage={AiEncryption}
       />

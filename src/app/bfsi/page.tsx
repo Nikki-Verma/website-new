@@ -22,6 +22,7 @@ const BFSI = () => {
       <section className="section">
         <div className="container">
           <div className="section_heading_container">
+            <div className="home_page_heading_tag">Why SimplAI?</div>
             <div className="home_page_heading">
               The fastest and simplest way to implement <br />
               AI-powered financial solutions
@@ -33,7 +34,11 @@ const BFSI = () => {
       <Tabs tabsConfig={retailAndBanking} />
       <Tabs tabsConfig={capital_marketing} />
       {/* <Tabs tabsConfig={insurance} /> */}
-      <AIPlatformOverview data={platformData} />
+      <AIPlatformOverview
+        data={platformData}
+        heading1="Empowering financial service leaders"
+        heading2="Your partner in Gen AI innovation"
+      />
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to elevate your financial services?"

@@ -25,7 +25,7 @@ import {
 export const banner = {
   title: "Healthcare",
   heading:
-    "Elevate patient engagement and streamline healthcare operations with Gen AI.",
+    "Elevate patient engagement and streamline healthcare operations with Gen AI",
   description:
     "From enhancing patient interactions, augmenting clinical decision-making and automating administrative tasks, scale your healthcare services with SimplAI platform.",
   buttonText: "Request Demo",
@@ -70,12 +70,12 @@ export const healthcare_provider = {
 
   tabs: {
     tabsName: [
-      "Care Delivery",
-      "Revenue Cycle Management",
+      "Care delivery",
+      "Revenue cycle management",
       "Patient experience",
     ],
     tabsContent: {
-      "Care Delivery": {
+      "Care delivery": {
         description:
           "Streamline clinical workflows and enhance decision-making processes.",
         features: [
@@ -86,7 +86,7 @@ export const healthcare_provider = {
         ],
         image: CareDeliveryImage,
       },
-      "Revenue Cycle Management": {
+      "Revenue cycle management": {
         description:
           "Optimize financial processes and improve revenue outcomes.",
         features: [

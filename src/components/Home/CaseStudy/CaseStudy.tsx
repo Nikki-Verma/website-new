@@ -10,7 +10,7 @@ const CaseStudy = () => {
     <section className="section">
       <div className="container">
         <div className="section_heading_container">
-          <div className="home_page_heading">Get Latest Insights on GenAI</div>
+          <div className="home_page_heading">Get latest insights on GenAI</div>
         </div>
         <Row gutter={[36, 36]}>
           <Col xs={24} sm={24} md={12} lg={8} xl={8}>

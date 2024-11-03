@@ -69,7 +69,7 @@ const Rag = () => {
         </div>
       </div>
       <div style={{ marginTop: 500 }}>
-        <div className="mt-12 mb-120">
+        <div className="mt-12 mb-16">
           <VedioContainerProductionRag />
         </div>
         <Feature />

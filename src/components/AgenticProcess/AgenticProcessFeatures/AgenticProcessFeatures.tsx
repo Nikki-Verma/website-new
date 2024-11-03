@@ -47,7 +47,7 @@ const data = [
     url: "/multimedia",
   },
   {
-    heading: "Legal Consulting & Research",
+    heading: "Legal, Consulting & Research",
     description:
       "Speed up legal document analysis, case management, and compliance tracking.",
     image: lawScaleIcon,

@@ -4,23 +4,6 @@
   padding-bottom: 54px;
 }
 
-.platform_feature_list {
-  margin-bottom: 24px;
-  color: var(--off-white);
-}
-
-.platform_feature_list > li {
-  color: var(--Text-Color-900, #171717);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border-bottom: 0.5px solid rgba(166, 188, 218, 0.67);
-  padding: 16px 0px;
-}
-.platform_feature_list > li::marker {
-  content: "";
-}
 .platform_build_box_container {
   display: flex;
   border-radius: 10px;

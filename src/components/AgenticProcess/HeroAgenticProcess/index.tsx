@@ -13,11 +13,11 @@ const HeroAgenticProcess = () => {
       {/* <Header /> */}
       <div className="content_section">
         <div className="mx-auto text-center">
-          <p className="product_page_name">Agentic process automation</p>
+          <p className="product_page_name">Agentic Process Automation</p>
         </div>
         <h1 className="text-center hero_section_heading w-2/3 m-auto flex flex-col gap-8">
           <span className="hero_h1">
-            The Fastest Way to Automate Complex Workflows
+            The fastest way to automate complex workflows
           </span>
           <span className="hero_h2">
             SimplAI empowers your teams to automate document processing,

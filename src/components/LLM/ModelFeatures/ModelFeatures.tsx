@@ -18,7 +18,7 @@ const getItems: (
 ) => CollapseProps["items"] = (panelStyle, headerStyle) => [
   {
     key: 1,
-    label: "Access to all Global LLMs",
+    label: "Access to popular closed-source LLMs",
     children: (
       <p>
         Discover and integrate with closed-source models using our unified API
@@ -32,7 +32,7 @@ const getItems: (
   },
   {
     key: 2,
-    label: "Deploy open source models on your own cloud",
+    label: "Deploy open-source LLMs",
     children: (
       <p>
         Seamlessly deploy open-source models on SimplAI’s cloud or your own
@@ -60,7 +60,7 @@ const getItems: (
   },
   {
     key: 4,
-    label: "Fine tune any open source model",
+    label: "Fine-Tune any open-source model",
     children: (
       <p>
         Customize models with advanced techniques like quantization, low-rank

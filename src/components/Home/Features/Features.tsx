@@ -14,7 +14,7 @@ import Link from "next/link";
 import "./style.css";
 const data = [
   {
-    heading: "Build Intelligent Agents",
+    heading: "AI Agents",
     description:
       "Develop intelligent conversational AI, including assistants, co-pilots, and AI employees.",
     image: AiAgents,
@@ -22,7 +22,7 @@ const data = [
     link: "/ai-agents",
   },
   {
-    heading: "Automate with Agentic Workflows",
+    heading: "Agentic Workflows",
     description:
       "Automate complex workflows by using AI chaining to handle multi-step tasks.",
     image: AgenticWorkflows,
@@ -30,7 +30,7 @@ const data = [
     link: "/agentic-process-automation",
   },
   {
-    heading: " Leverage Enterprise Knowledge",
+    heading: "Enterprise Knowledge",
     description:
       "Leverage your data to ground AI, ensuring high accuracy and relevance.",
     image: EnterpriseKnowledgebase,
@@ -38,45 +38,45 @@ const data = [
     link: "/rag",
   },
   {
-    heading: "Seamlessly Embed AI",
+    heading: "Embed AI",
     description:
       "Integrate AI into your system through APIs, webhooks, SDKs, and embedded UIs.",
     image: EmbedAi,
     imageAlt: "embed-ai-icon",
-    link: "",
+    link: "/llmstudio",
   },
   {
-    heading: "Effortless Data Integration Engine",
+    heading: "Data Integration Engine",
     description:
       "Bring your data pipelines to your AI applications with our 300+ readily available connectors.",
     image: DataIntegrationEngine,
     imageAlt: "data-integration-engine-icon",
-    link: "",
+    link: "/llmstudio",
   },
   {
-    heading: "Build with No Code / Low Code",
+    heading: "Intuitive UI/UX",
     description:
       "Build and deploy AI applications rapidly, without needing extensive coding skills.",
     image: Coding,
     imageAlt: "no-code-icon",
-    link: "",
+    link: "/llmstudio",
   },
 
   {
-    heading: "Experiment with Models",
+    heading: "Models",
     description:
       "Experiment, finetune, and deploy any of the popular open source and closed source models.",
     image: EnterpriseKnowledgebase,
     imageAlt: "mod-icon",
-    link: "",
+    link: "/llmstudio",
   },
   {
-    heading: "Ensure Observability",
+    heading: "Observability",
     description:
       "Monitor AI performance with granular tracing and evaluation metrics.",
     image: Observability,
     imageAlt: "Observability-icon",
-    link: "",
+    link: "/llmstudio",
   },
 ];
 const Features = () => {

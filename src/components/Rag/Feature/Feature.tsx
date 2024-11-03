@@ -13,8 +13,8 @@ const Feature = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Go from prototype to production-ready <br />
-            RAG with ease
+            Go from prototype to production-ready RAG
+            <br /> with ease
           </div>
         </div>
 

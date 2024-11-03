@@ -23,6 +23,7 @@ const HealthCare = () => {
       <section className="section">
         <div className="container">
           <div className="section_heading_container">
+            <div className="home_page_heading_tag">Why SimplAI?</div>
             <div className="home_page_heading">
               The fastest and simplest way to transform
               <br /> healthcare via Gen AI solutions
@@ -34,7 +35,11 @@ const HealthCare = () => {
       <Tabs tabsConfig={healthcare_provider} />
       <Tabs tabsConfig={healthcare_player} />
       <Tabs tabsConfig={healthcare_tech} />
-      <AIPlatformOverview data={platformData} />
+      <AIPlatformOverview
+        data={platformData}
+        heading1="For healthcare leaders"
+        heading2="Your partner in healthcare innovation"
+      />
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to transform your healthcare operations?"

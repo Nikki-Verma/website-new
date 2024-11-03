@@ -34,7 +34,7 @@ const AIStack = () => {
     <div className="text-center mb-12">
       <div className="container">
         <span className="home_page_heading ">
-          One Platform, Unlimited Possibilities
+          One platform. Unlimited possibilities.
         </span>
         <div className="marquee">
           <div className="badges_wrapper">
