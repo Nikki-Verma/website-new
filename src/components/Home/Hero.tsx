@@ -9,7 +9,7 @@ const Hero = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="hero_section" style={{ marginTop: -82 }}>
+    <div className="hero_section">
       {/* <Header /> */}
       <div className="content_section">
         <div className="text-center hero_section_heading">

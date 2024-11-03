@@ -9,7 +9,7 @@ const HeroAgentAi = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="hero_section" style={{ marginTop: -82 }}>
+    <div className="hero_section">
       {/* <Header /> */}
       <div className="content_section">
         <div className="mx-auto text-center">

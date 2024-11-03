@@ -14,7 +14,7 @@ const Banner = () => {
               Razorpay Rize{" "}
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <Image src={FounderHubLogo} alt={"founder-hub-logo"} />
             <Image src={RazorpayLogo} alt={"razorpay-rize-logo"} />
           </div>

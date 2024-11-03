@@ -226,7 +226,7 @@ const Pricing = () => {
   return (
     <>
       <Header />
-      <section className="section mt-12">
+      <section className="section mt-28">
         <div className="container">
           <div className="section_heading_container">
             <div className="home_page_heading">

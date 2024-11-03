@@ -1,7 +1,7 @@
 "use client";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Dropdown, Menu, MenuProps, Space } from "antd";
+import { Divider, Dropdown, Menu, MenuProps, Space } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -27,7 +27,7 @@ const Header = () => {
 
   const productsSubMenu: MenuProps["items"] = [
     {
-      key: 1,
+      key: 2,
       label: <Link href={"/llmstudio"}>SimplAI Studio</Link>,
       // title: "SimplAI Studio",
       // description:
@@ -55,7 +55,7 @@ const Header = () => {
       // description:}
     },
     {
-      key: 2,
+      key: 5,
       label: <Link href={"/rag"}>Production RAG</Link>,
       // title: "Production RAG",
       // description:
@@ -67,7 +67,7 @@ const Header = () => {
 
   const UseCaseSubMenu: MenuProps["items"] = [
     {
-      key: 1,
+      key: 7,
       label: <Link href={"/bfsi"}>Financial Services</Link>,
       // title: "BFSI",
       // description:
@@ -76,7 +76,7 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 2,
+      key: 8,
       label: <Link href={"/insurance"}>Insurance</Link>,
       // title: "BFSI",
       // description:
@@ -85,7 +85,7 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 3,
+      key: 9,
       label: <Link href={"/healthcare"}>Healthcare</Link>,
       // title: "Healthcare",
       // description:
@@ -94,7 +94,7 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 4,
+      key: 10,
       label: <Link href={"/legal"}>Legal</Link>,
       // title: "Legal",
       // description:
@@ -103,7 +103,7 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 5,
+      key: 11,
       label: <Link href={"/multimedia"}>Telecom, Media & Entertainment</Link>,
       // title: "Mulimedia",
       // description:
@@ -114,7 +114,7 @@ const Header = () => {
   ];
   const ResourcesSubMenu: MenuProps["items"] = [
     {
-      key: 1,
+      key: 13,
       label: <Link href={"https://simplai.ai/blogs/"}>Blogs</Link>,
       // title: "Blogs",
       // description:
@@ -123,7 +123,7 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 2,
+      key: 14,
       label: <Link href={"https://simplai.ai/docs/"}>Documentation</Link>,
       // title: "Documentation",
       // description:
@@ -145,7 +145,7 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 3,
+      key: 6,
       label: "Industries",
       children: UseCaseSubMenu,
       // title: "AI Agents",
@@ -155,14 +155,14 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 4,
+      key: 12,
       label: "Resources",
       children: ResourcesSubMenu,
       // title: "AI Optimization",
       // description:}
     },
     {
-      key: 2,
+      key: 14,
       label: (
         <Link href={"/pricing"} prefetch>
           Platform
@@ -184,7 +184,33 @@ const Header = () => {
         }}
         mode="inline"
         items={mainSubMenu}
+        onClick={() => {
+          setshowSubMenu(false);
+        }}
       />
+      <Divider
+        style={{
+          margin: "6px 4px",
+          width: "calc(100% - 8px)",
+          minWidth: "calc(100% - 8px)",
+        }}
+      />
+      <Space direction="vertical" align="center">
+        <div className="experience_center_button">
+          <button>
+            <ExperienceCenterIcon />
+            <span>Experience SimplAI </span>
+          </button>
+        </div>
+        <div className="request_button">
+          <button>
+            <span>Request Demo</span>
+            <span className="header_button_icon">
+              <IoMdArrowForward />
+            </span>
+          </button>
+        </div>
+      </Space>
     </div>
   );
 

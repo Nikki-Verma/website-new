@@ -24,6 +24,16 @@ const theme = {
       controlItemBgHover: "rgb(247,245,255)",
       controlItemBgActiveHover: "rgb(247,245,255)",
     },
+    Menu: {
+      darkItemSelectedBg: "rgb(0,0,0)",
+      subMenuItemBg: "rgb(255,255,255)",
+      itemHoverBg: "rgb(247,245,255)",
+      itemActiveBg: "rgb(247,245,255)",
+      itemSelectedBg: "rgb(247,245,255)",
+      horizontalItemHoverColor: "rgb(96,46,223)",
+      horizontalItemSelectedColor: "rgb(96,46,223)",
+      itemSelectedColor: "rgb(96,46,223)",
+    },
   },
 };
 

@@ -362,7 +362,7 @@ h5 {
 .small_container {
   max-width: 80%;
   width: 900px;
-  margin: 90px auto;
+  margin: 136px auto;
 }
 
 .text-primary {
@@ -520,7 +520,6 @@ h5 {
 
 /* new css */
 .dark_bg_hero {
-  margin-top: -86px;
   background: linear-gradient(124deg, #1f003c 0%, #311a66 78%);
   padding-bottom: 34px;
   padding-top: 160px;
@@ -697,5 +696,9 @@ li {
 }
 
 .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item:hover {
+  color: #602edf;
+}
+
+.ant-menu-title-content:hover {
   color: #602edf;
 }
