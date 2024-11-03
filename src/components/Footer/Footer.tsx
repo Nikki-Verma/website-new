@@ -20,10 +20,6 @@ const Footer = () => {
           link: "/llmstudio",
         },
         {
-          label: "Production RAG",
-          link: "/rag",
-        },
-        {
           label: "AI Agents",
           link: "/ai-agents",
         },
@@ -31,26 +27,34 @@ const Footer = () => {
           link: "/agentic-process-automation",
           label: "Agentic Process Automation",
         },
+        {
+          label: "Production RAG",
+          link: "/rag",
+        },
       ],
     },
     {
       heading: "Industries",
       menu: [
         {
-          label: "Multimedia",
-          link: "/multimedia",
+          label: "Financial Services",
+          link: "/bfsi",
+        },
+        {
+          label: "Insurance",
+          link: "/insurance",
         },
         {
           label: "Healthcare",
           link: "/healthcare",
         },
         {
-          label: "BFSI",
-          link: "/bfsi",
-        },
-        {
           label: "Legal",
           link: "/legal",
+        },
+        {
+          label: "Telecom, Media & Entertainment",
+          link: "/multimedia",
         },
       ],
     },
@@ -59,11 +63,11 @@ const Footer = () => {
       menu: [
         {
           label: "Blogs",
-          link: "",
+          link: "https://simplai.ai/blogs/",
         },
         {
           label: "Documentation",
-          link: "",
+          link: "https://simplai.ai/docs/",
         },
       ],
     },

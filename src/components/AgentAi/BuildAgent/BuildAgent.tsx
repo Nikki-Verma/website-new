@@ -12,7 +12,7 @@ const BuildAgent = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Build Smart AI Agents in Minutes
+            Build smart AI agents in minutes
           </div>
           <p className="section_subheading w-2/3">
             SimplAI’s platform provides a no-fuss way for technical and product
@@ -25,7 +25,7 @@ const BuildAgent = () => {
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <div>
                 <h4 className="text-left mb-4 w-5/6">
-                  Conversational AI, Voice AI, Co-pilots, and Assistants
+                  Conversational AI, voice AI, co-pilots, and assistants
                 </h4>
                 <p className="text-left">
                   From AI-powered chatbots to task-specific AI agents, deploy
@@ -45,7 +45,7 @@ const BuildAgent = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <h4 className="text-left mb-4 w-5/6">
-                Knowledge-Equipped and Function-Calling Sub-Agents
+                Knowledge-equipped and function-calling sub-agents
               </h4>
               <p className="text-left">
                 Your multi-agent AI system goes beyond conversation—each
@@ -82,7 +82,7 @@ const BuildAgent = () => {
                   }}
                 >
                   <h4 className="text-left mb-4 w-5/6">
-                    Citations and Guardrails
+                    Citations and guardrails
                   </h4>
                   <p className="text-left pr-4">
                     Ensure every response is grounded in verifiable data, with

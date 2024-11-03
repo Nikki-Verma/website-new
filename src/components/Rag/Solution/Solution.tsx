@@ -57,7 +57,7 @@ const Solution = () => {
 
                 <div>
                   <h4 className="heading_24 text-center text-left">
-                    Content Generation
+                    Content generation
                   </h4>
                   <p className="text-center mb-4">
                     Summarizations and question answering with precise citations
@@ -85,7 +85,7 @@ const Solution = () => {
 
                 <div>
                   <h4 className="heading_24 text-center text-left">
-                    Information Retrieval
+                    Information retrieval
                   </h4>
                   <p className="text-center mb-4">
                     Power hybrid search and recommendation system

@@ -7,7 +7,7 @@ import { useState } from "react";
 import "./style.css";
 const data = [
   {
-    heading: "Speed and Simplicity",
+    heading: "Speed and simplicity",
     description:
       "Build agents faster with an intuitive interface and no-code tools that simplify agent creation, configuration, and deployment",
     imageAlt: "poc-dev-icon",

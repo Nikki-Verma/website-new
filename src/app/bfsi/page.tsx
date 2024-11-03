@@ -9,7 +9,7 @@ import Tabs from "@/components/TabsConfig/Tabs";
 import {
   banner,
   capital_marketing,
-  insurance,
+  platformData,
   retailAndBanking,
   solutionsList,
 } from "@/data/bfsiPageData";
@@ -23,19 +23,22 @@ const BFSI = () => {
         <div className="container">
           <div className="section_heading_container">
             <div className="home_page_heading">
-              The Fastest and Simplest Way to Implement <br />
-              AI-Powered Financial Solutions
+              The fastest and simplest way to implement <br />
+              AI-powered financial solutions
             </div>
           </div>
           <CardInfo data={solutionsList} />
         </div>
       </section>
       <Tabs tabsConfig={retailAndBanking} />
-      <Tabs tabsConfig={insurance} />
       <Tabs tabsConfig={capital_marketing} />
-      <AIPlatformOverview />
+      {/* <Tabs tabsConfig={insurance} /> */}
+      <AIPlatformOverview data={platformData} />
       <CaseStudy />
-      <BannerExpert />
+      <BannerExpert
+        bannerHeading="Ready to elevate your financial services?"
+        bannerText="Transform your operations with SimplAI’s Generative AI solutions. Enhance efficiency, drive customer engagement, and automate workflows effortlessly."
+      />
       <Footer />
     </>
   );

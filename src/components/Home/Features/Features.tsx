@@ -10,64 +10,73 @@ import Observability from "../../../assets/svg/icons/Observability.svg";
 import Coding from "../../../assets/svg/icons/coding.svg";
 
 import { Col, Row } from "antd";
+import Link from "next/link";
 import "./style.css";
 const data = [
   {
-    heading: "AI Agents",
+    heading: "Build Intelligent Agents",
     description:
-      "Develop intelligent conversational AI, assistants, co-pilots, and AI employees.",
+      "Develop intelligent conversational AI, including assistants, co-pilots, and AI employees.",
     image: AiAgents,
     imageAlt: "ai-agent-icon",
+    link: "/ai-agents",
   },
   {
-    heading: "Agentic Workflows",
+    heading: "Automate with Agentic Workflows",
     description:
-      "Automate complex workflows by using AI chaining to handle multi-step tasks",
+      "Automate complex workflows by using AI chaining to handle multi-step tasks.",
     image: AgenticWorkflows,
     imageAlt: "agentic workflow-icon",
+    link: "/agentic-process-automation",
   },
   {
-    heading: "Enterprise Knowledge",
+    heading: " Leverage Enterprise Knowledge",
     description:
-      "Leverage your data to ground AI, ensuring high accuracy and relevance",
+      "Leverage your data to ground AI, ensuring high accuracy and relevance.",
     image: EnterpriseKnowledgebase,
     imageAlt: "enterprise-knowledgebase",
+    link: "/rag",
   },
   {
-    heading: "Embed AI",
+    heading: "Seamlessly Embed AI",
     description:
-      "Integrate AI into your system through APIs, webhooks, SDKs, and embedded UIs",
+      "Integrate AI into your system through APIs, webhooks, SDKs, and embedded UIs.",
     image: EmbedAi,
     imageAlt: "embed-ai-icon",
+    link: "",
   },
   {
-    heading: "Data Integration Engine",
+    heading: "Effortless Data Integration Engine",
     description:
-      "Bring your data pipelines to your AI applications with our 300+ readily available connectors",
+      "Bring your data pipelines to your AI applications with our 300+ readily available connectors.",
     image: DataIntegrationEngine,
     imageAlt: "data-integration-engine-icon",
+    link: "",
   },
   {
-    heading: "No Code / Low Code",
+    heading: "Build with No Code / Low Code",
     description:
-      "Build and deploy AI applications rapidly, without needing extensive coding skills",
+      "Build and deploy AI applications rapidly, without needing extensive coding skills.",
     image: Coding,
     imageAlt: "no-code-icon",
+    link: "",
   },
 
   {
-    heading: "Models",
+    heading: "Experiment with Models",
     description:
-      "Experiment, finetune, and deploy any of the popular open source and closed source models",
+      "Experiment, finetune, and deploy any of the popular open source and closed source models.",
     image: EnterpriseKnowledgebase,
     imageAlt: "mod-icon",
+    link: "",
   },
   {
-    heading: "Observability",
+    heading: "Ensure Observability",
     description:
-      "Monitor AI performance with granular tracing and evaluation metrics",
+      "Monitor AI performance with granular tracing and evaluation metrics.",
     image: Observability,
     imageAlt: "Observability-icon",
+    link: "",
   },
 ];
 const Features = () => {
@@ -96,22 +105,24 @@ const Features = () => {
                 xl={6}
                 style={{ alignSelf: "stretch" }}
               >
-                <div className="features_box_container">
-                  <Image
-                    alt={cardDetails?.imageAlt ?? "icon"}
-                    src={cardDetails?.image}
-                    height={32}
-                    width={32}
-                  />
-                  <div className="flex flex-col items-start gap-2">
-                    <div className="features_box_heading">
-                      {cardDetails?.heading}
-                    </div>
-                    <div className="features_box_description">
-                      {cardDetails.description}
+                <Link href={cardDetails?.link} prefetch>
+                  <div className="features_box_container">
+                    <Image
+                      alt={cardDetails?.imageAlt ?? "icon"}
+                      src={cardDetails?.image}
+                      height={32}
+                      width={32}
+                    />
+                    <div className="flex flex-col items-start gap-2">
+                      <div className="features_box_heading">
+                        {cardDetails?.heading}
+                      </div>
+                      <div className="features_box_description">
+                        {cardDetails.description}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </Col>
             );
           })}

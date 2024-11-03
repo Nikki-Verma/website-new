@@ -2,3 +2,20 @@
   background: #ffffff;
   padding: 24px 0;
 }
+
+.banner-heading {
+  color: var(--Text-Color-850, #222);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.banner-details {
+  color: var(--Text-Color-850, #222);
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

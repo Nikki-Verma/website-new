@@ -23,7 +23,7 @@ const AiFeature = () => {
               <div className="gap-2 gap-4 h-full flex justify-between flex-col">
                 <div>
                   <h4 className="heading_24 text-left">
-                    Intelligent AI Agents
+                    Intelligent AI agents
                   </h4>
                   <p className="">
                     Design conversational agents that manage complex
@@ -45,7 +45,7 @@ const AiFeature = () => {
             <div className="card_v2 px-8 py-8 w-full">
               <div className="gap-2 gap-4 h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="heading_24 text-left">AI & LLM Chaining</h4>
+                  <h4 className="heading_24 text-left">AI & LLM chaining</h4>
                   <p className="">
                     Build multi-agent systems where agents collaborate and
                     independently execute tasks, using adaptive learning and
@@ -67,7 +67,7 @@ const AiFeature = () => {
               <div className="h-full flex justify-between gap-4 flex-col">
                 <div>
                   <h4 className="heading_24 text-left">
-                    Automated AI Workflows
+                    Automated AI workflows
                   </h4>
                   <p className="">
                     Automate workflows with multi-step sequencing, blending
@@ -90,7 +90,7 @@ const AiFeature = () => {
               <div className="gap-2 gap-4 h-full flex justify-between flex-col">
                 <div>
                   <h4 className="heading_24 text-left">
-                    Flexible Deployment Options
+                    Flexible deployment options
                   </h4>
                   <p>
                     Deploy AI systems in the SimplAI cloud, on your private

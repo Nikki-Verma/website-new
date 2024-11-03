@@ -27,7 +27,7 @@ const Tools = () => {
                 />
 
                 <h4 className="heading_24 text-center mb-4 mt-8">
-                  Granular visibility with Traces
+                  Granular visibility with traces
                 </h4>
                 <p className="text-center">
                   Get a clear view of every sequence of calls, allowing you to
@@ -46,7 +46,7 @@ const Tools = () => {
                 />
 
                 <h4 className="heading_24 text-center mb-4 mt-8">
-                  Automatic Evaluation Metrics
+                  Automatic Evaluation metrics
                 </h4>
                 <p className="text-center">
                   Gain insights into the robustness and reliability of your LLM
@@ -66,7 +66,7 @@ const Tools = () => {
                 />
 
                 <h4 className="heading_24 text-center mb-4 mt-8">
-                  Evaluate and Improve
+                  Evaluate and improve
                 </h4>
                 <p className="text-center">
                   Continually enhance your LLM models with actionable insights,

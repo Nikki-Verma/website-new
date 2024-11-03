@@ -10,7 +10,7 @@ import {
   banner,
   consulting,
   legal,
-  research,
+  platformData,
   solution,
 } from "@/data/legalPage";
 
@@ -23,8 +23,8 @@ const Legal = () => {
         <div className="container">
           <div className="section_heading_container">
             <div className="home_page_heading">
-              Unlock Efficiency, Insights, and <br />
-              Accuracy with SimplAI
+              The fastest and simplest way to innovate legal, <br />
+              consulting, and research practices
             </div>
           </div>
           <div>
@@ -34,10 +34,13 @@ const Legal = () => {
       </section>
       <Tabs tabsConfig={legal} />
       <Tabs tabsConfig={consulting} />
-      <Tabs tabsConfig={research} />
+      {/* <Tabs tabsConfig={research} /> */}
       <CaseStudy />
-      <AIPlatformOverview />
-      <BannerExpert />
+      <AIPlatformOverview data={platformData} />
+      <BannerExpert
+        bannerHeading="Ready to Transform Your Legal, Consulting, and Research Solutions?"
+        bannerText="Unlock the immense potential of AI to enhance efficiency, drive insights, and automate processes across your organization."
+      />
       <Footer />
     </>
   );

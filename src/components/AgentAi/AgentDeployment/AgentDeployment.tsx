@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  AiEncryption,
   ApiIcon,
   ConnectionIcon,
   EmbedIcon,
@@ -12,14 +11,14 @@ import Image from "next/image";
 import "./style.css";
 const data = [
   {
-    heading: "API & Webhooks",
+    heading: "API & webhooks",
     description:
       "Integrate your AI agents seamlessly into any workflow or system",
     imageAlt: "poc-dev-icon",
     image: ApiIcon,
   },
   {
-    heading: "Embed Code",
+    heading: "Embed code",
     description:
       "Easily add AI agents to your website with a simple embed code",
     imageAlt: "iterate-refine-icon",
@@ -33,7 +32,7 @@ const data = [
     image: MobileSdkIcon,
   },
   {
-    heading: "Connect with Popular Apps",
+    heading: "Connect with popular apps",
     description: "Directly integrate with WhatsApp, Slack, Telegram, and more",
     imageAlt: "productise-ai-icon",
     image: ConnectionIcon,
@@ -44,20 +43,36 @@ const AgentDeployment = ({
   EncryptionDataPoints,
   title,
   subTitle,
+  mainImage,
 }: {
   EncryptionDataPoints: any[];
   title: string | null | undefined;
   subTitle: string | null | undefined;
+  mainImage: any;
 }) => {
   return (
     <section className="section">
       <div className="container">
+        <div className="section_heading_container">
+          <div className="home_page_heading">{title}</div>
+          <p className="text-center">{subTitle}</p>
+        </div>
         <div className="card_v2 flex w-full px-8 py-8 mb-12">
           <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
-            <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-              <h4 className="text-left mb-4 w-5/6">{title}</h4>
-              <p className="text-left pr-4 mb-8">{subTitle}</p>
-              <Image src={AiEncryption} alt="Ai-encryption-image" />
+            <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={12}
+              xl={12}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Image src={mainImage} alt="features-image" />
             </Col>
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               {EncryptionDataPoints?.map((data) => {
@@ -86,7 +101,7 @@ const AgentDeployment = ({
         </div>
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Deployment & Integration Made Simple
+            Deployment & integration made simple
           </div>
         </div>
 

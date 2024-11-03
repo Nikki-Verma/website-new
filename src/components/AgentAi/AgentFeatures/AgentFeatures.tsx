@@ -16,54 +16,54 @@ import { Col, Row } from "antd";
 import "./style.css";
 const data = [
   {
-    heading: "Customer Support Agents",
+    heading: "Customer support agents",
     description:
       "Handle inquiries, resolve issues, and provide real-time assistance.",
     image: CustomerSupportIcon,
     imageAlt: "no-code-icon",
   },
   {
-    heading: "Employee Assistants",
+    heading: "Employee assistants",
     description:
       "Manage schedules, automate tasks, and support internal workflows.",
     image: EmployeeAssistantIcon,
     imageAlt: "embed-ai-icon",
   },
   {
-    heading: "Data Analysis Agents",
+    heading: "Data analysis agents",
     description:
       "Analyze data, generate reports, and provide actionable insights.",
     image: AnalysisAgentIcon,
     imageAlt: "ai-agent-icon",
   },
   {
-    heading: "Task Execution Co-pilots",
+    heading: "Task execution co-pilots",
     description: "Assist with multi-step tasks and workflow automation.",
     image: TaskIcon,
     imageAlt: "agentic workflow-icon",
   },
   {
-    heading: "Research & Analyst Agents",
+    heading: "Research & analyst agents",
     description: "Gather, organize, and synthesize data for precise insights.",
     image: ResearchIcon,
     imageAlt: "enterprise-knowledgebase",
   },
   {
-    heading: "Sales & Marketing Agents",
+    heading: "Sales & marketing agents",
     description:
       "Automate lead generation, customer outreach, and market analysis.",
     image: MarketingIcon,
     imageAlt: "mod-icon",
   },
   {
-    heading: "Knowledge Assistants",
+    heading: "Knowledge assistants",
     description:
       "Retrieve information and answer complex questions from your knowledge base.",
     image: KnowledgeAssistantIcon,
     imageAlt: "data-integration-engine-icon",
   },
   {
-    heading: "Domain-Specific Agents",
+    heading: "Domain-specific agents",
     description:
       "Tailored AI for industry-specific tasks, be it finance, healthcare, to Supply chain, HR etc.",
     image: DomainAgent,
@@ -76,7 +76,7 @@ const AgentFeatures = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            One Agentic Platform. Unlimited Possibilities
+            One agentic platform. Unlimited possibilities.
           </div>
         </div>
         <Row gutter={[12, 12]} justify={"start"}>

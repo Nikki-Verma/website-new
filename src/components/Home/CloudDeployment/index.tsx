@@ -27,8 +27,8 @@ const CloudDeployment = () => {
         <div className="section_heading_container">
           <div className="home_page_heading_tag">Cloud Deployments</div>
           <div className="home_page_heading">
-            Deploy fully managed, dedicated Conductor <br /> instances on your
-            preferred cloud provider
+            Deploy Your Way <br />
+            SimplAI Cloud, Your Cloud, or On-Premises
           </div>
         </div>
 

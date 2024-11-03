@@ -12,32 +12,33 @@ import {
   EvaluationImage,
   FrameworkImage,
   GuardrailsImage,
+  createAutomatedWorkflowImage,
 } from "@/util/images";
 
 const EncryptionDataPoints = [
   {
-    heading: "Application-Level Version Control",
+    heading: "Application-level version control",
     description:
       "Simplify version management with seamless rollbacks and updates, supporting efficient collaborative workflows",
     imageAlt: "Application-Level-Version-Control-icon",
     image: AlvcImage,
   },
   {
-    heading: "Granular level Tracing",
+    heading: "Granular level tracing",
     description:
       "Keep track of every step in your automated processes, ensuring visibility and auditability at every stage",
     imageAlt: "poc-dev-icon",
     image: EvaluationImage,
   },
   {
-    heading: "Guardrails for Accuracy",
+    heading: "Guardrails for accuracy",
     description:
       "Built-in safeguards ensure every interaction is accurate, reliable, and fact-based, maintaining the highest standard of trustworthiness",
     imageAlt: "iterate-refine-icon",
     image: GuardrailsImage,
   },
   {
-    heading: "Experimentation Framework",
+    heading: "Experimentation framework",
     description:
       "Easily test and optimize your AI agents by configuring different prompts, response strategies, and guardrails within a controlled environment.",
     imageAlt: "integrate-agent-icon",
@@ -55,12 +56,16 @@ const home = () => {
       <AgentDeployment
         title={"Create workflows you can automate"}
         subTitle={
-          "Advanced features to build production-ready agentic automation."
+          "Advanced features to build production-ready agentic automation"
         }
         EncryptionDataPoints={EncryptionDataPoints}
+        mainImage={createAutomatedWorkflowImage}
       />
       <CaseStudy />
-      <BannerExpert />
+      <BannerExpert
+        bannerHeading="Ready to automate your workflows?"
+        bannerText="Create intelligent, automated workflows quickly with SimplAI’s agentic process automation platform. Automate complex processes, reduce manual errors, and scale operations with ease."
+      />
       <Footer />
     </section>
   );

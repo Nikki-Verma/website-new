@@ -107,7 +107,7 @@ const ModelFeatures = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Connect, Deploy, Experiment and Finetune <br /> any LLM model
+            Connect, deploy, experiment and finetune <br /> any LLM model
           </div>
         </div>
 

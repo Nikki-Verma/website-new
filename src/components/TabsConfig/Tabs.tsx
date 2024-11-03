@@ -54,7 +54,7 @@ const Tabs = ({ tabsConfig }: any) => {
               <Row gutter={[36, 36]}>
                 <Col span={24}>
                   <div className="active_tab_text_content">
-                    <p className="active_tab_description w-1/2 mb-4">
+                    <p className="active_tab_description mb-4">
                       {tabsConfig?.tabs?.tabsContent?.[activeTab]?.description}
                     </p>
                     {tabsConfig?.tabs?.tabsContent?.[activeTab]?.features

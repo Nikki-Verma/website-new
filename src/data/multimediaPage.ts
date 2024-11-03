@@ -1,3 +1,4 @@
+import { ReliableIcon, ScalableIcon, SecureIcon } from "@/util/icons";
 import {
   EducationBannerImage,
   GamingAndSportBannerImage,
@@ -6,32 +7,26 @@ import {
 } from "@/util/images";
 import {
   AiPoweredContentSearchImage,
-  AssestsMetadataAutomationImage,
   AutomatePostProductionImage,
   AutomatedContentManagementImage,
   ContentCreationImage,
-  ContentCreationInGameImage,
   ContentPersonalizationImage,
   CustomerSupportImage,
   EngagementIcon,
   FastTrackIcon,
   GameEngagementImage,
-  ModerationFilteringImage,
   NetwokOptimizationImage,
-  PlayerAndTeamInsightsImage,
   ScaleIcon,
-  SelfServicePortalImage,
   StreamlineOperationsImage,
   TelecomHeroBanner,
   TransformMediaIcon,
-  VirtualAssistantsInGameImage,
 } from "../util/svgImage";
 
 export const banner = {
   title: "Telecom, Media & Entertainment",
   heading: "Build AI-First Solutions for Telecom, Media & Entertainment",
   description:
-    "Harness future-ready applications with SimplAI's Agentic AI and process automation platform. From transforming creativity to automating operational workflows to enhancing customer engagement, unlock the full potential of AI-driven innovation.",
+    "Unlock the power of Gen AI with SimplAI's Agentic AI platform. Transform creativity, automate workflows, and elevate customer engagement—future-ready solutions for a competitive edge.",
   buttonText: "Request Demo",
   buttonLink: "#",
   img: TelecomHeroBanner,
@@ -39,27 +34,27 @@ export const banner = {
 
 export const solution = [
   {
-    title: "Deliver Unmatched Creative Experiences",
+    title: "Unmatched creative XP",
     description:
-      "Leverage SimplAI's Agentic AI to redefine content creation, personalization, and media production—creating experiences that captivate and engage audiences like never before.",
+      "Leverage SimplAI's Agentic AI to redefine content creation, personalization, and media production.",
     icon: TransformMediaIcon,
   },
   {
-    title: "Accelerate AI Application Launches",
+    title: "Accelerate launches",
     description:
-      "Build and deploy AI-first solutions quickly with our platform, enabling companies to innovate faster, streamline operations, and stay ahead in a competitive landscape.",
+      "Build and deploy AI-first solutions quickly with our platform, enabling companies to innovate faster.",
     icon: FastTrackIcon,
   },
   {
-    title: "Empower Your Customers Everywhere",
+    title: "Empower your customers ",
     description:
-      "Offer personalized, omnichannel experiences powered by AI—ensuring customer engagement across every platform, anytime",
+      "Offer personalized, omnichannel experiences powered by AI—ensuring customer engagement, anytime.",
     icon: EngagementIcon,
   },
   {
-    title: "Monetize Innovation and Scale Fast",
+    title: "Monetize and scale fast",
     description:
-      "SimplAI helps you scale AI-driven innovation while accelerating time to market and unlocking new revenue streams through automation and cutting-edge AI technologies.",
+      "SimplAI helps you scale AI-driven innovation, accelerating time to market and unlocking new revenue streams.",
     icon: ScaleIcon,
   },
 ];
@@ -71,42 +66,28 @@ export const telecom = {
     image: TelecomBannerImage,
     title: "Telecom",
     description:
-      "Enhance network performance and customer satisfaction with AI-driven automation.",
+      "Enhance network performance and customer satisfaction with tailored Gen AI solutions.",
   },
 
   tabs: {
-    tabsName: [
-      "Self-Service Portals",
-      "Customer Engagement & Support",
-      "Network Optimization",
-    ],
+    tabsName: ["Customer engagement", "Network Operations"],
     tabsContent: {
-      "Self-Service Portals": {
+      "Customer engagement": {
         description:
-          "Revolutionizing Customer Experiences with AI-Driven Self-Service Portals",
+          "Streamline customer interactions and improve service delivery.",
         features: [
-          "Automate customer interactions with AI-powered self-service options.",
-          "Enable customers to resolve issues and access services independently.",
-        ],
-        image: SelfServicePortalImage,
-      },
-      "Customer Engagement & Support": {
-        description:
-          "Transforming Customer Support & Engagement through AI Automation",
-        features: [
-          "Provide AI-driven, 24/7 customer support for real-time assistance.",
-          "Automate responses and reduce wait times with intelligent support agents.",
-          "Deploy AI agents to optimize field service management and task allocation.",
-          "Predict maintenance needs and improve response times.",
+          "Automated self-service portals: Enable customers to resolve issues and access services independently.",
+          "AI-driven 24/7 support: Provide round-the-clock customer support using intelligent agents, automating responses .",
+          "Field service optimization: Deploy AI agents to manage field service tasks, predicting maintenance needs.",
         ],
         image: CustomerSupportImage,
       },
-      "Network Optimization": {
+      "Network Operations": {
         description:
-          "Maximizing Network Efficiency with Intelligent AI-Powered Optimization",
+          "Leverage AI to enhance network efficiency and performance through real-time monitoring and predictive analytics.",
         features: [
-          "Use AI for real-time network monitoring and optimization.",
-          "Enhance network efficiency and performance with predictive insights.",
+          "Real-time network monitoring: Utilize AI for continuous analysis of network performance.",
+          "Automated incident response: Use AI to automatically detect and respond to network anomalies, ensuring swift resolution of issues.",
         ],
         image: NetwokOptimizationImage,
       },
@@ -117,53 +98,32 @@ export const telecom = {
 export const multimedia = {
   banner: {
     image: MediaAndBroadcastBannerImage,
-    title: "Media, Studio & Broadcast",
+    title: "Broadcast & Media",
     description:
-      "Streamline content creation and operations with AI-powered innovation",
+      "Streamline content creation and operations with AI-powered innovation.",
   },
 
   tabs: {
-    tabsName: [
-      "Asset Metadata Automation",
-      "Content Creation",
-      "AI-Powered Contextual Moderation & Filtering",
-      "Automate Post Production & Operations",
-    ],
+    tabsName: ["Content creation", "Post-production"],
     tabsContent: {
-      "Asset Metadata Automation": {
+      "Content creation": {
         description:
-          "Transforming Media Management with AI-Powered Asset Metadata Automation",
+          "Enhance creative workflows and production efficiency through AI-driven tools.",
         features: [
-          "Automate metadata tagging for faster content organization.",
-          "Improve searchability and accessibility of media assets.",
-        ],
-        image: AssestsMetadataAutomationImage,
-      },
-      "Content Creation": {
-        description: "Accelerating Content Creation with AI-Driven Innovation",
-        features: [
-          "Leverage AI for scriptwriting, content generation, and editing workflows.",
-          "Accelerate creative processes with AI-driven ideation.",
+          "Automated scriptwriting: Leverage AI for generating scripts based on input parameters, accelerating the creative process.",
+          "Content generation and editing: Use AI to assist in content generation and editing workflows.",
+          "Dynamic metadata tagging: Automate the tagging of media assets, improving discoverability and searchability.",
+          "Localized content generation: Implement AI for real-time translation and localization, making them accessible.",
         ],
         image: ContentCreationImage,
       },
-      "AI-Powered Contextual Moderation & Filtering": {
+      "Post-production": {
         description:
-          "Ensure Content Integrity with AI-Powered Contextual Moderation & Filtering",
+          "Optimize post-production workflows and enhance the quality of media outputs through AI applications.",
         features: [
-          "Apply AI for real-time content moderation and filtering.",
-          "Ensure compliance with contextual AI to detect and block inappropriate content.",
-        ],
-        image: ModerationFilteringImage,
-      },
-      "Automate Post Production & Operations": {
-        description:
-          "Revolutionizing Post-Production and Broadcast Operations through AI Automation",
-        features: [
-          "Streamline editing, rendering, and finalization with AI-powered tools.",
-          "Enhance video quality and turnaround time with automated processes.",
-          "Optimize broadcast scheduling and live control rooms with AI automation.",
-          "Use AI to improve resource allocation and reduce operational costs.",
+          "AI-powered video editing: Streamline editing and rendering processes with AI tools that automate repetitive tasks and suggest creative edits.",
+          "Contextual moderation & filtering: Apply AI for real-time content moderation and filtering, ensuring compliance.",
+          "Live control room automation: Apply AI to optimize scheduling and resource management in live broadcasting.",
         ],
         image: AutomatePostProductionImage,
       },
@@ -231,53 +191,43 @@ export const gaming_and_esport = {
     image: GamingAndSportBannerImage,
     title: "Gaming & E-Sports",
     description:
-      "Drive engagement and streamline gaming experiences with AI-powered solutions",
+      "Drive engagement and streamline gaming experiences with AI-powered solutions.",
   },
 
   tabs: {
-    tabsName: [
-      "Game Engagement",
-      "In-Game Virtual Assistants",
-      "Content Creation",
-      "Player & Team Insights",
-    ],
+    tabsName: ["Game Development"],
     tabsContent: {
-      "Game Engagement": {
+      "Game Development": {
         description:
-          "Elevating Player Engagement with AI-Driven Game Personalization",
+          "Enhance game design and development processes through innovative AI solutions.",
         features: [
-          "Personalize in-game experiences with AI-driven recommendations and dynamic content.",
-          "Keep players engaged with evolving storylines and Non Playing Character interactions.",
+          "Procedural content generation: Use LLMs to create unique game levels and scenarios, increasing replayability.",
+          "Dynamic NPC: Implement Gen AI to develop non-player characters (NPCs) that adapt their behavior based on player interactions.",
+          "Player personalization: Leverage AI to tailor in-game experiences, adjusting challenges and rewards.",
         ],
         image: GameEngagementImage,
-      },
-      "In-Game Virtual Assistants": {
-        description:
-          "Enhancing Gameplay with Real-Time AI-Powered Virtual Assistants",
-        features: [
-          "Provide real-time assistance to players with AI-powered in-game virtual assistants.",
-          "Offer help with game mechanics, strategy, and mission guidance.",
-        ],
-        image: VirtualAssistantsInGameImage,
-      },
-      "Content Creation": {
-        description:
-          "Transforming Game Development with AI-Driven Content Creation",
-        features: [
-          "Automate NPC development, procedural content generation, and player personalization.",
-          "Use AI to create unique, immersive game environments and characters.",
-        ],
-        image: ContentCreationInGameImage,
-      },
-      "Player & Team Insights": {
-        description:
-          "Unlocking Performance Insights with AI Analytics for Players & Teams",
-        features: [
-          "Leverage AI analytics for deep insights into player behavior and team performance.",
-          "Detect patterns to optimize gameplay and improve competitive strategies.",
-        ],
-        image: PlayerAndTeamInsightsImage,
       },
     },
   },
 };
+
+export const platformData = [
+  {
+    icon: SecureIcon,
+    heading: "Secure",
+    description:
+      "Maintain compliance with industry standards while protecting user data through robust security measures tailored for telecom and media sectors.",
+  },
+  {
+    icon: ScalableIcon,
+    heading: "Scalable",
+    description:
+      "Seamlessly scale AI solutions from initial pilots to full production, adapting to the demands of high-volume environments within telecom and media.",
+  },
+  {
+    icon: ReliableIcon,
+    heading: "Reliable",
+    description:
+      "Deploy AI solutions that provide real-time, accurate insights, ensuring consistency and quality across all applications to meet business needs.",
+  },
+];

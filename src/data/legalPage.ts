@@ -1,14 +1,13 @@
+import { ReliableIcon, ScalableIcon, SecureIcon } from "@/util/icons";
 import { ConsultingBanner, LegalBanner, ResearchBanner } from "@/util/images";
 import {
   AgilityIcon,
   ComplianceIcon,
   ConsultingAiWorkforce,
-  ConsultingDataStructuring,
   ConsultingInsightGeneration,
   FasterIcon,
   LegalAiWorkforce,
   LegalDataAnalysis,
-  LegalDocumentation,
   LegalHeroBanner,
   ResearchDataAnalysis,
   ResearchInsightGeneration,
@@ -18,9 +17,9 @@ import {
 export const banner = {
   title: "Legal, Consulting & Research",
   heading:
-    "AI Workforce & Process Automation for Legal, Consulting, and Research",
+    "Build your AI workforce and deploy agentic process automation today!",
   description:
-    "Transform knowledge-driven industries with SimplAI. Automate complex tasks, generate actionable insights, and supercharge your team with AI-powered tools designed for efficiency, accuracy, and innovation.",
+    "Empower your teams to navigate complexity with SimplAI. Harness the power of AI to automate mundane tasks, extract deep insights, and elevate your organization’s efficiency and accuracy.",
   buttonText: "Request Demo",
   buttonLink: "#",
   img: LegalHeroBanner,
@@ -28,27 +27,27 @@ export const banner = {
 
 export const solution = [
   {
-    title: "Streamline Workflows",
+    title: "Accelerate productivity",
     description:
-      "Automate routine tasks like data structuring, document drafting, and reporting, allowing your team to focus on strategic work.",
+      "Harness intelligent automation to streamline repetitive tasks, focussing on strategic insights and high-value work.",
     icon: StreamlineIcon,
   },
   {
-    title: "Faster, Smarter Insights",
+    title: "Intelligent decision-making",
     description:
-      "Leverage AI to uncover insights from vast datasets, driving faster and more informed decisions across your organization.",
+      "Real-time data analysis and insights, empowering professionals to make informed, data-driven decisions.",
     icon: FasterIcon,
   },
   {
-    title: "Increase Agility & Precision",
+    title: "Enhance client engagement",
     description:
-      "Optimize processes and reduce errors with AI-powered tools, enabling you to respond faster and more accurately to business demands.",
+      "Utilize agentic AI to personalize interactions, providing tailored experiences to elevate client satisfaction.",
     icon: AgilityIcon,
   },
   {
-    title: "Ensure Compliance & Accuracy",
+    title: "Optimize operational efficiency",
     description:
-      "Maintain high standards in legal documentation, research accuracy, and consulting analysis with automated compliance checks and enhanced data validation.",
+      "Agentic workflows to handle administrative tasks and document processing, reducing overhead costs.",
     icon: ComplianceIcon,
   },
 ];
@@ -58,30 +57,31 @@ export const legal: any = {
     image: LegalBanner,
     title: "Legal",
     description:
-      "Maximize efficiency and precision in legal operations with AI-driven automation.",
+      "Transform legal operations with intelligent AI workforce and automation.",
   },
 
   tabs: {
-    tabsName: [
-      "AI Workforce",
-      "Data Analysis & Insights",
-      "Legal Documentation",
-    ],
+    tabsName: ["AI workforce", "Document automation"],
     tabsContent: {
-      "AI Workforce": {
+      "AI workforce": {
         description:
-          "Automate legal research, contract drafting, and compliance review for increased productivity.",
+          "Transform legal operations with intelligent automation that enhances efficiency and productivity.",
+        features: [
+          "Legal Assistant: Delegate complex tasks with your AI-powered domain-specific personal assistant.",
+          "AI-powered search: Retrieves specific contract clauses quickly, providing instant insights into your agreements.",
+          "E-Discovery: LLMs streamline e-discovery through efficient data collection, extraction, and categorization, enhancing accuracy",
+        ],
         image: LegalAiWorkforce,
       },
-      "Data Analysis & Insights": {
+      "Document automation": {
         description:
-          "Analyze case law, regulations, and contracts faster with AI-powered data analysis.",
+          "Enhance document generation and processing to reduce turnaround times.",
+        features: [
+          "Legal reports generation: Automate the creation of various legal reports, ensuring consistency and compliance.",
+          "Summarization of documents: Summarize lengthy legal documents quickly, providing concise insights.",
+          "Legal drafting: Utilize Gen AI tools to draft legal documents such as contracts, agreements, and pleadings.",
+        ],
         image: LegalDataAnalysis,
-      },
-      "Legal Documentation": {
-        description:
-          "Automate document preparation and review for faster, more accurate legal processes.",
-        image: LegalDocumentation,
       },
     },
   },
@@ -90,31 +90,30 @@ export const legal: any = {
 export const consulting: any = {
   banner: {
     image: ConsultingBanner,
-    title: "Consulting",
+    title: "Consulting & research",
     description:
-      "Enhance consulting services with AI-powered insights and automation.",
+      "Empower consulting and research teams with Gen AI to streamline insights.",
   },
 
   tabs: {
-    tabsName: [
-      "AI Workforce",
-      "Data Structuring & Pre-processing",
-      "Insight Generation",
-    ],
+    tabsName: ["AI workforce", "Insight generation"],
     tabsContent: {
-      "AI Workforce": {
+      "AI workforce": {
         description:
-          "Automate client reporting, data analysis, and process optimization for faster turnarounds.",
+          "Boost efficiency and accuracy with specialized AI agents to handle complex tasks.",
+        features: [
+          "Virtual data analysts: AI-powered agents automate the analysis of complex datasets, extracting actionable insights.",
+          "Research assistant: Answer questions using insights from past reports, industry research, and data intelligence tools.",
+        ],
         image: ConsultingAiWorkforce,
       },
-      "Data Structuring & Pre-processing": {
+      "Insight generation": {
         description:
-          "Organize unstructured client data efficiently to drive actionable insights",
-        image: ConsultingDataStructuring,
-      },
-      "Insight Generation": {
-        description:
-          "Use AI to deliver predictive insights, helping clients make informed, data-driven decisions.",
+          "Transform data into meaningful insights, driving strategic decision-making.",
+        features: [
+          "Data structuring: Utilize AI for organizing unstructured data sources, for easier access and analysis.",
+          "Report automation: Streamline report creation, automatically compiling data and insights with minimal manual intervention.",
+        ],
         image: ConsultingInsightGeneration,
       },
     },
@@ -154,3 +153,24 @@ export const research: any = {
     },
   },
 };
+
+export const platformData = [
+  {
+    icon: SecureIcon,
+    heading: "Secure",
+    description:
+      "Deploy AI solutions tailored for the legal and consulting landscapes, ensuring compliance with industry regulations while safeguarding sensitive data.",
+  },
+  {
+    icon: ScalableIcon,
+    heading: "Scalable",
+    description:
+      "Effortlessly transition from pilot projects to full-scale implementations, adapting to the unique demands of your legal and consulting practices.",
+  },
+  {
+    icon: ReliableIcon,
+    heading: "Reliable",
+    description:
+      "Deliver grounded, factual insights with rapid, accurate answers backed by verified citations enabling confidence in decision-making.",
+  },
+];

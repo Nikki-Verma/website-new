@@ -8,8 +8,6 @@ import HealthcareIcon from "@/components/Icons/HealthcareIcon";
 import HealthcareSelectedIcon from "@/components/Icons/HealthcareSelectedIcon";
 import InsuranceSelectedIcon from "@/components/Icons/InsuranceSelectedIcon";
 import InsuranceIcon from "@/components/Icons/InsureanceIcon";
-import InternetIcon from "@/components/Icons/InternetIcon";
-import InternetSelectedIcon from "@/components/Icons/InternetSelectedIcon";
 import LegalIcon from "@/components/Icons/LegalIcon";
 import LegalSelectedIcon from "@/components/Icons/LegalSelectedIcon";
 import TelecomIcon from "@/components/Icons/TelecomIcon";
@@ -18,11 +16,11 @@ import {
   CoinHourglass,
   HealthcareImage,
   InsuranceImage,
-  InternetImage,
   LegalImage,
   TelecomImage,
 } from "@/util/images";
 import { Col, Row } from "antd";
+import Link from "next/link";
 import "./style.css";
 
 const data = [
@@ -34,6 +32,7 @@ const data = [
     buttonName: "Get started",
     buttonLink: "",
     image: CoinHourglass,
+    url: "/bfsi",
   },
   {
     heading: "Insurance",
@@ -43,6 +42,7 @@ const data = [
     buttonName: "Get started",
     buttonLink: "",
     image: InsuranceImage,
+    url: "/insurance",
   },
   {
     heading: "healthcare",
@@ -52,24 +52,7 @@ const data = [
     buttonName: "Get started",
     buttonLink: "",
     image: HealthcareImage,
-  },
-  {
-    heading: "Telecom",
-    description: [
-      "Elevate network management and customer engagement with SimplAI’s Gen AI solutions, enabling seamless service delivery, automated processes, and enhanced satisfaction.",
-    ],
-    buttonName: "Get started",
-    buttonLink: "",
-    image: TelecomImage,
-  },
-  {
-    heading: "Internet",
-    description: [
-      "Deliver scalable, reliable Gen AI applications with SimplAI, enhancing user experiences and enabling intelligent personalization while ensuring robust data privacy.",
-    ],
-    buttonName: "Get started",
-    buttonLink: "",
-    image: InternetImage,
+    url: "/healthcare",
   },
   {
     heading: "Legal",
@@ -79,7 +62,27 @@ const data = [
     buttonName: "Get started",
     buttonLink: "",
     image: LegalImage,
+    url: "/legal",
   },
+  {
+    heading: "Telecom",
+    description: [
+      "Elevate network management and customer engagement with SimplAI’s Gen AI solutions, enabling seamless service delivery, automated processes, and enhanced satisfaction.",
+    ],
+    buttonName: "Get started",
+    buttonLink: "",
+    image: TelecomImage,
+    url: "/multimedia",
+  },
+  // {
+  //   heading: "Internet",
+  //   description: [
+  //     "Deliver scalable, reliable Gen AI applications with SimplAI, enhancing user experiences and enabling intelligent personalization while ensuring robust data privacy.",
+  //   ],
+  //   buttonName: "Get started",
+  //   buttonLink: "",
+  //   image: InternetImage,
+  // },
 ];
 const Industries = () => {
   const [currentSelect, setCurrentSelect] = useState(data[0]);
@@ -95,10 +98,7 @@ const Industries = () => {
           <div className="home_page_heading_tag">Industries</div>
           <div className="home_page_heading">
             SimplAI empowers organizations across diverse sectors to build
-            production-ready Gen AI applications that are{" "}
-            <a className="heading_highlighter">
-              secure, scalable, and reliable.
-            </a>
+            production-ready Gen AI applications
           </div>
         </div>
         <Row
@@ -152,8 +152,8 @@ const Industries = () => {
                   : "industries_box_button"
               }
             >
-              {index === 3 ? <TelecomSelectedIcon /> : <TelecomIcon />}
-              Media & Telecom
+              {index === 3 ? <LegalSelectedIcon /> : <LegalIcon />}
+              Legal, Research & Consulting
             </button>
             <button
               onClick={() => handle(4)}
@@ -163,10 +163,11 @@ const Industries = () => {
                   : "industries_box_button"
               }
             >
-              {index === 4 ? <InternetSelectedIcon /> : <InternetIcon />}
-              Online & Internet
+              {index === 4 ? <TelecomSelectedIcon /> : <TelecomIcon />}
+              Media & Telecom
             </button>
-            <button
+
+            {/* <button
               onClick={() => handle(5)}
               className={
                 index === 5
@@ -174,9 +175,9 @@ const Industries = () => {
                   : "industries_box_button"
               }
             >
-              {index === 5 ? <LegalSelectedIcon /> : <LegalIcon />}
-              Legal, Research & Consulting
-            </button>
+              {index === 5 ? <InternetSelectedIcon /> : <InternetIcon />}
+              Online & Internet
+            </button> */}
           </Col>
           <Col
             span={18}
@@ -197,7 +198,9 @@ const Industries = () => {
             <span className="industries_description">
               {currentSelect?.description}
             </span>
-            <button className="button">Know more</button>
+            <Link href={currentSelect?.url} prefetch>
+              <button className="button">Know more</button>
+            </Link>
           </Col>
         </Row>
       </div>

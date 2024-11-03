@@ -11,6 +11,7 @@ import {
   healthcare_player,
   healthcare_provider,
   healthcare_tech,
+  platformData,
   solution,
 } from "@/data/healthcarePageData";
 
@@ -23,8 +24,8 @@ const HealthCare = () => {
         <div className="container">
           <div className="section_heading_container">
             <div className="home_page_heading">
-              Transforming Healthcare with SimplAI’s
-              <br /> Generative AI Solutions
+              The fastest and simplest way to transform
+              <br /> healthcare via Gen AI solutions
             </div>
           </div>
           <CardInfo data={solution} />
@@ -33,9 +34,12 @@ const HealthCare = () => {
       <Tabs tabsConfig={healthcare_provider} />
       <Tabs tabsConfig={healthcare_player} />
       <Tabs tabsConfig={healthcare_tech} />
-      <AIPlatformOverview />
+      <AIPlatformOverview data={platformData} />
       <CaseStudy />
-      <BannerExpert />
+      <BannerExpert
+        bannerHeading="Ready to transform your healthcare operations?"
+        bannerText="Unlock the potential of Gen AI to enhance clinical productivity, drive patient engagement, and streamline claims management for both providers and payers."
+      />
       <Footer />
     </>
   );

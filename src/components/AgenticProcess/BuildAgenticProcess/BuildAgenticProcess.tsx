@@ -3,6 +3,7 @@ import Image from "next/image";
 import {
   DataConnectorImage,
   DocPEImage,
+  GuardrailsCardImage,
   IntelligentDMImage,
   workflowAutomationImage,
 } from "@/util/images";
@@ -13,7 +14,7 @@ const BuildAgenticProcess = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Build Intelligent Workflows in Minutes
+            Build intelligent workflows in minutes
           </div>
           <p className="section_subheading w-2/3">
             SimplAI’s platform provides a seamless way for technical and product
@@ -41,18 +42,17 @@ const BuildAgenticProcess = () => {
                   }}
                 >
                   <h4 className="text-left mb-4 w-5/6">
-                    Document Processing & Extraction
+                    Intelligent Decision Making
                   </h4>
                   <p className="text-left pr-4">
-                    Automatically extract, analyze, and organize data from
-                    structured and unstructured documents, streamlining your
-                    data flow
+                    Leverage LLMs to power decision-making processes, also
+                    enabling self-learning capabilities.
                   </p>
                 </Col>
                 <Col xs={24} sm={24} md={24} lg={10} xl={8}>
                   <Image
-                    src={DocPEImage}
-                    alt="Document-process-extraction-image"
+                    src={IntelligentDMImage}
+                    alt="IntelligentDMImage"
                     height={300}
                     width={300}
                   />
@@ -63,36 +63,39 @@ const BuildAgenticProcess = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <div>
-                <h4 className="text-left mb-4 w-5/6">Workflow Automation</h4>
+                <h4 className="text-left mb-4 w-5/6">
+                  Process workflow automation
+                </h4>
                 <p className="text-left">
-                  Create automated workflows that handle repetitive tasks,
-                  improving efficiency and reducing manual errors
+                  Utilize our intuitive platform to chain nodes effortlessly,
+                  creating automated workflows that enhance efficiency and
+                  minimize manual errors.
                 </p>
               </div>
               <div className="mx-auto text-center w-full">
                 <Image
                   src={workflowAutomationImage}
-                  alt="data-connector"
+                  alt="workflowAutomationImage"
                   className="text-center mx-auto"
                 />
               </div>
             </div>
           </Col>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-            <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
+            <div className="card_v2 h-full flex justify-between flex-col py-8 px-8 gap-4">
               <div>
                 <h4 className="text-left mb-4 w-5/6">
-                  Intelligent Decision Making
+                  Document processing & extraction
                 </h4>
                 <p className="text-left">
-                  Equip your processes with AI-driven decision-making that
-                  reacts to real-time data and adjusts workflows dynamically
+                  Automatically extract, analyze and organize data from various
+                  document types, streamlining workflows in minutes.
                 </p>
               </div>
               <div className="">
                 <Image
-                  src={IntelligentDMImage}
-                  alt="BuildProductionImage"
+                  src={DocPEImage}
+                  alt="DocPEImage"
                   className="text-center mx-auto"
                 />
               </div>
@@ -105,13 +108,13 @@ const BuildAgenticProcess = () => {
                 <p className="text-left">
                   Leverage built-in safety checks and verifiable data to
                   maintain reliability and compliance, configurable within
-                  minutes
+                  minutes.
                 </p>
               </div>
               <div className="">
                 <Image
-                  src={workflowAutomationImage}
-                  alt="BuildProductionImage"
+                  src={GuardrailsCardImage}
+                  alt="GuardrailsCardImage"
                   className="text-center mx-auto"
                 />
               </div>
@@ -123,8 +126,9 @@ const BuildAgenticProcess = () => {
                 <div>
                   <h4 className="text-left mb-4">Data connectors</h4>
                   <p className="text-left">
-                    Seamlessly sync data from over 300 sources, enabling smooth
-                    and rapid data integration across platforms.
+                    Integrate seamlessly with over 300+ data sources,
+                    facilitating quick data synchronization and enhancing
+                    automation.
                   </p>
                 </div>
                 <div className="mx-auto text-center w-full">

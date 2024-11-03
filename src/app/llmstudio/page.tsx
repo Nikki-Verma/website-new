@@ -9,6 +9,7 @@ import ModelFeatures from "@/components/LLM/ModelFeatures/ModelFeatures";
 import Tools from "@/components/LLM/Tools/Tools";
 import VedioContainerLLmStudio from "@/components/LLM/VedioContainer/VedioContainer";
 import {
+  AdvancedFeatureImage,
   EvaluationImage,
   FrameworkImage,
   GuardrailsImage,
@@ -17,30 +18,30 @@ import {
 
 const EncryptionDataPoints = [
   {
-    heading: "Application-Level Version Control",
+    heading: "Application-level version control",
     description:
       "Simplify version management with seamless rollbacks and updates, supporting efficient collaborative workflows.",
     imageAlt: "poc-dev-icon",
     image: EvaluationImage,
   },
   {
-    heading: "Project-Level Environments",
+    heading: "Project-level environments",
     description:
       "Establish isolated environments for prototyping, testing, and development to ensure stability and smooth transitions to production.",
     imageAlt: "iterate-refine-icon",
     image: GuardrailsImage,
   },
   {
-    heading: "Experimentation Framework",
+    heading: "Experimentation framework",
     description:
       "Experiment with diverse models, prompts, and AI applications, testing responses side-by-side to effectively fine-tune and optimize outcomes.",
     imageAlt: "integrate-agent-icon",
     image: FrameworkImage,
   },
   {
-    heading: "Trust and Security",
+    heading: "Trust and security",
     description:
-      "SimplAI Studio complies with industry standards such as SOC 2 and ISO2701, ensuring robust data protection and compliance",
+      "SimplAI Studio provides an end-to-end data vault solution that complies with industry standards, including SOC 2 and ISO 27001.",
     imageAlt: "integrate-agent-icon",
     image: TrustSecurityImage,
   },
@@ -56,14 +57,13 @@ const LLMStudio = () => {
             <p className="product_page_name">SimplAI Studio</p>
           </div>
           <h1 className="text-white">
-            Enterprise Platform for experimenting, building,
+            Enterprise platform for experimenting, building,
             <br /> deploying, and monitoring Gen AI applications
           </h1>
           <p className="font-16 text-white text-center mt-6 w-2/3 mx-auto">
             The fastest and simplest path from idea to PoC to production,
-            SimplAI Studio empowers technical and product teams with
-            user-friendly tools to build secure, scalable, and reliable AI
-            applications.
+            SimplAI Studio empowers technical and product teams with intuitive
+            UI/UX tools to build secure, scalable, and reliable AI applications.
           </p>
           <button className="button button_white mx-auto mt-6">
             Request Demo
@@ -82,9 +82,13 @@ const LLMStudio = () => {
           title={"Advanced features to build production-ready applications"}
           subTitle={""}
           EncryptionDataPoints={EncryptionDataPoints}
+          mainImage={AdvancedFeatureImage}
         />
         <CaseStudy />
-        <BannerExpert />
+        <BannerExpert
+          bannerHeading="Ready to unleash the potential of Generative AI?"
+          bannerText="Build and deploy powerful AI applications effortlessly with SimplAI Studio. Experiment, integrate, and optimize your applications while enjoying a seamless user experience designed for speed and scalability."
+        />
         <Footer />
         {/* drop down */}
         {/* <Accordian /> */}

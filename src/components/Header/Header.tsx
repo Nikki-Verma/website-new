@@ -22,15 +22,6 @@ const Header = () => {
       // icon: Programming,
     },
     {
-      key: 2,
-      label: <Link href={"/rag"}>Production RAG</Link>,
-      // title: "Production RAG",
-      // description:
-      //   "Learn about the SimplAi Products how it can boost your business",
-      // link: "/rag",
-      // icon: Programming,
-    },
-    {
       key: 3,
       label: <Link href={"/ai-agents"}>AI Agents</Link>,
       // title: "AI Agents",
@@ -49,34 +40,43 @@ const Header = () => {
       // title: "AI Optimization",
       // description:}
     },
+    {
+      key: 2,
+      label: <Link href={"/rag"}>Production RAG</Link>,
+      // title: "Production RAG",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/rag",
+      // icon: Programming,
+    },
   ];
 
   const UseCaseSubMenu: MenuProps["items"] = [
     {
       key: 1,
-      label: <Link href={"/multimedia"}>Mulimedia</Link>,
-      // title: "Mulimedia",
+      label: <Link href={"/bfsi"}>Financial Services</Link>,
+      // title: "BFSI",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",
-      // link: "/multimedia",
+      // link: "/bfsi",
       // icon: Programming,
     },
     {
       key: 2,
+      label: <Link href={"/insurance"}>Insurance</Link>,
+      // title: "BFSI",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/bfsi",
+      // icon: Programming,
+    },
+    {
+      key: 3,
       label: <Link href={"/healthcare"}>Healthcare</Link>,
       // title: "Healthcare",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",
       // link: "/healthcare",
-      // icon: Programming,
-    },
-    {
-      key: 3,
-      label: <Link href={"/bfsi"}>BFSI</Link>,
-      // title: "BFSI",
-      // description:
-      //   "Learn about the SimplAi Products how it can boost your business",
-      // link: "/bfsi",
       // icon: Programming,
     },
     {
@@ -88,11 +88,20 @@ const Header = () => {
       // link: "/legal",
       // icon: Programming,
     },
+    {
+      key: 5,
+      label: <Link href={"/multimedia"}>Telecom, Media & Entertainment</Link>,
+      // title: "Mulimedia",
+      // description:
+      //   "Learn about the SimplAi Products how it can boost your business",
+      // link: "/multimedia",
+      // icon: Programming,
+    },
   ];
   const ResourcesSubMenu: MenuProps["items"] = [
     {
       key: 1,
-      label: <Link href={""}>Blogs</Link>,
+      label: <Link href={"https://simplai.ai/blogs/"}>Blogs</Link>,
       // title: "Blogs",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",
@@ -101,7 +110,7 @@ const Header = () => {
     },
     {
       key: 2,
-      label: <Link href={""}>Documentation</Link>,
+      label: <Link href={"https://simplai.ai/docs/"}>Documentation</Link>,
       // title: "Documentation",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",

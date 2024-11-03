@@ -13,8 +13,8 @@ const Feature = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Go from Prototype to Production-Ready <br />
-            RAG with Ease
+            Go from prototype to production-ready <br />
+            RAG with ease
           </div>
         </div>
 
@@ -42,7 +42,7 @@ const Feature = () => {
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                   <h2 className="heading_24 mb-4 text-left">
-                    End-to-End Platform
+                    End-to-end platform
                   </h2>
                   <p>
                     Experience a seamless workflow from data extraction and
@@ -60,7 +60,7 @@ const Feature = () => {
               <div className="h-full flex justify-between flex-col">
                 <div>
                   <h4 className="text-left mb-4 heading_24">
-                    Trust, not Hallucinate
+                    Trust, not hallucinate
                   </h4>
                   <p className="text-left">
                     Ensure your generative systems rely solely on the facts and
@@ -83,7 +83,7 @@ const Feature = () => {
             <div className="card_v2 py-8 px-8">
               <div className="h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="text-left mb-4">Ease of Use</h4>
+                  <h4 className="text-left mb-4">Ease of use</h4>
                   <p className="text-left">
                     Navigate through an intuitive, no-code interface designed
                     for quick experimentation and configuration. Easily test and
@@ -106,7 +106,7 @@ const Feature = () => {
               <Row gutter={[36, 36]} justify={"space-between"} align={"middle"}>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                   <h2 className="heading_24 mb-4 text-left">
-                    Your Data is Secure
+                    Your data is secure
                   </h2>
                   <p>
                     Keep complete control of your data with our privacy-first

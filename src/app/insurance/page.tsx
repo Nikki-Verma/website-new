@@ -3,20 +3,17 @@ import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import CardInfo from "@/components/CardInfo/CardInfo";
 import CommonHero from "@/components/CommonHero/CommonHero";
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
 import Tabs from "@/components/TabsConfig/Tabs";
-
-import Header from "@/components/Header/Header";
 import {
   banner,
-  gaming_and_esport,
-  multimedia,
+  insurance,
   platformData,
-  solution,
-  telecom,
-} from "@/data/multimediaPage";
+  solutionsList,
+} from "@/data/insurancePageData";
 
-const Multimedia = () => {
+const Insurance = () => {
   return (
     <>
       <Header />
@@ -25,25 +22,23 @@ const Multimedia = () => {
         <div className="container">
           <div className="section_heading_container">
             <div className="home_page_heading">
-              Unlock innovation with SimplAI’s Generative AI Solutions
+              The fastest and simplest way to implement <br />
+              AI-powered financial solutions
             </div>
           </div>
-          <CardInfo data={solution} />
+          <CardInfo data={solutionsList} />
         </div>
       </section>
-      <Tabs tabsConfig={telecom} />
-      <Tabs tabsConfig={multimedia} />
-      {/* <Tabs tabsConfig={education_and_publication} /> */}
-      <Tabs tabsConfig={gaming_and_esport} />
+      <Tabs tabsConfig={insurance} />
       <AIPlatformOverview data={platformData} />
       <CaseStudy />
       <BannerExpert
-        bannerHeading="Ready to transform your Telecom, Media & Entertainment operations?"
-        bannerText="Unlock the immense potential of Gen AI to enhance customer experiences, streamline operations, and drive innovation throughout your organization."
+        bannerHeading="Ready to transform your insurance business?"
+        bannerText="Enhance your operations, improve customer engagement, and streamline workflows effortlessly with SimplAI’s Generative AI solutions."
       />
       <Footer />
     </>
   );
 };
 
-export default Multimedia;
+export default Insurance;

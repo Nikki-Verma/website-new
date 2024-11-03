@@ -1,3 +1,4 @@
+import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import AIStack from "@/components/Home/AIStack/AIStack";
@@ -23,6 +24,7 @@ const home = () => {
       <CloudDeployment />
       <Testimonial />
       <CaseStudy />
+      <BannerExpert />
       <Footer />
     </section>
   );

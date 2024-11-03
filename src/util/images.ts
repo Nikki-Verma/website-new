@@ -48,6 +48,7 @@ export { default as ResearchBanner } from "../assets/legal/research_banner.png";
 export { default as AccordianImage1 } from "../assets/svg/Images/AccordianImage1.svg";
 export { default as AccordianImage2 } from "../assets/svg/Images/AccordianImage2.svg";
 export { default as AccordianImage3 } from "../assets/svg/Images/AccordianImage3.svg";
+export { default as AdvancedFeatureImage } from "../assets/svg/Images/AdvancedFeatureImage.svg";
 export { default as AiEncryption } from "../assets/svg/Images/AiEncryption.svg";
 export { default as AlvcImage } from "../assets/svg/Images/AlvcImage.svg";
 export { default as AnalysisAgentIcon } from "../assets/svg/Images/AnalysisAgentIcon.svg";
@@ -73,6 +74,7 @@ export { default as EvaluationImage } from "../assets/svg/Images/EvaluationImage
 export { default as FounderHubLogo } from "../assets/svg/Images/FounderHubLogo.svg";
 export { default as FrameworkImage } from "../assets/svg/Images/FrameworkImage.svg";
 export { default as GenScale } from "../assets/svg/Images/GenScale.svg";
+export { default as GuardrailsCardImage } from "../assets/svg/Images/GuardrailsCardImage.svg";
 export { default as GuardrailsImage } from "../assets/svg/Images/GuardrailsImage.svg";
 export { default as HallucinateImage } from "../assets/svg/Images/HallucinateImage.svg";
 export { default as HealthcareImage } from "../assets/svg/Images/HealthcareImage.svg";
@@ -108,6 +110,7 @@ export { default as TrustSecurityImage } from "../assets/svg/Images/TrustSecurit
 export { default as VideoContainerAgentAiImage } from "../assets/svg/Images/VideoContainerAgentAi.svg";
 export { default as VideoContainerAgenticProcessImage } from "../assets/svg/Images/VideoContainerAgenticProcessImage.svg";
 export { default as chatbotImage } from "../assets/svg/Images/chatbotImage.svg";
+export { default as createAutomatedWorkflowImage } from "../assets/svg/Images/createAutomatedWorkflowImage.svg";
 export { default as financialServiceIcon } from "../assets/svg/Images/financialServiceIcon.svg";
 export { default as healthcareAgentIcon } from "../assets/svg/Images/healthcareAgentIcon.svg";
 export { default as lawScaleIcon } from "../assets/svg/Images/lawScaleIcon.svg";
