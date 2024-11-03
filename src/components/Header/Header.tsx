@@ -374,7 +374,7 @@ const Header = () => {
             </Link>
           </button>
         </div>
-        <Space className="button-container-header">
+        <div className="flex gap-4 button-container-header items-center justify-center">
           <div className="experience_center_button">
             <button>
               <ExperienceCenterIcon />
@@ -389,7 +389,7 @@ const Header = () => {
               </span>
             </button>
           </div>
-        </Space>
+        </div>
       </header>
 
       {showSubMenu && subMenuProduct}
