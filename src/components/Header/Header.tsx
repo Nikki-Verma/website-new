@@ -202,14 +202,16 @@ const Header = () => {
             <span>Experience SimplAI </span>
           </button>
         </div>
-        <div className="request_button">
-          <button>
-            <span>Request Demo</span>
-            <span className="header_button_icon">
-              <IoMdArrowForward />
-            </span>
-          </button>
-        </div>
+        <Link href={"/request-demo"} prefetch>
+          <div className="request_button">
+            <button>
+              <span>Request Demo</span>
+              <span className="header_button_icon">
+                <IoMdArrowForward />
+              </span>
+            </button>
+          </div>
+        </Link>
       </Space>
     </div>
   );
@@ -381,14 +383,16 @@ const Header = () => {
               <span>Experience SimplAI </span>
             </button>
           </div>
-          <div className="request_button">
-            <button>
-              <span>Request Demo</span>
-              <span className="header_button_icon">
-                <IoMdArrowForward />
-              </span>
-            </button>
-          </div>
+          <Link href={"/request-demo"} prefetch>
+            <div className="request_button">
+              <button>
+                <span>Request Demo</span>
+                <span className="header_button_icon">
+                  <IoMdArrowForward />
+                </span>
+              </button>
+            </div>
+          </Link>
         </div>
       </header>
 

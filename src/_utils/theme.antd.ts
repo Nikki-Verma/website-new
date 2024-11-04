@@ -34,6 +34,9 @@ const theme = {
       horizontalItemSelectedColor: "rgb(96,46,223)",
       itemSelectedColor: "rgb(96,46,223)",
     },
+    Spin: {
+      colorPrimary: "rgb(96,46,223)",
+    },
   },
 };
 

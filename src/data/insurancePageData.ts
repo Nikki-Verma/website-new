@@ -18,7 +18,7 @@ export const banner = {
   description:
     "Empower your organization to streamline processes, enhance risk management, and elevate customer experiences with AI-driven solutions. SimplAI offers innovative tools designed specifically for the insurance industry.",
   buttonText: "Request Demo",
-  buttonLink: "#",
+  buttonLink: "/request-demo",
   img: BfsiHeroBanner,
 };
 

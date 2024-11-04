@@ -84,7 +84,7 @@ const Footer = () => {
         },
         {
           label: "Contact us",
-          link: "",
+          link: "/request-demo",
         },
         {
           label: "System Status",

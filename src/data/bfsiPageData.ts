@@ -29,7 +29,7 @@ export const banner = {
   description:
     "Empower your organization with intelligent agents and AI-driven automation to enhance productivity and drive customer engagement. SimplAI delivers fast, effective solutions tailored for financial industry.",
   buttonText: "Request Demo",
-  buttonLink: "#",
+  buttonLink: "/request-demo",
   img: BfsiHeroBanner,
 };
 

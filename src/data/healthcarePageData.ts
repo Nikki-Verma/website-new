@@ -29,7 +29,7 @@ export const banner = {
   description:
     "From enhancing patient interactions, augmenting clinical decision-making and automating administrative tasks, scale your healthcare services with SimplAI platform.",
   buttonText: "Request Demo",
-  buttonLink: "#",
+  buttonLink: "/request-demo",
   img: HealthcareHeroImage,
 };
 

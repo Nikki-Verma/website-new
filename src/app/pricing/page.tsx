@@ -25,7 +25,7 @@ const pricingPlans: any = [
       "1 User",
     ],
     buttonLabel: "Request Demo",
-    buttonLink: "#",
+    buttonLink: "/request-demo",
   },
   // {
   //   title: "Pro",
@@ -79,7 +79,7 @@ const pricingPlans: any = [
       "1 User",
     ],
     buttonLabel: "Request Demo",
-    buttonLink: "#",
+    buttonLink: "/request-demo",
   },
 ];
 

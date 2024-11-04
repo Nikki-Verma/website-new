@@ -21,7 +21,7 @@ export const banner = {
   description:
     "Empower your teams to navigate complexity with SimplAI. Harness the power of AI to automate mundane tasks, extract deep insights, and elevate your organization’s efficiency and accuracy.",
   buttonText: "Request Demo",
-  buttonLink: "#",
+  buttonLink: "/request-demo",
   img: LegalHeroBanner,
 };
 

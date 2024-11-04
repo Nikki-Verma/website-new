@@ -28,7 +28,7 @@ export const banner = {
   description:
     "Unlock the power of Gen AI with SimplAI's Agentic AI platform. Transform creativity, automate workflows, and elevate customer engagement—future-ready solutions for a competitive edge.",
   buttonText: "Request Demo",
-  buttonLink: "#",
+  buttonLink: "/request-demo",
   img: TelecomHeroBanner,
 };
 

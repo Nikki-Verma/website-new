@@ -10,10 +10,13 @@ const DataIntegration = () => {
   return (
     <div className="section">
       <div className="container">
-        <h2 className="mb-12">
-          Bring your own data via our <br />
-          data integration engine
-        </h2>
+        <div className="section_heading_container">
+          <div className="home_page_heading">
+            Bring your own data via our <br />
+            data integration engine
+          </div>
+        </div>
+
         <Row gutter={[16, 16]} justify={"space-between"} align={"stretch"}>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 py-8 px-8 h-full">

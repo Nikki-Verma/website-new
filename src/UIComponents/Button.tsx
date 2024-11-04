@@ -10,7 +10,7 @@ const Button = ({ url, label, type, color }: ButtonProps) => {
   const buttonType = type ? type : "button";
 
   return (
-    <Link href={url}>
+    <Link href={url} prefetch>
       <button className={`${buttonType} ${color}`}>{label}</button>
     </Link>
   );

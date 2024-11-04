@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRef, useState } from "react";
 import "../../../app/globals.css";
 import VideoContainerAgenticProcess from "../VideoContainerAgenticProcess/VideoContainerAgenticProcess";
@@ -26,7 +27,9 @@ const HeroAgenticProcess = () => {
           </span>
         </h1>
         <div className="flex justify-center items-center mt-8 mb-8">
-          <button className="button button_white">Book a demo</button>
+          <Link href={"/request-demo"} prefetch>
+            <button className="button button_white">Book a demo</button>
+          </Link>
         </div>
       </div>
       <VideoContainerAgenticProcess />

@@ -1,4 +1,5 @@
 import { BannerExpertBgImage } from "@/util/images";
+import Link from "next/link";
 
 const BannerExpert = ({
   bannerHeading = "See the SimplAI platform in action",
@@ -25,7 +26,9 @@ const BannerExpert = ({
           {bannerText}
         </p>
         <div className="mx-auto text-center">
-          <button className="button text-center mx-auto">{ctaText}</button>
+          <Link prefetch href={"/request-demo"}>
+            <button className="button text-center mx-auto">{ctaText}</button>
+          </Link>
         </div>
       </div>
     </div>

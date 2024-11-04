@@ -13,6 +13,7 @@ import {
   GuardrailsImage,
   TrustSecurityImage,
 } from "@/util/images";
+import Link from "next/link";
 
 const EncryptionDataPoints = [
   {
@@ -63,9 +64,11 @@ const Rag = () => {
             converting it into factual insights with every response grounded in
             truth and delivered with precision.
           </p>
-          <button className="button button_white mx-auto mt-6">
-            Request Demo
-          </button>
+          <Link prefetch href={"/request-demo"}>
+            <button className="button button_white mx-auto mt-6">
+              Request Demo
+            </button>
+          </Link>
         </div>
       </div>
       <div style={{ marginTop: 500 }}>

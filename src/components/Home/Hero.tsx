@@ -1,5 +1,6 @@
 "use client";
 import { BoxesBgImage } from "@/util/images";
+import Link from "next/link";
 import { useRef, useState } from "react";
 import "../../app/globals.css";
 import "./style.css";
@@ -26,7 +27,9 @@ const Hero = () => {
           <a className="hero_text_highlight"> one month.</a>
         </p>
         <div className="flex justify-center items-center mt-8 mb-8">
-          <button className="button button_white">Book a demo</button>
+          <Link prefetch href={"/request-demo"}>
+            <button className="button button_white">Book a demo</button>
+          </Link>
         </div>
       </div>
     </div>
