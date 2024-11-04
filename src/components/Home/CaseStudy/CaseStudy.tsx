@@ -5,6 +5,7 @@ import { IoMdArrowForward } from "react-icons/io";
 import "./style.css";
 
 import { useFetchData } from "@/Hooks/useApi";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -45,14 +46,11 @@ const CaseStudy = () => {
                         className="Col-blog"
                       >
                         <div className="blog_card">
-                          <img
+                          <Image
                             src={postData?.feature_image}
                             alt={postData?.feature_image_alt ?? "blog-image"}
                             width={100}
                             height={100}
-                            style={{
-                              width: "100%",
-                            }}
                           />
                           <div className="blog_content">
                             <div className="flex justify-end items-center mb-4">
