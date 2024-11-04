@@ -24,43 +24,51 @@ const data = [
   {
     heading:
       "Enterprise Platform for experimenting, building, deploying, and monitoring Gen AI applications",
-    image: SimplaiStudioImage,
-    imageAlt: "simplai-studio-dashboard-image",
     link: "/llmstudio",
+    image: (
+      <Image src={SimplaiStudioImage} alt={"simplai-studio-dashboard-image"} />
+    ),
   },
   {
     heading:
       "Develop intelligent conversational AI,  assistants, co-pilots, and AI employees",
-    image: AiAgentsImage,
-    imageAlt: "ai-agents-dashboard-image",
+    image: <Image src={AiAgentsImage} alt={"ai-agents-dashboard-image"} />,
     link: "/ai-agents",
   },
   {
     heading:
       "Automate complex workflows by using AI chaining to handle multi-step tasks",
-    image: AgenticWorkflowsImage,
-    imageAlt: "agentic-workflows-dashboard-image",
+    image: (
+      <Image
+        src={AgenticWorkflowsImage}
+        alt={"agentic-workflows-dashboard-image"}
+      />
+    ),
     link: "/agentic-process-automation",
   },
   {
     heading:
       "Leverage your data to ground AI, ensuring high accuracy and relevance",
-    image: DataKnowledgeImage,
-    imageAlt: "dataset-knowledgebase-workflows-dashboard-image",
+    image: (
+      <Image
+        src={DataKnowledgeImage}
+        alt={"dataset-knowledgebase-workflows-dashboard-image"}
+      />
+    ),
     link: "/rag",
   },
   {
     heading:
       "Build and deploy AI applications rapidly, without needing extensive coding skills",
-    image: DeploymentImage,
-    imageAlt: "deployment-dashboard-image",
+    image: <Image src={DeploymentImage} alt={"deployment-dashboard-image"} />,
     link: "/llmstudio#deployment",
   },
   {
     heading:
       "Monitor AI performance with granular tracing and evaluation metrics",
-    image: ObservabilityImage,
-    imageAlt: "observability-dashboard-image",
+    image: (
+      <Image src={ObservabilityImage} alt={"observability-dashboard-image"} />
+    ),
     link: "/llmstudio#observability",
   },
 ];
@@ -146,8 +154,8 @@ const Features = () => {
             xs={24}
             sm={24}
             md={18}
-            lg={16}
-            xl={16}
+            lg={12}
+            xl={12}
             style={{
               display: "flex",
               flexDirection: "column",
@@ -181,7 +189,7 @@ const Features = () => {
               alignItems: "center",
             }}
           >
-            <Image src={currentSelect?.image} alt={currentSelect?.imageAlt} />
+            {currentSelect?.image}
           </Col>
         </Row>
       </div>
