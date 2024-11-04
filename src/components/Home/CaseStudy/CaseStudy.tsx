@@ -1,7 +1,6 @@
 "use client";
 
 import { Col, Row, Spin } from "antd";
-import Image from "next/image";
 import { IoMdArrowForward } from "react-icons/io";
 import "./style.css";
 
@@ -46,7 +45,7 @@ const CaseStudy = () => {
                         className="Col-blog"
                       >
                         <div className="blog_card">
-                          <Image
+                          <img
                             src={postData?.feature_image}
                             alt={postData?.feature_image_alt ?? "blog-image"}
                             width={100}
