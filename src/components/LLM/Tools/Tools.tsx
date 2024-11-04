@@ -9,7 +9,7 @@ import { Col, Row } from "antd";
 
 const Tools = () => {
   return (
-    <section className="section">
+    <section className="section" id="observability">
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">

@@ -49,7 +49,7 @@ const AgentDeployment = ({
   mainImage: any;
 }) => {
   return (
-    <section className="section">
+    <section className="section" id="deployment">
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">{title}</div>

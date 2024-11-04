@@ -49,11 +49,15 @@ export { default as AccordianImage1 } from "../assets/svg/Images/AccordianImage1
 export { default as AccordianImage2 } from "../assets/svg/Images/AccordianImage2.svg";
 export { default as AccordianImage3 } from "../assets/svg/Images/AccordianImage3.svg";
 export { default as AdvancedFeatureImage } from "../assets/svg/Images/AdvancedFeatureImage.svg";
+export { default as AgenticWorkflowsImage } from "../assets/svg/Images/AgenticWorkflowsImage.svg";
+export { default as AiAgentsImage } from "../assets/svg/Images/AiAgentsImage.svg";
 export { default as AiEncryption } from "../assets/svg/Images/AiEncryption.svg";
 export { default as AlvcImage } from "../assets/svg/Images/AlvcImage.svg";
 export { default as AnalysisAgentIcon } from "../assets/svg/Images/AnalysisAgentIcon.svg";
 export { default as ApiIcon } from "../assets/svg/Images/ApiIcon.svg";
 export { default as BannerExpertBgImage } from "../assets/svg/Images/BannerExpertBgImage.svg";
+export { default as BoxesBgImage } from "../assets/svg/Images/BoxesBgImage.svg";
+export { default as BoxesBgImage1 } from "../assets/svg/Images/BoxesBgImage1.svg";
 export { default as BuildProductionImage } from "../assets/svg/Images/BuildProductionImage.svg";
 export { default as ChatbotFeatureImage } from "../assets/svg/Images/ChatbotFeatureImage.svg";
 export { default as CitationImage } from "../assets/svg/Images/CitationImage.svg";
@@ -64,7 +68,9 @@ export { default as ContentGenerationImage } from "../assets/svg/Images/ContentG
 export { default as ConversationalAiImage } from "../assets/svg/Images/ConversationalAiImage.svg";
 export { default as CustomerSupportIcon } from "../assets/svg/Images/CustomerSupportIcon.svg";
 export { default as DataConnectorImage } from "../assets/svg/Images/DataConnectorImage.svg";
+export { default as DataKnowledgeImage } from "../assets/svg/Images/DataKnowledgeImage.svg";
 export { default as DataSecureImage } from "../assets/svg/Images/DataSecureImage.svg";
+export { default as DeploymentImage } from "../assets/svg/Images/DeploymentImage.svg";
 export { default as DocPEImage } from "../assets/svg/Images/DocPEImage.svg";
 export { default as DomainAgent } from "../assets/svg/Images/DomainAgent.svg";
 export { default as EaseUseImage } from "../assets/svg/Images/EaseUseImage.svg";
@@ -94,6 +100,7 @@ export { default as MarketingIcon } from "../assets/svg/Images/MarketingIcon.svg
 export { default as MediaIcon } from "../assets/svg/Images/MediaIcon.svg";
 export { default as MfaIcon } from "../assets/svg/Images/MfaIcon.svg";
 export { default as MobileSdkIcon } from "../assets/svg/Images/MobileSdkIcon.svg";
+export { default as ObservabilityImage } from "../assets/svg/Images/ObservabilityImage.svg";
 export { default as PlatformImage } from "../assets/svg/Images/PlatformImage.svg";
 export { default as ProductionRagHeroImage } from "../assets/svg/Images/ProductionRagHeroImage.svg";
 export { default as RazorpayLogo } from "../assets/svg/Images/RazorpayLogo.svg";
@@ -103,6 +110,7 @@ export { default as RetrievalImage } from "../assets/svg/Images/RetrievalImage.s
 export { default as ScalabilityIcon } from "../assets/svg/Images/ScalabilityIcon.svg";
 export { default as SecurityIcon } from "../assets/svg/Images/SecurityIcon.svg";
 export { default as SimplaiStudioHeroImage } from "../assets/svg/Images/SimplaiStudioHeroImage.svg";
+export { default as SimplaiStudioImage } from "../assets/svg/Images/SimplaiStudioImage.svg";
 export { default as SpeedIcon } from "../assets/svg/Images/Speed_Icon.svg";
 export { default as TaskIcon } from "../assets/svg/Images/TaskIcon.svg";
 export { default as TelecomImage } from "../assets/svg/Images/TelecomImage.svg";

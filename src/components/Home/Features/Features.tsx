@@ -1,87 +1,86 @@
 "use client";
 
-import Image from "next/image";
-import AgenticWorkflows from "../../../assets/svg/icons/AgenticWorkflows.svg";
-import AiAgents from "../../../assets/svg/icons/AiAgents.svg";
-import DataIntegrationEngine from "../../../assets/svg/icons/DataIntegrationEngine.svg";
-import EmbedAi from "../../../assets/svg/icons/EmbedAi.svg";
-import EnterpriseKnowledgebase from "../../../assets/svg/icons/EnterpriseKnowledgebase.svg";
-import Observability from "../../../assets/svg/icons/Observability.svg";
-import Coding from "../../../assets/svg/icons/coding.svg";
-
+import AgenticWorkflowIcon from "@/components/Icons/AgenticWorkflowIcon";
+import AiAgentIcon from "@/components/Icons/AiAgentIcon";
+import DataStorageIcon from "@/components/Icons/DataStorageIcon";
+import DeploymentIcon from "@/components/Icons/DeploymentIcon";
+import ObservabilityIcon from "@/components/Icons/ObservabilityIcon";
+import SecureAiIcon from "@/components/Icons/SecureAiIcon";
+import {
+  AgenticWorkflowsImage,
+  AiAgentsImage,
+  BoxesBgImage1,
+  DataKnowledgeImage,
+  DeploymentImage,
+  ObservabilityImage,
+  SimplaiStudioImage,
+} from "@/util/images";
 import { Col, Row } from "antd";
+import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import "./style.css";
 const data = [
   {
-    heading: "AI Agents",
-    description:
-      "Develop intelligent conversational AI, including assistants, co-pilots, and AI employees.",
-    image: AiAgents,
-    imageAlt: "ai-agent-icon",
+    heading:
+      "Enterprise Platform for experimenting, building, deploying, and monitoring Gen AI applications",
+    image: SimplaiStudioImage,
+    imageAlt: "simplai-studio-dashboard-image",
+    link: "/llmstudio",
+  },
+  {
+    heading:
+      "Develop intelligent conversational AI,  assistants, co-pilots, and AI employees",
+    image: AiAgentsImage,
+    imageAlt: "ai-agents-dashboard-image",
     link: "/ai-agents",
   },
   {
-    heading: "Agentic Workflows",
-    description:
-      "Automate complex workflows by using AI chaining to handle multi-step tasks.",
-    image: AgenticWorkflows,
-    imageAlt: "agentic workflow-icon",
+    heading:
+      "Automate complex workflows by using AI chaining to handle multi-step tasks",
+    image: AgenticWorkflowsImage,
+    imageAlt: "agentic-workflows-dashboard-image",
     link: "/agentic-process-automation",
   },
   {
-    heading: "Enterprise Knowledge",
-    description:
-      "Leverage your data to ground AI, ensuring high accuracy and relevance.",
-    image: EnterpriseKnowledgebase,
-    imageAlt: "enterprise-knowledgebase",
+    heading:
+      "Leverage your data to ground AI, ensuring high accuracy and relevance",
+    image: DataKnowledgeImage,
+    imageAlt: "dataset-knowledgebase-workflows-dashboard-image",
     link: "/rag",
   },
   {
-    heading: "Embed AI",
-    description:
-      "Integrate AI into your system through APIs, webhooks, SDKs, and embedded UIs.",
-    image: EmbedAi,
-    imageAlt: "embed-ai-icon",
-    link: "/llmstudio",
+    heading:
+      "Build and deploy AI applications rapidly, without needing extensive coding skills",
+    image: DeploymentImage,
+    imageAlt: "deployment-dashboard-image",
+    link: "/llmstudio#deployment",
   },
   {
-    heading: "Data Integration Engine",
-    description:
-      "Bring your data pipelines to your AI applications with our 300+ readily available connectors.",
-    image: DataIntegrationEngine,
-    imageAlt: "data-integration-engine-icon",
-    link: "/llmstudio",
-  },
-  {
-    heading: "Intuitive UI/UX",
-    description:
-      "Build and deploy AI applications rapidly, without needing extensive coding skills.",
-    image: Coding,
-    imageAlt: "no-code-icon",
-    link: "/llmstudio",
-  },
-
-  {
-    heading: "Models",
-    description:
-      "Experiment, finetune, and deploy any of the popular open source and closed source models.",
-    image: EnterpriseKnowledgebase,
-    imageAlt: "mod-icon",
-    link: "/llmstudio",
-  },
-  {
-    heading: "Observability",
-    description:
-      "Monitor AI performance with granular tracing and evaluation metrics.",
-    image: Observability,
-    imageAlt: "Observability-icon",
-    link: "/llmstudio",
+    heading:
+      "Monitor AI performance with granular tracing and evaluation metrics",
+    image: ObservabilityImage,
+    imageAlt: "observability-dashboard-image",
+    link: "/llmstudio#observability",
   },
 ];
 const Features = () => {
+  const [currentSelect, setCurrentSelect] = useState(data[0]);
+  const [index, setIndex] = useState(0);
+  const handle = (number: number) => {
+    setIndex(number);
+    setCurrentSelect(data[number]);
+  };
+
   return (
-    <section className="section">
+    <section
+      className="section"
+      style={{
+        backgroundImage: `url(${BoxesBgImage1?.src}) , linear-gradient(180deg, #fcfbff 0%, #f1f1ff 100%)`,
+        backgroundPosition: "center bottom",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading_tag">
@@ -94,38 +93,96 @@ const Features = () => {
             AI solutions - without technical complexity
           </div>
         </div>
-        <Row align={"stretch"} justify={"start"} gutter={[12, 12]}>
-          {data?.map((cardDetails) => {
-            return (
-              <Col
-                xs={24}
-                sm={12}
-                md={8}
-                lg={6}
-                xl={6}
-                style={{ alignSelf: "stretch" }}
-              >
-                <Link href={cardDetails?.link} prefetch>
-                  <div className="features_box_container">
-                    <Image
-                      alt={cardDetails?.imageAlt ?? "icon"}
-                      src={cardDetails?.image}
-                      height={32}
-                      width={32}
-                    />
-                    <div className="flex flex-col items-start gap-2">
-                      <div className="features_box_heading">
-                        {cardDetails?.heading}
-                      </div>
-                      <div className="features_box_description">
-                        {cardDetails.description}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            );
-          })}
+        <div className="button_section_home">
+          <button
+            onClick={() => handle(0)}
+            className={index === 0 ? "round_button_selected" : "round_button"}
+          >
+            <SecureAiIcon style={{ height: 24, width: 24 }} />
+            SimplAI Studio
+          </button>
+          <button
+            onClick={() => handle(1)}
+            className={index === 1 ? "round_button_selected" : "round_button"}
+          >
+            <AiAgentIcon style={{ height: 24, width: 24 }} />
+            AI Agents
+          </button>
+          <button
+            onClick={() => handle(2)}
+            className={index === 2 ? "round_button_selected" : "round_button"}
+          >
+            <AgenticWorkflowIcon style={{ height: 24, width: 24 }} />
+            Agentic Workflows
+          </button>
+          <button
+            onClick={() => handle(3)}
+            className={index === 3 ? "round_button_selected" : "round_button"}
+          >
+            <DataStorageIcon style={{ height: 24, width: 24 }} />
+            Data & Knowledge
+          </button>
+          <button
+            onClick={() => handle(4)}
+            className={index === 4 ? "round_button_selected" : "round_button"}
+          >
+            <DeploymentIcon style={{ height: 24, width: 24 }} />
+            Deployment
+          </button>
+          <button
+            onClick={() => handle(5)}
+            className={index === 5 ? "round_button_selected" : "round_button"}
+          >
+            <ObservabilityIcon style={{ height: 24, width: 24 }} />
+            Observability
+          </button>
+        </div>
+        <Row
+          justify={"center"}
+          gutter={[20, 20]}
+          style={{ textAlign: "center" }}
+        >
+          <Col
+            xs={24}
+            sm={24}
+            md={18}
+            lg={16}
+            xl={16}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+            className="home-feature-tab-heading"
+          >
+            {currentSelect?.heading}
+          </Col>
+          <Col
+            xs={24}
+            sm={24}
+            md={18}
+            lg={16}
+            xl={16}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Link href={currentSelect?.link} prefetch>
+              <button className="button">Know more</button>
+            </Link>
+          </Col>
+          <Col
+            span={24}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Image src={currentSelect?.image} alt={currentSelect?.imageAlt} />
+          </Col>
         </Row>
       </div>
     </section>

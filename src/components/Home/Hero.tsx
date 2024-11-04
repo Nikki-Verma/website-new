@@ -1,7 +1,7 @@
 "use client";
+import { BoxesBgImage } from "@/util/images";
 import { useRef, useState } from "react";
 import "../../app/globals.css";
-import OurApplications from "./OurApplications/OurApplications";
 import "./style.css";
 const Hero = () => {
   const animateText = ["Secure", "Scalable", "Reliable"];
@@ -9,8 +9,10 @@ const Hero = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="hero_section">
-      {/* <Header /> */}
+    <div
+      className="hero_section_home"
+      style={{ backgroundImage: `url(${BoxesBgImage?.src})` }}
+    >
       <div className="content_section">
         <div className="text-center hero_section_heading">
           <span className="hero_h1">
@@ -27,7 +29,6 @@ const Hero = () => {
           <button className="button button_white">Book a demo</button>
         </div>
       </div>
-      <OurApplications />
     </div>
   );
 };
