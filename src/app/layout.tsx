@@ -2,6 +2,7 @@ import AntdStyledComponentsRegistry from "@/components/AntDesign/AntdStyledCompo
 import { ThemeProvider } from "@/providers/antdThemeProvider";
 import { Montserrat } from "@next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Metadata } from "next";
 import "./globals.css";
 import Metrics from "./metrics";
 
@@ -11,7 +12,7 @@ const montserrat = Montserrat({
   variable: "--font-montserrat", // Optional: CSS variable name
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "SimplAI. Build Production-Ready Gen AI Applications With Ease.",
   description:
     "Simplify AI development for enterprises with our no-code platform. Build, orchestrate, deploy and monitor Gen AI apps—all in one place.",
