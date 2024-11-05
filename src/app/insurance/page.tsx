@@ -39,7 +39,7 @@ const Insurance = () => {
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to transform your insurance business?"
-        bannerText="Enhance your operations, improve customer engagement, and streamline workflows effortlessly with SimplAI’s Generative AI solutions."
+        bannerText="Enhance your operations, improve customer engagement, and streamline workflows effortlessly with SimplAI’s Generative AI solutions"
       />
       <Footer />
     </>

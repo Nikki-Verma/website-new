@@ -44,7 +44,7 @@ const Multimedia = () => {
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to transform your Telecom, Media & Entertainment operations?"
-        bannerText="Unlock the immense potential of Gen AI to enhance customer experiences, streamline operations, and drive innovation throughout your organization."
+        bannerText="Unlock the immense potential of Gen AI to enhance customer experiences, streamline operations, and drive innovation throughout your organization"
       />
       <Footer />
     </>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BannerExpert = ({
   bannerHeading = "See the SimplAI platform in action",
-  bannerText = "Request a demo and see how SimplAI empowers your teams to supercharge their AI-driven applications for seamless business growth.",
+  bannerText = "Request a demo and see how SimplAI empowers your teams to supercharge their AI-driven applications for seamless business growth",
   ctaText = "Request a Demo",
 }: {
   bannerHeading?: string;
@@ -12,7 +12,7 @@ const BannerExpert = ({
 }) => {
   return (
     <div
-      className="dark_bg mb-120 py-12"
+      className="dark_bg mb-120 py-4"
       style={{
         backgroundImage: `url(${BannerExpertBgImage?.src})`,
         backgroundSize: "cover",
@@ -21,8 +21,8 @@ const BannerExpert = ({
       }}
     >
       <div className="container">
-        <h3 className="text-white text-center mb-6">{bannerHeading}</h3>
-        <p className="text-center text-white mx-auto mb-4 w-4/5">
+        <h3 className="text-white text-center mb-4 ">{bannerHeading}</h3>
+        <p className="text-center text-white mx-auto mb-6 w-2/3">
           {bannerText}
         </p>
         <div className="mx-auto text-center">

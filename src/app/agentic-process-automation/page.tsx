@@ -64,7 +64,7 @@ const home = () => {
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to automate your workflows?"
-        bannerText="Create intelligent, automated workflows quickly with SimplAI’s agentic process automation platform. Automate complex processes, reduce manual errors, and scale operations with ease."
+        bannerText="Create intelligent, automated workflows quickly with SimplAI’s agentic process automation platform. Automate complex processes, reduce manual errors, and scale operations with ease"
       />
       <Footer />
     </section>

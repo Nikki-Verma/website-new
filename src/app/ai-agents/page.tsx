@@ -62,7 +62,7 @@ const home = () => {
       <CaseStudy />
       <BannerExpert
         bannerHeading=" Ready to build your AI agents?"
-        bannerText="Create intelligent AI agents quickly with SimplAI’s platform. Automate tasks, engage customers, and augment employees with agents designed for security, scalability, and reliability."
+        bannerText="Create intelligent AI agents quickly with SimplAI’s platform. Automate tasks, engage customers, and augment employees with agents designed for security, scalability, and reliability"
       />
       <Footer />
     </section>

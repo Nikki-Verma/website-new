@@ -44,7 +44,7 @@ const Legal = () => {
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to Transform Your Legal, Consulting, and Research Solutions?"
-        bannerText="Unlock the immense potential of AI to enhance efficiency, drive insights, and automate processes across your organization."
+        bannerText="Unlock the immense potential of AI to enhance efficiency, drive insights, and automate processes across your organization"
       />
       <Footer />
     </>

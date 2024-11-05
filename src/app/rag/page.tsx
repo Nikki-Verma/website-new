@@ -87,7 +87,7 @@ const Rag = () => {
         <CaseStudy />
         <BannerExpert
           bannerHeading="Ready to build trustworthy AI systems?"
-          bannerText="Transform your data into reliable insights with SimplAI’s multi-modal RAG platform. Experience seamless integration, enhanced factuality, and user-friendly design, empowering you to deploy AI solutions with confidence."
+          bannerText="Transform your data into reliable insights with SimplAI’s multi-modal RAG platform. Experience seamless integration, enhanced factuality, and user-friendly design, empowering you to deploy AI solutions with confidence"
         />
         <Footer />
       </div>

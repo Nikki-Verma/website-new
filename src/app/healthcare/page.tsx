@@ -43,7 +43,7 @@ const HealthCare = () => {
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to transform your healthcare operations?"
-        bannerText="Unlock the potential of Gen AI to enhance clinical productivity, drive patient engagement, and streamline claims management for both providers and payers."
+        bannerText="Unlock the potential of Gen AI to enhance clinical productivity, drive patient engagement, and streamline claims management for both providers and payers"
       />
       <Footer />
     </>

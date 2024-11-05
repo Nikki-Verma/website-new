@@ -42,7 +42,7 @@ const BFSI = () => {
       <CaseStudy />
       <BannerExpert
         bannerHeading="Ready to elevate your financial services?"
-        bannerText="Transform your operations with SimplAI’s Generative AI solutions. Enhance efficiency, drive customer engagement, and automate workflows effortlessly."
+        bannerText="Transform your operations with SimplAI’s Generative AI solutions. Enhance efficiency, drive customer engagement, and automate workflows effortlessly"
       />
       <Footer />
     </>
