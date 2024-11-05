@@ -7,6 +7,7 @@
   border-radius: 11.455px;
   border: 0.573px solid rgba(166, 188, 218, 0.4);
   background: var(--white);
+  transition: all 0.3s;
   &:hover {
     border: 1px solid var(--G1, #c266e7) !important;
     /* DP for website */

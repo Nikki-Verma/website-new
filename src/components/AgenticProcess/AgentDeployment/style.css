@@ -7,6 +7,7 @@
   background: #fdfdff;
   padding: 24px 32px;
   gap: 16px;
+  transition: all 0.3s;
   &:hover {
     border: 1px solid var(--G1, #c266e7);
     /* DP for website */

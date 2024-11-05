@@ -37,7 +37,7 @@ const data = [
   },
   {
     heading:
-      "Deliver accurate and dependable results, every time—no hallucinations",
+      "Deliver accurate and dependable results, every time-no hallucinations",
     description: [
       "Application-level version control for stability and consistency",
       "Input and output guardrails to ensure trustworthy AI",
