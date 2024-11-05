@@ -1,0 +1,7 @@
+.footer-links {
+  color: var(--foreground);
+  &:hover {
+    transition: all 0.3s;
+    color: var(--primary-color);
+  }
+}

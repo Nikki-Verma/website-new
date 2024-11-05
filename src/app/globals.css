@@ -54,10 +54,6 @@ body {
   line-height: 24px;
 }
 
-a {
-  color: var(--foreground) !important;
-}
-
 p,
 .ant-row,
 .ant-col {

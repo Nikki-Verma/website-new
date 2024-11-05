@@ -370,10 +370,8 @@ const Header = () => {
               </div>
             </Dropdown>
           </button>
-          <button>
-            <Link className="px-4 mx-2" href="/pricing">
-              Pricing
-            </Link>
+          <button className="px-4 mx-2">
+            <Link href="/pricing">Pricing</Link>
           </button>
         </div>
         <div className="button-container-header">

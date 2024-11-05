@@ -9,7 +9,7 @@ import LinkedInIcon from "../../assets/svg/icons/linkedin.svg";
 import PinterestIcon from "../../assets/svg/icons/pinterest.svg";
 import TwitterIcon from "../../assets/svg/icons/twitter.svg";
 import Banner from "../Home/Banner/Banner";
-
+import "./style.css";
 const Footer = () => {
   const menuList = [
     {
@@ -127,7 +127,9 @@ const Footer = () => {
                             className="mb-4 font-14"
                             style={{ cursor: "pointer" }}
                           >
-                            <Link href={menu.link}>{menu.label}</Link>
+                            <Link className="footer-links" href={menu.link}>
+                              {menu.label}
+                            </Link>
                           </li>
                         </ul>
                       );
@@ -151,13 +153,23 @@ const Footer = () => {
                 <Col>
                   <div>
                     <span>
-                      <Link href="/privacypolicy">Privacy policy</Link> &emsp;|
+                      <Link className="footer-links" href="/privacypolicy">
+                        Privacy policy
+                      </Link>{" "}
+                      &emsp;|
                     </span>
                     <span>
-                      &emsp;<Link href="/refund">Refund policy</Link> &emsp;|
+                      &emsp;
+                      <Link className="footer-links" href="/refund">
+                        Refund policy
+                      </Link>{" "}
+                      &emsp;|
                     </span>
                     <span>
-                      &emsp; <Link href="/termservices">Terms of service</Link>
+                      &emsp;{" "}
+                      <Link className="footer-links" href="/termservices">
+                        Terms of service
+                      </Link>
                     </span>
                   </div>
                 </Col>

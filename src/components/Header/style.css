@@ -32,7 +32,7 @@
 
 .nav_links > button:hover {
   transition: all 0.3s;
-  color: #444444;
+  color: var(--primary-color);
 }
 
 .experience_center_button > button {
