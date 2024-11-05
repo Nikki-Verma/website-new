@@ -6,8 +6,8 @@ const VedioContainerProductionRag = () => {
     <div className="relative ... vedio_container_parent">
       <Image
         src={ProductionRagHeroImage}
-        style={{ width: "100%", height: "100%" }}
-        alt="Simplai-llm-studio-image"
+        style={{ minWidth: "100%", height: "100%" }}
+        alt="production rag image"
       />
     </div>
   );

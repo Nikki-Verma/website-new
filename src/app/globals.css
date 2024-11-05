@@ -88,6 +88,18 @@ p,
   line-height: 50px; /* 188.235% */
 }
 
+.hero_h2 {
+  color: var(--pure-white) !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  --tw-text-opacity: 1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home_page_heading_tag {
   display: flex;
   height: 40px;
@@ -490,7 +502,6 @@ h5 {
   background: var(--white);
   transition: all 0.3s;
   &:hover {
-    border: 1px solid var(--G1, #c266e7);
     /* DP for website */
     box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
       0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
@@ -502,7 +513,7 @@ h5 {
   position: absolute;
   inset: 0;
   border-radius: 10px;
-  border: 1px solid transparent; /*2*/
+  border: 1px solid transparent;
   background: var(--border-gradient-purple) border-box; /*3*/
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
@@ -653,7 +664,6 @@ h5 {
   gap: 16px;
   transition: all 0.3s;
   &:hover {
-    border: 1px solid var(--G1, #c266e7);
     /* DP for website */
     box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
       0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
@@ -688,7 +698,7 @@ h5 {
 
 .features_box_description {
   color: var(--Text-Color-800, #2e2e2e);
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 188.235% */

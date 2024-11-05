@@ -83,7 +83,7 @@ const Feature = () => {
             <div className="card_v2 py-8 px-8">
               <div className="h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="text-left mb-4">Ease of use</h4>
+                  <h4 className="text-left mb-4 heading_24">Ease of use</h4>
                   <p className="text-left">
                     Navigate through an intuitive, no-code interface designed
                     for quick experimentation and configuration. Easily test and

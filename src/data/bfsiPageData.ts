@@ -38,7 +38,7 @@ export const solutionsList = [
     title: "Boost productivity",
     description:
       "Leverage intelligent agents to automate tasks, enhancing knowledge workers and accelerating outcomes.",
-    icon: ProductivityIcon,
+    icon: CustomerEngagementIcon,
   },
   {
     title: "Enable smarter decisions",
@@ -47,10 +47,10 @@ export const solutionsList = [
     icon: DecisionIcon,
   },
   {
-    title: "Elevate customer engagement",
+    title: " customer engagement",
     description:
       "Provide personalized experiences through agentic AI and LLM-powered journeys",
-    icon: CustomerEngagementIcon,
+    icon: ProductivityIcon,
   },
   {
     title: "Cut costs",

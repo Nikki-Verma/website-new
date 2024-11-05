@@ -27,7 +27,7 @@ const Tools = () => {
                   height={150}
                 />
 
-                <h4 className="heading_24 text-center mb-4 mt-8">
+                <h4 className="text-lg text-center mb-4 mt-8">
                   Granular visibility with traces
                 </h4>
                 <p className="text-center">
@@ -47,7 +47,7 @@ const Tools = () => {
                   height={150}
                 />
 
-                <h4 className="heading_24 text-center mb-4 mt-8">
+                <h4 className="text-lg text-center mb-4 mt-8">
                   Automatic evaluation metrics
                 </h4>
                 <p className="text-center">
@@ -68,7 +68,7 @@ const Tools = () => {
                   height={150}
                 />
 
-                <h4 className="heading_24 text-center mb-4 mt-8">
+                <h4 className="text-lg text-center mb-4 mt-8">
                   Evaluate and improve applications
                 </h4>
                 <p className="text-center">

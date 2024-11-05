@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../assets/svg/icons/color-logo.svg";
 import FacebookIcon from "../../assets/svg/icons/facebook.svg";
-import InstagramIcon from "../../assets/svg/icons/instagram.svg";
 import LinkedInIcon from "../../assets/svg/icons/linkedin.svg";
 import PinterestIcon from "../../assets/svg/icons/pinterest.svg";
 import TwitterIcon from "../../assets/svg/icons/twitter.svg";
@@ -184,7 +183,6 @@ const Footer = () => {
                 >
                   <Image src={FacebookIcon} alt="facebook" />
                 </Link>
-                <Image src={InstagramIcon} alt="instagram" />
                 <Link
                   href="https://twitter.com/simplai1"
                   target="_blank"
@@ -204,7 +202,13 @@ const Footer = () => {
                 >
                   <Image src={LinkedInIcon} alt="linkedin" />
                 </Link>
-                <Image src={PinterestIcon} alt="pinterest" />
+                <Link
+                  href="https://in.pinterest.com/simplaimedia/"
+                  target="_blank"
+                  style={{ display: "contents" }}
+                >
+                  <Image src={PinterestIcon} alt="pinterest" />
+                </Link>
               </div>
             </Col>
           </Row>

@@ -2,9 +2,10 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import "../../../app/globals.css";
-import VideoContainerAgentAi from "../VideoContainerAgentAi/VideoContainerAgentAi";
+
+import VedioContainerProductionRag from "../VedioContainer/VedioContainer";
 import "./style.css";
-const HeroAgentAi = () => {
+const HeroRag = () => {
   const animateText = ["Secure", "Scalable", "Reliable"];
   const textRefs: any = useRef([]);
   const [index, setIndex] = useState(0);
@@ -14,16 +15,17 @@ const HeroAgentAi = () => {
       {/* <Header /> */}
       <div className="content_section">
         <div className="mx-auto text-center">
-          <p className="product_page_name">AI Agents</p>
+          <p className="product_page_name">Multi-modal Production RAG</p>
         </div>
-        <h1 className="text-center hero_section_heading w-2/3 m-auto flex flex-col gap-8">
+        <h1 className="text-center hero_section_heading m-auto flex flex-col gap-8">
           <span className="hero_h1">
-            The fastest way to build intelligent <br /> AI agents and employees
+            Advanced RAG platform for building <br />
+            trustworthy AI systems
           </span>
           <span className="hero_h2 w-2/3">
-            Empower your teams with conversational AI, voice AI, co-pilots,
-            assistants and multi-agent systems that transform workflows,
-            automate processes, and deliver precise, trustworthy responses.
+            Transform and ingest both structured and unstructured data,
+            converting it into factual insights with every response grounded in
+            truth and delivered with precision.
           </span>
         </h1>
         <div className="flex justify-center items-center mt-8 mb-8">
@@ -32,9 +34,9 @@ const HeroAgentAi = () => {
           </Link>
         </div>
       </div>
-      <VideoContainerAgentAi />
+      <VedioContainerProductionRag />
     </div>
   );
 };
 
-export default HeroAgentAi;
+export default HeroRag;

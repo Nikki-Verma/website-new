@@ -17,8 +17,8 @@ const Hero = () => {
       <div className="content_section">
         <div className="text-center hero_section_heading">
           <span className="hero_h1">
-            The <span className="hero_h2">simplest and fastest</span> way to
-            build <br /> and deploy Gen AI applications
+            The <span className="hero_h2_home_page">simplest and fastest</span>{" "}
+            way to build <br /> and deploy Gen AI applications
           </span>
         </div>
         <p className="text-center mx-auto mt-8 hero_text">

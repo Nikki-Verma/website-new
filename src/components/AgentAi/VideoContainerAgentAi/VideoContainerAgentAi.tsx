@@ -13,8 +13,8 @@ const VideoContainerAgentAi = () => {
     <div className=" container relative">
       <Image
         src={VideoContainerAgentAiImage}
-        style={{ width: "100%", height: "100%" }}
-        alt="website-video"
+        style={{ minWidth: "100%", height: "100%" }}
+        alt="AI-agent-hero-image"
       />
     </div>
   );

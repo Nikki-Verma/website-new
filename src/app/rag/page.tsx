@@ -4,8 +4,8 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
 import Feature from "@/components/Rag/Feature/Feature";
+import HeroRag from "@/components/Rag/HeroRag/HeroRag";
 import Solution from "@/components/Rag/Solution/Solution";
-import VedioContainerProductionRag from "@/components/Rag/VedioContainer/VedioContainer";
 import {
   AdvancedFeatureImage,
   EvaluationImage,
@@ -13,7 +13,6 @@ import {
   GuardrailsImage,
   TrustSecurityImage,
 } from "@/util/images";
-import Link from "next/link";
 
 const EncryptionDataPoints = [
   {
@@ -48,50 +47,25 @@ const EncryptionDataPoints = [
 
 const Rag = () => {
   return (
-    <>
+    <section>
       <Header />
-      <div className="hero_background">
-        <div style={{ paddingTop: 160 }}>
-          <div className="mx-auto text-center">
-            <p className="product_page_name">Multi-modal Production RAG</p>
-          </div>
-          <h1 className="text-white">
-            Advanced RAG platform for building <br />
-            trustworthy AI systems
-          </h1>
-          <p className="font-16 text-white text-center mt-6 w-2/3 mx-auto">
-            Transform and ingest both structured and unstructured data,
-            converting it into factual insights with every response grounded in
-            truth and delivered with precision.
-          </p>
-          <Link prefetch href={"/request-demo"}>
-            <button className="button button_white mx-auto mt-6">
-              Request Demo
-            </button>
-          </Link>
-        </div>
-      </div>
-      <div style={{ marginTop: 500 }}>
-        <div className="mt-12 mb-16">
-          <VedioContainerProductionRag />
-        </div>
-        <Feature />
-        <Solution />
-        {/* <Securitystandards /> */}
-        <AgentDeployment
-          title={"Advanced features to build production-ready applications"}
-          subTitle={""}
-          EncryptionDataPoints={EncryptionDataPoints}
-          mainImage={AdvancedFeatureImage}
-        />
-        <CaseStudy />
-        <BannerExpert
-          bannerHeading="Ready to build trustworthy AI systems?"
-          bannerText="Transform your data into reliable insights with SimplAI’s multi-modal RAG platform. Experience seamless integration, enhanced factuality, and user-friendly design, empowering you to deploy AI solutions with confidence"
-        />
-        <Footer />
-      </div>
-    </>
+      <HeroRag />
+      <Feature />
+      <Solution />
+      {/* <Securitystandards /> */}
+      <AgentDeployment
+        title={"Advanced features to build production-ready applications"}
+        subTitle={""}
+        EncryptionDataPoints={EncryptionDataPoints}
+        mainImage={AdvancedFeatureImage}
+      />
+      <CaseStudy />
+      <BannerExpert
+        bannerHeading="Ready to build trustworthy AI systems?"
+        bannerText="Transform your data into reliable insights with SimplAI’s multi-modal RAG platform. Experience seamless integration, enhanced factuality, and user-friendly design, empowering you to deploy AI solutions with confidence"
+      />
+      <Footer />
+    </section>
   );
 };
 

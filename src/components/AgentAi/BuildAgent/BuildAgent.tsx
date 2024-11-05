@@ -24,7 +24,7 @@ const BuildAgent = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <div>
-                <h4 className="text-left mb-4 w-5/6">
+                <h4 className="heading_24 text-left mb-4 w-5/6">
                   Conversational AI, voice AI, co-pilots, and assistants
                 </h4>
                 <p className="text-left">
@@ -45,7 +45,7 @@ const BuildAgent = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8 gap-4">
               <div>
-                <h4 className="text-left mb-4 w-5/6">
+                <h4 className="heading_24 text-left mb-4 w-5/6">
                   Knowledge-equipped and function-calling sub-agents
                 </h4>
                 <p className="text-left">
@@ -83,7 +83,7 @@ const BuildAgent = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <h4 className="text-left mb-4 w-5/6">
+                  <h4 className="heading_24 text-left mb-4 w-5/6">
                     Citations and guardrails
                   </h4>
                   <p className="text-left pr-4">

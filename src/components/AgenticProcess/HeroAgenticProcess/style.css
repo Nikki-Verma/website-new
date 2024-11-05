@@ -63,15 +63,6 @@
   line-height: 59px; /* 140.476% */
 }
 
-.hero_h2 {
-  color: var(--Neutral-1, #fff);
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 34px; /* 188.889% */
-}
-
 .animate_text_wrapper {
   display: inline-block;
   overflow: hidden;

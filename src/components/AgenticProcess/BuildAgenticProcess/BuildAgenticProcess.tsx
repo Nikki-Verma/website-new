@@ -18,7 +18,7 @@ const BuildAgenticProcess = () => {
           </div>
           <p className="section_subheading w-2/3">
             SimplAI’s platform provides a seamless way for technical and product
-            teams to automate complex processes—without the complexity.
+            teams to automate complex processes-without the complexity.
           </p>
         </div>
         <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
@@ -41,7 +41,7 @@ const BuildAgenticProcess = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <h4 className="text-left mb-4 w-5/6">
+                  <h4 className="heading_24 text-left mb-4 w-5/6">
                     Intelligent decision making
                   </h4>
                   <p className="text-left pr-4">
@@ -63,7 +63,7 @@ const BuildAgenticProcess = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <div>
-                <h4 className="text-left mb-4 w-5/6">
+                <h4 className="heading_24 text-left mb-4 w-5/6">
                   Process workflow automation
                 </h4>
                 <p className="text-left">
@@ -84,7 +84,7 @@ const BuildAgenticProcess = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8 gap-4">
               <div>
-                <h4 className="text-left mb-4 w-5/6">
+                <h4 className="heading_24 text-left mb-4 w-5/6">
                   Document processing & extraction
                 </h4>
                 <p className="text-left">
@@ -104,7 +104,7 @@ const BuildAgenticProcess = () => {
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <div>
-                <h4 className="text-left mb-4 w-5/6">Guardrails</h4>
+                <h4 className="heading_24 text-left mb-4 w-5/6">Guardrails</h4>
                 <p className="text-left">
                   Leverage built-in safety checks and verifiable data to
                   maintain reliability and compliance, configurable within
@@ -124,7 +124,7 @@ const BuildAgenticProcess = () => {
             <div className="card_v2 py-8 px-8 h-full">
               <div className="h-full flex justify-between flex-col ">
                 <div>
-                  <h4 className="text-left mb-4">Data connectors</h4>
+                  <h4 className="heading_24 text-left mb-4">Data connectors</h4>
                   <p className="text-left">
                     Integrate seamlessly with over 300+ data sources,
                     facilitating quick data synchronization and enhancing
