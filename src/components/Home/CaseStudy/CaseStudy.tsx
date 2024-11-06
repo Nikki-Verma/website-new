@@ -53,14 +53,14 @@ const CaseStudy = () => {
                             height={100}
                           />
                           <div className="blog_content">
-                            <div className="flex justify-end items-center mb-4">
-                              {/* <div className="artical_badge">Article</div> */}
+                            {/* <div className="flex justify-end items-center mb-4">
+                              <div className="artical_badge">Article</div>
                               <div className="blog_date">
                                 {Intl.DateTimeFormat("en-GB").format(
                                   new Date(postData?.created_at),
                                 )}
                               </div>
-                            </div>
+                            </div> */}
                             <h5 className="mb-4">{postData?.title}</h5>
                             <p className="mb-4">
                               {postData?.excerpt?.substring(0, 120)}...

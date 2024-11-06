@@ -41,10 +41,8 @@ const Feature = () => {
                   />
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                  <h2 className="heading_24 mb-4 text-left">
-                    End-to-end platform
-                  </h2>
-                  <p>
+                  <h2 className="heading_card_v2">End-to-end platform</h2>
+                  <p className="description_card_v2">
                     Experience a seamless workflow from data extraction and
                     parsing to encoding, indexing, and integrating with vector
                     databases. With built-in data loaders, search & filtering,
@@ -59,10 +57,8 @@ const Feature = () => {
             <div className="card_v2 py-8 px-8">
               <div className="h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="text-left mb-4 heading_24">
-                    Trust, not hallucinate
-                  </h4>
-                  <p className="text-left">
+                  <h4 className="heading_card_v2 ">Trust, not hallucinate</h4>
+                  <p className="description_card_v2">
                     Ensure your generative systems rely solely on the facts and
                     data you provide. Every generated response is traceable to
                     its source, with citations enhancing trust and credibility
@@ -83,8 +79,8 @@ const Feature = () => {
             <div className="card_v2 py-8 px-8">
               <div className="h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="text-left mb-4 heading_24">Ease of use</h4>
-                  <p className="text-left">
+                  <h4 className="heading_card_v2">Ease of use</h4>
+                  <p className="description_card_v2">
                     Navigate through an intuitive, no-code interface designed
                     for quick experimentation and configuration. Easily test and
                     build the perfect RAG strategy with multiple settings
@@ -105,10 +101,8 @@ const Feature = () => {
             <div className="card_v2 px-8 pt-16 pb-12 ">
               <Row gutter={[36, 36]} justify={"space-between"} align={"middle"}>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                  <h2 className="heading_24 mb-4 text-left">
-                    Your data is secure
-                  </h2>
-                  <p>
+                  <h2 className="heading_card_v2">Your data is secure</h2>
+                  <p className="description_card_v2">
                     Keep complete control of your data with our privacy-first
                     approach. Deploy your RAG systems on your own cloud, with
                     our SOC 2 and ISO 27001 compliant platform.

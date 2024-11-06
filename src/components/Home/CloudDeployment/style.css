@@ -8,4 +8,15 @@
   border-radius: 10px;
   border: 1px solid rgba(166, 188, 218, 0.3);
   background: #fdfdff;
+  margin-bottom: 0px;
+  padding: 40px 48px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 56px;
+  @media screen and (max-width: 600px) {
+    padding: 1rem;
+    /* border: none;
+    background: transparent;
+    margin-bottom: 12px; */
+  }
 }

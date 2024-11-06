@@ -1,9 +1,7 @@
-import AgentDeployment from "@/components/AgentAi/AgentDeployment/AgentDeployment";
 import AgenticProcessFeatures from "@/components/AgenticProcess/AgenticProcessFeatures/AgenticProcessFeatures";
 import BuildAgenticProcess from "@/components/AgenticProcess/BuildAgenticProcess/BuildAgenticProcess";
 import HeroAgenticProcess from "@/components/AgenticProcess/HeroAgenticProcess";
 import SimplaiAgentFeatures from "@/components/AgenticProcess/SimplaiAgentFeatures/SimplaiAgentFeatures";
-import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
@@ -14,6 +12,21 @@ import {
   GuardrailsImage,
   createAutomatedWorkflowImage,
 } from "@/util/images";
+import dynamic from "next/dynamic";
+
+const AgentDeployment = dynamic(
+  () => import("@/components/AgentAi/AgentDeployment/AgentDeployment"),
+  {
+    ssr: false,
+  },
+);
+
+const BannerExpert = dynamic(
+  () => import("@/components/BannerExpert/BannerExpert"),
+  {
+    ssr: false,
+  },
+);
 
 const EncryptionDataPoints = [
   {

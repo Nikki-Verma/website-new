@@ -22,8 +22,8 @@ const DataIntegration = () => {
             <div className="card_v2 py-8 px-8 h-full">
               <div className="h-full flex justify-between flex-col ">
                 <div>
-                  <h4 className="heading_24 text-left mb-4">Data connectors</h4>
-                  <p className="text-left">
+                  <h4 className="heading_card_v2">Data connectors</h4>
+                  <p className="description_card_v2">
                     Seamlessly sync data from over 300 sources, enabling smooth
                     and rapid data integration across platforms.
                   </p>
@@ -42,10 +42,10 @@ const DataIntegration = () => {
             <div className="card_v2 py-8 px-8  h-full">
               <div className="h-full flex justify-between flex-col">
                 <div className="mb-4">
-                  <h4 className="heading_24 text-left mb-4">
+                  <h4 className="heading_card_v2">
                     Build production-ready Agentic RAG
                   </h4>
-                  <p className="text-left">
+                  <p className="description_card_v2">
                     Use a powerful RAG interface supporting any vector database,
                     embeddings, and chunking for structured and unstructured
                     data.
@@ -65,10 +65,8 @@ const DataIntegration = () => {
             <div className="card_v2 py-8 px-8 h-full">
               <div className="h-full flex justify-between flex-col">
                 <div className="mb-4">
-                  <h4 className="heading_24 text-left mb-4">
-                    Retrieval playground
-                  </h4>
-                  <p className="text-left ">
+                  <h4 className="heading_card_v2">Retrieval playground</h4>
+                  <p className="description_card_v2">
                     Experiment, iterate, and refine in the simplest and fastest
                     way to maximize accuracy and performance.
                   </p>

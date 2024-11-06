@@ -22,9 +22,17 @@ const AIPlatformOverview = ({
             return (
               <Col xs={24} md={8} style={{ display: "flex" }}>
                 <div className="card_v2_with_hover py-6 px-4 flex justify-start flex-col items-center">
-                  <Image src={value.icon} alt={value.heading} />
-                  <h4 className="heading_24 text-center">{value.heading}</h4>
-                  <p className="font-16 text-center">{value.description}</p>
+                  <Image
+                    src={value.icon}
+                    alt={value.heading}
+                    className="mb-4"
+                  />
+                  <h4 className="heading_card_v2_with_hover">
+                    {value.heading}
+                  </h4>
+                  <p className="description_card_v2_with_hover">
+                    {value.description}
+                  </p>
                 </div>
               </Col>
             );

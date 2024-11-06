@@ -38,7 +38,7 @@ const data = [
       />
     ),
     tabName: "SimplAI Studio",
-    tabIcon: <SecureAiIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <SecureAiIcon style={{ height: 20, width: 20 }} />,
   },
   {
     heading:
@@ -46,7 +46,7 @@ const data = [
     image: <Image src={AiAgentsImage} alt={"ai-agents-dashboard-image"} />,
     link: "/ai-agents",
     tabName: "AI Agents",
-    tabIcon: <AiAgentIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <AiAgentIcon style={{ height: 20, width: 20 }} />,
   },
   {
     heading:
@@ -59,7 +59,7 @@ const data = [
     ),
     link: "/agentic-process-automation",
     tabName: "Agentic Automations",
-    tabIcon: <AgenticWorkflowIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <AgenticWorkflowIcon style={{ height: 20, width: 20 }} />,
   },
   {
     heading:
@@ -72,7 +72,7 @@ const data = [
     ),
     link: "/agentic-rag",
     tabName: "Data & Knowledge",
-    tabIcon: <DataStorageIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <DataStorageIcon style={{ height: 20, width: 20 }} />,
   },
   {
     heading:
@@ -80,7 +80,7 @@ const data = [
     image: <Image src={DeploymentImage} alt={"deployment-dashboard-image"} />,
     link: "/simplai-studio#deployment",
     tabName: "Deployment",
-    tabIcon: <DeploymentIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <DeploymentIcon style={{ height: 20, width: 20 }} />,
   },
   {
     heading:
@@ -90,17 +90,17 @@ const data = [
     ),
     link: "/simplai-studio#observability",
     tabName: "Observability",
-    tabIcon: <ObservabilityIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <ObservabilityIcon style={{ height: 20, width: 20 }} />,
   },
 ];
 const Features = () => {
   const [currentSelect, setCurrentSelect] = useState(data[0]);
   const [index, setIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 596);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 595);
+      setIsMobile(window.innerWidth < 601);
     };
 
     // Add event listener for window resize
@@ -118,7 +118,9 @@ const Features = () => {
     <section
       className="section"
       style={{
-        backgroundImage: `url(${BoxesBgImage1?.src}) , linear-gradient(180deg, #fcfbff 0%, #f1f1ff 100%)`,
+        backgroundImage: !isMobile
+          ? `url(${BoxesBgImage1?.src}) , linear-gradient(180deg, #fcfbff 0%, #f1f1ff 100%)`
+          : "",
         backgroundPosition: "center bottom",
         backgroundRepeat: "no-repeat",
       }}

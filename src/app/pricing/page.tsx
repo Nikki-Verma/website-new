@@ -1,13 +1,19 @@
 import Button from "@/UIComponents/Button";
-import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
 import { Col, Collapse, CollapseProps, Row } from "antd";
+import dynamic from "next/dynamic";
 import { CSSProperties } from "react";
 import { FaCheck } from "react-icons/fa6";
 import "./PricingPlans.css";
 
+const BannerExpert = dynamic(
+  () => import("@/components/BannerExpert/BannerExpert"),
+  {
+    ssr: false,
+  },
+);
 const pricingPlans: any = [
   {
     title: "Free",

@@ -1,9 +1,7 @@
-import AgentDeployment from "@/components/AgentAi/AgentDeployment/AgentDeployment";
 import AgentFeatures from "@/components/AgentAi/AgentFeatures/AgentFeatures";
 import BuildAgent from "@/components/AgentAi/BuildAgent/BuildAgent";
 import HeroAgentAi from "@/components/AgentAi/HeroAgentAi";
 import SimplaiAgentFeatures from "@/components/AgentAi/SimplaiAgentFeatures/SimplaiAgentFeatures";
-import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
@@ -14,6 +12,21 @@ import {
   FrameworkImage,
   GuardrailsImage,
 } from "@/util/images";
+import dynamic from "next/dynamic";
+
+const AgentDeployment = dynamic(
+  () => import("@/components/AgentAi/AgentDeployment/AgentDeployment"),
+  {
+    ssr: false,
+  },
+);
+
+const BannerExpert = dynamic(
+  () => import("@/components/BannerExpert/BannerExpert"),
+  {
+    ssr: false,
+  },
+);
 
 const EncryptionDataPoints = [
   {

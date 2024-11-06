@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown, IoMdArrowForward } from "react-icons/io";
 import Logo from "../../assets/svg/icons/color-logo.svg";
+import CloseIcon from "../Icons/CloseIcon";
 import ExperienceCenterIcon from "../Icons/ExperienceCenterIcon";
 import "./style.css";
 
@@ -195,7 +196,7 @@ const Header = () => {
           minWidth: "calc(100% - 8px)",
         }}
       />
-      <Space direction="vertical" align="center">
+      <Space direction="vertical" align="center" style={{ gap: "16px" }}>
         <Link prefetch href={"https://app.simplai.ai/login"}>
           <div className="experience_center_button">
             <button>
@@ -300,12 +301,20 @@ const Header = () => {
             <Image src={Logo} alt="logo" />
           </Link>
           <div ref={componentRef} className="iconShow">
-            <FontAwesomeIcon
-              onClick={() => {
-                setshowSubMenu(true);
-              }}
-              icon={faBars}
-            />
+            {!showSubMenu ? (
+              <FontAwesomeIcon
+                onClick={() => {
+                  setshowSubMenu(true);
+                }}
+                icon={faBars}
+              />
+            ) : (
+              <CloseIcon
+                onClick={() => {
+                  setshowSubMenu(false);
+                }}
+              />
+            )}
           </div>
         </div>
         <div className="nav_links">

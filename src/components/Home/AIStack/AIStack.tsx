@@ -32,7 +32,7 @@ const AIStack = () => {
   ];
 
   return (
-    <div className="text-center mb-12">
+    <div className="text-center mb-6">
       <div className="container">
         <span className="home_page_heading ">
           One platform. Unlimited possibilities.

@@ -48,11 +48,11 @@ const AcceleratedExecution = () => {
             <span className="heading_highlighter"> with in a month</span>
           </div>
         </div>
-        <Row align={"stretch"} justify={"space-between"} gutter={[16, 16]}>
+        <Row align={"stretch"} justify={"space-evenly"} gutter={[16, 16]}>
           {data?.map((cardDetail) => {
             return (
               <Col
-                xs={24}
+                xs={18}
                 sm={12}
                 md={12}
                 lg={8}

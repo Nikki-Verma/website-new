@@ -36,14 +36,22 @@
   font-style: normal;
   font-weight: 700;
   line-height: 32px; /* 173.578% */
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 .accelerated_exec_box_description {
   color: #242323;
-  font-size: 18.435px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .accelerated_exec_box_container img {

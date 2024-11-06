@@ -1,5 +1,3 @@
-import AgentDeployment from "@/components/AgentAi/AgentDeployment/AgentDeployment";
-import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
@@ -13,6 +11,21 @@ import {
   GuardrailsImage,
   TrustSecurityImage,
 } from "@/util/images";
+import dynamic from "next/dynamic";
+
+const AgentDeployment = dynamic(
+  () => import("@/components/AgentAi/AgentDeployment/AgentDeployment"),
+  {
+    ssr: false,
+  },
+);
+
+const BannerExpert = dynamic(
+  () => import("@/components/BannerExpert/BannerExpert"),
+  {
+    ssr: false,
+  },
+);
 
 const EncryptionDataPoints = [
   {

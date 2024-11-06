@@ -8,6 +8,7 @@ import {
 } from "@/util/images";
 import { Col, Row } from "antd";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import "./style.css";
 const data = [
   {
@@ -48,6 +49,19 @@ const AgentDeployment = ({
   subTitle: string | null | undefined;
   mainImage: any;
 }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 601);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <section className="section" id="deployment">
       <div className="container">
@@ -57,21 +71,25 @@ const AgentDeployment = ({
         </div>
         <div className="card_v2 flex w-full px-8 py-8 mb-12">
           <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
-            <Col
-              xs={24}
-              sm={24}
-              md={24}
-              lg={12}
-              xl={12}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Image src={mainImage} alt="features-image" />
-            </Col>
+            {!isMobile ? (
+              <Col
+                xs={24}
+                sm={24}
+                md={24}
+                lg={12}
+                xl={12}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image src={mainImage} alt="features-image" />
+              </Col>
+            ) : (
+              <></>
+            )}
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               {EncryptionDataPoints?.map((data) => {
                 return (

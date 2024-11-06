@@ -30,20 +30,6 @@
   /* --black:"#222222" */
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 body {
   font-family: var(--font-montserrat) !important;
   background: var(--white);
@@ -61,6 +47,49 @@ body {
 .container {
   width: calc(100vw - 100px);
   margin: 0 auto;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
+}
+.hero_section {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    var(--secondry-color) 70%,
+    #fcfbff 30%
+  );
+  padding-top: 180px;
+  padding-bottom: 70px;
+  width: 100%;
+  top: 0;
+  @media screen and (max-width: 600px) {
+    background: linear-gradient(
+      to bottom,
+      var(--secondry-color) 85%,
+      #fcfbff 15%
+    );
+    padding-top: 160px;
+    padding-bottom: 24px;
+  }
+}
+
+.hero_section::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 80%; /* Adjust size as needed */
+  height: 30%;
+  opacity: 0.7;
+  background: linear-gradient(98deg, #9746b7 11.05%, #6b36f2 56.31%);
+  filter: blur(126.70392608642578px);
+  pointer-events: none; /* So that it doesn't interfere with interactions */
+  z-index: 0;
+  @media screen and (max-width: 600px) {
+    top: 75%;
+    height: 20%;
+  }
 }
 
 .home_page_container {
@@ -79,10 +108,13 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 50px; /* 188.235% */
+  @media screen and (max-width: 600px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .hero_h2 {
-  color: var(--pure-white) !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -91,6 +123,14 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color: var(--Neutral-1, #fff);
+  font-style: normal;
+  width: 67%;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    font-weight: 400;
+  }
 }
 
 .home_page_heading_tag {
@@ -107,7 +147,24 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
 }
+.hero_h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55px; /* 128% */
+
+  @media screen and (max-width: 600px) {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
 .home_page_heading_tag::before {
   content: "";
   position: absolute;
@@ -213,7 +270,7 @@ h5 {
 .button {
   display: flex;
   width: max-content;
-  height: 44px;
+  min-height: 44px;
   border-radius: 10px;
   padding: 2px 30px;
   justify-content: center;
@@ -221,6 +278,11 @@ h5 {
   background-color: var(--primary-color);
   color: var(--support-white);
   overflow: hidden;
+  @media screen and (max-width: 600px) {
+    min-height: 36px;
+    padding: 2px 20px;
+    font-size: 14px;
+  }
 }
 
 .button_white {
@@ -230,6 +292,11 @@ h5 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media screen and (max-width: 600px) {
+    min-height: 36px;
+    padding: 2px 20px;
+    font-size: 14px;
+  }
 }
 
 .button:hover {
@@ -274,9 +341,10 @@ h5 {
   background: #f9f8fe;
   padding: 5px 6px;
 
-  @media screen and (max-width: 605px) {
+  @media screen and (max-width: 600px) {
     border: none;
     background: transparent;
+    margin-bottom: 12px;
   }
 }
 
@@ -295,15 +363,16 @@ h5 {
   background: #f9f8fe;
   padding: 5px 6px;
 
-  @media screen and (max-width: 1304px) {
+  @media screen and (max-width: 600px) {
     border: none;
     background: transparent;
+    margin-bottom: 12px;
   }
 }
 
 .round_button_selected {
   background: #f0f0ff !important;
-  height: 50px;
+  min-height: 50px;
   border-radius: 40px;
   display: flex;
   padding: 0px 24px;
@@ -318,18 +387,28 @@ h5 {
   font-weight: 500;
   line-height: normal;
   gap: 6px;
+  @media screen and (max-width: 600px) {
+    border-radius: 30px !important;
+    border: 1px solid var(--Stroke, #c3d0e2) !important;
+    background: #f9f8fe !important;
+    font-size: 12px;
+    min-height: 36px;
+    padding: 0px 16px;
+  }
 }
 .round_button_selected::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 40px; /*1*/
-  border: 1px solid transparent; /*2*/
-  background: var(--border-gradient-purple) border-box; /*3*/
-  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor; /*5'*/
-  mask-composite: exclude; /*5*/
+  @media screen and (min-width: 601px) {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px; /*1*/
+    border: 1px solid transparent; /*2*/
+    background: var(--border-gradient-purple) border-box; /*3*/
+    -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+    mask-composite: exclude; /*5*/
+  }
 }
 .link_button:hover .icon {
   transform: translateX(6px) rotateZ(-45deg);
@@ -487,6 +566,9 @@ h5 {
   height: 100%;
   border: 1px solid var(--stroke-cardv2);
   background: var(--white);
+  @media screen and (max-width: 600px) {
+    padding: 16px;
+  }
 }
 .card_v2_with_hover {
   border-radius: 10px;
@@ -498,6 +580,9 @@ h5 {
     /* DP for website */
     box-shadow: 0px 20.039px 40.078px -9.619px rgba(0, 0, 0, 0.25),
       0px 0px 12.024px 0px rgba(0, 0, 0, 0.07);
+  }
+  @media screen and (max-width: 600px) {
+    padding: 16px !important;
   }
 }
 
@@ -569,6 +654,10 @@ h5 {
   padding-top: 24px;
   padding-bottom: 70px;
   margin-bottom: 70px;
+  @media screen and (max-width: 600px) {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .section_heading_container {
@@ -578,6 +667,9 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 }
 
 .card_hover {
@@ -612,6 +704,10 @@ h5 {
   font-style: normal;
   font-weight: 700;
   line-height: 60.2px;
+  @media screen and (max-width: 600px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .card_points_container {
@@ -622,7 +718,7 @@ h5 {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 14px 12px;
-  @media (max-width: 500px) {
+  @media screen and (max-width: 500px) {
     flex-direction: column;
   }
 }
@@ -700,6 +796,9 @@ h5 {
 .platform_feature_list {
   margin-bottom: 24px;
   color: var(--off-white);
+  @media screen and (max-width: 600px) {
+    margin-bottom: 12px;
+  }
 }
 
 .platform_feature_list > li {
@@ -711,6 +810,13 @@ h5 {
   border-bottom: 0.5px solid rgba(166, 188, 218, 0.67);
   padding: 16px 0px;
   max-width: max-content;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 0px;
+  }
 }
 .platform_feature_list > li::marker {
   content: "";
@@ -736,6 +842,11 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: 32px; /* 177.778% */
+  @media screen and (max-width: 600px) {
+    font-size: 12px !important;
+    line-height: 24px !important;
+    font-weight: 500;
+  }
 }
 
 .solution-pages-hero-links {
@@ -759,4 +870,70 @@ li {
 .solution-pages-hero-links:hover > .arrow {
   transition: all 0.3s;
   transform: translateX(6px) rotateZ(-45deg);
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+  margin: 24px 0px !important;
+}
+
+.ant-menu-light.ant-menu-inline .ant-menu-item {
+  margin-top: 0px !important;
+  margin-bottom: 24px !important;
+}
+
+.banner_expert_heading {
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (max-width: 600px) {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+.banner_expert_description {
+  width: 66.67%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 24px;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+}
+
+.heading_card_v2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 16px;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+.description_card_v2 {
+  text-align: left;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+.heading_card_v2_with_hover {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+.description_card_v2_with_hover {
+  text-align: center;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+    width: 100%;
+  }
 }

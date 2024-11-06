@@ -22,10 +22,8 @@ const AiFeature = () => {
             <div className="card_v2 px-8 py-8 w-full">
               <div className="gap-2 gap-4 h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="heading_24 text-left">
-                    Intelligent AI agents
-                  </h4>
-                  <p className="">
+                  <h4 className="heading_card_v2">Intelligent AI agents</h4>
+                  <p className="description_card_v2">
                     Design conversational agents that manage complex
                     interactions with ease, utilizing chat history, guardrails,
                     and real-time streaming.
@@ -45,8 +43,8 @@ const AiFeature = () => {
             <div className="card_v2 px-8 py-8 w-full">
               <div className="gap-2 gap-4 h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="heading_24 text-left">AI & LLM chaining</h4>
-                  <p className="">
+                  <h4 className="heading_card_v2">AI & LLM chaining</h4>
+                  <p className="description_card_v2">
                     Build multi-agent systems where agents collaborate and
                     independently execute tasks, using adaptive learning and
                     conditional chaining.
@@ -66,10 +64,8 @@ const AiFeature = () => {
             <div className="card_v2 px-8 py-8 w-full">
               <div className="h-full flex justify-between gap-4 flex-col">
                 <div>
-                  <h4 className="heading_24 text-left">
-                    Automated AI workflows
-                  </h4>
-                  <p className="">
+                  <h4 className="heading_card_v2">Automated AI workflows</h4>
+                  <p className="description_card_v2">
                     Automate workflows with multi-step sequencing, blending
                     traditional process automation with intelligent agents to
                     streamline operations.
@@ -89,10 +85,10 @@ const AiFeature = () => {
             <div className="card_v2 px-8 py-8 w-full">
               <div className="gap-2 gap-4 h-full flex justify-between flex-col">
                 <div>
-                  <h4 className="heading_24 text-left">
+                  <h4 className="heading_card_v2">
                     Flexible deployment options
                   </h4>
-                  <p>
+                  <p className="description_card_v2">
                     Deploy AI systems in the SimplAI cloud, on your private
                     cloud, or on-premise for maximum data control and
                     compliance.

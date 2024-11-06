@@ -39,6 +39,9 @@
   gap: 24px 12px;
   padding-top: 50px;
   animation: marquee 10s linear infinite;
+  @media screen and (max-width: 600px) {
+    padding-top: 24px;
+  }
 }
 .badges_wrapper1 {
   animation: marquee1 10s linear infinite;
@@ -51,6 +54,9 @@
   gap: 24px 12px;
   padding-top: 50px;
   animation: marquee 10s linear infinite;
+  @media screen and (max-width: 600px) {
+    padding-top: 24px;
+  }
 }
 
 .badges {
@@ -69,11 +75,11 @@
 
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 
   display: inline-flex;
-  height: 43px;
+  min-height: 43px;
   padding: 0px 12px;
   justify-content: center;
   align-items: center;
@@ -82,4 +88,12 @@
   border-radius: 8px;
   border: 0.5px solid rgba(166, 188, 218, 0.7);
   background: #f1f6fc;
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 8px;
+    min-height: 32px;
+  }
 }

@@ -21,7 +21,7 @@ const data = [
     buttonLink: "",
     image: SecureAi,
     tabName: "Secure AI",
-    tabIcon: <SecureAiIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <SecureAiIcon style={{ height: 20, width: 20 }} />,
   },
   {
     heading:
@@ -37,7 +37,7 @@ const data = [
     buttonLink: "",
     image: GenScale,
     tabName: "Scalable AI",
-    tabIcon: <ScalableAiIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <ScalableAiIcon style={{ height: 20, width: 20 }} />,
   },
   {
     heading:
@@ -53,17 +53,17 @@ const data = [
     buttonLink: "",
     image: Relaible,
     tabName: "Reliable AI",
-    tabIcon: <ReliableAiIcon style={{ height: 24, width: 24 }} />,
+    tabIcon: <ReliableAiIcon style={{ height: 20, width: 20 }} />,
   },
 ];
 const PlatformBuild = () => {
   const [currentSelect, setCurrentSelect] = useState(data[0]);
   const [index, setIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 604);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 604);
+      setIsMobile(window.innerWidth < 601);
     };
 
     // Add event listener for window resize
@@ -119,9 +119,9 @@ const PlatformBuild = () => {
               </button>
             </div>
 
-            <div className="platform_build_box_container mb-0 py-10 px-12 flex-wrap justify-between gap-x-56">
+            <div className="platform_build_box_container ">
               <div className="flex flex-1 flex-col">
-                <h4 className="text-[color:--black-v2] mb-6">
+                <h4 className=" platform_card_heading">
                   {currentSelect.heading}
                 </h4>
                 <ul className="platform_feature_list list-disc">
@@ -154,9 +154,9 @@ const PlatformBuild = () => {
                       {itemDetails?.tabName}
                     </button>
                   </div>
-                  <div className="platform_build_box_container mb-0 py-10 px-12 flex-wrap justify-between gap-x-56">
+                  <div className="platform_build_box_container ">
                     <div className="flex flex-1 flex-col">
-                      <h4 className="text-[color:--black-v2] mb-6">
+                      <h4 className="platform_card_heading">
                         {itemDetails.heading}
                       </h4>
                       <ul className="platform_feature_list list-disc">

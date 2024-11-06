@@ -30,8 +30,10 @@ const Solution = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-lg text-center">Conversational AI</h4>
-                  <p className="mb-4 text-center">
+                  <h4 className="heading_card_v2_with_hover">
+                    Conversational AI
+                  </h4>
+                  <p className="description_card_v2_with_hover">
                     Chatbots and AI assistants grounded with truth
                   </p>
                   {/* <button className="link_button link_button_primary flex m-auto items-center gap-3">
@@ -57,10 +59,10 @@ const Solution = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-lg text-center text-left">
+                  <h4 className="heading_card_v2_with_hover">
                     Content generation
                   </h4>
-                  <p className="text-center mb-4">
+                  <p className="description_card_v2_with_hover">
                     Summarizations and question answering with precise citations
                   </p>
                   {/* <button className="link_button link_button_primary flex items-center m-auto gap-3">
@@ -86,10 +88,10 @@ const Solution = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-lg text-center text-left">
+                  <h4 className="heading_card_v2_with_hover">
                     Information retrieval
                   </h4>
-                  <p className="text-center mb-4">
+                  <p className="description_card_v2_with_hover">
                     Power hybrid search and recommendation system
                   </p>
                   {/* <button className="link_button link_button_primary m-auto flex items-center gap-3">

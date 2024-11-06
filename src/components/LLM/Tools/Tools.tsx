@@ -23,14 +23,14 @@ const Tools = () => {
                 <Image
                   src={TraceVisibilityImage}
                   alt={"TraceVisibilityImage"}
-                  className="tex-center mx-auto"
+                  className="tex-center mx-auto mb-6"
                   height={150}
                 />
 
-                <h4 className="text-lg text-center mb-4 mt-8">
+                <h4 className="heading_card_v2_with_hover">
                   Granular visibility with traces
                 </h4>
-                <p className="text-center">
+                <p className="description_card_v2_with_hover">
                   Get a clear view of every sequence of calls, allowing you to
                   fine-tune performance with precision and detail
                 </p>
@@ -43,14 +43,14 @@ const Tools = () => {
                 <Image
                   src={AutomacticImage}
                   alt={"AutomacticImage"}
-                  className="tex-center mx-auto"
+                  className="tex-center mx-auto mb-6"
                   height={150}
                 />
 
-                <h4 className="text-lg text-center mb-4 mt-8">
+                <h4 className="heading_card_v2_with_hover">
                   Automatic evaluation metrics
                 </h4>
-                <p className="text-center">
+                <p className="description_card_v2_with_hover">
                   Gain insights into the robustness and reliability of your LLM
                   applications through built-in metrics, ensuring consistent
                   performance
@@ -64,14 +64,14 @@ const Tools = () => {
                 <Image
                   src={ImproveImage}
                   alt={"ImproveImage"}
-                  className="tex-center mx-auto"
+                  className="tex-center mx-auto mb-6"
                   height={150}
                 />
 
-                <h4 className="text-lg text-center mb-4 mt-8">
+                <h4 className="heading_card_v2_with_hover">
                   Evaluate and improve applications
                 </h4>
-                <p className="text-center">
+                <p className="description_card_v2_with_hover">
                   Continually enhance your LLM models with actionable insights,
                   keeping you ahead of the curve in AI development
                 </p>

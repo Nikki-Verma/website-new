@@ -2,7 +2,12 @@
 
 import ScalableAiIcon from "@/components/Icons/ScalableAi";
 import SecureAiIcon from "@/components/Icons/SecureAiIcon";
-import { CustomerCloudDeploy, SimplaiCloudDeploy } from "@/util/images";
+import {
+  CustomerCloudDeploy,
+  OnPremiseMobile,
+  SimplaiCloudDeploy,
+  SimplaiCloudMobile,
+} from "@/util/images";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import "./style.css";
@@ -17,11 +22,11 @@ const data = [
 const CloudDeployment = () => {
   const [currentSelect, setCurrentSelect] = useState(data[0]);
   const [index, setIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 604);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 604);
+      setIsMobile(window.innerWidth < 601);
     };
 
     // Add event listener for window resize
@@ -46,26 +51,61 @@ const CloudDeployment = () => {
         </div>
 
         {/* buttons */}
-        <div className="button_section">
-          <button
-            onClick={() => handle(0)}
-            className={index === 0 ? "round_button_selected" : "round_button"}
-          >
-            <SecureAiIcon />
-            SimplAI cloud
-          </button>
-          <button
-            onClick={() => handle(1)}
-            className={index === 1 ? "round_button_selected" : "round_button"}
-          >
-            <ScalableAiIcon />
-            On-premise
-          </button>
-        </div>
+        {!isMobile ? (
+          <>
+            <div className="button_section">
+              <button
+                onClick={() => handle(0)}
+                className={
+                  index === 0 ? "round_button_selected" : "round_button"
+                }
+              >
+                <SecureAiIcon />
+                SimplAI cloud
+              </button>
+              <button
+                onClick={() => handle(1)}
+                className={
+                  index === 1 ? "round_button_selected" : "round_button"
+                }
+              >
+                <ScalableAiIcon />
+                On-premise
+              </button>
+            </div>
 
-        <div className="flex justify-center m-auto">
-          <Image src={currentSelect?.image} alt={"cloud-deploy-icon"} />
-        </div>
+            <div className="flex justify-center m-auto">
+              <Image src={currentSelect?.image} alt={"cloud-deploy-icon"} />
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="button_section">
+              <button
+                style={{ cursor: "auto" }}
+                className="round_button_selected"
+              >
+                <SecureAiIcon style={{ height: 20, width: 20 }} />
+                SimplAI cloud
+              </button>
+            </div>
+            <div className="flex justify-center m-auto mb-4">
+              <Image src={SimplaiCloudMobile} alt={"cloud-deploy-icon"} />
+            </div>
+            <div className="button_section">
+              <button
+                style={{ cursor: "auto" }}
+                className="round_button_selected"
+              >
+                <ScalableAiIcon style={{ height: 20, width: 20 }} />
+                On-premise
+              </button>
+            </div>
+            <div className="flex justify-center m-auto">
+              <Image src={OnPremiseMobile} alt={"cloud-deploy-icon"} />
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

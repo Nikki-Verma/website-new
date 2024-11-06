@@ -138,7 +138,7 @@ const Footer = () => {
                   <span>Copyright © 2024 SimplAI</span>
                 </Col>
                 <Col>
-                  <div>
+                  <div className="flex flex-wrap">
                     <span>
                       <Link className="footer-links" href="/privacypolicy">
                         Privacy policy

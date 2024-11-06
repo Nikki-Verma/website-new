@@ -134,25 +134,27 @@ const ModelFeatures = () => {
                 }}
               />
             </Col>
-            <Col
-              xs={24}
-              sm={24}
-              md={24}
-              lg={12}
-              xl={12}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
-                justifyContent: "center",
-              }}
-            >
-              <Image
-                src={currentSelect?.image}
-                alt="RetrievalImage"
-                className="w-9/12"
-              />
-            </Col>
+            {currentSelect?.image && (
+              <Col
+                xs={24}
+                sm={24}
+                md={24}
+                lg={12}
+                xl={12}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  src={currentSelect?.image}
+                  alt="RetrievalImage"
+                  className="w-9/12"
+                />
+              </Col>
+            )}
           </Row>
         </div>
       </div>

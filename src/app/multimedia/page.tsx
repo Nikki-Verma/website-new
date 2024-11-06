@@ -1,5 +1,4 @@
 import AIPlatformOverview from "@/components/AIPlatformOverview/AIPlatformOverview";
-import BannerExpert from "@/components/BannerExpert/BannerExpert";
 import CardInfo from "@/components/CardInfo/CardInfo";
 import CommonHero from "@/components/CommonHero/CommonHero";
 import Footer from "@/components/Footer/Footer";
@@ -15,7 +14,14 @@ import {
   solution,
   telecom,
 } from "@/data/multimediaPage";
+import dynamic from "next/dynamic";
 
+const BannerExpert = dynamic(
+  () => import("@/components/BannerExpert/BannerExpert"),
+  {
+    ssr: false,
+  },
+);
 const Multimedia = () => {
   return (
     <>
