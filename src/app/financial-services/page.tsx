@@ -37,7 +37,7 @@ const BFSI = () => {
       <AIPlatformOverview
         data={platformData}
         heading1="Empowering financial service leaders"
-        heading2="Your partner in Gen AI innovation"
+        heading2="Your partner in AI innovation"
       />
       <CaseStudy />
       <BannerExpert

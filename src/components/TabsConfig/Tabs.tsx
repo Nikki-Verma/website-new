@@ -1,12 +1,44 @@
 "use client";
-import { Col, Row } from "antd";
+import { Tabs as AntdTabs, Col, Row, TabsProps } from "antd";
 import { useState } from "react";
 import "./tabs.css";
-
 const Tabs = ({ tabsConfig }: any) => {
   const [activeTab, setActiveTab] = useState<string>(
     tabsConfig?.tabs?.tabsName[0],
   );
+
+  const tabItems: TabsProps["items"] = tabsConfig?.tabs?.tabsName?.map(
+    (tabName: string, index: any) => {
+      return {
+        key: index,
+        label: tabName,
+        children: (
+          <Row gutter={[36, 36]}>
+            <Col span={24}>
+              <div className="active_tab_text_content">
+                <p className="active_tab_description mb-6">
+                  {tabsConfig?.tabs?.tabsContent?.[tabName]?.description}
+                </p>
+                {tabsConfig?.tabs?.tabsContent?.[tabName]?.features?.length ? (
+                  <ul className="platform_feature_list list-disc">
+                    {tabsConfig?.tabs?.tabsContent?.[tabName]?.features?.map(
+                      (feature: string) => {
+                        return <li>{feature}</li>;
+                      },
+                    )}
+                  </ul>
+                ) : (
+                  ""
+                )}
+              </div>
+            </Col>
+          </Row>
+        ),
+      };
+    },
+  );
+
+  console.log(`tab item`, tabItems);
 
   return (
     <div className="section">
@@ -32,47 +64,8 @@ const Tabs = ({ tabsConfig }: any) => {
               </Col>
             </Row>
           </div>
-          {/* tabs list */}
-          <div className="tabs_content">
-            <div className="tab_name_list">
-              {tabsConfig?.tabs?.tabsName?.map((tabName: string) => {
-                return (
-                  <span
-                    className={`tab_name ${
-                      activeTab === tabName ? "tab_active" : ""
-                    }`}
-                    onClick={() => setActiveTab(tabName)}
-                  >
-                    {tabName}
-                  </span>
-                );
-              })}
-            </div>
-
-            {/* active tab details */}
-            <div className="active_tab_detail">
-              <Row gutter={[36, 36]}>
-                <Col span={24}>
-                  <div className="active_tab_text_content">
-                    <p className="active_tab_description mb-6">
-                      {tabsConfig?.tabs?.tabsContent?.[activeTab]?.description}
-                    </p>
-                    {tabsConfig?.tabs?.tabsContent?.[activeTab]?.features
-                      ?.length ? (
-                      <ul className="platform_feature_list list-disc">
-                        {tabsConfig?.tabs?.tabsContent?.[
-                          activeTab
-                        ]?.features?.map((feature: string) => {
-                          return <li>{feature}</li>;
-                        })}
-                      </ul>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                </Col>
-              </Row>
-            </div>
+          <div className="my-9 mx-8">
+            <AntdTabs defaultActiveKey="1" items={tabItems} />
           </div>
         </div>
       </div>

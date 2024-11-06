@@ -64,7 +64,7 @@ const BuildAgenticProcess = () => {
             <div className="card_v2 h-full flex justify-between flex-col py-8 px-8">
               <div>
                 <h4 className="heading_24 text-left mb-4 w-5/6">
-                  Process workflow automation
+                  Process & workflow automation
                 </h4>
                 <p className="text-left">
                   Utilize our intuitive platform to chain nodes effortlessly,

@@ -1,6 +1,7 @@
 import "./style.css";
 const AIStack = () => {
   const badges_list = [
+    "AI Employees",
     "AI Assistants",
     "Chatbots",
     "Co-Pilots",

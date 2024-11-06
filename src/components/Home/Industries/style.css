@@ -33,10 +33,11 @@
 }
 
 .industries_box_button_selected {
-  height: 46px;
+  min-height: 46px;
   padding: 12px;
   display: flex;
   justify-content: flex-start;
+  text-align: left;
   align-items: center;
   border-radius: 4px 0px 0px 4px;
   background: #fff;
@@ -45,11 +46,12 @@
 }
 
 .industries_box_button {
-  height: 46px;
+  min-height: 46px;
   padding: 12px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-align: left;
   border-radius: 4px 0px 0px 4px;
   background: transparent;
   color: var(--white);

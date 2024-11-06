@@ -16,7 +16,7 @@ const HeroAgentAi = () => {
         <div className="mx-auto text-center">
           <p className="product_page_name">AI Agents</p>
         </div>
-        <h1 className="text-center hero_section_heading w-2/3 m-auto flex flex-col gap-8">
+        <h1 className="text-center hero_section_heading m-auto flex flex-col gap-8">
           <span className="hero_h1">
             The fastest way to build intelligent <br /> AI agents and employees
           </span>

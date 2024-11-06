@@ -16,7 +16,7 @@ const Footer = () => {
       menu: [
         {
           label: "SimplAI Studio",
-          link: "/llmstudio",
+          link: "/simplai-studio",
         },
         {
           label: "AI Agents",
@@ -27,8 +27,8 @@ const Footer = () => {
           label: "Agentic Process Automation",
         },
         {
-          label: "Production RAG",
-          link: "/rag",
+          label: "Agentic RAG",
+          link: "/agentic-rag",
         },
       ],
     },
@@ -37,7 +37,7 @@ const Footer = () => {
       menu: [
         {
           label: "Financial Services",
-          link: "/bfsi",
+          link: "/financial-services",
         },
         {
           label: "Insurance",
@@ -48,7 +48,7 @@ const Footer = () => {
           link: "/healthcare",
         },
         {
-          label: "Legal",
+          label: "Legal, Consulting & Research",
           link: "/legal",
         },
         {
@@ -67,27 +67,6 @@ const Footer = () => {
         {
           label: "Documentation",
           link: "https://simplai.ai/docs/",
-        },
-      ],
-    },
-    {
-      heading: "Support",
-      menu: [
-        {
-          label: "Help Center",
-          link: "",
-        },
-        {
-          label: "Compliance",
-          link: "",
-        },
-        {
-          label: "Contact us",
-          link: "/request-demo",
-        },
-        {
-          label: "System Status",
-          link: "",
         },
       ],
     },
@@ -111,21 +90,30 @@ const Footer = () => {
             </div>
           </Col>
           {/* flex justify-between gap-16 */}
-          <Col xs={24} md={16}>
-            <Row gutter={[24, 24]}>
+          <Col
+            xs={24}
+            md={16}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "space-between",
+            }}
+          >
+            <Row
+              gutter={[24, 24]}
+              style={{ width: "100%" }}
+              justify={"space-between"}
+            >
               {menuList?.map((value: any, index: number) => {
                 return (
-                  <Col xs={24} md={6} key={index}>
+                  <Col xs={12} md={8} key={index}>
                     <p className="mb-4">
                       <strong>{value.heading}</strong>
                     </p>
                     {value.menu.map((menu: any) => {
                       return (
                         <ul key={menu?.label}>
-                          <li
-                            className="mb-4 font-14"
-                            style={{ cursor: "pointer" }}
-                          >
+                          <li className="mb-4 font-14">
                             <Link className="footer-links" href={menu.link}>
                               {menu.label}
                             </Link>

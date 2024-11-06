@@ -1,9 +1,9 @@
 import AntdStyledComponentsRegistry from "@/components/AntDesign/AntdStyledComponentsRegistry";
 import { ThemeProvider } from "@/providers/antdThemeProvider";
 import { ReactQueryProvider } from "@/providers/reactQueryProvider";
-import { Montserrat } from "@next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Metrics from "./metrics";
 
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-MMV6VP3N" />
-      <body className={`${montserrat.variable}`}>
+      <body className={montserrat.variable}>
         <ThemeProvider>
           <AntdStyledComponentsRegistry>
             <ReactQueryProvider>{children}</ReactQueryProvider>

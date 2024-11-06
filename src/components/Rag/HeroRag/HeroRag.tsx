@@ -15,7 +15,7 @@ const HeroRag = () => {
       {/* <Header /> */}
       <div className="content_section">
         <div className="mx-auto text-center">
-          <p className="product_page_name">Multi-modal Production RAG</p>
+          <p className="product_page_name">Multi-modal Agentic RAG</p>
         </div>
         <h1 className="text-center hero_section_heading m-auto flex flex-col gap-8">
           <span className="hero_h1">

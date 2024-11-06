@@ -20,7 +20,7 @@ const HeroLlmStudio = () => {
         <h1 className="text-center hero_section_heading m-auto flex flex-col gap-8">
           <span className="hero_h1">
             Enterprise platform for experimenting, building,
-            <br /> deploying, and monitoring Gen AI applications
+            <br /> deploying, & monitoring Agentic AI applications
           </span>
           <span className="hero_h2 w-2/3">
             The fastest and simplest path from idea to PoC to production,

@@ -18,13 +18,13 @@ const Hero = () => {
         <div className="text-center hero_section_heading">
           <span className="hero_h1">
             The <span className="hero_h2_home_page">simplest and fastest</span>{" "}
-            way to build <br /> and deploy Gen AI applications
+            way to build <br /> Agentic AI applications
           </span>
         </div>
         <p className="text-center mx-auto mt-8 hero_text">
-          Create AI agents and agentic workflows at scale, with robust security.
-          Experience rapid execution, transforming PoC to production in just{" "}
-          <a className="hero_text_highlight"> one month.</a>
+          Create scalable, secure, and reliable AI agents and agentic
+          automations to transform your enterprise for the{" "}
+          <a className="hero_text_highlight"> AI-native world.</a>
         </p>
         <div className="flex justify-center items-center mt-8 mb-8">
           <Link prefetch href={"/request-demo"}>

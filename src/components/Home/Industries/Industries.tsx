@@ -32,7 +32,7 @@ const data = [
     buttonName: "Get started",
     buttonLink: "",
     image: CoinHourglass,
-    url: "/bfsi",
+    url: "/financial-services",
   },
   {
     heading: "Insurance",
@@ -98,7 +98,7 @@ const Industries = () => {
           <div className="home_page_heading_tag">Industries</div>
           <div className="home_page_heading">
             SimplAI empowers organizations across diverse sectors to build
-            production-ready Gen AI applications
+            enterprise-ready AI applications
           </div>
         </div>
         <Row

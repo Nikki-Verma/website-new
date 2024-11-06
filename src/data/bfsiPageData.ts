@@ -47,7 +47,7 @@ export const solutionsList = [
     icon: DecisionIcon,
   },
   {
-    title: " customer engagement",
+    title: "Customer engagement",
     description:
       "Provide personalized experiences through agentic AI and LLM-powered journeys",
     icon: ProductivityIcon,

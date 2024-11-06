@@ -44,8 +44,8 @@ const AcceleratedExecution = () => {
         <div className="section_heading_container">
           <div className="home_page_heading_tag">Accelerated Execution</div>
           <div className="home_page_heading">
-            Quickly build your experiments, iterate & <br /> productionize with
-            in a month
+            Quickly build your experiments, iterate & <br /> productionize
+            <span className="heading_highlighter"> with in a month</span>
           </div>
         </div>
         <Row align={"stretch"} justify={"space-between"} gutter={[16, 16]}>

@@ -28,7 +28,7 @@ const data = [
       "Streamline regulatory compliance, fraud detection, and financial reporting workflows.",
     image: financialServiceIcon,
     imageAlt: "embed-ai-icon",
-    url: "/bfsi",
+    url: "/financial-services",
   },
   {
     heading: "Insurance",

@@ -39,7 +39,7 @@ const Multimedia = () => {
       <AIPlatformOverview
         data={platformData}
         heading1="Telecom, Media & Entertainment teams"
-        heading2="Your strategic partner for innovation in Gen AI"
+        heading2="Your strategic partner for AI innovation"
       />
       <CaseStudy />
       <BannerExpert

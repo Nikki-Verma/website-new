@@ -2,8 +2,8 @@ import { BannerExpertBgImage } from "@/util/images";
 import Link from "next/link";
 
 const BannerExpert = ({
-  bannerHeading = "See the SimplAI platform in action",
-  bannerText = "Request a demo and see how SimplAI empowers your teams to supercharge their AI-driven applications for seamless business growth",
+  bannerHeading = "Ready to transform your enterprise with Agentic AI?",
+  bannerText = "Explore the potential of AI agents and agentic automation solutions tailored for your business. Book a demo today to see how SimplAI can help you drive innovation in the AI-native world.",
   ctaText = "Request a Demo",
 }: {
   bannerHeading?: string;

@@ -34,7 +34,7 @@ const Insurance = () => {
       <AIPlatformOverview
         data={platformData}
         heading1="Empowering insurance leaders"
-        heading2="Your trusted partner in Gen AI innovation"
+        heading2="Your trusted partner in AI innovation"
       />
       <CaseStudy />
       <BannerExpert

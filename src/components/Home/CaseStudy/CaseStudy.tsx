@@ -28,7 +28,7 @@ const CaseStudy = () => {
           <div className="container">
             <div className="section_heading_container">
               <div className="home_page_heading">
-                Get latest insights on GenAI
+                Get latest insights on Agentic AI
               </div>
             </div>
             {isLoading || isRefetching ? (

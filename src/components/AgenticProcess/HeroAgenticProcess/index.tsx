@@ -21,9 +21,9 @@ const HeroAgenticProcess = () => {
             The fastest way to automate complex workflows
           </span>
           <span className="hero_h2  ">
-            SimplAI empowers your teams to automate document processing,
-            workflow execution, and decision-making with ease. Streamline
-            operations across industries with reliable, scalable automation.
+            SimplAI empowers your teams to automate workflow execution, document
+            processing, and decision-making with ease. Streamline operations
+            across industries with reliable, scalable automation.
           </span>
         </h1>
         <div className="flex justify-center items-center mt-8 mb-8">

@@ -24,7 +24,7 @@ const home = () => {
       <CloudDeployment />
       <Testimonial />
       <CaseStudy />
-      <BannerExpert />
+      <BannerExpert ctaText="Book a Demo" />
       <Footer />
     </section>
   );

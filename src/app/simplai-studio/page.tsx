@@ -64,7 +64,7 @@ const LLMStudio = () => {
       />
       <CaseStudy />
       <BannerExpert
-        bannerHeading="Ready to unleash the potential of Generative AI?"
+        bannerHeading="Ready to unleash the potential of Agentic AI?"
         bannerText="Build and deploy powerful AI applications effortlessly with SimplAI Studio. Experiment, integrate, and optimize your applications while enjoying a seamless user experience designed for speed and scalability"
       />
       <Footer />

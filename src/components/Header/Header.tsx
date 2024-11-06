@@ -28,7 +28,7 @@ const Header = () => {
   const productsSubMenu: MenuProps["items"] = [
     {
       key: 2,
-      label: <Link href={"/llmstudio"}>SimplAI Studio</Link>,
+      label: <Link href={"/simplai-studio"}>SimplAI Studio</Link>,
       // title: "SimplAI Studio",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",
@@ -56,7 +56,7 @@ const Header = () => {
     },
     {
       key: 5,
-      label: <Link href={"/rag"}>Production RAG</Link>,
+      label: <Link href={"/agentic-rag"}>Agentic RAG</Link>,
       // title: "Production RAG",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",
@@ -68,7 +68,7 @@ const Header = () => {
   const UseCaseSubMenu: MenuProps["items"] = [
     {
       key: 7,
-      label: <Link href={"/bfsi"}>Financial Services</Link>,
+      label: <Link href={"/financial-services"}>Financial Services</Link>,
       // title: "BFSI",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",
@@ -95,7 +95,7 @@ const Header = () => {
     },
     {
       key: 10,
-      label: <Link href={"/legal"}>Legal</Link>,
+      label: <Link href={"/legal"}>Legal, Consulting & Research</Link>,
       // title: "Legal",
       // description:
       //   "Learn about the SimplAi Products how it can boost your business",
@@ -161,19 +161,19 @@ const Header = () => {
       // title: "AI Optimization",
       // description:}
     },
-    {
-      key: 14,
-      label: (
-        <Link href={"/pricing"} prefetch>
-          Platform
-        </Link>
-      ),
-      // title: "Production RAG",
-      // description:
-      //   "Learn about the SimplAi Products how it can boost your business",
-      // link: "/rag",
-      // icon: Programming,
-    },
+    // {
+    //   key: 14,
+    //   label: (
+    //     <Link href={"/pricing"} prefetch>
+    //       Platform
+    //     </Link>
+    //   ),
+    //   // title: "Production RAG",
+    //   // description:
+    //   //   "Learn about the SimplAi Products how it can boost your business",
+    //   // link: "/rag",
+    //   // icon: Programming,
+    // },
   ];
 
   const subMenuProduct = (
@@ -196,12 +196,14 @@ const Header = () => {
         }}
       />
       <Space direction="vertical" align="center">
-        <div className="experience_center_button">
-          <button>
-            <ExperienceCenterIcon />
-            <span>Experience SimplAI </span>
-          </button>
-        </div>
+        <Link prefetch href={"https://app.simplai.ai/login"}>
+          <div className="experience_center_button">
+            <button>
+              <ExperienceCenterIcon />
+              <span>Experience SimplAI </span>
+            </button>
+          </div>
+        </Link>
         <Link href={"/request-demo"} prefetch>
           <div className="request_button">
             <button>
@@ -370,17 +372,19 @@ const Header = () => {
               </div>
             </Dropdown>
           </button>
-          <button className="px-4 mx-2">
+          {/* <button className="px-4 mx-2">
             <Link href="/pricing">Pricing</Link>
-          </button>
+          </button> */}
         </div>
         <div className="button-container-header">
-          <div className="experience_center_button">
-            <button>
-              <ExperienceCenterIcon />
-              <span>Experience SimplAI </span>
-            </button>
-          </div>
+          <Link prefetch href={"https://app.simplai.ai/login"}>
+            <div className="experience_center_button">
+              <button>
+                <ExperienceCenterIcon />
+                <span>Experience SimplAI </span>
+              </button>
+            </div>
+          </Link>
           <Link href={"/request-demo"} prefetch>
             <div className="request_button">
               <button>
