@@ -43,7 +43,7 @@ const DataIntegration = () => {
               <div className="h-full flex justify-between flex-col">
                 <div className="mb-4">
                   <h4 className="heading_card_v2">
-                    Build production-ready Agentic RAG
+                    Build enterprise-ready Agentic RAG
                   </h4>
                   <p className="description_card_v2">
                     Use a powerful RAG interface supporting any vector database,

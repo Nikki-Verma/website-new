@@ -44,16 +44,6 @@
   z-index: 12;
 }
 
-.hero_section_heading {
-  text-align: center;
-  /* font-size: 70px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104px;  */
-  color: #fff;
-  overflow: hidden;
-}
-
 .hero_h2_home_page {
   color: #fff;
   text-align: center;
@@ -89,21 +79,17 @@
 }
 
 .hero_text {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  --tw-text-opacity: 1;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   color: var(--Neutral-1, #fff);
+  text-align: center;
+  font-size: 18px;
   font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 188.889% */
   width: 67%;
-
   @media screen and (max-width: 600px) {
     width: 100%;
     font-weight: 400;
+    font-size: 16px;
   }
 }
 

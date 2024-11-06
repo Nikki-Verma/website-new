@@ -21,7 +21,7 @@ const Feature = () => {
         <Row gutter={[36, 36]} justify={"space-between"} align={"stretch"}>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
             <div className="card_v2 px-8 pt-16 pb-12">
-              <Row gutter={[36, 36]} justify={"space-between"} align={"middle"}>
+              <Row gutter={[36, 32]} justify={"space-between"} align={"middle"}>
                 <Col
                   xs={24}
                   sm={24}

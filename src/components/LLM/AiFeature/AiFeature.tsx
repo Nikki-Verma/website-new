@@ -12,7 +12,7 @@ const AiFeature = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading">
-            Build and deploy AI solutions — without <br />
+            Build and deploy AI solutions - without <br />
             technical complexity
           </div>
         </div>

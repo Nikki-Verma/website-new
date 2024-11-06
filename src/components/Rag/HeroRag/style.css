@@ -26,15 +26,6 @@
   z-index: 12;
 }
 
-.hero_section_heading {
-  color: var(--Text-Color-50, #fff);
-  text-align: center;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 59px; /* 140.476% */
-}
-
 .animate_text_wrapper {
   display: inline-block;
   overflow: hidden;
@@ -50,19 +41,6 @@
   animation-direction: alternate;
   animation: textanimate 3s ease-in-out;
 }
-
-.hero_text {
-  color: var(--Neutral-1, #fff);
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 34px; /* 188.889% */
-  @media screen and (max-width: 600px) {
-    font-weight: 400;
-  }
-}
-
 .hero_text_highlight {
   color: var(--Text-Color-50, #fff);
   background: var(--blue-purple-500, #602edf);

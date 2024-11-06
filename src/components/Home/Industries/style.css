@@ -70,4 +70,50 @@
   font-weight: 500;
   line-height: 38px; /* 158.333% */
   width: 60%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.industry_carousel_container {
+  display: flex !important;
+  flex-direction: column;
+  padding: 12px;
+  background: linear-gradient(180deg, #0d0220 0%, #1f0649 100%);
+  flex: 1;
+}
+
+.industry_carousel_heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--Text-Color-50, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 22px;
+}
+.industry_carousel_card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 215px 12px 24px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ant-carousel .slick-slider .slick-track {
+  display: flex;
+  align-items: stretch;
 }

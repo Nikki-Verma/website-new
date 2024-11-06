@@ -128,7 +128,7 @@ const Features = () => {
       <div className="container">
         <div className="section_heading_container">
           <div className="home_page_heading_tag">
-            For Technology & Product Teams
+            For Product & Technology Teams
           </div>
           <div className="home_page_heading">
             Agentic AI platform that helps to{" "}

@@ -16,7 +16,7 @@ const Hero = () => {
     >
       <div className="content_section">
         <div className="text-center hero_section_heading">
-          <span className="hero_h1">
+          <span className="hero_h1_home_page">
             The <span className="hero_h2_home_page">simplest and fastest</span>{" "}
             way to build <br /> Agentic AI applications
           </span>

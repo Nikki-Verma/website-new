@@ -80,8 +80,8 @@ const Footer = () => {
             <div className="address_info" style={{ maxWidth: 400 }}>
               <Image src={Logo} alt="simplAI" />
               <p className="py-4">
-                SimplAI is a unified Gen AI development platform to build,
-                orchestrate, deploy & monitor LLM-Powered applications with ease
+                SimplAI is the simplest and fastest way to build Agentic AI
+                applications that are secure, scalable and reliable
               </p>
               <div className="badge_wrapper flex mt-8 gap-4">
                 <Image src={SocIcon} alt="badge" />

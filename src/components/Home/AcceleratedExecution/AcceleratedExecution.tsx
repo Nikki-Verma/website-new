@@ -19,19 +19,19 @@ const data = [
   },
   {
     heading: "Iterate & Refine",
-    description: "(2-5 Days)",
+    description: "(5-10 Days)",
     imageAlt: "iterate-refine-icon",
     image: IterateRefine,
   },
   {
     heading: "Integrate Agentic AI",
-    description: "(5-10 Days)",
+    description: "(2-5 Days)",
     imageAlt: "integrate-agent-icon",
     image: IntegrateAgent,
   },
   {
     heading: "Productize AI System ",
-    description: "(5-10 Days)",
+    description: "(2-5 Days)",
     imageAlt: "productise-ai-icon",
     image: ProductiseAi,
   },
@@ -44,8 +44,9 @@ const AcceleratedExecution = () => {
         <div className="section_heading_container">
           <div className="home_page_heading_tag">Accelerated Execution</div>
           <div className="home_page_heading">
-            Quickly build your experiments, iterate & <br /> productionize
-            <span className="heading_highlighter"> with in a month</span>
+            Build complex use cases fast – from <br /> experimentation to
+            production in
+            <span className="heading_highlighter"> just a month</span>
           </div>
         </div>
         <Row align={"stretch"} justify={"space-evenly"} gutter={[16, 16]}>

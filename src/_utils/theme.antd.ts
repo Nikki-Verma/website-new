@@ -13,6 +13,7 @@ const theme = {
       dotHeight: 7,
       dotActiveWidth: 7,
       dotWidth: 7,
+      dotOffset: -16,
     },
     Dropdown: {
       paddingBlock: 12,

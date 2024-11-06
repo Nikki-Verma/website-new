@@ -4,9 +4,15 @@ import AIStack from "@/components/Home/AIStack/AIStack";
 import AcceleratedExecution from "@/components/Home/AcceleratedExecution/AcceleratedExecution";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
 import Hero from "@/components/Home/Hero";
-import Industries from "@/components/Home/Industries/Industries";
 import Testimonial from "@/components/Home/Testimonial/Testimonial";
 import dynamic from "next/dynamic";
+
+const Industries = dynamic(
+  () => import("@/components/Home/Industries/Industries"),
+  {
+    ssr: false,
+  },
+);
 
 const CloudDeployment = dynamic(
   () => import("@/components/Home/CloudDeployment"),

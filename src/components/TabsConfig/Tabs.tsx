@@ -43,7 +43,7 @@ const Tabs = ({ tabsConfig }: any) => {
   return (
     <div className="section">
       <div className="container mb-0">
-        <div className="card_v2 mb-0">
+        <div className="card_v2 mb-0" style={{ padding: 0 }}>
           <div
             className="tabs_banner"
             style={{
@@ -64,7 +64,7 @@ const Tabs = ({ tabsConfig }: any) => {
               </Col>
             </Row>
           </div>
-          <div className="my-9 mx-8">
+          <div className="tabs-content-container my-9 mx-8">
             <AntdTabs defaultActiveKey="1" items={tabItems} />
           </div>
         </div>

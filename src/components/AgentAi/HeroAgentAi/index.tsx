@@ -20,7 +20,7 @@ const HeroAgentAi = () => {
           <span className="hero_h1">
             The fastest way to build intelligent <br /> AI agents and employees
           </span>
-          <span className="hero_h2 w-2/3">
+          <span className="hero_h2">
             Empower your teams with conversational AI, voice AI, co-pilots,
             assistants and multi-agent systems that transform workflows,
             automate processes, and deliver precise, trustworthy responses.

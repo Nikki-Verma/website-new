@@ -16,7 +16,7 @@ const BuildAgent = () => {
           </div>
           <p className="section_subheading w-2/3">
             SimplAI’s platform provides a no-fuss way for technical and product
-            teams to create intelligent AI agents and employees—without the
+            teams to create intelligent AI agents and employees-without the
             hassle.
           </p>
         </div>

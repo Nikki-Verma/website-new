@@ -62,6 +62,7 @@ export { default as BoxesBgImage1 } from "../assets/svg/Images/BoxesBgImage1.svg
 export { default as BuildProductionImage } from "../assets/svg/Images/BuildProductionImage.svg";
 export { default as ChatbotFeatureImage } from "../assets/svg/Images/ChatbotFeatureImage.svg";
 export { default as CitationImage } from "../assets/svg/Images/CitationImage.svg";
+export { default as CoinHourglassMobile } from "../assets/svg/Images/CoinHourglassMobile.svg";
 export { default as CommonHeroBgImage } from "../assets/svg/Images/CommonHeroBgImage.svg";
 export { default as ComplianceIcon } from "../assets/svg/Images/ComplianceIcon.svg";
 export { default as ConnectionIcon } from "../assets/svg/Images/ConnectionIcon.svg";
@@ -85,6 +86,7 @@ export { default as GuardrailsCardImage } from "../assets/svg/Images/GuardrailsC
 export { default as GuardrailsImage } from "../assets/svg/Images/GuardrailsImage.svg";
 export { default as HallucinateImage } from "../assets/svg/Images/HallucinateImage.svg";
 export { default as HealthcareImage } from "../assets/svg/Images/HealthcareImage.svg";
+export { default as HealthcareImageMobile } from "../assets/svg/Images/HealthcareImageMobile.svg";
 export { default as HeroImage1 } from "../assets/svg/Images/HeroImage1.svg";
 export { default as HeroImage2 } from "../assets/svg/Images/HeroImage2.svg";
 export { default as HeroImage3 } from "../assets/svg/Images/HeroImage3.svg";
@@ -92,11 +94,14 @@ export { default as HeroImage4 } from "../assets/svg/Images/HeroImage4.svg";
 export { default as InformationRetrievalImage } from "../assets/svg/Images/InformationRetrievalImage.svg";
 export { default as InsuranceAgentIcon } from "../assets/svg/Images/InsuranceAgentIcon.svg";
 export { default as InsuranceImage } from "../assets/svg/Images/InsuranceImage.svg";
+export { default as InsuranceImageMobile } from "../assets/svg/Images/InsuranceImageMobile.svg";
 export { default as IntelligentDMImage } from "../assets/svg/Images/IntelligentDMImage.svg";
 export { default as InternetIcon } from "../assets/svg/Images/InternetIcon.svg";
 export { default as InternetImage } from "../assets/svg/Images/InternetImage.svg";
+export { default as InternetImageMobile } from "../assets/svg/Images/InternetImageMobile.svg";
 export { default as KnowledgeAssistantIcon } from "../assets/svg/Images/KnowledgeAssistantIcon.svg";
 export { default as LegalImage } from "../assets/svg/Images/LegalImage.svg";
+export { default as LegalImageMobile } from "../assets/svg/Images/LegalImageMobile.svg";
 export { default as MarketingIcon } from "../assets/svg/Images/MarketingIcon.svg";
 export { default as MediaIcon } from "../assets/svg/Images/MediaIcon.svg";
 export { default as MfaIcon } from "../assets/svg/Images/MfaIcon.svg";
@@ -117,6 +122,7 @@ export { default as SimplaiStudioImage } from "../assets/svg/Images/SimplaiStudi
 export { default as SpeedIcon } from "../assets/svg/Images/Speed_Icon.svg";
 export { default as TaskIcon } from "../assets/svg/Images/TaskIcon.svg";
 export { default as TelecomImage } from "../assets/svg/Images/TelecomImage.svg";
+export { default as TelecomImageMobile } from "../assets/svg/Images/TelecomImageMobile.svg";
 export { default as TrustSecurityImage } from "../assets/svg/Images/TrustSecurityImage.svg";
 export { default as VideoContainerAgentAiImage } from "../assets/svg/Images/VideoContainerAgentAi.svg";
 export { default as VideoContainerAgenticProcessImage } from "../assets/svg/Images/VideoContainerAgenticProcessImage.svg";
