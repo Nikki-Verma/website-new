@@ -847,6 +847,7 @@ h5 {
 .platform_feature_list {
   margin-bottom: 24px;
   color: var(--off-white);
+  list-style-type: none;
   @media screen and (max-width: 600px) {
     margin-bottom: 12px;
   }
@@ -868,9 +869,6 @@ h5 {
     line-height: normal;
     padding: 12px 0px;
   }
-}
-.platform_feature_list > li::marker {
-  content: "";
 }
 
 li {

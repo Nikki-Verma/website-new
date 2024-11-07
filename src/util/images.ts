@@ -124,6 +124,8 @@ export { default as TaskIcon } from "../assets/svg/Images/TaskIcon.svg";
 export { default as TelecomImage } from "../assets/svg/Images/TelecomImage.svg";
 export { default as TelecomImageMobile } from "../assets/svg/Images/TelecomImageMobile.svg";
 export { default as TrustSecurityImage } from "../assets/svg/Images/TrustSecurityImage.svg";
+export { default as UserCompanyPeek } from "../assets/svg/Images/UserCompanyPeek.svg";
+export { default as UserImagePeek } from "../assets/svg/Images/UserImagePeek.svg";
 export { default as VideoContainerAgentAiImage } from "../assets/svg/Images/VideoContainerAgentAi.svg";
 export { default as VideoContainerAgenticProcessImage } from "../assets/svg/Images/VideoContainerAgenticProcessImage.svg";
 export { default as chatbotImage } from "../assets/svg/Images/chatbotImage.svg";

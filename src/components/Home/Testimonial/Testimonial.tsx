@@ -1,5 +1,6 @@
 import "./style.css";
 
+import { UserCompanyPeek, UserImagePeek } from "@/util/images";
 import { Col, Row } from "antd";
 import Image from "next/image";
 import UserCompany from "../../../assets/png/user_company_logo.png";
@@ -20,15 +21,15 @@ const Testimonial = () => {
             xs={24}
             sm={24}
             md={12}
-            lg={12}
-            xl={8}
+            lg={10}
+            xl={10}
             style={{ alignSelf: "stretch" }}
           >
             <div className="testimonial_card ">
               <div className=" flex flex-col gap-4">
                 <div className="user_details">
                   <div className="flex items-center gap-2">
-                    <Image src={UserImage} alt="user_image" />
+                    <Image src={UserImage} alt="user_image_lawyered" />
                     <div>
                       <div className="user_name">Himanshu</div>
                       <div className="user_designation">Founder & CEO</div>
@@ -37,7 +38,7 @@ const Testimonial = () => {
                   <Image
                     src={UserCompany}
                     alt="user_company"
-                    style={{ maxWidth: "80px" }}
+                    style={{ maxWidth: "80px", maxHeight: "52px" }}
                   />
                 </div>
                 <div className="user_say">
@@ -46,17 +47,48 @@ const Testimonial = () => {
                   cutting-edge technology with our mission to democratize legal
                   access, we're not only streamlining processes but also
                   ensuring data security and privacy. SimplAI isn't just a
-                  platform; it's a catalyst for innovation, empowering Lawyered
+                  platform, it's a catalyst for innovation, empowering Lawyered
                   to deliver impactful solutions while safeguarding the trust of
-                  our customers."
+                  our customers.
                 </div>
-                {/* <button>Hello</button> */}
-                {/* <button className="link_button flex items-center gap-3 link_button_primary mt-6">
-              View case study{" "}
-              <span className="icon">
-                <IoMdArrowForward />
-              </span>
-            </button> */}
+              </div>
+            </div>
+          </Col>
+          <Col
+            xs={24}
+            sm={24}
+            md={12}
+            lg={10}
+            xl={10}
+            style={{ alignSelf: "stretch" }}
+          >
+            <div className="testimonial_card ">
+              <div className=" flex flex-col gap-4">
+                <div className="user_details">
+                  <div className="flex items-center gap-2">
+                    <Image src={UserImagePeek} alt="user_image_peek" />
+                    <div>
+                      <div className="user_name">Lisa McLean</div>
+                      <div className="user_designation">
+                        Director of Product Management
+                      </div>
+                    </div>
+                  </div>
+                  <Image
+                    src={UserCompanyPeek}
+                    alt="user_company"
+                    style={{ maxWidth: "80px", maxHeight: "52px" }}
+                  />
+                </div>
+                <div className="user_say">
+                  SimplAI is helping us address customer challenges at scale
+                  using AI, without the need to build an in-house AI engineering
+                  team. Even before going live in production, SimplAI has shown
+                  its value through its robust capabilities and consistent
+                  support for our goals. Their responsive and dedicated approach
+                  has made them a reliable partner in advancing our AI
+                  initiatives.
+                </div>
               </div>
             </div>
           </Col>
