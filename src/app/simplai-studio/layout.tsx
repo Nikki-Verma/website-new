@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
   title: "This is new meta data for specific page.",
