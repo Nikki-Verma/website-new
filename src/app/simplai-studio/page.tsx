@@ -2,7 +2,6 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import CaseStudy from "@/components/Home/CaseStudy/CaseStudy";
 import AiFeature from "@/components/LLM/AiFeature/AiFeature";
-import DataIntegration from "@/components/LLM/DataIntegration/DataIntegration";
 import HeroLlmStudio from "@/components/LLM/HeroLlmStudio/HeroLlmStudio";
 import ModelFeatures from "@/components/LLM/ModelFeatures/ModelFeatures";
 import Tools from "@/components/LLM/Tools/Tools";
@@ -14,6 +13,14 @@ import {
   TrustSecurityImage,
 } from "@/util/images";
 import dynamic from "next/dynamic";
+
+const DataIntegration = dynamic(
+  () => import("@/components/LLM/DataIntegration/DataIntegration"),
+  {
+    ssr: false,
+  },
+);
+
 const AgentDeployment = dynamic(
   () => import("@/components/AgentAi/AgentDeployment/AgentDeployment"),
   {

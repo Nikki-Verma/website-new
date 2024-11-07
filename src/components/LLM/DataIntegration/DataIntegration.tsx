@@ -1,12 +1,28 @@
+"use client";
 import Image from "next/image";
 
 import {
   BuildProductionImage,
   DataConnectorImage,
   RetrievalImage,
+  RetrievalImageMobile,
 } from "@/util/images";
 import { Col, Row } from "antd";
+import { useEffect, useState } from "react";
 const DataIntegration = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 601);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="section">
       <div className="container">
@@ -73,7 +89,7 @@ const DataIntegration = () => {
                 </div>
                 <div>
                   <Image
-                    src={RetrievalImage}
+                    src={!isMobile ? RetrievalImage : RetrievalImageMobile}
                     alt="RetrievalImage"
                     className="w-full"
                   />

@@ -114,6 +114,7 @@ export { default as RazorpayLogo } from "../assets/svg/Images/RazorpayLogo.svg";
 export { default as Relaible } from "../assets/svg/Images/Relaible.svg";
 export { default as ResearchIcon } from "../assets/svg/Images/ResearchIcon.svg";
 export { default as RetrievalImage } from "../assets/svg/Images/RetrievalImage.svg";
+export { default as RetrievalImageMobile } from "../assets/svg/Images/RetrievalImageMobile.svg";
 export { default as ScalabilityIcon } from "../assets/svg/Images/ScalabilityIcon.svg";
 export { default as SecurityIcon } from "../assets/svg/Images/SecurityIcon.svg";
 export { default as SimplaiCloudMobile } from "../assets/svg/Images/SimplaiCloudMobile.svg";
