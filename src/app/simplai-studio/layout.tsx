@@ -21,5 +21,5 @@ type Props = {
 };
 
 export const Layout = ({ children }: Props) => {
-  return <>{children}</>;
+  return <Layout>{children}</Layout>;
 };
